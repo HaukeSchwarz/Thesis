@@ -88,5 +88,6 @@ target/
 # Mypy cache
 .mypy_cache/
 
-# PDF
+# Files ignored
 *.pdf
+*.csv
