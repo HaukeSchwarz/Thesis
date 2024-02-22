@@ -1,0 +1,141 @@
+\documentclass[
+	12pt, 
+	a4paper, 
+	oneside,
+	parskip=half*, % Line spacing for paragraphs
+	openany,  % openany -> on which page should new chapters start
+	listof=totoc, % Include listings in the table of contents
+	bibliography=totoc, % adding a bibliography to the table of contents
+	index=totoc, % add index directory to the table of contents
+  toc=chapterentrywithdots, % Set dots in the table of contents also for chapters
+  numbers=noenddot, % removes the last dot after X.X.X.
+  %chapterprefix=true % changes the display of the chapter, adds "Chapter" to the chapter number
+]{scrbook}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages}
+\usepackage{textcomp}
+\usepackage{amsmath} % math environment
+\usepackage{scrhack}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{makecell}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{newtxtext}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[titles]{tocloft}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{titletoc}
+
+
+% ---------------------------
+% |    Meta-Data for PDF    |
+% ---------------------------
+\usepackage[
+  pdftex,
+  pdfauthor={Hauke Schwarz},
+  pdftitle={Thesis},
+  pdfsubject={Master Thesis},
+  pdfkeywords={Thesis;Template;LaTeX},
+  pdfproducer={LaTeX},
+  pdfcreator={pdfLaTeX},
+  pdfduplex={DuplexFlipLongEdge}, %Alt.: Simplex or DuplexFlipShortEdge 
+  pdflang={en},
+  bookmarksopen,
+  bookmarksnumbered
+]{hyperref}
+
+
+% settings import
+
+
+\begin{document}
+% Title page
+% Abstract
+% Abstract in Portuguese
+% Acknowledgements
+
+
+% ---------------------------
+% |    Table of contents    |
+% ---------------------------
+
+\titlecontents{chapter}[0em] 
+{\vspace{0.59em}\bfseries}  % adjust vertical space here
+{\contentslabel{0em}\hspace{1em}}  % adjust label width here and add space after the label
+{\hspace{0em}}  % adjust space for numberless chapters
+{\titlerule*[0.8pc]{.}\contentspage}
+
+\cleardoubleoddpage	
+\pdfbookmark[section]{\contentsname}{toc} % toc is part of the bookmarks but not part the toc itself
+{
+  \pagestyle{empty}
+  \addtocontents{toc}{\protect} 
+  \tableofcontents
+  \clearpage
+  
+}
+
+
+% -----------------
+% |    Indexes    |
+% -----------------
+
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{0em}{2.3em}}  % For List of Figures
+\renewcommand*\l@table{\@dottedtocline{1}{0em}{2.3em}}   % For List of Tables
+\makeatother
+
+\BeforeStartingTOC[lof]{\addtocontents{lof}{\protect\addvspace{3pt}}}
+\BeforeStartingTOC[lot]{\addtocontents{lot}{\protect\addvspace{3pt}}}
+
+\begingroup
+\let\clearpage\relax  % Disable \clearpage
+\listoffigures  % List of figures
+\newpage
+\listoftables  % List of tables
+\endgroup
+
+\newcommand{\listformulasname}{List of Formulas}
+\newlistof{formulas}{frm}{\listformulasname}
+\listofformulas
+
+\addcontentsline{toc}{chapter}{List of Formulas}
+
+
+% ------------------
+% |    Acronyms   |
+% ------------------
+
+\cleardoubleoddpage	
+\pdfbookmark[section]{List of Abbreviations}{loa} % List of Abbreviations as bookmark
+\chapter*{List of Abbreviations}
+
+\setlength{\LTleft}{-0.45em}  % Align the table with the left margin
+
+\begin{longtable}{ll}
+\large\textbf{Abbreviation} & \large\textbf{Definition} \\
+ML & Machine Learning \\
+AI & Artificial Intelligence \\
+xAI & Explainable Artificial Intelligence \\
+\end{longtable}
+
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+
+
+% chapters
+% appendix
+% bibliography
+
+\end{document}
