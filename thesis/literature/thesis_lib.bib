@@ -15,18 +15,6 @@
 }
 
  
-@Book{Ding2021,
-  author     = {Ding, Frances and Hardt, Moritz and Miller, John and Schmidt, Ludwig},
-  title      = {Retiring {Adult}: {New} {Datasets} for {Fair} {Machine} {Learning}},
-  year       = {2021},
-  month      = aug,
-  abstract   = {Although the fairness community has recognized the importance of data, researchers in the area primarily rely on UCI Adult when it comes to tabular data. Derived from a 1994 US Census survey, this dataset has appeared in hundreds of research papers where it served as the basis for the development and comparison of many algorithmic fairness interventions. We reconstruct a superset of the UCI Adult data from available US Census sources and reveal idiosyncrasies of the UCI Adult dataset that limit its external validity. Our primary contribution is a suite of new datasets derived from US Census surveys that extend the existing data ecosystem for research on fair machine learning. We create prediction tasks relating to income, employment, health, transportation, and housing. The data span multiple years and all states of the United States, allowing researchers to study temporal shift and geographic variation. We highlight a broad initial sweep of new empirical insights relating to trade-offs between fairness criteria, performance of algorithmic interventions, and the role of distribution shift based on our new datasets. Our findings inform ongoing debates, challenge some existing narratives, and point to future research directions. Our datasets are available at https://github.com/zykls/folktables.},
-  file       = {ResearchGate Link:https\://www.researchgate.net/publication/353838347_Retiring_Adult_New_Datasets_for_Fair_Machine_Learning:;:C\:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/01_Material/02_Other/data/Ding et al_Retiring Adult New Datasets for Fair Machine Learning.pdf:PDF},
-  groups     = {Data},
-  shorttitle = {Retiring {Adult}},
-}
-
- 
 @TechReport{Hall2020,
   author   = {Hall, Patrick},
   title    = {On the {Art} and {Science} of {Machine} {Learning} {Explanations}},
@@ -377,10 +365,83 @@ All interpretation methods are explained in depth and discussed critically. How 
   series    = {{ITCS} '12},
   abstract  = {We study fairness in classification, where individuals are classified, e.g., admitted to a university, and the goal is to prevent discrimination against individuals based on their membership in some group, while maintaining utility for the classifier (the university). The main conceptual contribution of this paper is a framework for fair classification comprising (1) a (hypothetical) task-specific metric for determining the degree to which individuals are similar with respect to the classification task at hand; (2) an algorithm for maximizing utility subject to the fairness constraint, that similar individuals are treated similarly. We also present an adaptation of our approach to achieve the complementary goal of "fair affirmative action," which guarantees statistical parity (i.e., the demographics of the set of individuals receiving any classification are the same as the demographics of the underlying population), while treating similar individuals as similarly as possible. Finally, we discuss the relationship of fairness to privacy: when fairness implies privacy, and how tools developed in the context of differential privacy may be applied to fairness.},
   doi       = {10.1145/2090236.2090255},
-  groups    = {Overview xAI / Interpretability},
+  groups    = {Overview xAI / Interpretability, Fairness},
   isbn      = {9781450311151},
   url       = {https://arxiv.org/abs/1104.3913},
   urldate   = {2024-02-19},
+}
+
+ 
+@InProceedings{Le2023,
+  author   = {Le, Phuong Quynh and Nauta, Meike and Nguyen, Van Bach and Pathak, Shreyasi and Schlötterer, Jörg and Seifert, Christin},
+  title    = {Benchmarking {eXplainable} {AI} - {A} {Survey} on {Available} {Toolkits} and {Open} {Challenges}},
+  year     = {2023},
+  month    = aug,
+  pages    = {6665--6673},
+  volume   = {6},
+  abstract = {Electronic proceedings of IJCAI 2023},
+  comment  = {Comparing xAI Benchmarking Methods},
+  doi      = {10.24963/ijcai.2023/747},
+  file     = {:Le2023 - Benchmarking EXplainable AI a Survey on Available Toolkits and Open Challenges.pdf:PDF},
+  groups   = {Benchmarking},
+  issn     = {1045-0823},
+  language = {en},
+  url      = {https://www.ijcai.org/proceedings/2023/747},
+  urldate  = {2024-02-24},
+}
+
+ 
+@Article{Klosok2020,
+  author    = {Kłosok, Marta and Chlebus, Marcin},
+  journal   = {Working Papers},
+  title     = {Towards better understanding of complex machine learning models using {Explainable} {Artificial} {Intelligence} ({XAI}) - case of {Credit} {Scoring} modelling},
+  year      = {2020},
+  abstract  = {recent years many scientific journals have widely explored the topic of machine learning interpretability. It is important as application of Artificial Intelligence is growing rapidly and its excellent performance is of huge potential for many. There is also need for overcoming the barriers faced by analysts implementing intelligent systems. The biggest one relates to the problem of explaining why the model made a certain prediction. This work brings the topic of methods for understanding a black-box from both the global and local perspective. Numerous agnostic methods aimed at interpreting black-box model behavior and predictions generated by these complex structures are analyzed. Among them are: Permutation Feature Importance, Partial Dependence Plot, Individual Conditional Expectation Curve, Accumulated Local Effects, techniques approximating predictions of the black-box for single observations with surrogate models (interpretable white-boxes) and Shapley values framework. Our prospect leads toward the question to what extent presented tools enhance model transparency. All of the frameworks are examined in practice with a credit default data use case. The overview presented prove that each of the method has some limitations, but overall almost all summarized techniques produce reliable explanations and contribute to higher transparency accountability of decision systems.},
+  groups    = {Credit Scoring / Borrowing},
+  keywords  = {machine learning, explainable Artificial Intelligence, visualization techniques, model interpretation, variable importance},
+  language  = {en},
+  publisher = {Faculty of Economic Sciences, University of Warsaw},
+  url       = {https://www.wne.uw.edu.pl/files/9815/9355/2268/WNE_WP324.pdf},
+  urldate   = {2024-02-24},
+}
+
+ 
+@TechReport{Belaid2022,
+  author        = {Belaid, Mohamed Karim and Hüllermeier, Eyke and Rabus, Maximilian and Krestel, Ralf},
+  title         = {Do {We} {Need} {Another} {Explainable} {AI} {Method}? {Toward} {Unifying} {Post}-hoc {XAI} {Evaluation} {Methods} into an {Interactive} and {Multi}-dimensional {Benchmark}},
+  year          = {2022},
+  month         = oct,
+  note          = {arXiv:2207.14160 [cs] type: article},
+  abstract      = {In recent years, Explainable AI (xAI) attracted a lot of attention as various countries turned explanations into a legal right. xAI allows for improving models beyond the accuracy metric by, e.g., debugging the learned pattern and demystifying the AI's behavior. The widespread use of xAI brought new challenges. On the one hand, the number of published xAI algorithms underwent a boom, and it became difficult for practitioners to select the right tool. On the other hand, some experiments did highlight how easy data scientists could misuse xAI algorithms and misinterpret their results. To tackle the issue of comparing and correctly using feature importance xAI algorithms, we propose Compare-xAI, a benchmark that unifies all exclusive functional testing methods applied to xAI algorithms. We propose a selection protocol to shortlist non-redundant functional tests from the literature, i.e., each targeting a specific end-user requirement in explaining a model. The benchmark encapsulates the complexity of evaluating xAI methods into a hierarchical scoring of three levels, namely, targeting three end-user groups: researchers, practitioners, and laymen in xAI. The most detailed level provides one score per test. The second level regroups tests into five categories (fidelity, fragility, stability, simplicity, and stress tests). The last level is the aggregated comprehensibility score, which encapsulates the ease of correctly interpreting the algorithm's output in one easy to compare value. Compare-xAI's interactive user interface helps mitigate errors in interpreting xAI results by quickly listing the recommended xAI solutions for each ML task and their current limitations. The benchmark is made available at https://karim-53.github.io/cxai/},
+  comment-hauke = {Overview of xAI Benchmarking Methods},
+  doi           = {10.48550/arXiv.2207.14160},
+  file          = {:Belaid2022 - Do We Need Another Explainable AI Method_ toward Unifying Post Hoc XAI Evaluation Methods into an Interactive and Multi Dimensional Benchmark.pdf:PDF},
+  groups        = {Benchmarking, Credit Scoring / Borrowing},
+  keywords      = {Computer Science - Software Engineering, Computer Science - Artificial Intelligence},
+  school        = {arXiv},
+  shorttitle    = {Do {We} {Need} {Another} {Explainable} {AI} {Method}?},
+  url           = {http://arxiv.org/abs/2207.14160},
+  urldate       = {2024-02-24},
+}
+
+ 
+@InProceedings{Demajo2020,
+  author        = {Demajo, Lara Marie and Vella, Vince and Dingli, Alexiei},
+  booktitle     = {Computer {Science} \& {Information} {Technology} ({CS} \& {IT})},
+  title         = {Explainable {AI} for {Interpretable} {Credit} {Scoring}},
+  year          = {2020},
+  month         = nov,
+  note          = {arXiv:2012.03749 [cs, q-fin]},
+  pages         = {185--203},
+  abstract      = {With the ever-growing achievements in Artificial Intelligence (AI) and the recent boosted enthusiasm in Financial Technology (FinTech), applications such as credit scoring have gained substantial academic interest. Credit scoring helps financial experts make better decisions regarding whether or not to accept a loan application, such that loans with a high probability of default are not accepted. Apart from the noisy and highly imbalanced data challenges faced by such credit scoring models, recent regulations such as the `right to explanation' introduced by the General Data Protection Regulation (GDPR) and the Equal Credit Opportunity Act (ECOA) have added the need for model interpretability to ensure that algorithmic decisions are understandable and coherent. An interesting concept that has been recently introduced is eXplainable AI (XAI), which focuses on making black-box models more interpretable. In this work, we present a credit scoring model that is both accurate and interpretable. For classification, state-of-the-art performance on the Home Equity Line of Credit (HELOC) and Lending Club (LC) Datasets is achieved using the Extreme Gradient Boosting (XGBoost) model. The model is then further enhanced with a 360-degree explanation framework, which provides different explanations (i.e. global, local feature-based and local instance-based) that are required by different people in different situations. Evaluation through the use of functionallygrounded, application-grounded and human-grounded analysis show that the explanations provided are simple, consistent as well as satisfy the six predetermined hypotheses testing for correctness, effectiveness, easy understanding, detail sufficiency and trustworthiness.},
+  annote        = {Comment: 19 pages, David C. Wyld et al. (Eds): ACITY, DPPR, VLSI, WeST, DSA, CNDC, IoTE, AIAA, NLPTA - 2020},
+  comment-hauke = {Quotable as approach to make credit scoring interpretable and as a source for related work},
+  doi           = {10.5121/csit.2020.101516},
+  file          = {:Demajo2020 - Explainable AI for Interpretable Credit Scoring.pdf:PDF},
+  groups        = {Credit Scoring / Borrowing},
+  keywords      = {Quantitative Finance - Risk Management, Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+  url           = {http://arxiv.org/abs/2012.03749},
+  urldate       = {2024-02-24},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -390,4 +451,7 @@ All interpretation methods are explained in depth and discussed critically. How 
 1 StaticGroup:Overview xAI / Interpretability\;0\;1\;0x0000ffff\;\;Files providing overviews of different interpretability / explainability methods\;;
 1 StaticGroup:Data\;0\;1\;0xffff00ff\;\;Potential Datasets\;;
 1 StaticGroup:Other\;0\;0\;0xff008fff\;\;Theoretical Frameworks etc.\;;
+1 StaticGroup:Fairness\;0\;1\;0x008000ff\;\;\;;
+1 StaticGroup:Benchmarking\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Credit Scoring / Borrowing\;0\;1\;0x00ffffff\;\;\;;
 }
