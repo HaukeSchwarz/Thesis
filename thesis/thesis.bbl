@@ -16,5 +16,64 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Adadi2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a9ff04737c73b2b3a33aa683bf3fbce}{%
+           family={Adadi},
+           familyi={A\bibinitperiod},
+           given={Amina},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9bcbdaf716d702fac9dc8cc5800ef30}{%
+           family={Berrada},
+           familyi={B\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{fullhash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{bibnamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authorbibnamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authornamehash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \strng{authorfullhash}{020b8c17b7a31bebb298656b5ca70bc3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{At the dawn of the fourth industrial revolution, we are witnessing a fast and widespread adoption of artificial intelligence (AI) in our daily life, which contributes to accelerating the shift towards a more algorithmic society. However, even with such unprecedented advancements, a key impediment to the use of AI-based systems is that they often lack transparency. Indeed, the black-box nature of these systems allows powerful predictions, but it cannot be directly explained. This issue has triggered a new debate on explainable AI (XAI). A research field holds substantial promise for improving trust and transparency of AI-based systems. It is recognized as the sine qua non for AI to continue making steady progress without disruption. This survey provides an entry point for interested researchers and practitioners to learn key aspects of the young and rapidly growing body of research related to XAI. Through the lens of the literature, we review the existing approaches regarding the topic, discuss trends surrounding its sphere, and present major research trajectories.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{shorttitle}{Peeking {Inside} the {Black}-{Box}}
+      \field{title}{Peeking {Inside} the {Black}-{Box}: {A} {Survey} on {Explainable} {Artificial} {Intelligence} ({XAI})}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{52138\bibrangedash 52160}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2018.2870052
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Full Text PDF:https\://ieeexplore.ieee.org/ielx7/6287639/8274985/08466590.pdf?tp=&arnumber=8466590&isnumber=8274985&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50Lzg0NjY1OTA=:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8466590
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8466590
+      \endverb
+      \keyw{Conferences,Machine learning,Market research,Prediction algorithms,Machine learning algorithms,Biological system modeling,Explainable artificial intelligence,interpretable machine learning,black-box models}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

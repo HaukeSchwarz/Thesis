@@ -7,5 +7,6 @@
 \contentsline {chapter}{List of Formulas}{4}{chapter*.4}%
 \contentsline {chapter}{List of Abbreviations}{5}{table.0.1}%
 \contentsline {chapter}{\numberline {1}Literature Review}{1}{chapter.1}%
+\contentsline {chapter}{\nonumberline Bibliography}{2}{chapter*.6}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
