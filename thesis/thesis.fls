@@ -1729,8 +1729,15 @@ INPUT thesis.bbl
 INPUT ./thesis.bbl
 INPUT ./thesis.bbl
 INPUT thesis.bbl
+INPUT ./chapters/other/pre/abstract.tex
+INPUT chapters/other/pre/abstract.tex
+INPUT ./chapters/other/pre/abstract.tex
+INPUT chapters/other/pre/abstract.tex
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntxth-Italic-tlf-t1.tfm
+OUTPUT thesis.pdf
+INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./thesis.toc
 INPUT thesis.toc
 INPUT thesis.toc
@@ -1746,9 +1753,6 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT thesis.toc
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntxth-Italic-tlf-t1.tfm
-OUTPUT thesis.pdf
-INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./thesis.lof
 INPUT thesis.lof
 INPUT thesis.lof
