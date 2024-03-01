@@ -23,7 +23,7 @@ While both terms are used interchangeably in a multitude of publications, severa
 One of the most adapted definitions for \textit{Interpretability} has been made by Doshi-Velez and Kim, who define it as the “ability to explain or to present in understandable terms to a human” \parencite{DoshiVelez2017}. 
 However, this definition does not only heavily intersect with common definitions of Explainability, it also appears to be rather general and not easily applicable in a scientific context. 
 Among other unclear definitions, this has led Lipton to state that in the scientific discussion, the term Interpretability is “ill-defined”, leading to many papers in this research area only exhibiting a “quasi-scientific character” \parencite{Lipton2018}, while other authors deemed Interpretability to be a “broad, poorly defined concept” \parencite{Murdoch2019}. 
-Usually, the concept of Interpretability is focused on the ability to logically comprehend the inner workings of AI algorithms, i.e. the user being able to predict outputs from inputs \parencite{Kim2016}.
+Usually, the concept of Interpretability is focused on the ability to logically comprehend the inner workings of AI algorithms, i.e.\ the user being able to predict outputs from inputs~\parencite{Kim2016}.
 
 
 \textit{Explainability} or \textit{xAI} (which will be used interchangeably with the term Interpretability in this work), even though being subject to a similarly wide range of definitions, is usually defined to be more concerned with explaining the rationale behind decisions made to generate trust instead of precisely dissecting the inner workings mathematically \parencite{Gunning2019}. 
@@ -32,7 +32,9 @@ Compared to interpretable AI, which has been discussed in academic literature fo
 
 \subsection{Inherently Interpretable Models vs. Black Box Models}\label{subsec:inherently}
 
-XXX
+Machine Learning algorithms vary in their degree of interpretability. There usually is a trade-off between their \textit{predictive accuracy} (i.e.\ how well they perform on prediction tasks) and their \textit{descriptive accuracy} (i.e.\ how well they can be understood by humans) \parencite{Murdoch2019}.
+While some models, like linear regressions, are inherently interpretable, others, like Neural Networks, are considered to be 'black boxes' \parencite{Guidotti2018} or 'opaque models' \parencite{Burrell2016}, as their inner workings are not intuitively understandable for humans.
+However, there is increased demand for models that have a high predictive accuracy while still being explainable due to, among others, legal requirements like the GDPR \parencite{GDPR} and ethical considerations \parencite{Guidotti2018}, leading to increased demand for explainability algorithms.
 
 \subsection{Explainability Algorithms}\label{subsec:algorithms}
 

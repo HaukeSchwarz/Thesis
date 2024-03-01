@@ -134,6 +134,58 @@
       \endverb
       \keyw{Explainable Artificial Intelligence,Machine Learning,Deep Learning,Data Fusion,Interpretability,Comprehensibility,Transparency,Privacy,Fairness,Accountability,Responsible Artificial Intelligence}
     \endentry
+    \entry{Burrell2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4fb32e340f29cc5617fb36a94abe804}{%
+           family={Burrell},
+           familyi={B\bibinitperiod},
+           given={Jenna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Ltd}%
+      }
+      \strng{namehash}{e4fb32e340f29cc5617fb36a94abe804}
+      \strng{fullhash}{e4fb32e340f29cc5617fb36a94abe804}
+      \strng{bibnamehash}{e4fb32e340f29cc5617fb36a94abe804}
+      \strng{authorbibnamehash}{e4fb32e340f29cc5617fb36a94abe804}
+      \strng{authornamehash}{e4fb32e340f29cc5617fb36a94abe804}
+      \strng{authorfullhash}{e4fb32e340f29cc5617fb36a94abe804}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article considers the issue of opacity as a problem for socially consequential mechanisms of classification and ranking, such as spam filters, credit card fraud detection, search engines, news trends, market segmentation and advertising, insurance or loan qualification, and credit scoring. These mechanisms of classification all frequently rely on computational algorithms, and in many cases on machine learning algorithms to do this work. In this article, I draw a distinction between three forms of opacity: (1) opacity as intentional corporate or state secrecy, (2) opacity as technical illiteracy, and (3) an opacity that arises from the characteristics of machine learning algorithms and the scale required to apply them usefully. The analysis in this article gets inside the algorithms themselves. I cite existing literatures in computer science, known industry practices (as they are publicly presented), and do some testing and manipulation of code as a form of lightweight code audit. I argue that recognizing the distinct forms of opacity that may be coming into play in a given application is a key to determining which of a variety of technical and non-technical solutions could help to prevent harm.}
+      \field{issn}{2053-9517}
+      \field{journaltitle}{Big Data \& Society}
+      \field{month}{6}
+      \field{number}{1}
+      \field{shorttitle}{How the machine ‘thinks’}
+      \field{title}{How the machine ‘thinks’: {Understanding} opacity in machine learning algorithms}
+      \field{urlday}{1}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{2053951715622512}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/2053951715622512
+      \endverb
+      \verb{file}
+      \verb SAGE PDF Full Text:https\://journals.sagepub.com/doi/pdf/10.1177/2053951715622512:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/2053951715622512
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/2053951715622512
+      \endverb
+    \endentry
     \entry{Caruana2015}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=599c5251d489b92dc7856277d56cb1a9}{%
@@ -671,6 +723,27 @@
       \endverb
       \verb{url}
       \verb https://www.pnas.org/doi/full/10.1073/pnas.1900654116
+      \endverb
+    \endentry
+    \entry{GDPR}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labeltitlesource}{title}
+      \field{title}{Regulation - 2016/679 - {EN} - gdpr - {EUR}-{Lex}}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
       \endverb
     \endentry
   \enddatalist
