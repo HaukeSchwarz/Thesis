@@ -16,7 +16,19 @@ XXX
 
 \section{Explainability and Interpretability in Machine Learning}\label{sec:explainability}
 
-Intro here
+Given the constantly increasing research into AI Interpretability and Explainability, there is surprisingly little consent on how to precisely define these concepts and how to distinguish them \parencite{Linardatos2021}. 
+While both terms are used interchangeably in a multitude of publications, several studies have tried to distinguish both concepts in terms of their scope, giving rise to terms like “xAI” (Explainable Artificial Intelligence) \parencite{Gunning2019} and occasionally also introducing related concepts like Understandability, Comprehensibility \parencite{Guidotti2018}, or Intelligibility \parencite{Caruana2015}.
+
+
+One of the most adapted definitions for \textit{Interpretability} has been made by Doshi-Velez and Kim, who define it as the “ability to explain or to present in understandable terms to a human” \parencite{DoshiVelez2017}. 
+However, this definition does not only heavily intersect with common definitions of Explainability, it also appears to be rather general and not easily applicable in a scientific context. 
+Among other unclear definitions, this has led Lipton to state that in the scientific discussion, the term Interpretability is “ill-defined”, leading to many papers in this research area only exhibiting a “quasi-scientific character” \parencite{Lipton2018}, while other authors deemed Interpretability to be a “broad, poorly defined concept” \parencite{Murdoch2019}. 
+Usually, the concept of Interpretability is focused on the ability to logically comprehend the inner workings of AI algorithms, i.e. the user being able to predict outputs from inputs \parencite{Kim2016}.
+
+
+\textit{Explainability} or \textit{xAI} (which will be used interchangeably with the term Interpretability in this work), even though being subject to a similarly wide range of definitions, is usually defined to be more concerned with explaining the rationale behind decisions made to generate trust instead of precisely dissecting the inner workings mathematically \parencite{Gunning2019}. 
+Compared to interpretable AI, which has been discussed in academic literature for a comparably longer timeframe, Explainability is a newer concept, which however seems to gather momentum in academic interest very fast, most likely due to the more and more widespread adoption of not inherently explainable Deep Learning Models \parencite{BarredoArrieta2020}.
+
 
 \subsection{Inherently Interpretable Models vs. Black Box Models}\label{subsec:inherently}
 

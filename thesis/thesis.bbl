@@ -16,5 +16,664 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{BarredoArrieta2020}{article}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=9ac145aec0ff90debeae86e848c9984d}{%
+           family={Barredo\bibnamedelima Arrieta},
+           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2f49e7916926b46a6555cf86c18c919}{%
+           family={Díaz-Rodríguez},
+           familyi={D\bibinithyphendelim R\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cad385a9bc804164f8a02ca66c24913e}{%
+           family={Del\bibnamedelima Ser},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eee76618bbe2267980002ac15fc73c9b}{%
+           family={Bennetot},
+           familyi={B\bibinitperiod},
+           given={Adrien},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d79f34727bcbbd23065a0c111485c1b}{%
+           family={Tabik},
+           familyi={T\bibinitperiod},
+           given={Siham},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d5191cbb4190664e6dad9d9b27505e}{%
+           family={Barbado},
+           familyi={B\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e4ae61677cf00f7d16f46e14524ffb7}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Salvador},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c76f24f655d5b4f879a86f8c6971a5f0}{%
+           family={Gil-Lopez},
+           familyi={G\bibinithyphendelim L\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=381bf37312a71cebeee50fc633f67c46}{%
+           family={Molina},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ff51a3504ff841d75fa3640a2842bff}{%
+           family={Benjamins},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a0c0821a0200d3f23713aa8ea5278dc}{%
+           family={Chatila},
+           familyi={C\bibinitperiod},
+           given={Raja},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f81f46436ba77791311a5db20ff5c25}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50f0a58c77869be7e1702c64668d6a08}
+      \strng{fullhash}{feb210010afaef788607947cc37ee687}
+      \strng{bibnamehash}{50f0a58c77869be7e1702c64668d6a08}
+      \strng{authorbibnamehash}{50f0a58c77869be7e1702c64668d6a08}
+      \strng{authornamehash}{50f0a58c77869be7e1702c64668d6a08}
+      \strng{authorfullhash}{feb210010afaef788607947cc37ee687}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In the last few years, Artificial Intelligence (AI) has achieved a notable momentum that, if harnessed appropriately, may deliver the best of expectations over many application sectors across the field. For this to occur shortly in Machine Learning, the entire community stands in front of the barrier of explainability, an inherent problem of the latest techniques brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were not present in the last hype of AI (namely, expert systems and rule based models). Paradigms underlying this problem fall within the so-called eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature for the practical deployment of AI models. The overview presented in this article examines the existing literature and contributions already done in the field of XAI, including a prospect toward what is yet to be reached. For this purpose we summarize previous efforts made to define explainability in Machine Learning, establishing a novel definition of explainable Machine Learning that covers such prior conceptual propositions with a major focus on the audience for which the explainability is sought. Departing from this definition, we propose and discuss about a taxonomy of recent contributions related to the explainability of different Machine Learning models, including those aimed at explaining Deep Learning methods for which a second dedicated taxonomy is built and examined in detail. This critical literature analysis serves as the motivating background for a series of challenges faced by XAI, such as the interesting crossroads of data fusion and explainability. Our prospects lead toward the concept of Responsible Artificial Intelligence, namely, a methodology for the large-scale implementation of AI methods in real organizations with fairness, model explainability and accountability at its core. Our ultimate goal is to provide newcomers to the field of XAI with a thorough taxonomy that can serve as reference material in order to stimulate future research advances, but also to encourage experts and professionals from other disciplines to embrace the benefits of AI in their activity sectors, without any prior bias for its lack of interpretability.}
+      \field{issn}{1566-2535}
+      \field{journaltitle}{Information Fusion}
+      \field{month}{6}
+      \field{shorttitle}{Explainable {Artificial} {Intelligence} ({XAI})}
+      \field{title}{Explainable {Artificial} {Intelligence} ({XAI}): {Concepts}, taxonomies, opportunities and challenges toward responsible {AI}}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{58}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{82\bibrangedash 115}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.inffus.2019.12.012
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:https\://www.sciencedirect.com/science/article/abs/pii/S1566253519308103/pdfft?isDTMRedir=true&download=true:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1566253519308103
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1566253519308103
+      \endverb
+      \keyw{Explainable Artificial Intelligence,Machine Learning,Deep Learning,Data Fusion,Interpretability,Comprehensibility,Transparency,Privacy,Fairness,Accountability,Responsible Artificial Intelligence}
+    \endentry
+    \entry{Caruana2015}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=599c5251d489b92dc7856277d56cb1a9}{%
+           family={Caruana},
+           familyi={C\bibinitperiod},
+           given={Rich},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67f76e36e64df182b735da0440c35b84}{%
+           family={Lou},
+           familyi={L\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89173e109d33053942397c24c048f5c2}{%
+           family={Gehrke},
+           familyi={G\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=703e065f6602a496e08abb38d20c02d2}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=379e8db35785ea22547a6cad6cc6265c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3be880e08d80db7febe6076f8af50f90}{%
+           family={Elhadad},
+           familyi={E\bibinitperiod},
+           given={Noemie},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{089af20c0e85c71235697709555dc96d}
+      \strng{fullhash}{5b15957286a84b00cf808e153a4fe128}
+      \strng{bibnamehash}{089af20c0e85c71235697709555dc96d}
+      \strng{authorbibnamehash}{089af20c0e85c71235697709555dc96d}
+      \strng{authornamehash}{089af20c0e85c71235697709555dc96d}
+      \strng{authorfullhash}{5b15957286a84b00cf808e153a4fe128}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In machine learning often a tradeoff must be made between accuracy and intelligibility. More accurate models such as boosted trees, random forests, and neural nets usually are not intelligible, but more intelligible models such as logistic regression, naive-Bayes, and single decision trees often have significantly worse accuracy. This tradeoff sometimes limits the accuracy of models that can be applied in mission-critical applications such as healthcare where being able to understand, validate, edit, and trust a learned model is important. We present two case studies where high-performance generalized additive models with pairwise interactions (GA2Ms) are applied to real healthcare problems yielding intelligible models with state-of-the-art accuracy. In the pneumonia risk prediction case study, the intelligible model uncovers surprising patterns in the data that previously had prevented complex learned models from being fielded in this domain, but because it is intelligible and modular allows these patterns to be recognized and removed. In the 30-day hospital readmission case study, we show that the same methods scale to large datasets containing hundreds of thousands of patients and thousands of attributes while remaining intelligible and providing accuracy comparable to the best (unintelligible) machine learning methods.}
+      \field{booktitle}{Proceedings of the 21th {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} and {Data} {Mining}}
+      \field{isbn}{9781450336642}
+      \field{month}{8}
+      \field{series}{{KDD} '15}
+      \field{shorttitle}{Intelligible {Models} for {HealthCare}}
+      \field{title}{Intelligible {Models} for {HealthCare}: {Predicting} {Pneumonia} {Risk} and {Hospital} 30-day {Readmission}}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1721\bibrangedash 1730}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2783258.2788613
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2783258.2788613
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2783258.2788613
+      \endverb
+      \keyw{additive models,classification,healthcare,intelligibility,interaction detection,logistic regression,risk prediction}
+    \endentry
+    \entry{DoshiVelez2017}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b01a5e92cd39a5551d74ab2393c7b9fd}{%
+           family={Doshi-Velez},
+           familyi={D\bibinithyphendelim V\bibinitperiod},
+           given={Finale},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Been},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \strng{fullhash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \strng{bibnamehash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \strng{authorbibnamehash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \strng{authornamehash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \strng{authorfullhash}{66c38242b4ecdd0e74f6a1fb48199a21}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As machine learning systems become ubiquitous, there has been a surge of interest in interpretable machine learning: systems that provide explanation for their outputs. These explanations are often used to qualitatively assess other criteria such as safety or non-discrimination. However, despite the interest in interpretability, there is very little consensus on what interpretable machine learning is and how it should be measured. In this position paper, we first define interpretability and describe when interpretability is needed (and when it is not). Next, we suggest a taxonomy for rigorous evaluation and expose open questions towards a more rigorous science of interpretable machine learning.}
+      \field{month}{3}
+      \field{note}{arXiv:1702.08608 [cs, stat] type: article}
+      \field{title}{Towards {A} {Rigorous} {Science} of {Interpretable} {Machine} {Learning}}
+      \field{type}{techreport}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1702.08608
+      \endverb
+      \verb{file}
+      \verb :DoshiVelez2017 - Towards a Rigorous Science of Interpretable Machine Learning.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1702.08608
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1702.08608
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
+    \entry{Guidotti2018}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=da8fc5161754b324b4ac06cdfcb9f51e}{%
+           family={Guidotti},
+           familyi={G\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b005cc0cd264224d2555c63a72d798d}{%
+           family={Monreale},
+           familyi={M\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a76ccbef49119aa2cc87d46090bea705}{%
+           family={Ruggieri},
+           familyi={R\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=239ddb34b2b1f4cba06ecb606fca3560}{%
+           family={Turini},
+           familyi={T\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b5335e9010800b63f5c2959f076d90f}{%
+           family={Giannotti},
+           familyi={G\bibinitperiod},
+           given={Fosca},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2cc2c3b41c34d28b00e8b61bf830b42}{%
+           family={Pedreschi},
+           familyi={P\bibinitperiod},
+           given={Dino},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{82f290714ed3cfe5fe35f2e58678f788}
+      \strng{fullhash}{3579dc0dfeb86c4d5f58a6a93ec112a3}
+      \strng{bibnamehash}{82f290714ed3cfe5fe35f2e58678f788}
+      \strng{authorbibnamehash}{82f290714ed3cfe5fe35f2e58678f788}
+      \strng{authornamehash}{82f290714ed3cfe5fe35f2e58678f788}
+      \strng{authorfullhash}{3579dc0dfeb86c4d5f58a6a93ec112a3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent years, many accurate decision support systems have been constructed as black boxes, that is as systems that hide their internal logic to the user. This lack of explanation constitutes both a practical and an ethical issue. The literature reports many approaches aimed at overcoming this crucial weakness, sometimes at the cost of sacrificing accuracy for interpretability. The applications in which black box decision systems can be used are various, and each approach is typically developed to provide a solution for a specific problem and, as a consequence, it explicitly or implicitly delineates its own definition of interpretability and explanation. The aim of this article is to provide a classification of the main problems addressed in the literature with respect to the notion of explanation and the type of black box system. Given a problem definition, a black box type, and a desired explanation, this survey should help the researcher to find the proposals more useful for his own work. The proposed classification of approaches to open black box models should also be useful for putting the many research open questions in perspective.}
+      \field{issn}{0360-0300}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{8}
+      \field{number}{5}
+      \field{title}{A {Survey} of {Methods} for {Explaining} {Black} {Box} {Models}}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{51}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{93:1\bibrangedash 93:42}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/3236009
+      \endverb
+      \verb{file}
+      \verb :Guidotti2018 - A Survey of Methods for Explaining Black Box Models.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1802.01933
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1802.01933
+      \endverb
+      \keyw{Open the black box,explanations,interpretability,transparent models}
+    \endentry
+    \entry{Gunning2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=25d2cc74dc187d8b48d08bbdae1064da}{%
+           family={Gunning},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92a14ac89f93c224dc339aaaa178fd94}{%
+           family={Aha},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \strng{fullhash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \strng{bibnamehash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \strng{authorbibnamehash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \strng{authornamehash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \strng{authorfullhash}{1ceffbc2ab77c147b9f7a988e25a52db}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dramatic success in machine learning has led to a new wave of AI applications (for example, transportation, security, medicine, finance, defense) that offer tremendous benefits but cannot explain their decisions and actions to human users. DARPA's explainable artificial intelligence (XAI) program endeavors to create AI systems whose learned models and decisions can be understood and appropriately trusted by end users. Realizing this goal requires methods for learning more explainable models, designing effective explanation interfaces, and understanding the psychologic requirements for effective explanations. The XAI developer teams are addressing the first two challenges by creating ML techniques and developing principles, strategies, and human-computer interaction techniques for generating effective explanations. Another XAI team is addressing the third challenge by summarizing, extending, and applying psychologic theories of explanation to help the XAI evaluator define a suitable evaluation framework, which the developer teams will use to test their systems. The XAI teams completed the first of this 4-year program in May 2018. In a series of ongoing evaluations, the developer teams are assessing how well their XAM systems' explanations improve user understanding, user trust, and user task performance.}
+      \field{issn}{2371-9621}
+      \field{journaltitle}{AI Magazine}
+      \field{number}{2}
+      \field{title}{{DARPA}'s {Explainable} {Artificial} {Intelligence} {Program}}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{40}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{44\bibrangedash 58}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1609/aimag.v40i2.2850
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:https\://onlinelibrary.wiley.com/doi/pdfdirect/10.1609/aimag.v40i2.2850:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1609/aimag.v40i2.2850
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1609/aimag.v40i2.2850
+      \endverb
+    \endentry
+    \entry{Kim2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Been},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3d9b23b97482af55601d7db22cbf99e}{%
+           family={Khanna},
+           familyi={K\bibinitperiod},
+           given={Rajiv},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0feb43ba975fb91c3f51303c882e958}{%
+           family={Koyejo},
+           familyi={K\bibinitperiod},
+           given={Oluwasanmi\bibnamedelima O},
+           giveni={O\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=98056d9ddecda0076a31a183e3e69326}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0ef91066dee98e654f9aebd57da00647}{%
+           family={Sugiyama},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=24a834b722f8b79357bd16d08a1e523f}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=e7e74de725116358b68a6e890c026145}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{754b02892648bfc2c99a6c9e7bdfc2dc}
+      \strng{fullhash}{dda8cded8fcfe731c78054018e04d61e}
+      \strng{bibnamehash}{dda8cded8fcfe731c78054018e04d61e}
+      \strng{authorbibnamehash}{dda8cded8fcfe731c78054018e04d61e}
+      \strng{authornamehash}{754b02892648bfc2c99a6c9e7bdfc2dc}
+      \strng{authorfullhash}{dda8cded8fcfe731c78054018e04d61e}
+      \strng{editorbibnamehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{editornamehash}{a39670f7069dc3237dbc92fe523ad0c6}
+      \strng{editorfullhash}{12a698699c223bd18ce3abc205938f9b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Examples are not enough, learn to criticize! Criticism for Interpretability}
+      \field{volume}{29}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2016/file/5680522b8e2bb01943234bce7bf84534-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2016/file/5680522b8e2bb01943234bce7bf84534-Paper.pdf
+      \endverb
+    \endentry
+    \entry{Linardatos2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1cb6820f7c44b05374180a54934adb3}{%
+           family={Linardatos},
+           familyi={L\bibinitperiod},
+           given={Pantelis},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed990d467a87c96a07f652b55ec62716}{%
+           family={Papastefanopoulos},
+           familyi={P\bibinitperiod},
+           given={Vasilis},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=455d9b7c9c8ff82a0a3673712365237c}{%
+           family={Kotsiantis},
+           familyi={K\bibinitperiod},
+           given={Sotiris},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{dbfc091863c2007d665e2e8fa59e8f72}
+      \strng{fullhash}{fd919348aa5487733a9ac23ee49c0eaa}
+      \strng{bibnamehash}{fd919348aa5487733a9ac23ee49c0eaa}
+      \strng{authorbibnamehash}{fd919348aa5487733a9ac23ee49c0eaa}
+      \strng{authornamehash}{dbfc091863c2007d665e2e8fa59e8f72}
+      \strng{authorfullhash}{fd919348aa5487733a9ac23ee49c0eaa}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Recent advances in artificial intelligence (AI) have led to its widespread industrial adoption, with machine learning systems demonstrating superhuman performance in a significant number of tasks. However, this surge in performance, has often been achieved through increased model complexity, turning such systems into “black box” approaches and causing uncertainty regarding the way they operate and, ultimately, the way that they come to decisions. This ambiguity has made it problematic for machine learning systems to be adopted in sensitive yet critical domains, where their value could be immense, such as healthcare. As a result, scientific interest in the field of Explainable Artificial Intelligence (XAI), a field that is concerned with the development of new methods that explain and interpret machine learning models, has been tremendously reignited over recent years. This study focuses on machine learning interpretability methods; more specifically, a literature review and taxonomy of these methods are presented, as well as links to their programming implementations, in the hope that this survey would serve as a reference point for both theorists and practitioners.}
+      \field{issn}{1099-4300}
+      \field{journaltitle}{Entropy}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Explainable {AI}}
+      \field{title}{Explainable {AI}: {A} {Review} of {Machine} {Learning} {Interpretability} {Methods}}
+      \field{urlday}{13}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{23}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/e23010018
+      \endverb
+      \verb{file}
+      \verb :Linardatos2021 - Explainable AI_ a Review of Machine Learning Interpretability Methods.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1099-4300/23/1/18
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1099-4300/23/1/18
+      \endverb
+      \keyw{xai,machine learning,explainability,interpretability,fairness,sensitivity,black-box}
+    \endentry
+    \entry{Lipton2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=599ae457cf41d4ce64e09433edbc964b}{%
+           family={Lipton},
+           familyi={L\bibinitperiod},
+           given={Zachary\bibnamedelima C.},
+           giveni={Z\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{599ae457cf41d4ce64e09433edbc964b}
+      \strng{fullhash}{599ae457cf41d4ce64e09433edbc964b}
+      \strng{bibnamehash}{599ae457cf41d4ce64e09433edbc964b}
+      \strng{authorbibnamehash}{599ae457cf41d4ce64e09433edbc964b}
+      \strng{authornamehash}{599ae457cf41d4ce64e09433edbc964b}
+      \strng{authorfullhash}{599ae457cf41d4ce64e09433edbc964b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Supervised machine-learning models boast remarkable predictive capabilities. But can you trust your model? Will it work in deployment? What else can it tell you about the world?}
+      \field{issn}{1542-7730}
+      \field{journaltitle}{Queue}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shorttitle}{The {Mythos} of {Model} {Interpretability}}
+      \field{title}{The {Mythos} of {Model} {Interpretability}: {In} machine learning, the concept of interpretability is both important and slippery.}
+      \field{urlday}{18}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{16}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{31\bibrangedash 57}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1145/3236386.3241340
+      \endverb
+      \verb{file}
+      \verb :Lipton2018 - The Mythos of Model Interpretability_ in Machine Learning, the Concept of Interpretability Is Both Important and Slippery..pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1606.03490
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1606.03490
+      \endverb
+    \endentry
+    \entry{Murdoch2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=22c46697552a85457f5d2a862a502350}{%
+           family={Murdoch},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi James},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d46196fdd4e251f39ed2cc52b0308d4b}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Chandan},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13e53b7130829772308671d8809a92f2}{%
+           family={Kumbier},
+           familyi={K\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31d85fc904c5901571f1ff0edcd3bf80}{%
+           family={Abbasi-Asl},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d22dc81cc0e5bb1d24d5eeb65ecbae}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{37d6aee03aa03f5d5b08353bc019e388}
+      \strng{fullhash}{b044182d5bd267eb97319fc6439993ff}
+      \strng{bibnamehash}{37d6aee03aa03f5d5b08353bc019e388}
+      \strng{authorbibnamehash}{37d6aee03aa03f5d5b08353bc019e388}
+      \strng{authornamehash}{37d6aee03aa03f5d5b08353bc019e388}
+      \strng{authorfullhash}{b044182d5bd267eb97319fc6439993ff}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Machine-learning models have demonstrated great success in learning complex patterns that enable them to make predictions about unobserved data. In addition to using models for prediction, the ability to interpret what a model has learned is receiving an increasing amount of attention. However, this increased focus has led to considerable confusion about the notion of interpretability. In particular, it is unclear how the wide array of proposed interpretation methods are related and what common concepts can be used to evaluate them. We aim to address these concerns by defining interpretability in the context of machine learning and introducing the predictive, descriptive, relevant (PDR) framework for discussing interpretations. The PDR framework provides 3 overarching desiderata for evaluation: predictive accuracy, descriptive accuracy, and relevancy, with relevancy judged relative to a human audience. Moreover, to help manage the deluge of interpretation methods, we introduce a categorization of existing techniques into model-based and post hoc categories, with subgroups including sparsity, modularity, and simulatability. To demonstrate how practitioners can use the PDR framework to evaluate and understand interpretations, we provide numerous real-world examples. These examples highlight the often underappreciated role played by human audiences in discussions of interpretability. Finally, based on our framework, we discuss limitations of existing methods and directions for future work. We hope that this work will provide a common vocabulary that will make it easier for both practitioners and researchers to discuss and choose from the full range of interpretation methods.}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{10}
+      \field{number}{44}
+      \field{title}{Definitions, methods, and applications in interpretable machine learning}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{116}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{22071\bibrangedash 22080}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1073/pnas.1900654116
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:https\://www.pnas.org/doi/pdf/10.1073/pnas.1900654116:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1900654116
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1900654116
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
