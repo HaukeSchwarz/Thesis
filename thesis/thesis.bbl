@@ -19,6 +19,59 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Barocas2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cb55e045fbd37698b0b60a60b567ab83}{%
+           family={Barocas},
+           familyi={B\bibinitperiod},
+           given={Solon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a507057780ea66f8ee407163b7cec8ff}{%
+           family={Selbst},
+           familyi={S\bibinitperiod},
+           given={Andrew\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {California Law Review, Inc.}%
+      }
+      \strng{namehash}{7ed35f883e3f721a6f060536e80d6901}
+      \strng{fullhash}{7ed35f883e3f721a6f060536e80d6901}
+      \strng{bibnamehash}{7ed35f883e3f721a6f060536e80d6901}
+      \strng{authorbibnamehash}{7ed35f883e3f721a6f060536e80d6901}
+      \strng{authornamehash}{7ed35f883e3f721a6f060536e80d6901}
+      \strng{authorfullhash}{7ed35f883e3f721a6f060536e80d6901}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Advocates of algorithmic techniques like data mining argue that these techniques eliminate human biases from the decision-making process. But an algorithm is only as good as the data it works with. Data is frequently imperfect in ways that allow these algorithms to inherit the prejudices of prior decision makers. In other cases, data may simply reflect the widespread biases that persist in society at large. In still others, data mining can discover surprisingly useful regularities that are really just preexisting patterns of exclusion and inequality. Unthinking reliance on data mining can deny historically disadvantaged and vulnerable groups full participation in society. Worse still, because the resulting discrimination is almost always an unintentional emergent property of the algorithm's use rather than a conscious choice by its programmers, it can be unusually hard to identify the source of the problem or to explain it to a court. This Essay examines these concerns through the lens of American antidiscrimination law—more particularly, through Title VII's prohibition of discrimination in employment. In the absence of a demonstrable intent to discriminate, the best doctrinal hope for data mining's victims would seem to lie in disparate impact doctrine. Case law and the Equal Employment Opportunity Commission's Uniform Guidelines, though, hold that a practice can be justified as a business necessity when its outcomes are predictive of future employment outcomes, and data mining is specifically designed to find such statistical correlations. Unless there is a reasonably practical way to demonstrate that these discoveries are spurious, Title VII would appear to bless its use, even though the correlations it discovers will often reflect historic patterns of prejudice, others' discrimination against members of protected groups, or flaws in the underlying data. Addressing the sources of this unintentional discrimination and remedying the corresponding deficiencies in the law will be difficult technically, difficult legally, and difficult politically. There are a number of practical limits to what can be accomplished computationally. For example, when discrimination occurs because the data being mined is itself a result of past intentional discrimination, there is frequently no obvious method to adjust historical data to rid it of this taint. Corrective measures that alter the results of the data mining after it is complete would tread on legally and politically disputed terrain. These challenges for reform throw into stark relief the tension between the two major theories underlying antidiscrimination law: anticlassification and antisubordination. Finding a solution to big data's disparate impact will require more than best efforts to stamp out prejudice and bias; it will require a wholesale reexamination of the meanings of "discrimination" and "fairness."}
+      \field{issn}{0008-1221}
+      \field{journaltitle}{California Law Review}
+      \field{number}{3}
+      \field{title}{Big {Data}'s {Disparate} {Impact}}
+      \field{urlday}{1}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{104}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{671\bibrangedash 732}
+      \range{pages}{62}
+      \verb{file}
+      \verb JSTOR Full Text PDF:https\://www.jstor.org/stable/pdfplus/10.2307/24758720.pdf?acceptTC=true:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/24758720
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/24758720
+      \endverb
+    \endentry
     \entry{BarredoArrieta2020}{article}{}
       \name{author}{12}{}{%
         {{un=0,uniquepart=base,hash=9ac145aec0ff90debeae86e848c9984d}{%
@@ -648,6 +701,64 @@
       \verb{url}
       \verb https://arxiv.org/abs/1606.03490
       \endverb
+    \endentry
+    \entry{Marcinkevics2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=68ed0731fd5b9f5c6cc8035be131eb5a}{%
+           family={Marcinkevičs},
+           familyi={M\bibinitperiod},
+           given={Ričards},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76b8207b3e792705bd59adc14f399702}{%
+           family={Vogt},
+           familyi={V\bibinitperiod},
+           given={Julia\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \strng{fullhash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \strng{bibnamehash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \strng{authorbibnamehash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \strng{authornamehash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \strng{authorfullhash}{ee49f13b1bf4b79e647e8d3ce0d3c807}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Interpretability and explainability are crucial for machine learning (ML) and statistical applications in medicine, economics, law, and natural sciences and form an essential principle for ML model design and development. Although interpretability and explainability have escaped a precise and universal definition, many models and techniques motivated by these properties have been developed over the last 30 years, with the focus currently shifting toward deep learning. We will consider concrete examples of state-of-the-art, including specially tailored rule-based, sparse, and additive classification models, interpretable representation learning, and methods for explaining black-box models post hoc. The discussion will emphasize the need for and relevance of interpretability and explainability, the divide between them, and the inductive biases behind the presented “zoo” of interpretable models and explanation methods. This article is categorized under: Fundamental Concepts of Data and Knowledge {>} Explainable AI Technologies {>} Machine Learning Commercial, Legal, and Ethical Issues {>} Social Considerations}
+      \field{issn}{1942-4795}
+      \field{journaltitle}{WIREs Data Mining and Knowledge Discovery}
+      \field{number}{3}
+      \field{shorttitle}{Interpretable and explainable machine learning}
+      \field{title}{Interpretable and explainable machine learning: {A} methods-centric overview with concrete examples}
+      \field{urlday}{13}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{e1493}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/widm.1493
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:https\://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/widm.1493:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1493
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1493
+      \endverb
+      \keyw{explainability,interpretability,machine learning,neural networks}
     \endentry
     \entry{Murdoch2019}{article}{}
       \name{author}{5}{}{%

@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {1.2}Explainability and Interpretability in Machine Learning}{1}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Inherently Interpretable Models vs. Black Box Models}{2}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{2}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{2}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{3}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{3}{subsection.1.2.4}%
 \contentsline {chapter}{\nonumberline Bibliography}{4}{chapter*.7}%
 \contentsfinish 
