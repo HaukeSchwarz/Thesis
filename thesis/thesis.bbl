@@ -171,8 +171,6 @@
       \field{volume}{3}
       \field{year}{2016}
       \field{urldateera}{ce}
-      \field{pages}{2053951715622512}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1177/2053951715622512
       \endverb
@@ -710,8 +708,6 @@
       \field{volume}{116}
       \field{year}{2019}
       \field{urldateera}{ce}
-      \field{pages}{22071\bibrangedash 22080}
-      \range{pages}{10}
       \verb{doi}
       \verb 10.1073/pnas.1900654116
       \endverb
