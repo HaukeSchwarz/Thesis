@@ -892,6 +892,74 @@
       \field{title}{On Fairness and Interpretability}
       \field{year}{2021}
     \endentry
+    \entry{Pradhan2022}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f871c8118d77327419b7e6292833d8c8}{%
+           family={Pradhan},
+           familyi={P\bibinitperiod},
+           given={Romila},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6d7fd0cdbde3459a802ba434d76692a}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiongli},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43da5c7ddcb78da27cf5011a21ea2fd4}{%
+           family={Glavic},
+           familyi={G\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=866f58f5d1eeb1664972e51e9fa9671a}{%
+           family={Salimi},
+           familyi={S\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b30ae51ad467a0735c1f12b78b8ef5ba}
+      \strng{fullhash}{f51511dc80dce357312442b4d77e6f8e}
+      \strng{bibnamehash}{b30ae51ad467a0735c1f12b78b8ef5ba}
+      \strng{authorbibnamehash}{b30ae51ad467a0735c1f12b78b8ef5ba}
+      \strng{authornamehash}{b30ae51ad467a0735c1f12b78b8ef5ba}
+      \strng{authorfullhash}{f51511dc80dce357312442b4d77e6f8e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A wide variety of fairness metrics and eXplainable Artificial Intelligence (XAI) approaches have been proposed in the literature to identify bias in machine learning models that are used in critical real-life contexts. However, merely reporting on a model's bias or generating explanations using existing XAI techniques is insufficient to locate and eventually mitigate sources of bias. We introduce Gopher, a system that produces compact, interpretable, and causal explanations for bias or unexpected model behavior by identifying coherent subsets of the training data that are root-causes for this behavior. Specifically, we introduce the concept of causal responsibility that quantifies the extent to which intervening on training data by removing or updating subsets of it can resolve the bias. Building on this concept, we develop an efficient approach for generating the top-k patterns that explain model bias by utilizing techniques from the machine learning (ML) community to approximate causal responsibility, and using pruning rules to manage the large search space for patterns. Our experimental evaluation demonstrates the effectiveness of Gopher in generating interpretable explanations for identifying and debugging sources of bias.}
+      \field{booktitle}{Proceedings of the 2022 {International} {Conference} on {Management} of {Data}}
+      \field{isbn}{9781450392495}
+      \field{month}{6}
+      \field{series}{{SIGMOD} '22}
+      \field{title}{Interpretable {Data}-{Based} {Explanations} for {Fairness} {Debugging}}
+      \field{year}{2022}
+      \field{pages}{247\bibrangedash 261}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/3514221.3517886
+      \endverb
+      \verb{file}
+      \verb :Pradhan2022 - Interpretable Data Based Explanations for Fairness Debugging.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3514221.3517886
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3514221.3517886
+      \endverb
+      \keyw{data debugging,explanations,fairness,interpretability}
+    \endentry
     \entry{GDPR}{misc}{}
       \list{language}{1}{%
         {en}%

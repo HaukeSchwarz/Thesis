@@ -52,7 +52,7 @@ However, there is increased demand for models that have a high predictive accura
 
 %To-Do:
 %Brief methodological overview from one of the meta-studies
-%Counterfactuals
+%Counterfactuals - see Zhou or arxiv for sources
 
 \subsection{Application of Explainability Algorithms}\label{subsec:application}
 
@@ -63,13 +63,29 @@ However, there is increased demand for models that have a high predictive accura
 
 In order to conclude this literature review, this section will evaluate how the the concepts of Fairness and Explainability are related to each other, showing that the analysis of each adds separate value to this thesis.
 
-%To-Do:
-%Deepak: Explain two proposed connections, mention that no direct practical implication is made
-%Zhou: Maybe copy overview with sources
-%Go through sources of Zhou and list important ones
-%Mention Gopher (Pradhan)
-%Mention specifically newly added analysis in this thesis
-
 Explainability and Fairness within the field of Machine Learning do not inherently share the same scope. On the one hand, as an example, Explainability is a rather objective concept, focusing on describing a model's inner workings neutrally. 
 Comparing that to Fairness it becomes apparent that the latter is a more subjective concept, as it is dependent on the context and man-made definitions, which are often rooted in certain (e.g.\ political) interpretations of Fairness \parencite{Deepak2021}.
 Yet, both concepts are somewhat dependent as assessing model fairness requires an understanding of the factors influencing a prediction \parencite{Zhou2022}.
+Subsequently, approaches to connect both concepts have been proposed in academic literature. Two different approaches are proposed by Deepak \parencite{Deepak2021}: 
+\begin{itemize}
+    \item \textbf{Interpretability for Fairness (IFF)}: IFF is a framework intending to ensure that supposedly fair decisions made by AI are truly fair. The two steps in order to achieve that are \textit{clearly laying out the values supposed to adhered to} and \textit{explaining decisions made with regards to how they relate to those values}.
+    \item \textbf{Fairness and Interpretations (F\&I)}: F\&I is a multi-layered approach, which, in the first step, aims to satisfy both Fairness and Interpretability requirements based on given constraints. If both criteria in combination cannot satisfyingly be met, the user needs to be informed that the model is not sufficiently interpretable, but yet adheres to at least one of the two desired properties.
+\end{itemize}
+However, these concepts are only stated on theoretical level without practical implications in this paper and are therefore not directly applicable for practitioners.
+
+
+Following Zhou's line of reasoning \parencite{Zhou2022}, other important approaches to merge the ideas of Fairness and Explainability in academic literature include:
+
+\textbf{Explanation as a way of guaranteeing Fairness}: ... Papers!
+
+\textbf{Explanation as a way of shaping the perception of Fairness}: ... Papers!
+
+\textbf{Perceived Fairness of feature properties}: ... Papers!
+
+
+Another promising approach to merge the concepts of Fairness and Explainability is the identification of root-causes for a certain model behavior by identifying \textit{influential subsets} within the underlying datasets as proposed by Pradhan \parencite{Pradhan2022}\footnote{For additional information on the proposed model see https://github.com/romilapradhan/gopher}.
+By combining Explainability criteria ('Why is a certain subgroup influential on the model's outcome?') with Fairness criteria ('In how far can intervention in the training data regarding these subsets improve Fairness?'), the authors manage to implement an efficient algorithm combining both concepts.
+
+%To-Do:
+%Go through sources of Zhou and list important ones
+%Mention specifically newly added analysis in this thesis
