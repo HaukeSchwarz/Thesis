@@ -54,12 +54,8 @@
       \field{journaltitle}{California Law Review}
       \field{number}{3}
       \field{title}{Big {Data}'s {Disparate} {Impact}}
-      \field{urlday}{1}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{volume}{104}
       \field{year}{2016}
-      \field{urldateera}{ce}
       \field{pages}{671\bibrangedash 732}
       \range{pages}{62}
       \verb{file}
@@ -165,12 +161,8 @@
       \field{month}{6}
       \field{shorttitle}{Explainable {Artificial} {Intelligence} ({XAI})}
       \field{title}{Explainable {Artificial} {Intelligence} ({XAI}): {Concepts}, taxonomies, opportunities and challenges toward responsible {AI}}
-      \field{urlday}{17}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{58}
       \field{year}{2020}
-      \field{urldateera}{ce}
       \field{pages}{82\bibrangedash 115}
       \range{pages}{34}
       \verb{doi}
@@ -218,12 +210,8 @@
       \field{number}{1}
       \field{shorttitle}{How the machine ‘thinks’}
       \field{title}{How the machine ‘thinks’: {Understanding} opacity in machine learning algorithms}
-      \field{urlday}{1}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{volume}{3}
       \field{year}{2016}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.1177/2053951715622512
       \endverb
@@ -301,11 +289,7 @@
       \field{series}{{KDD} '15}
       \field{shorttitle}{Intelligible {Models} for {HealthCare}}
       \field{title}{Intelligible {Models} for {HealthCare}: {Predicting} {Pneumonia} {Risk} and {Hospital} 30-day {Readmission}}
-      \field{urlday}{18}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{year}{2015}
-      \field{urldateera}{ce}
       \field{pages}{1721\bibrangedash 1730}
       \range{pages}{10}
       \verb{doi}
@@ -354,11 +338,7 @@
       \field{note}{arXiv:1702.08608 [cs, stat] type: article}
       \field{title}{Towards {A} {Rigorous} {Science} of {Interpretable} {Machine} {Learning}}
       \field{type}{techreport}
-      \field{urlday}{17}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{year}{2017}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.1702.08608
       \endverb
@@ -430,12 +410,8 @@
       \field{month}{8}
       \field{number}{5}
       \field{title}{A {Survey} of {Methods} for {Explaining} {Black} {Box} {Models}}
-      \field{urlday}{18}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{51}
       \field{year}{2018}
-      \field{urldateera}{ce}
       \field{pages}{93:1\bibrangedash 93:42}
       \range{pages}{-1}
       \verb{doi}
@@ -487,12 +463,8 @@
       \field{journaltitle}{AI Magazine}
       \field{number}{2}
       \field{title}{{DARPA}'s {Explainable} {Artificial} {Intelligence} {Program}}
-      \field{urlday}{17}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{40}
       \field{year}{2019}
-      \field{urldateera}{ce}
       \field{pages}{44\bibrangedash 58}
       \range{pages}{15}
       \verb{doi}
@@ -631,12 +603,8 @@
       \field{number}{1}
       \field{shorttitle}{Explainable {AI}}
       \field{title}{Explainable {AI}: {A} {Review} of {Machine} {Learning} {Interpretability} {Methods}}
-      \field{urlday}{13}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{23}
       \field{year}{2021}
-      \field{urldateera}{ce}
       \field{pages}{18}
       \range{pages}{1}
       \verb{doi}
@@ -681,12 +649,8 @@
       \field{number}{3}
       \field{shorttitle}{The {Mythos} of {Model} {Interpretability}}
       \field{title}{The {Mythos} of {Model} {Interpretability}: {In} machine learning, the concept of interpretability is both important and slippery.}
-      \field{urlday}{18}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{16}
       \field{year}{2018}
-      \field{urldateera}{ce}
       \field{pages}{31\bibrangedash 57}
       \range{pages}{27}
       \verb{doi}
@@ -738,12 +702,8 @@
       \field{number}{3}
       \field{shorttitle}{Interpretable and explainable machine learning}
       \field{title}{Interpretable and explainable machine learning: {A} methods-centric overview with concrete examples}
-      \field{urlday}{13}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{13}
       \field{year}{2023}
-      \field{urldateera}{ce}
       \field{pages}{e1493}
       \range{pages}{-1}
       \verb{doi}
@@ -811,12 +771,8 @@
       \field{month}{7}
       \field{number}{6}
       \field{title}{A {Survey} on {Bias} and {Fairness} in {Machine} {Learning}}
-      \field{urlday}{1}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{volume}{54}
       \field{year}{2021}
-      \field{urldateera}{ce}
       \field{pages}{115:1\bibrangedash 115:35}
       \range{pages}{-1}
       \verb{doi}
@@ -883,12 +839,8 @@
       \field{month}{10}
       \field{number}{44}
       \field{title}{Definitions, methods, and applications in interpretable machine learning}
-      \field{urlday}{19}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
       \field{volume}{116}
       \field{year}{2019}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.1073/pnas.1900654116
       \endverb
