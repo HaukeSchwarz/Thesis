@@ -2372,26 +2372,27 @@
     <bcf:citekey order="7" intorder="1">Mehrabi2021</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Mehrabi2021</bcf:citekey>
     <bcf:citekey order="9" intorder="1">Mehrabi2021</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Linardatos2021</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Gunning2019</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Guidotti2018</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Caruana2015</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">DoshiVelez2017</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Lipton2018</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Murdoch2019</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Kim2016</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Gunning2019</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">BarredoArrieta2020</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Murdoch2019</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Guidotti2018</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Burrell2016</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">GDPR</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Guidotti2018</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Deepak2021</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Zhou2022</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Deepak2021</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Zhou2022</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Pradhan2022</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Teodorescu2020</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Linardatos2021</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Gunning2019</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Guidotti2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Caruana2015</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">DoshiVelez2017</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Lipton2018</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Murdoch2019</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Kim2016</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Gunning2019</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">BarredoArrieta2020</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Murdoch2019</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Guidotti2018</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Burrell2016</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">GDPR</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Guidotti2018</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Deepak2021</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Zhou2022</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Deepak2021</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Zhou2022</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Pradhan2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
