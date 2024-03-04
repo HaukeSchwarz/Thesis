@@ -179,6 +179,140 @@
       \endverb
       \keyw{Explainable Artificial Intelligence,Machine Learning,Deep Learning,Data Fusion,Interpretability,Comprehensibility,Transparency,Privacy,Fairness,Accountability,Responsible Artificial Intelligence}
     \endentry
+    \entry{Bellamy2019}{article}{}
+      \name{author}{18}{}{%
+        {{un=0,uniquepart=base,hash=2c87a199f314ba76a8239daa4c5a471d}{%
+           family={Bellamy},
+           familyi={B\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7eea19b60fca70e48c4908d39017a95b}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Kuntal},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79965ab18066c72febb431453b9c5292}{%
+           family={Hind},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=516336e5ebc498fb1f5c5b3250ed691b}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcc9db054b5582c3f6461270ce7082f2}{%
+           family={Houde},
+           familyi={H\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=144cbdc71137d16c88ce9d1274d4f6b2}{%
+           family={Kannan},
+           familyi={K\bibinitperiod},
+           given={Kalapriya},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85bc23b42b9358452cdecb08f7df05c1}{%
+           family={Lohia},
+           familyi={L\bibinitperiod},
+           given={Pranay},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce56ccb78666f0b071d3e9f3bd1456e7}{%
+           family={Martino},
+           familyi={M\bibinitperiod},
+           given={Jacquelyn},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb378fc897441f58f0b87c994b6cf0c3}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={Sameep},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b307172bb37df012d87c57be4d9fa00}{%
+           family={Mojsilovic},
+           familyi={M\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cb3cda6f4874983491dee9b20350d08}{%
+           family={Nagar},
+           familyi={N\bibinitperiod},
+           given={Seema},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b51cb5fad7b85d3305a54e0c5189be2e}{%
+           family={Natesan\bibnamedelima Ramamurthy},
+           familyi={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Karthikeyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6ce8dfac7bb5c8c619a3476b673cc30}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa4c810638779bcdaf224c4e117fc751}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Diptikalyan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cee509eae344ced0d8cd625e2e3b4b64}{%
+           family={Sattigeri},
+           familyi={S\bibinitperiod},
+           given={Prasanna},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1400939940f79ddc1fb64bbd1cee0531}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Moninder},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a9c6f8058b0f850d726bece00c6b10e}{%
+           family={Varshney},
+           familyi={V\bibinitperiod},
+           given={Kush},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9912d78ae87e3e4c03aa245499e81f4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yunfeng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0bc101b523e41d4a3933c42655e15c68}
+      \strng{fullhash}{ee154f279f2ea4ae67592bd7dc134c98}
+      \strng{bibnamehash}{0bc101b523e41d4a3933c42655e15c68}
+      \strng{authorbibnamehash}{0bc101b523e41d4a3933c42655e15c68}
+      \strng{authornamehash}{0bc101b523e41d4a3933c42655e15c68}
+      \strng{authorfullhash}{ee154f279f2ea4ae67592bd7dc134c98}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBM Journal of Research and Development}
+      \field{month}{09}
+      \field{title}{AI Fairness 360: An Extensible Toolkit for Detecting and Mitigating Algorithmic Bias}
+      \field{volume}{PP}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1147/JRD.2019.2942287
+      \endverb
+    \endentry
     \entry{Bhutta2022}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7a62444d1a4a95bd1e1d35864402d3ad}{%
@@ -278,6 +412,105 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1177/2053951715622512
+      \endverb
+    \endentry
+    \entry{Calmon2017}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fcfdc520c2a8b14267c762cab48878b0}{%
+           family={Calmon},
+           familyi={C\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3792e697ba7dd59bb280735cfe39079}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e10e6b267b3663d628cdd7147a06674a}{%
+           family={Vinzamuri},
+           familyi={V\bibinitperiod},
+           given={Bhanukiran},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b51cb5fad7b85d3305a54e0c5189be2e}{%
+           family={Natesan\bibnamedelima Ramamurthy},
+           familyi={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Karthikeyan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ee022cf13c12a788da92b67a9780cff}{%
+           family={Varshney},
+           familyi={V\bibinitperiod},
+           given={Kush\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{7}{}{%
+        {{hash=e7e74de725116358b68a6e890c026145}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3b118a9660c18913c6d05d3bcfae41a3}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={U.\bibnamedelimi Von},
+           giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9b411b6c9cefdde16ffea77ecf612142}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1444141e07dd9549dbb4b8530fe4ec15}{%
+           family={Wallach},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3857e15544199442f3d4fb2cf6645b4}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c73f06e2fc98c9b0bf52eb5fdce61943}{%
+           family={Vishwanathan},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{c5d89c8095ac422421c5889f45a88c6d}
+      \strng{fullhash}{7a0db0ff3c5818ce4fcc6fbdef7dec5a}
+      \strng{bibnamehash}{c5d89c8095ac422421c5889f45a88c6d}
+      \strng{authorbibnamehash}{c5d89c8095ac422421c5889f45a88c6d}
+      \strng{authornamehash}{c5d89c8095ac422421c5889f45a88c6d}
+      \strng{authorfullhash}{7a0db0ff3c5818ce4fcc6fbdef7dec5a}
+      \strng{editorbibnamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editornamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editorfullhash}{1564f811a39f09a7400a11284c987926}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Optimized Pre-Processing for Discrimination Prevention}
+      \field{volume}{30}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/9a49a25d845a483fae4be7e341368e36-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/9a49a25d845a483fae4be7e341368e36-Paper.pdf
       \endverb
     \endentry
     \entry{Caruana2015}{inproceedings}{}
@@ -547,6 +780,76 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
     \endentry
+    \entry{Feldman2015}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=244c96635798701847a1e6c990863733}{%
+           family={Feldman},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2b40e7a0fdfbdbcf9af2da7c8e59417}{%
+           family={Friedler},
+           familyi={F\bibinitperiod},
+           given={Sorelle\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dfff61dbc9e69984218b6fa859febd5}{%
+           family={Moeller},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de216a4cef9daa2d1fce563e8b498941}{%
+           family={Scheidegger},
+           familyi={S\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aaeb9142f2e1590450061f637edb6845}{%
+           family={Venkatasubramanian},
+           familyi={V\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Sydney, NSW, Australia}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3b1cce86496aaf13c09dd79ffe2475b2}
+      \strng{fullhash}{1ece2bf8f6d5dee69a99b249fc47c0ce}
+      \strng{bibnamehash}{3b1cce86496aaf13c09dd79ffe2475b2}
+      \strng{authorbibnamehash}{3b1cce86496aaf13c09dd79ffe2475b2}
+      \strng{authornamehash}{3b1cce86496aaf13c09dd79ffe2475b2}
+      \strng{authorfullhash}{1ece2bf8f6d5dee69a99b249fc47c0ce}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What does it mean for an algorithm to be biased? In U.S. law, unintentional bias is encoded via disparate impact, which occurs when a selection process has widely different outcomes for different groups, even as it appears to be neutral. This legal determination hinges on a definition of a protected class (ethnicity, gender) and an explicit description of the process.When computers are involved, determining disparate impact (and hence bias) is harder. It might not be possible to disclose the process. In addition, even if the process is open, it might be hard to elucidate in a legal setting how the algorithm makes its decisions. Instead of requiring access to the process, we propose making inferences based on the data it uses.We present four contributions. First, we link disparate impact to a measure of classification accuracy that while known, has received relatively little attention. Second, we propose a test for disparate impact based on how well the protected class can be predicted from the other attributes. Third, we describe methods by which data might be made unbiased. Finally, we present empirical evidence supporting the effectiveness of our test for disparate impact and our approach for both masking bias and preserving relevant information in the data. Interestingly, our approach resembles some actual selection practices that have recently received legal scrutiny.}
+      \field{booktitle}{Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{isbn}{9781450336642}
+      \field{series}{KDD '15}
+      \field{title}{Certifying and Removing Disparate Impact}
+      \field{year}{2015}
+      \field{pages}{259\bibrangedash 268}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2783258.2783311
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2783258.2783311
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2783258.2783311
+      \endverb
+      \keyw{machine learning,fairness,disparate impact}
+    \endentry
     \entry{Guidotti2018}{article}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=da8fc5161754b324b4ac06cdfcb9f51e}{%
@@ -673,6 +976,60 @@
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1609/aimag.v40i2.2850
       \endverb
+    \endentry
+    \entry{Kamiran2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=767ab6888ee1d3aa5cdc53f783d7d4e1}{%
+           family={Kamiran},
+           familyi={K\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6aab2f9608a64a01a7cdd6501ba9fd5c}{%
+           family={Calders},
+           familyi={C\bibinitperiod},
+           given={Toon},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{65e3c39300f08d29f99407c58fb60d14}
+      \strng{fullhash}{65e3c39300f08d29f99407c58fb60d14}
+      \strng{bibnamehash}{65e3c39300f08d29f99407c58fb60d14}
+      \strng{authorbibnamehash}{65e3c39300f08d29f99407c58fb60d14}
+      \strng{authornamehash}{65e3c39300f08d29f99407c58fb60d14}
+      \strng{authorfullhash}{65e3c39300f08d29f99407c58fb60d14}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, the following Discrimination-Aware Classification Problem was introduced: Suppose we are given training data that exhibit unlawful discrimination; e.g., toward sensitive attributes such as gender or ethnicity. The task is to learn a classifier that optimizes accuracy, but does not have this discrimination in its predictions on test data. This problem is relevant in many settings, such as when the data are generated by a biased decision process or when the sensitive attribute serves as a proxy for unobserved features. In this paper, we concentrate on the case with only one binary sensitive attribute and a two-class classification problem. We first study the theoretically optimal trade-off between accuracy and non-discrimination for pure classifiers. Then, we look at algorithmic solutions that preprocess the data to remove discrimination before a classifier is learned. We survey and extend our existing data preprocessing techniques, being suppression of the sensitive attribute, massaging the dataset by changing class labels, and reweighing or resampling the data to remove discrimination without relabeling instances. These preprocessing techniques have been implemented in a modified version of Weka and we present the results of experiments on real-life data.}
+      \field{issn}{0219-3116}
+      \field{journaltitle}{Knowledge and Information Systems}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Data preprocessing techniques for classification without discrimination}
+      \field{volume}{33}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 33}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1007/s10115-011-0463-8
+      \endverb
+      \verb{file}
+      \verb :Kamiran2012 - Data Preprocessing Techniques for Classification without Discrimination.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10115-011-0463-8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10115-011-0463-8
+      \endverb
+      \keyw{Classification,Preprocessing,Discrimination-aware data mining}
     \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
@@ -969,12 +1326,8 @@
       \field{month}{7}
       \field{number}{6}
       \field{title}{A {Survey} on {Bias} and {Fairness} in {Machine} {Learning}}
-      \field{urlday}{1}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{volume}{54}
       \field{year}{2021}
-      \field{urldateera}{ce}
       \field{pages}{115:1\bibrangedash 115:35}
       \range{pages}{-1}
       \verb{doi}
@@ -1093,6 +1446,57 @@
       \field{booktitle}{IJCAI 2021 Workshop on AI for Social Good}
       \field{title}{On Fairness and Interpretability}
       \field{year}{2021}
+    \endentry
+    \entry{Pessach2020}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=99ed2bd5cd96edde9caf52fb2c97436b}{%
+           family={Pessach},
+           familyi={P\bibinitperiod},
+           given={Dana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85b1412798ce5a7ef782f040faf8203a}{%
+           family={Shmueli},
+           familyi={S\bibinitperiod},
+           given={Erez},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b41653466fc0a0a322220b9f30889060}
+      \strng{fullhash}{b41653466fc0a0a322220b9f30889060}
+      \strng{bibnamehash}{b41653466fc0a0a322220b9f30889060}
+      \strng{authorbibnamehash}{b41653466fc0a0a322220b9f30889060}
+      \strng{authornamehash}{b41653466fc0a0a322220b9f30889060}
+      \strng{authorfullhash}{b41653466fc0a0a322220b9f30889060}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An increasing number of decisions regarding the daily lives of human beings are being controlled by artificial intelligence (AI) algorithms in spheres ranging from healthcare, transportation, and education to college admissions, recruitment, provision of loans and many more realms. Since they now touch on many aspects of our lives, it is crucial to develop AI algorithms that are not only accurate but also objective and fair. Recent studies have shown that algorithmic decision-making may be inherently prone to unfairness, even when there is no intention for it. This paper presents an overview of the main concepts of identifying, measuring and improving algorithmic fairness when using AI algorithms. The paper begins by discussing the causes of algorithmic bias and unfairness and the common definitions and measures for fairness. Fairness-enhancing mechanisms are then reviewed and divided into pre-process, in-process and post-process mechanisms. A comprehensive comparison of the mechanisms is then conducted, towards a better understanding of which mechanisms should be used in different scenarios. The paper then describes the most commonly used fairness-related datasets in this field. Finally, the paper ends by reviewing several emerging research sub-fields of algorithmic fairness.}
+      \field{annotation}{Comment: 31 pages, 1 figure, This is a survey article that reviews the field of algorithmic fairness}
+      \field{month}{1}
+      \field{note}{arXiv:2001.09784 [cs, stat] type: article}
+      \field{title}{Algorithmic {Fairness}}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.48550/arXiv.2001.09784
+      \endverb
+      \verb{file}
+      \verb :Pessach2020 - Algorithmic Fairness.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2001.09784
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2001.09784
+      \endverb
+      \keyw{Computer Science - Computers and Society,Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning}
     \endentry
     \entry{Pradhan2022}{inproceedings}{}
       \name{author}{4}{}{%

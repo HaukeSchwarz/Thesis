@@ -14,11 +14,11 @@ As this thesis is based on mortgage lending data and builds upon the analysis of
 %To-Do: 
 %Main issues (topical) and methods (mathematically vs. non-mathematically)
 
-A crucial element in the Fairness discussion is the concepts of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
+A crucial element in the Fairness discussion is the concept of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
 Protected attributes usually contain demographic information like age, race or gender (identity) \parencite{Teodorescu2020}. There are definitions available specifically for the case of mortgage lending \parencite{Chen2019}\footnote{Note that the attributes defined in the paper by Chen et al.\ apply specifically to laws of the United States of America}. 
 Even though recent studies have suggested that racial bias might not be as prevalent in both human-made and algorithmic decisions as it has been assumed \parencite{Bhutta2022}, 
 it is still apparent that bias-related fairness concerns are a major issue in algorithmic decision making \parencite{Mehrabi2021}.
-Moreover, race is just one of the protected attributes present in the dataset analyzed in this thesis, meaning that other features present in the data can still be a source of unfairness, even though race might not be one of them.
+Moreover, race is just one of the protected attributes present in the dataset analyzed in this thesis, meaning that other features present in the data can still be a source of unfairness.
 
 
 !!! Update once a final decision has been made !!!
@@ -31,11 +31,27 @@ which has been discussed in academic literature as a major issue in the field of
 
 \subsection{Fairness in Practice}\label{subsec:practice}
 
-While there are a multitude of approaches to fair ML algorithms being discussed in academic literature (compare e.g.\ \cite{Mehrabi2021}), the scope of this thesis primarily includes \textit{Fairness Assessment}, i.e.\ the evaluation of the fairness of a given model, and \textit{Fair Modeling}, i.e.\ the development of fair ML algorithms.
+While there are a multitude of approaches to fair ML algorithms being discussed in academic literature (compare e.g.\ \cite{Mehrabi2021}), the scope of this thesis primarily includes \textit{Fair Modeling}, i.e.\ the development of fair ML algorithms, and \textit{Fairness Assessment}, i.e.\ the evaluation of the fairness of a given model
 
 %To-Do:
-%Fair modeling (preprocessing, in-processing, postprocessing - aequitas and Choras)
+%Mention aequitas and AIF360
+%Fair modeling (preprocessing, in-processing, postprocessing - aequitas, Pessach, Mehrabi and Choras)
 %Fairness assessment (methods and metrics with formulas - aequitas, Onetto, Chouldechova, Corbett-Davies and Pessach)
+
+
+\textbf{Fair Modeling} \newline
+Fair Modeling is the process of developing fair ML algorithms. This can be done in three different stages: \textit{Pre-processing}, \textit{In-processing} and \textit{Post-processing} \parencite{Pessach2020}. \newline
+\textit{Pre-Processing} focuses on modifying the training data in a way that removes potential biases in order to have the model learn from unbiased data \parencite{Bellamy2019}.
+Several methods have been proposed in academic literature, among them \textit{massaging}, \textit{reweighing} and \textit{sampling} \parencite{Kamiran2012}, editing features and labels of the underlying dataset following fairness criteria based on a probabilistic framework \parencite{Calmon2017}, or attempts to remove disparate impact (i.e.\ the different process outcomes for different groups) by feature value adjustment \parencite{Feldman2015}.
+\dots
+\textit{In-Processing} \dots
+\textit{Post-Processing} \dots
+
+
+The increasing importance of Fairness considerations in Machine Learning has also led to an increased availability of tools and libraries to implement fair ML algorithms.
+Two of the most prominent libraries are \textit{Aequitas}\footnote{https://github.com/dssg/aequitas} and \textit{AI Fairness 360 (AIF360)}\footnote{https://github.com/Trusted-AI/AIF360}.
+Both of these libraries offer a range of features from the fair modeling and Fairness assessment steps mentioned above.
+
 
 A concrete approach on how to implement fair ML algorithms in organizations and monitor their performance is proposed by Teodorescu et al.\ \parencite{Teodorescu2020}:
 The proposed framework has three phases: \textit{Design}, \textit{Development} and \textit{Post-hoc Model Assessment}. Based on the presence and relevance of protected attributes (see \autoref{subsec:overview}), the authors propose different decision steps to rule out potential unfairness in the algorithm implementation.
