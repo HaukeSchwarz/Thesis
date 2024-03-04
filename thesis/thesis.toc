@@ -9,9 +9,9 @@
 \contentsline {chapter}{\numberline {1}Literature Review}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Fairness in Algorithmic Decision Making}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Overview of Fairness in Algorithmic Decision Making}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Fairness in Practice}{1}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Explainability and Interpretability in Machine Learning}{1}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Inherently Interpretable Models vs. Black Box Models}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.1.2}Fairness in Practice}{2}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Explainability and Interpretability in Machine Learning}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Inherently Interpretable Models vs. Black Box Models}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{3}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{3}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{3}{subsection.1.2.4}%

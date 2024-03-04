@@ -13,9 +13,21 @@ As this thesis is based on mortgage lending data and builds upon the analysis of
 
 %To-Do: 
 %Main issues (topical) and methods (mathematically vs. non-mathematically)
-%Protected / Sensitive attributes
-%Counter-Perspective (Paper Ana) - Argue that I take into consideration multiple features
-%Show that my approach is novel due to new data and enrichments
+
+A crucial element in the Fairness discussion is the concepts of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
+Protected attributes usually contain demographic information like age, race or gender (identity) \parencite{Teodorescu2020}. There are definitions available specifically for the case of mortgage lending \parencite{Chen2019}\footnote{Note that the attributes defined in the paper by Chen et al.\ apply specifically to laws of the United States of America}. 
+Even though recent studies have suggested that racial bias might not be as prevalent in both human-made and algorithmic decisions as it has been assumed \parencite{Bhutta2022}, 
+it is still apparent that bias-related fairness concerns are a major issue in algorithmic decision making \parencite{Mehrabi2021}.
+Moreover, race is just one of the protected attributes present in the dataset analyzed in this thesis, meaning that other features present in the data can still be a source of unfairness, even though race might not be one of them.
+
+
+!!! Update once a final decision has been made !!!
+There already is extensive research available on the topic of fairness in algorithmic decision making, even specifically to the field of mortgage lending.
+Nevertheless, this thesis aims to make a novel contribution to this field not only by its combined analysis of Fairness and Explainability (as will be discussed in chapter XXX),
+but also by the data being used: The analyses in this thesis are based on the 2023 HMDA (Home Mortgage Disclosure Act) dataset, which has only been made publicly available in March 2024.
+Moreover, the dataset has been enriched with additional data sources based on geographical information, which will be discussed in chapter XXX.
+This enrichment does not only serve the purpose of an improved Explainability, but also aims to tackle the issue of \textit{indirect discrimination} (i.e.\ discrimination through non-sensitive attributes like zip codes being correlated with sensitive attributes like race), 
+which has been discussed in academic literature as a major issue in the field of Fairness \parencite{Mehrabi2021}.
 
 \subsection{Fairness in Practice}\label{subsec:practice}
 
@@ -24,7 +36,7 @@ While there are a multitude of approaches to fair ML algorithms being discussed 
 %To-Do:
 %Fair modeling (preprocessing, in-processing, postprocessing - aequitas and Choras)
 %Fairness assessment (methods and metrics with formulas - aequitas, Onetto, Chouldechova, Corbett-Davies and Pessach)
-%Maybe quote fair ML framework
+%Maybe quote fair ML framework - relate to protected attributes from previous chapter
 
 \section{Explainability and Interpretability in Machine Learning}\label{sec:explainability}
 
@@ -44,7 +56,7 @@ Compared to interpretable AI, which has been discussed in academic literature fo
 
 \subsection{Inherently Interpretable Models vs. Black Box Models}\label{subsec:inherently}
 
-Machine Learning algorithms vary in their degree of interpretability. There usually is a trade-off between their \textit{predictive accuracy} (i.e.\ how well they perform on prediction tasks) and their \textit{descriptive accuracy} (i.e.\ how well they can be understood by humans) \parencite{Murdoch2019}.
+Machine Learning algorithms vary in their degree of Interpretability. There usually is a trade-off between their \textit{predictive accuracy} (i.e.\ how well they perform on prediction tasks) and their \textit{descriptive accuracy} (i.e.\ how well they can be understood by humans) \parencite{Murdoch2019}.
 While some models, like linear regressions, are inherently interpretable, others, like Neural Networks, are considered to be 'black boxes' \parencite{Guidotti2018} or 'opaque models' \parencite{Burrell2016}, as their inner workings are not intuitively understandable for humans.
 However, there is increased demand for models that have a high predictive accuracy while still being explainable due to, among others, legal requirements like the GDPR \parencite{GDPR} and ethical considerations \parencite{Guidotti2018}, leading to increased demand for Explainability algorithms.
 

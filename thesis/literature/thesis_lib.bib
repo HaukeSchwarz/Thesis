@@ -762,6 +762,41 @@
   url       = {https://dl.acm.org/doi/10.1145/3514221.3517886},
 }
 
+ 
+@TechReport{Datta2017,
+  author   = {Datta, Anupam and Fredrikson, Matt and Ko, Gihyuk and Mardziel, Piotr and Sen, Shayak},
+  title    = {Proxy {Non}-{Discrimination} in {Data}-{Driven} {Systems}},
+  year     = {2017},
+  month    = jul,
+  note     = {arXiv:1707.08120 [cs] type: article},
+  abstract = {Machine learnt systems inherit biases against protected classes, historically disparaged groups, from training data. Usually, these biases are not explicit, they rely on subtle correlations discovered by training algorithms, and are therefore difficult to detect. We formalize proxy discrimination in data-driven systems, a class of properties indicative of bias, as the presence of protected class correlates that have causal influence on the system's output. We evaluate an implementation on a corpus of social datasets, demonstrating how to validate systems against these properties and to repair violations where they occur.},
+  annote   = {Comment: arXiv admin note: substantial text overlap with arXiv:1705.07807},
+  doi      = {10.48550/arXiv.1707.08120},
+  file     = {:Datta2017 - Proxy Non Discrimination in Data Driven Systems.pdf:PDF},
+  groups   = {Fairness},
+  keywords = {Computer Science - Computers and Society, Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1707.08120},
+}
+
+@inproceedings{Chen2019,
+  author = {Chen, Jiahao and Kallus, Nathan and Mao, Xiaojie and Svacha, Geoffry and Udell, Madeleine},
+  title = {Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved},
+  year = {2019},
+  isbn = {9781450361255},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3287560.3287594},
+  doi = {10.1145/3287560.3287594},
+  abstract = {Assessing the fairness of a decision making system with respect to a protected class, such as gender or race, is challenging when class membership labels are unavailable. Probabilistic models for predicting the protected class based on observable proxies, such as surname and geolocation for race, are sometimes used to impute these missing labels for compliance assessments. Empirically, these methods are observed to exaggerate disparities, but the reason why is unknown. In this paper, we decompose the biases in estimating outcome disparity via threshold-based imputation into multiple interpretable bias sources, allowing us to explain when over- or underestimation occurs. We also propose an alternative weighted estimator that uses soft classification, and show that its bias arises simply from the conditional covariance of the outcome with the true class membership. Finally, we illustrate our results with numerical simulations and a public dataset of mortgage applications, using geolocation as a proxy for race. We confirm that the bias of threshold-based imputation is generally upward, but its magnitude varies strongly with the threshold chosen. Our new weighted estimator tends to have a negative bias that is much simpler to analyze and reason about.},
+  booktitle = {Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages = {339–348},
+  numpages = {10},
+  keywords = {Bayesian Improved Surname Geocoding, disparate impact, fair lending, probablistic proxy model, protected class, race imputation, racial discrimination},
+  location = {Atlanta, GA, USA},
+  series = {FAT* '19},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

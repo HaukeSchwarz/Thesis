@@ -179,6 +179,61 @@
       \endverb
       \keyw{Explainable Artificial Intelligence,Machine Learning,Deep Learning,Data Fusion,Interpretability,Comprehensibility,Transparency,Privacy,Fairness,Accountability,Responsible Artificial Intelligence}
     \endentry
+    \entry{Bhutta2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7a62444d1a4a95bd1e1d35864402d3ad}{%
+           family={Bhutta},
+           familyi={B\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=baafda717c1906b89c1256ef937ef96d}{%
+           family={Hizmo},
+           familyi={H\bibinitperiod},
+           given={Aurel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a55508a6fdcfca533d582131e1ca2608}{%
+           family={Ringo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3a025acab95632eecbfd397b7c68ba87}
+      \strng{fullhash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
+      \strng{bibnamehash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
+      \strng{authorbibnamehash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
+      \strng{authornamehash}{3a025acab95632eecbfd397b7c68ba87}
+      \strng{authorfullhash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The Federal Reserve Board of Governors in Washington DC.}
+      \field{month}{10}
+      \field{shorttitle}{How {Much} {Does} {Racial} {Bias} {Affect} {Mortgage} {Lending}?}
+      \field{title}{How {Much} {Does} {Racial} {Bias} {Affect} {Mortgage} {Lending}? {Evidence} from {Human} and {Algorithmic} {Credit} {Decisions}}
+      \field{urlday}{27}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb :Bhutta2022 - How Much Does Racial Bias Affect Mortgage Lending_ Evidence from Human and Algorithmic Credit Decisions.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.federalreserve.gov/econres/feds/how-much-does-racial-bias-affect-mortgage-lending.htm
+      \endverb
+      \verb{url}
+      \verb https://www.federalreserve.gov/econres/feds/how-much-does-racial-bias-affect-mortgage-lending.htm
+      \endverb
+    \endentry
     \entry{Burrell2016}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e4fb32e340f29cc5617fb36a94abe804}{%
@@ -302,6 +357,145 @@
       \verb https://doi.org/10.1145/2783258.2788613
       \endverb
       \keyw{additive models,classification,healthcare,intelligibility,interaction detection,logistic regression,risk prediction}
+    \endentry
+    \entry{Chen2019}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=69bd6c70a08a67d2841abb1b24a5ccfa}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jiahao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2db96cc54afe3fe8c684be53af54a7bf}{%
+           family={Kallus},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05588c281fb0ad5fdec0154c3cba1b22}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Xiaojie},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b8405f96b0ca67a22f45bce6c98a9d3}{%
+           family={Svacha},
+           familyi={S\bibinitperiod},
+           given={Geoffry},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fb06ee4839e284f359c2733a642ce8d}{%
+           family={Udell},
+           familyi={U\bibinitperiod},
+           given={Madeleine},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Atlanta, GA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b41cb43b730c4a1d59c2729b1efde3f6}
+      \strng{fullhash}{0a0f88bde9c30ad66b2e0814809f9c87}
+      \strng{bibnamehash}{b41cb43b730c4a1d59c2729b1efde3f6}
+      \strng{authorbibnamehash}{b41cb43b730c4a1d59c2729b1efde3f6}
+      \strng{authornamehash}{b41cb43b730c4a1d59c2729b1efde3f6}
+      \strng{authorfullhash}{0a0f88bde9c30ad66b2e0814809f9c87}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Assessing the fairness of a decision making system with respect to a protected class, such as gender or race, is challenging when class membership labels are unavailable. Probabilistic models for predicting the protected class based on observable proxies, such as surname and geolocation for race, are sometimes used to impute these missing labels for compliance assessments. Empirically, these methods are observed to exaggerate disparities, but the reason why is unknown. In this paper, we decompose the biases in estimating outcome disparity via threshold-based imputation into multiple interpretable bias sources, allowing us to explain when over- or underestimation occurs. We also propose an alternative weighted estimator that uses soft classification, and show that its bias arises simply from the conditional covariance of the outcome with the true class membership. Finally, we illustrate our results with numerical simulations and a public dataset of mortgage applications, using geolocation as a proxy for race. We confirm that the bias of threshold-based imputation is generally upward, but its magnitude varies strongly with the threshold chosen. Our new weighted estimator tends to have a negative bias that is much simpler to analyze and reason about.}
+      \field{booktitle}{Proceedings of the Conference on Fairness, Accountability, and Transparency}
+      \field{isbn}{9781450361255}
+      \field{series}{FAT* '19}
+      \field{title}{Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved}
+      \field{year}{2019}
+      \field{pages}{339\bibrangedash 348}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3287560.3287594
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3287560.3287594
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3287560.3287594
+      \endverb
+      \keyw{Bayesian Improved Surname Geocoding,disparate impact,fair lending,probablistic proxy model,protected class,race imputation,racial discrimination}
+    \endentry
+    \entry{Datta2017}{report}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c3ec74f0096bebfca003e01940429056}{%
+           family={Datta},
+           familyi={D\bibinitperiod},
+           given={Anupam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca53191803a563335db0f1917ff556b2}{%
+           family={Fredrikson},
+           familyi={F\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13b7b28318c3c0bd6c6fa7e42e215645}{%
+           family={Ko},
+           familyi={K\bibinitperiod},
+           given={Gihyuk},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36b04db0da7f3f385e92a82ac5ba3937}{%
+           family={Mardziel},
+           familyi={M\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3678cc10aee52aba805deb8794de560}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Shayak},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{087dd7e9663a31bdd9758941644f1493}
+      \strng{fullhash}{8d9383cac9da3b5cfba50c6e235a91b4}
+      \strng{bibnamehash}{087dd7e9663a31bdd9758941644f1493}
+      \strng{authorbibnamehash}{087dd7e9663a31bdd9758941644f1493}
+      \strng{authornamehash}{087dd7e9663a31bdd9758941644f1493}
+      \strng{authorfullhash}{8d9383cac9da3b5cfba50c6e235a91b4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Machine learnt systems inherit biases against protected classes, historically disparaged groups, from training data. Usually, these biases are not explicit, they rely on subtle correlations discovered by training algorithms, and are therefore difficult to detect. We formalize proxy discrimination in data-driven systems, a class of properties indicative of bias, as the presence of protected class correlates that have causal influence on the system's output. We evaluate an implementation on a corpus of social datasets, demonstrating how to validate systems against these properties and to repair violations where they occur.}
+      \field{annotation}{Comment: arXiv admin note: substantial text overlap with arXiv:1705.07807}
+      \field{month}{7}
+      \field{note}{arXiv:1707.08120 [cs] type: article}
+      \field{title}{Proxy {Non}-{Discrimination} in {Data}-{Driven} {Systems}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.48550/arXiv.1707.08120
+      \endverb
+      \verb{file}
+      \verb :Datta2017 - Proxy Non Discrimination in Data Driven Systems.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1707.08120
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1707.08120
+      \endverb
+      \keyw{Computer Science - Computers and Society,Computer Science - Machine Learning}
     \endentry
     \entry{DoshiVelez2017}{report}{}
       \name{author}{2}{}{%
@@ -988,6 +1182,72 @@
       \verb{url}
       \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
       \endverb
+    \endentry
+    \entry{Teodorescu2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=dfca41496df1723708b63f6c908fb0b8}{%
+           family={Teodorescu},
+           familyi={T\bibinitperiod},
+           given={Mike\bibnamedelima Horia},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9b1abc57a612fc5afcc19b1ae98efeb}{%
+           family={Morse},
+           familyi={M\bibinitperiod},
+           given={Lily},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=988cafdfe82a19d9a62590ec30e5d172}{%
+           family={Awwad},
+           familyi={A\bibinitperiod},
+           given={Yazeed},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b30587ecfa545f70cc8dfdf47d2dfe9a}{%
+           family={Kane},
+           familyi={K\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academy of Management}%
+      }
+      \strng{namehash}{5ee5d180478d70cc92e7630fe763e03b}
+      \strng{fullhash}{d8ca741d818da796cf79b0f0106c704f}
+      \strng{bibnamehash}{5ee5d180478d70cc92e7630fe763e03b}
+      \strng{authorbibnamehash}{5ee5d180478d70cc92e7630fe763e03b}
+      \strng{authornamehash}{5ee5d180478d70cc92e7630fe763e03b}
+      \strng{authorfullhash}{d8ca741d818da796cf79b0f0106c704f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of machine learning in organizations presents a double-edged sword: machine learning tools reduce costs on otherwise repetitive, time-consuming tasks, yet run the risks of introducing systematic unfairness in organizational processes. Issues of behavioral ethics in machine learning implementations in organizations have not been thoroughly addressed in prior literature, as many of the necessary concepts are disparate across three literatures – ethics, machine learning, and management. Further, tradeoffs between fairness criteria in machine learning have not been addressed with regards to organizations. We move research forward by introducing an organizing framework for selecting and implementing fair algorithms in organizations."}
+      \field{issn}{0065-0668}
+      \field{journaltitle}{Academy of Management Proceedings}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{A {Framework} for {Fairer} {Machine} {Learning} in {Organizations}}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{pages}{16889}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.5465/AMBPP.2020.16889abstract
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/01_Material/02_Other/Morse et al._A Framework for Fairer Machine Learning in Organizations.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.aom.org/doi/10.5465/AMBPP.2020.16889abstract
+      \endverb
+      \verb{url}
+      \verb https://journals.aom.org/doi/10.5465/AMBPP.2020.16889abstract
+      \endverb
+      \keyw{AOM Annual Meeting Proceedings 2020}
     \endentry
     \entry{Zhou2022}{inbook}{}
       \name{author}{3}{}{%
