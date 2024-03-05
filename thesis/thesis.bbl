@@ -661,6 +661,50 @@
       \endverb
       \keyw{Bayesian Improved Surname Geocoding,disparate impact,fair lending,probablistic proxy model,protected class,race imputation,racial discrimination}
     \endentry
+    \entry{Alessandro2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=acb904779b7c0a2a2cb560f566b410e2}{%
+           family={d'Alessandro},
+           familyi={d\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d9e8c54407ca5f4ae5ce79112bcffdf}{%
+           family={O'Neil},
+           familyi={O\bibinitperiod},
+           given={Cathy},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f27fc2679610ebc8ff2ea289315e6041}{%
+           family={LaGatta},
+           familyi={L\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8ae7b66b87653b4f0e7456d4485bbe32}
+      \strng{fullhash}{c7ec3bfec92805aa1f7a1d407068f988}
+      \strng{bibnamehash}{c7ec3bfec92805aa1f7a1d407068f988}
+      \strng{authorbibnamehash}{c7ec3bfec92805aa1f7a1d407068f988}
+      \strng{authornamehash}{8ae7b66b87653b4f0e7456d4485bbe32}
+      \strng{authorfullhash}{c7ec3bfec92805aa1f7a1d407068f988}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Big Data}
+      \field{month}{06}
+      \field{title}{Conscientious Classification: A Data Scientist's Guide to Discrimination-Aware Classification}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{120\bibrangedash 134}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1089/big.2016.0048
+      \endverb
+    \endentry
     \entry{Datta2017}{report}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=c3ec74f0096bebfca003e01940429056}{%
@@ -976,6 +1020,62 @@
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1609/aimag.v40i2.2850
       \endverb
+    \endentry
+    \entry{Hardt2016}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e771760b6d0d33f8b4dfd907d8d57ac2}{%
+           family={Hardt},
+           familyi={H\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0b481f252064438215c11421a5d102f}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a4fc057d8331655775a21a8994f3339}{%
+           family={Srebro},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6715d12818335ad532b3aa871d63dcdf}
+      \strng{fullhash}{fd6cdc27517719fbf581f97eb68c5bb0}
+      \strng{bibnamehash}{fd6cdc27517719fbf581f97eb68c5bb0}
+      \strng{authorbibnamehash}{fd6cdc27517719fbf581f97eb68c5bb0}
+      \strng{authornamehash}{6715d12818335ad532b3aa871d63dcdf}
+      \strng{authorfullhash}{fd6cdc27517719fbf581f97eb68c5bb0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy. In line with other studies, our notion is oblivious: it depends only on the joint statistics of the predictor, the target and the protected attribute, but not on interpretation of individualfeatures. We study the inherent limits of defining and identifying biases based on such oblivious measures, outlining what can and cannot be inferred from different oblivious tests. We illustrate our notion using a case study of FICO credit scores.}
+      \field{month}{10}
+      \field{note}{arXiv:1610.02413 [cs] type: article}
+      \field{title}{Equality of {Opportunity} in {Supervised} {Learning}}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.48550/arXiv.1610.02413
+      \endverb
+      \verb{file}
+      \verb :Hardt2016 - Equality of Opportunity in Supervised Learning.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1610.02413
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1610.02413
+      \endverb
+      \keyw{Computer Science - Machine Learning}
     \endentry
     \entry{Kamiran2012}{article}{}
       \name{author}{2}{}{%

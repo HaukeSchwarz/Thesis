@@ -42,10 +42,11 @@ While there are a multitude of approaches to fair ML algorithms being discussed 
 \textbf{Fair Modeling} \newline
 Fair Modeling is the process of developing fair ML algorithms. This can be done in three different stages: \textit{Pre-processing}, \textit{In-processing} and \textit{Post-processing} \parencite{Pessach2020}. \newline
 \textit{Pre-Processing} focuses on modifying the training data in a way that removes potential biases in order to have the model learn from unbiased data \parencite{Bellamy2019}.
-Several methods have been proposed in academic literature, among them \textit{massaging}, \textit{reweighing} and \textit{sampling} \parencite{Kamiran2012}, editing features and labels of the underlying dataset following fairness criteria based on a probabilistic framework \parencite{Calmon2017}, or attempts to remove disparate impact (i.e.\ the different process outcomes for different groups) by feature value adjustment \parencite{Feldman2015}.
-\dots
-\textit{In-Processing} \dots
-\textit{Post-Processing} \dots
+Several methods have been proposed in academic literature, among them \textit{massaging}, \textit{reweighing} and \textit{sampling} \parencite{Kamiran2012}, editing features and labels of the underlying dataset following fairness criteria based on a probabilistic framework \parencite{Calmon2017}, or attempts to remove disparate impact (i.e.\ the different process outcomes for different groups) by feature value adjustment \parencite{Feldman2015}. \newline
+\textit{In-Processing} \dots \newline
+\textit{Post-Processing} can be applied after the model training is finished. It does however rely on the availability of previously unseen holdout data \parencite{Alessandro2017}. Nevertheless, it is the only viable option if neither the underlying data nor the model itself can be modified \parencite{Bellamy2019}.
+Increased Fairness through post-processing can e.g.\ be achieved by selecting different thresholds for different demographic groups or learning different classifiers for each demographic group \parencite{Pessach2020}.
+A practical implementation of this approach is the work of Hardt et al.\ \parencite{Hardt2016}, where a post-processing algorithm is proposed that aims to adjust the model's predictions to achieve equalized odds (i.e.\ equal True Positive Rates and False Positive Rates for all demographic groups) while trying to improve accuracy at the same time, relying on complete information on labels, predictions and protected attributes. 
 
 
 The increasing importance of Fairness considerations in Machine Learning has also led to an increased availability of tools and libraries to implement fair ML algorithms.
