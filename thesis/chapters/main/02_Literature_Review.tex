@@ -15,7 +15,7 @@ The intensive research of Fairness in algorithmic decision making results in a w
 Most of these are of \textit{mathematical} or quantitative nature, however, there also is somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
 Before presenting the most prominent mathematical measures of fairness, it should be noted that while there are different reasons for unfairness to arise (see~\cite{Chouldechova2018} for a brief overview), bias in the underlying data (through discrimination, erroneous inputs or imbalances in the distributions) 
 is the main reason for unfairness to arise \parencite{Choras2020}\footnote{The reasons for bias in the underlying data are a highly interesting area of research, but out of the scope of this thesis. See~\cite{Mehrabi2021} for an extensive list and discussion for types and reasons for biased data}.
-%mention: statistical parity, equalized odds, equalized opportunity, predictive parity, disparate impact, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
+%mention: statistical parity, equalized odds, equalized opportunity, predictive parity, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
 Measuring the impact of these biases on model fairness, several approaches have gained increased attention from researchers\footnote{This selection is based on the paper by Pessach and Shmueli \parencite{Pessach2020}, who also provide a more extensive overview of measurements not as commonly used in academic literature}:
 \begin{itemize}
     \item \textbf{Disparate Impact} is based on the expected positive prediction rate for each group. For a fair outcome, the rate of positive predictions for any group should be on par or just slightly below the rate for any other group. Formally: 
@@ -24,7 +24,14 @@ Measuring the impact of these biases on model fairness, several approaches have 
     \label{eq:disparate_impact}
     \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Disparate Impact}
     \end{equation}
-    where $S$ is the protected attribute, $S=1$ is a potentially privileged group, $S \neq 1$ is a potentially disadvantaged group and $\varepsilon$ refers to the allowed threshold.
+    where $\hat{Y} = 1$ refers to a positive prediction, $S$ is the protected attribute, $S=1$ is a potentially privileged group, $S \neq 1$ is a potentially disadvantaged group and $\varepsilon$ refers to the allowed threshold.
+
+    \item \textbf{Statistical Parity} is similar to the measurement of Disparate Impact, but works with the difference instead of the ratio. Formally:
+    \begin{equation}
+    \left| P\left[\hat{Y} = 1|S = 1\right] - P\left[\hat{Y} = 1|S \neq 1\right] \right| \leq \epsilon
+    \label{eq:statistical_parity}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Statistical Parity}
+    \end{equation}
 \end{itemize}
 
 
