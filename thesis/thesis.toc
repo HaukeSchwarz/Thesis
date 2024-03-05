@@ -12,9 +12,9 @@
 \contentsline {subsection}{\numberline {1.1.2}Fairness in Practice}{3}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Explainability and Interpretability in Machine Learning}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Inherently Interpretable Models vs. Black Box Models}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{5}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{5}{subsection.1.2.4}%
-\contentsline {chapter}{\nonumberline Bibliography}{7}{chapter*.7}%
+\contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{6}{subsection.1.2.4}%
+\contentsline {chapter}{\nonumberline Bibliography}{8}{chapter*.7}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
