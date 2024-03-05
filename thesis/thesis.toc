@@ -15,6 +15,6 @@
 \contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{4}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{4}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{4}{subsection.1.2.4}%
-\contentsline {chapter}{\nonumberline Bibliography}{6}{chapter*.7}%
+\contentsline {chapter}{\nonumberline Bibliography}{7}{chapter*.7}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

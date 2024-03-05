@@ -1131,6 +1131,79 @@
       \endverb
       \keyw{Classification,Preprocessing,Discrimination-aware data mining}
     \endentry
+    \entry{Kamishima2012}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=deda01c09bf5becd0c4d49b99fd0c096}{%
+           family={Kamishima},
+           familyi={K\bibinitperiod},
+           given={Toshihiro},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=688fc78f0fdd83d6a6a087950cfcdd3f}{%
+           family={Akaho},
+           familyi={A\bibinitperiod},
+           given={Shotaro},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff2e29c565fa4cc865595ea1636f716e}{%
+           family={Asoh},
+           familyi={A\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e50997be633aa84a225f937f2e76437e}{%
+           family={Sakuma},
+           familyi={S\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=396f43e4116eb90951c1b3c963d1501a}{%
+           family={Flach},
+           familyi={F\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c0da3cbd10c1e5cf6d9fac513267fe8e}{%
+           family={De\bibnamedelima Bie},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Tijl},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b643588b4a53ed47702d3277b6de83a9}{%
+           family={Cristianini},
+           familyi={C\bibinitperiod},
+           given={Nello},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{23eee66c64cc9f2da18753269b1c3859}
+      \strng{fullhash}{d10e331baf9e1205b368922e4f60b347}
+      \strng{bibnamehash}{23eee66c64cc9f2da18753269b1c3859}
+      \strng{authorbibnamehash}{23eee66c64cc9f2da18753269b1c3859}
+      \strng{authornamehash}{23eee66c64cc9f2da18753269b1c3859}
+      \strng{authorfullhash}{d10e331baf9e1205b368922e4f60b347}
+      \strng{editorbibnamehash}{1035364434bb4a118fee07fedce98389}
+      \strng{editornamehash}{2706b10f1098b788befac885d812cd68}
+      \strng{editorfullhash}{1035364434bb4a118fee07fedce98389}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the spread of data mining technologies and the accumulation of social data, such technologies and data are being used for determinations that seriously affect individuals' lives. For example, credit scoring is frequently determined based on the records of past credit data together with statistical prediction techniques. Needless to say, such determinations must be nondiscriminatory and fair in sensitive features, such as race, gender, religion, and so on. Several researchers have recently begun to attempt the development of analysis techniques that are aware of social fairness or discrimination. They have shown that simply avoiding the use of sensitive features is insufficient for eliminating biases in determinations, due to the indirect influence of sensitive information. In this paper, we first discuss three causes of unfairness in machine learning. We then propose a regularization approach that is applicable to any prediction algorithm with probabilistic discriminative models. We further apply this approach to logistic regression and empirically show its effectiveness and efficiency.}
+      \field{booktitle}{Machine Learning and Knowledge Discovery in Databases}
+      \field{isbn}{978-3-642-33486-3}
+      \field{title}{Fairness-Aware Classifier with Prejudice Remover Regularizer}
+      \field{year}{2012}
+      \field{pages}{35\bibrangedash 50}
+      \range{pages}{16}
+    \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
@@ -1752,6 +1825,82 @@
       \verb https://journals.aom.org/doi/10.5465/AMBPP.2020.16889abstract
       \endverb
       \keyw{AOM Annual Meeting Proceedings 2020}
+    \endentry
+    \entry{Zafar2017}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=651ed744d2d757bbdb4ef8519fdb9745}{%
+           family={Zafar},
+           familyi={Z\bibinitperiod},
+           given={Muhammad\bibnamedelima Bilal},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86077c699c3bcb4f9fecce395f1e6f41}{%
+           family={Valera},
+           familyi={V\bibinitperiod},
+           given={Isabel},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58d0e095ee85f537d94f11a32509a911}{%
+           family={Rogriguez},
+           familyi={R\bibinitperiod},
+           given={Manuel\bibnamedelima Gomez},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbf52af009e972037dc69055660e4a65}{%
+           family={Gummadi},
+           familyi={G\bibinitperiod},
+           given={Krishna\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d77c73a14b0f048484c1d34aba3071d4}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Aarti},
+           giveni={A\bibinitperiod}}}%
+        {{hash=39c902c926e80826b55032878c4a4b49}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{5a3b59ce7c7b687c4ebf7f069fab18c2}
+      \strng{fullhash}{8cf94f95ed5c2ba94c905031b07c4686}
+      \strng{bibnamehash}{5a3b59ce7c7b687c4ebf7f069fab18c2}
+      \strng{authorbibnamehash}{5a3b59ce7c7b687c4ebf7f069fab18c2}
+      \strng{authornamehash}{5a3b59ce7c7b687c4ebf7f069fab18c2}
+      \strng{authorfullhash}{8cf94f95ed5c2ba94c905031b07c4686}
+      \strng{editorbibnamehash}{76ce338934df3b777883645db0b56555}
+      \strng{editornamehash}{76ce338934df3b777883645db0b56555}
+      \strng{editorfullhash}{76ce338934df3b777883645db0b56555}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Algorithmic decision making systems are ubiquitous across a wide variety of online as well as offline services. These systems rely on complex learning methods and vast amounts of data to optimize the service functionality, satisfaction of the end user and profitability. However, there is a growing concern that these automated decisions can lead, even in the absence of intent, to a lack of fairness, i.e., their outcomes can disproportionately hurt (or, benefit) particular groups of people sharing one or more sensitive attributes (e.g., race, sex). In this paper, we introduce a flexible mechanism to design fair classifiers by leveraging a novel intuitive measure of decision boundary (un)fairness. We instantiate this mechanism with two well-known classifiers, logistic regression and support vector machines, and show on real-world data that our mechanism allows for a fine-grained control on the degree of fairness, often at a small cost in terms of accuracy.}
+      \field{booktitle}{Proceedings of the 20th International Conference on Artificial Intelligence and Statistics}
+      \field{month}{20--22 Apr}
+      \field{series}{Proceedings of Machine Learning Research}
+      \field{title}{{Fairness Constraints: Mechanisms for Fair Classification}}
+      \field{volume}{54}
+      \field{year}{2017}
+      \field{pages}{962\bibrangedash 970}
+      \range{pages}{9}
+      \verb{file}
+      \verb http://proceedings.mlr.press/v54/zafar17a/zafar17a.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v54/zafar17a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v54/zafar17a.html
+      \endverb
     \endentry
     \entry{Zhou2022}{inbook}{}
       \name{author}{3}{}{%
