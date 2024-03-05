@@ -32,6 +32,19 @@ Measuring the impact of these biases on model fairness, several approaches have 
     \label{eq:statistical_parity}
     \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Statistical Parity}
     \end{equation}
+
+    \item \textbf{Equalized Odds} is based on the True Positive Rate (TPR) and the False Positive Rate (FPR). For a fair outcome, both rates should be (close to) equal for all groups. Formally:
+    \begin{equation}
+    \left| P[\hat{Y} = 1|S = 1, Y = 0] - P[\hat{Y} = 1|S \neq 1, Y = 0] \right| \leq \epsilon
+    \label{eq:equalized_odds_1}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Equalized Odds (1)}
+    \end{equation}
+    \begin{equation}
+    \left| P[\hat{Y} = 1|S = 1, Y = 1] - P[\hat{Y} = 1|S \neq 1, Y = 1] \right| \leq \epsilon
+    \label{eq:equalized_odds_2}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Equalized Odds (2)}
+    \end{equation}
+    where \eqref{eq:equalized_odds_1} and \eqref{eq:equalized_odds_2} restrict the difference in TPR and FPR for the two groups to be smaller than $\varepsilon$ respectively.
 \end{itemize}
 
 
