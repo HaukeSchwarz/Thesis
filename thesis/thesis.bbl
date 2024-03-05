@@ -661,6 +661,221 @@
       \endverb
       \keyw{Bayesian Improved Surname Geocoding,disparate impact,fair lending,probablistic proxy model,protected class,race imputation,racial discrimination}
     \endentry
+    \entry{Choras2020}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=deaebd093d3ca7945926e214f3f9766a}{%
+           family={Choraś},
+           familyi={C\bibinitperiod},
+           given={Micha{ł}},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0dc6ca1f843355509bda6846b9ce192b}{%
+           family={Pawlicki},
+           familyi={P\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=094d92173b11bc483b32465afea1ea7d}{%
+           family={Puchalski},
+           familyi={P\bibinitperiod},
+           given={Damian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0bddcabe41c89595295847d040bcd294}{%
+           family={Kozik},
+           familyi={K\bibinitperiod},
+           given={Rafa{ł}},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{7}{}{%
+        {{hash=9e8c105de857d380f7ba7e0a20b14ec8}{%
+           family={Krzhizhanovskaya},
+           familyi={K\bibinitperiod},
+           given={Valeria\bibnamedelima V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=f293ccf53ec63a8c586efe6b6187ffa3}{%
+           family={Závodszky},
+           familyi={Z\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=52319f26a0fdfea11eddcbf55904cd22}{%
+           family={Lees},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0e7c85e7550c9cf876b4ddf487193e8f}{%
+           family={Dongarra},
+           familyi={D\bibinitperiod},
+           given={Jack\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=24951e6a6503cb8a1fec551397605657}{%
+           family={Sloot},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelimb M.\bibnamedelimi A.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=572aa9acfa5f22c38d0add16ac073b1d}{%
+           family={Brissos},
+           familyi={B\bibinitperiod},
+           given={Sérgio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=43fe8c5618bd5cecd7f78713e421cf35}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{ed15620dd4a37a127264c98277ad2335}
+      \strng{fullhash}{5f7d61afa8c565e3b12707b306d483a9}
+      \strng{bibnamehash}{ed15620dd4a37a127264c98277ad2335}
+      \strng{authorbibnamehash}{ed15620dd4a37a127264c98277ad2335}
+      \strng{authornamehash}{ed15620dd4a37a127264c98277ad2335}
+      \strng{authorfullhash}{5f7d61afa8c565e3b12707b306d483a9}
+      \strng{editorbibnamehash}{5c66b5a860add4a2881c7ff18d7a3d55}
+      \strng{editornamehash}{5c66b5a860add4a2881c7ff18d7a3d55}
+      \strng{editorfullhash}{25d3abaf4d81f02e486bcea609762ed3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent advances in machine learning (ML) and the surge in computational power have opened the way to the proliferation of ML and Artificial Intelligence (AI) in many domains and applications. Still, apart from achieving good accuracy and results, there are many challenges that need to be discussed in order to effectively apply ML algorithms in critical applications for the good of societies. The aspects that can hinder practical and trustful ML and AI are: lack of security of ML algorithms as well as lack of fairness and explainability. In this paper we discuss those aspects and provide current state of the art analysis of the relevant works in the mentioned domains.}
+      \field{booktitle}{Computational Science -- ICCS 2020}
+      \field{isbn}{978-3-030-50423-6}
+      \field{title}{Machine Learning -- The Results Are Not the only Thing that Matters! What About Security, Explainability and Fairness?}
+      \field{year}{2020}
+      \field{pages}{615\bibrangedash 628}
+      \range{pages}{14}
+    \endentry
+    \entry{Chouldechova2018}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=38a289c38744c96713fe118011e7781d}{%
+           family={Chouldechova},
+           familyi={C\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bb323b3c3d2af68def0dcbde8e6795d}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{54536261e93fbadf89e7effa8c960548}
+      \strng{fullhash}{54536261e93fbadf89e7effa8c960548}
+      \strng{bibnamehash}{54536261e93fbadf89e7effa8c960548}
+      \strng{authorbibnamehash}{54536261e93fbadf89e7effa8c960548}
+      \strng{authornamehash}{54536261e93fbadf89e7effa8c960548}
+      \strng{authorfullhash}{54536261e93fbadf89e7effa8c960548}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The last few years have seen an explosion of academic and popular interest in algorithmic fairness. Despite this interest and the volume and velocity of work that has been produced recently, the fundamental science of fairness in machine learning is still in a nascent state. In March 2018, we convened a group of experts as part of a CCC visioning workshop to assess the state of the field, and distill the most promising research directions going forward. This report summarizes the findings of that workshop. Along the way, it surveys recent theoretical work in the field and points towards promising directions for research.}
+      \field{month}{10}
+      \field{note}{arXiv:1810.08810 [cs, stat] type: article}
+      \field{title}{The {Frontiers} of {Fairness} in {Machine} {Learning}}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.48550/arXiv.1810.08810
+      \endverb
+      \verb{file}
+      \verb :Chouldechova2018 - The Frontiers of Fairness in Machine Learning.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1810.08810
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1810.08810
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Data Structures and Algorithms,Computer Science - Computer Science and Game Theory,Statistics - Machine Learning}
+    \endentry
+    \entry{CorbettDavies2023}{report}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=341a17b1faf8ad74034822ff2f891742}{%
+           family={Corbett-Davies},
+           familyi={C\bibinithyphendelim D\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc87d955c84b91ba3d881af1c1a93666}{%
+           family={Gaebler},
+           familyi={G\bibinitperiod},
+           given={Johann\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4b30e51359854c0d89aa15a6279a424}{%
+           family={Nilforoshan},
+           familyi={N\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85bd24ef7b2a76727f6692bb1bd9d048}{%
+           family={Shroff},
+           familyi={S\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=769c0f637707fcc5e9ebb71ce29eb5d1}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Sharad},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5a8687cd6a4a9ab3df98cc3620677781}
+      \strng{fullhash}{4544570fa35bc719cb1465901595a433}
+      \strng{bibnamehash}{5a8687cd6a4a9ab3df98cc3620677781}
+      \strng{authorbibnamehash}{5a8687cd6a4a9ab3df98cc3620677781}
+      \strng{authornamehash}{5a8687cd6a4a9ab3df98cc3620677781}
+      \strng{authorfullhash}{4544570fa35bc719cb1465901595a433}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The field of fair machine learning aims to ensure that decisions guided by algorithms are equitable. Over the last decade, several formal, mathematical definitions of fairness have gained prominence. Here we first assemble and categorize these definitions into two broad families: (1) those that constrain the effects of decisions on disparities; and (2) those that constrain the effects of legally protected characteristics, like race and gender, on decisions. We then show, analytically and empirically, that both families of definitions typically result in strongly Pareto dominated decision policies. For example, in the case of college admissions, adhering to popular formal conceptions of fairness would simultaneously result in lower student-body diversity and a less academically prepared class, relative to what one could achieve by explicitly tailoring admissions policies to achieve desired outcomes. In this sense, requiring that these fairness definitions hold can, perversely, harm the very groups they were designed to protect. In contrast to axiomatic notions of fairness, we argue that the equitable design of algorithms requires grappling with their context-specific consequences, akin to the equitable design of policy. We conclude by listing several open challenges in fair machine learning and offering strategies to ensure algorithms are better aligned with policy goals.}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{month}{8}
+      \field{note}{arXiv:1808.00023 [cs] type: article}
+      \field{number}{24}
+      \field{title}{The {Measure} and {Mismeasure} of {Fairness}}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 117}
+      \range{pages}{117}
+      \verb{doi}
+      \verb 10.48550/arXiv.1808.00023
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:https\://arxiv.org/pdf/1808.00023.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1808.00023
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1808.00023
+      \endverb
+      \keyw{Computer Science - Computers and Society}
+    \endentry
     \entry{Alessandro2017}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=acb904779b7c0a2a2cb560f566b410e2}{%

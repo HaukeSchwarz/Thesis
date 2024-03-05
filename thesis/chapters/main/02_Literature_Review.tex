@@ -11,8 +11,13 @@ As this thesis is based on mortgage lending data and builds upon the analysis of
 
 \subsection{Overview of Fairness in Algorithmic Decision Making}\label{subsec:overview}
 
-%To-Do: 
-%Main issues (topical) and methods (mathematically vs. non-mathematically)
+The intensive research of Fairness in algorithmic decision making results in a wide range of definitions of Fairness as well as methods to assess it \parencite{CorbettDavies2023}.
+Most of these are of \textit{mathematical} or quantitative nature, however, there also is somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
+%mention: statistical parity, equalized odds, equalized opportunity, predictive parity, disparate impact, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
+%Mention biases / causes of unfairness?
+Before presenting the most prominent mathematical measures of fairness, it should be noted that while there are different reasons for unfairness to arise (see~\cite{Chouldechova2018} for a brief overview), bias in the underlying data (through discrimination, erroneous inputs or imbalances in the distributions) 
+is the main reason for unfairness to arise \parencite{Choras2020}\footnote{The reasons for bias in the underlying data are a highly interesting area of research, but out of the scope of this thesis. See~\cite{Mehrabi2021} for an extensive list and discussion for types and reasons for biased data}.
+
 
 A crucial element in the Fairness discussion is the concept of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
 Protected attributes usually contain demographic information like age, race or gender (identity) \parencite{Teodorescu2020}. There are definitions available specifically for the case of mortgage lending \parencite{Chen2019}\footnote{Note that the attributes defined in the paper by Chen et al.\ apply specifically to laws of the United States of America}. 
@@ -34,7 +39,6 @@ which has been discussed in academic literature as a major issue in the field of
 While there are a multitude of approaches to fair ML algorithms being discussed in academic literature (compare e.g.\ \cite{Mehrabi2021}), the scope of this thesis primarily includes \textit{Fair Modeling}, i.e.\ the development of fair ML algorithms, and \textit{Fairness Assessment}, i.e.\ the evaluation of the fairness of a given model
 
 %To-Do:
-%Mention aequitas and AIF360
 %Fairness assessment (methods and metrics with formulas - aequitas, Onetto, Chouldechova, Corbett-Davies and Pessach)
 
 
