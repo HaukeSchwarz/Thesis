@@ -13,10 +13,19 @@ As this thesis is based on mortgage lending data and builds upon the analysis of
 
 The intensive research of Fairness in algorithmic decision making results in a wide range of definitions of Fairness as well as methods to assess it \parencite{CorbettDavies2023}.
 Most of these are of \textit{mathematical} or quantitative nature, however, there also is somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
-%mention: statistical parity, equalized odds, equalized opportunity, predictive parity, disparate impact, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
-%Mention biases / causes of unfairness?
 Before presenting the most prominent mathematical measures of fairness, it should be noted that while there are different reasons for unfairness to arise (see~\cite{Chouldechova2018} for a brief overview), bias in the underlying data (through discrimination, erroneous inputs or imbalances in the distributions) 
 is the main reason for unfairness to arise \parencite{Choras2020}\footnote{The reasons for bias in the underlying data are a highly interesting area of research, but out of the scope of this thesis. See~\cite{Mehrabi2021} for an extensive list and discussion for types and reasons for biased data}.
+%mention: statistical parity, equalized odds, equalized opportunity, predictive parity, disparate impact, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
+Measuring the impact of these biases on model fairness, several approaches have gained increased attention from researchers\footnote{This selection is based on the paper by Pessach and Shmueli \parencite{Pessach2020}, who also provide a more extensive overview of measurements not as commonly used in academic literature}:
+\begin{itemize}
+    \item \textbf{Disparate Impact} is based on the expected positive prediction rate for each group. For a fair outcome, the rate of positive predictions for any group should be on par or just slightly below the rate for any other group. Formally: 
+    \begin{equation}
+    \frac{P(\hat{Y} = 1|S \neq 1)}{P(\hat{Y} = 1|S = 1)} \geq 1 - \varepsilon
+    \label{eq:disparate_impact}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Disparate Impact}
+    \end{equation}
+    where $S$ is the protected attribute, $S=1$ is a potentially privileged group, $S \neq 1$ is a potentially disadvantaged group and $\varepsilon$ refers to the allowed threshold.
+\end{itemize}
 
 
 A crucial element in the Fairness discussion is the concept of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
@@ -45,7 +54,7 @@ While there are a multitude of approaches to fair ML algorithms being discussed 
 \textbf{Fair Modeling} \newline
 Fair Modeling is the process of developing fair ML algorithms. This can be done in three different stages: \textit{Pre-processing}, \textit{In-processing} and \textit{Post-processing} \parencite{Pessach2020}. \newline
 \textit{Pre-Processing} focuses on modifying the training data in a way that removes potential biases in order to have the model learn from unbiased data \parencite{Bellamy2019}.
-Several methods have been proposed in academic literature, among them \textit{massaging}, \textit{reweighing} and \textit{sampling} \parencite{Kamiran2012}, editing features and labels of the underlying dataset following fairness criteria based on a probabilistic framework \parencite{Calmon2017}, or attempts to remove disparate impact (i.e.\ the different process outcomes for different groups) by feature value adjustment \parencite{Feldman2015}. \newline
+Several methods have been proposed in academic literature, among them \textit{massaging}, \textit{reweighing} and \textit{sampling} \parencite{Kamiran2012}, editing features and labels of the underlying dataset following fairness criteria based on a probabilistic framework \parencite{Calmon2017}, or attempts to remove disparate impact by feature value adjustment \parencite{Feldman2015}. \newline
 \textit{In-Processing} aims to address unfairness during model training \parencite{Alessandro2017}. In practice, this is usually achieved by imposing constraints or adding regularization parameters to the models that explicitly aim to affect fairness criteria \parencite{Pessach2020}.
 Practical examples from the academic literature include the \textit{prejudice remover regularizer} introduced by Kamishima et al. \parencite{Kamishima2012}, which is a regularizer that aims to enforce independence of predictions from protected attributes, or a method of imposing both accuracy and fairness constraints to tackle disparate impact proposed by Zafar et al. \parencite{Zafar2017}. \newline
 \textit{Post-Processing} can be applied after the model training is finished. It does however rely on the availability of previously unseen holdout data \parencite{Alessandro2017}. Nevertheless, it is the only viable option if neither the underlying data nor the model itself can be modified \parencite{Bellamy2019}.
