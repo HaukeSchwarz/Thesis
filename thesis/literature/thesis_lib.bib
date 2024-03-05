@@ -778,44 +778,35 @@
   url      = {http://arxiv.org/abs/2001.09784},
 }
 
-@article{Bellamy2019,
-  author = {Bellamy, Rachel and Dey, Kuntal and Hind, Michael and Hoffman, Samuel and Houde, Stephanie and Kannan, Kalapriya and Lohia, Pranay and Martino, Jacquelyn and Mehta, Sameep and Mojsilovic, Aleksandra and Nagar, Seema and Natesan Ramamurthy, Karthikeyan and Richards, John and Saha, Diptikalyan and Sattigeri, Prasanna and Singh, Moninder and Varshney, Kush and Zhang, Yunfeng},
-  year = {2019},
-  month = {09},
-  pages = {1-1},
-  title = {AI Fairness 360: An Extensible Toolkit for Detecting and Mitigating Algorithmic Bias},
-  volume = {PP},
+@Article{Bellamy2019,
+  author  = {Bellamy, Rachel and Dey, Kuntal and Hind, Michael and Hoffman, Samuel and Houde, Stephanie and Kannan, Kalapriya and Lohia, Pranay and Martino, Jacquelyn and Mehta, Sameep and Mojsilovic, Aleksandra and Nagar, Seema and Natesan Ramamurthy, Karthikeyan and Richards, John and Saha, Diptikalyan and Sattigeri, Prasanna and Singh, Moninder and Varshney, Kush and Zhang, Yunfeng},
   journal = {IBM Journal of Research and Development},
-  doi = {10.1147/JRD.2019.2942287}
+  title   = {AI Fairness 360: An Extensible Toolkit for Detecting and Mitigating Algorithmic Bias},
+  year    = {2019},
+  month   = {09},
+  pages   = {1-1},
+  volume  = {PP},
+  doi     = {10.1147/JRD.2019.2942287},
+  groups  = {Fairness},
 }
 
-@inproceedings{Calmon2017,
- author = {Calmon, Flavio and Wei, Dennis and Vinzamuri, Bhanukiran and Natesan Ramamurthy, Karthikeyan and Varshney, Kush R},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
- publisher = {Curran Associates, Inc.},
- title = {Optimized Pre-Processing for Discrimination Prevention},
- url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/9a49a25d845a483fae4be7e341368e36-Paper.pdf},
- volume = {30},
- year = {2017}
-}
-
-@inproceedings{Feldman2015,
-  author = {Feldman, Michael and Friedler, Sorelle A. and Moeller, John and Scheidegger, Carlos and Venkatasubramanian, Suresh},
-  title = {Certifying and Removing Disparate Impact},
-  year = {2015},
-  isbn = {9781450336642},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/2783258.2783311},
-  doi = {10.1145/2783258.2783311},
-  abstract = {What does it mean for an algorithm to be biased? In U.S. law, unintentional bias is encoded via disparate impact, which occurs when a selection process has widely different outcomes for different groups, even as it appears to be neutral. This legal determination hinges on a definition of a protected class (ethnicity, gender) and an explicit description of the process.When computers are involved, determining disparate impact (and hence bias) is harder. It might not be possible to disclose the process. In addition, even if the process is open, it might be hard to elucidate in a legal setting how the algorithm makes its decisions. Instead of requiring access to the process, we propose making inferences based on the data it uses.We present four contributions. First, we link disparate impact to a measure of classification accuracy that while known, has received relatively little attention. Second, we propose a test for disparate impact based on how well the protected class can be predicted from the other attributes. Third, we describe methods by which data might be made unbiased. Finally, we present empirical evidence supporting the effectiveness of our test for disparate impact and our approach for both masking bias and preserving relevant information in the data. Interestingly, our approach resembles some actual selection practices that have recently received legal scrutiny.},
+@InProceedings{Feldman2015,
+  author    = {Feldman, Michael and Friedler, Sorelle A. and Moeller, John and Scheidegger, Carlos and Venkatasubramanian, Suresh},
   booktitle = {Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-  pages = {259–268},
-  numpages = {10},
-  keywords = {machine learning, fairness, disparate impact},
-  location = {Sydney, NSW, Australia},
-  series = {KDD '15}
+  title     = {Certifying and Removing Disparate Impact},
+  year      = {2015},
+  address   = {New York, NY, USA},
+  pages     = {259–268},
+  publisher = {Association for Computing Machinery},
+  series    = {KDD '15},
+  abstract  = {What does it mean for an algorithm to be biased? In U.S. law, unintentional bias is encoded via disparate impact, which occurs when a selection process has widely different outcomes for different groups, even as it appears to be neutral. This legal determination hinges on a definition of a protected class (ethnicity, gender) and an explicit description of the process.When computers are involved, determining disparate impact (and hence bias) is harder. It might not be possible to disclose the process. In addition, even if the process is open, it might be hard to elucidate in a legal setting how the algorithm makes its decisions. Instead of requiring access to the process, we propose making inferences based on the data it uses.We present four contributions. First, we link disparate impact to a measure of classification accuracy that while known, has received relatively little attention. Second, we propose a test for disparate impact based on how well the protected class can be predicted from the other attributes. Third, we describe methods by which data might be made unbiased. Finally, we present empirical evidence supporting the effectiveness of our test for disparate impact and our approach for both masking bias and preserving relevant information in the data. Interestingly, our approach resembles some actual selection practices that have recently received legal scrutiny.},
+  doi       = {10.1145/2783258.2783311},
+  groups    = {Fairness},
+  isbn      = {9781450336642},
+  keywords  = {machine learning, fairness, disparate impact},
+  location  = {Sydney, NSW, Australia},
+  numpages  = {10},
+  url       = {https://doi.org/10.1145/2783258.2783311},
 }
 
  
@@ -856,13 +847,85 @@
   url      = {https://doi.org/10.1007/s10115-011-0463-8},
 }
 
+@InProceedings{Kamishima2012,
+  author    = {Kamishima, Toshihiro and Akaho, Shotaro and Asoh, Hideki and Sakuma, Jun},
+  booktitle = {Machine Learning and Knowledge Discovery in Databases},
+  title     = {Fairness-Aware Classifier with Prejudice Remover Regularizer},
+  year      = {2012},
+  address   = {Berlin, Heidelberg},
+  editor    = {Flach, Peter A. and De Bie, Tijl and Cristianini, Nello},
+  pages     = {35--50},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {With the spread of data mining technologies and the accumulation of social data, such technologies and data are being used for determinations that seriously affect individuals' lives. For example, credit scoring is frequently determined based on the records of past credit data together with statistical prediction techniques. Needless to say, such determinations must be nondiscriminatory and fair in sensitive features, such as race, gender, religion, and so on. Several researchers have recently begun to attempt the development of analysis techniques that are aware of social fairness or discrimination. They have shown that simply avoiding the use of sensitive features is insufficient for eliminating biases in determinations, due to the indirect influence of sensitive information. In this paper, we first discuss three causes of unfairness in machine learning. We then propose a regularization approach that is applicable to any prediction algorithm with probabilistic discriminative models. We further apply this approach to logistic regression and empirically show its effectiveness and efficiency.},
+  groups    = {Fairness},
+  isbn      = {978-3-642-33486-3},
+}
+
+
+@InProceedings{Zafar2017,
+  author    = {Zafar, Muhammad Bilal and Valera, Isabel and Rogriguez, Manuel Gomez and Gummadi, Krishna P.},
+  booktitle = {Proceedings of the 20th International Conference on Artificial Intelligence and Statistics},
+  title     = {{Fairness Constraints: Mechanisms for Fair Classification}},
+  year      = {2017},
+  editor    = {Singh, Aarti and Zhu, Jerry},
+  month     = {20--22 Apr},
+  pages     = {962--970},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {54},
+  abstract  = {Algorithmic decision making systems are ubiquitous across a wide variety of online as well as offline services. These systems rely on complex learning methods and vast amounts of data to optimize the service functionality, satisfaction of the end user and profitability. However, there is a growing concern that these automated decisions can lead, even in the absence of intent, to a lack of fairness, i.e., their outcomes can disproportionately hurt (or, benefit) particular groups of people sharing one or more sensitive attributes (e.g., race, sex). In this paper, we introduce a flexible mechanism to design fair classifiers by leveraging a novel intuitive measure of decision boundary (un)fairness. We instantiate this mechanism with two well-known classifiers, logistic regression and support vector machines, and show on real-world data that our mechanism allows for a fine-grained control on the degree of fairness, often at a small cost in terms of accuracy.},
+  groups    = {Fairness},
+  pdf       = {http://proceedings.mlr.press/v54/zafar17a/zafar17a.pdf},
+  url       = {https://proceedings.mlr.press/v54/zafar17a.html},
+}
+
+
+@Article{Alessandro2017,
+  author  = {d'Alessandro, Brian and O'Neil, Cathy and LaGatta, Tom},
+  journal = {Big Data},
+  title   = {Conscientious Classification: A Data Scientist's Guide to Discrimination-Aware Classification},
+  year    = {2017},
+  month   = {06},
+  pages   = {120-134},
+  volume  = {5},
+  doi     = {10.1089/big.2016.0048},
+  groups  = {Fairness},
+}
+
+@inproceedings{Calmon2017,
+ author = {Calmon, Flavio and Wei, Dennis and Vinzamuri, Bhanukiran and Natesan Ramamurthy, Karthikeyan and Varshney, Kush R},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ publisher = {Curran Associates, Inc.},
+ title = {Optimized Pre-Processing for Discrimination Prevention},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/9a49a25d845a483fae4be7e341368e36-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+ 
+@TechReport{Hardt2016,
+  author   = {Hardt, Moritz and Price, Eric and Srebro, Nathan},
+  title    = {Equality of {Opportunity} in {Supervised} {Learning}},
+  year     = {2016},
+  month    = oct,
+  note     = {arXiv:1610.02413 [cs] type: article},
+  abstract = {We propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy. In line with other studies, our notion is oblivious: it depends only on the joint statistics of the predictor, the target and the protected attribute, but not on interpretation of individualfeatures. We study the inherent limits of defining and identifying biases based on such oblivious measures, outlining what can and cannot be inferred from different oblivious tests. We illustrate our notion using a case study of FICO credit scores.},
+  doi      = {10.48550/arXiv.1610.02413},
+  file     = {:Hardt2016 - Equality of Opportunity in Supervised Learning.pdf:PDF},
+  groups   = {Fairness},
+  keywords = {Computer Science - Machine Learning},
+  school   = {arXiv},
+  url      = {http://arxiv.org/abs/1610.02413},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Overview xAI / Interpretability\;0\;1\;0x0000ffff\;\;Files providing overviews of different interpretability / explainability methods\;;
 1 StaticGroup:Other\;0\;0\;0xff008fff\;\;Theoretical Frameworks etc.\;;
-1 StaticGroup:Fairness\;0\;0\;0x008000ff\;\;\;;
+1 StaticGroup:Fairness\;0\;1\;0x008000ff\;\;\;;
 1 StaticGroup:Benchmarking\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:Credit / Mortgage\;0\;1\;0xffff00ff\;\;\;;
 }
