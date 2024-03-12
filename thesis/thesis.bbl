@@ -1729,6 +1729,37 @@
       \endverb
       \keyw{Fairness and bias in artificial intelligence,deep learning,machine learning,natural language processing,representation learning}
     \endentry
+    \entry{Molnar2023}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1519de263bd388a2ce312e7171b96d0d}{%
+           family={Molnar},
+           familyi={M\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1519de263bd388a2ce312e7171b96d0d}
+      \strng{fullhash}{1519de263bd388a2ce312e7171b96d0d}
+      \strng{bibnamehash}{1519de263bd388a2ce312e7171b96d0d}
+      \strng{authorbibnamehash}{1519de263bd388a2ce312e7171b96d0d}
+      \strng{authornamehash}{1519de263bd388a2ce312e7171b96d0d}
+      \strng{authorfullhash}{1519de263bd388a2ce312e7171b96d0d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Machine learning has great potential for improving products, processes and research. But computers usually do not explain their predictions which is a barrier to the adoption of machine learning. This book is about making machine learning models and their decisions interpretable. After exploring the concepts of interpretability, you will learn about simple, interpretable models such as decision trees, decision rules and linear regression. The focus of the book is on model-agnostic methods for interpreting black box models such as feature importance and accumulated local effects, and explaining individual predictions with Shapley values and LIME. In addition, the book presents methods specific to deep neural networks. All interpretation methods are explained in depth and discussed critically. How do they work under the hood? What are their strengths and weaknesses? How can their outputs be interpreted? This book will enable you to select and correctly apply the interpretation method that is most suitable for your machine learning project. Reading the book is recommended for machine learning practitioners, data scientists, statisticians, and anyone else interested in making machine learning models interpretable.}
+      \field{title}{Interpretable {Machine} {Learning}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://christophm.github.io/interpretable-ml-book/
+      \endverb
+      \verb{url}
+      \verb https://christophm.github.io/interpretable-ml-book/
+      \endverb
+    \endentry
     \entry{Murdoch2019}{article}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=22c46697552a85457f5d2a862a502350}{%
@@ -1974,6 +2005,73 @@
       \verb{url}
       \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
       \endverb
+    \endentry
+    \entry{SALEEM2022165}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=913f3075dff156bd2c1b5904cd13bd1e}{%
+           family={Saleem},
+           familyi={S\bibinitperiod},
+           given={Rabia},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ce4eb84b8441cb4f47e328910e194f7}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d38d9d4414d6adff18e5532af8c4585}{%
+           family={Kurugollu},
+           familyi={K\bibinitperiod},
+           given={Fatih},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77ef5ba8807635b9f03c88cacb5fa915}{%
+           family={Anjum},
+           familyi={A\bibinitperiod},
+           given={Ashiq},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b70d85f003fa30a5cae684a692c6e97}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{53757ee8b2c836069f46da07812b13ec}
+      \strng{fullhash}{9cfc0937ed2295be1fef0164f37118be}
+      \strng{bibnamehash}{53757ee8b2c836069f46da07812b13ec}
+      \strng{authorbibnamehash}{53757ee8b2c836069f46da07812b13ec}
+      \strng{authornamehash}{53757ee8b2c836069f46da07812b13ec}
+      \strng{authorfullhash}{9cfc0937ed2295be1fef0164f37118be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A substantial amount of research has been carried out in Explainable Artificial Intelligence (XAI) models, especially in those which explain the deep architectures of neural networks. A number of XAI approaches have been proposed to achieve trust in Artificial Intelligence (AI) models as well as provide explainability of specific decisions made within these models. Among these approaches, global interpretation methods have emerged as the prominent methods of explainability because they have the strength to explain every feature and the structure of the model. This survey attempts to provide a comprehensive review of global interpretation methods that completely explain the behaviour of the AI models. We present a taxonomy of the available global interpretations models and systematically highlight the critical features and algorithms that differentiate them from local as well as hybrid models of explainability. Through examples and case studies from the literature, we evaluate the strengths and weaknesses of the global interpretation models and assess challenges when these methods are put into practice. We conclude the paper by providing the future directions of research in how the existing challenges in global interpretation methods could be addressed and what values and opportunities could be realized by the resolution of these challenges.}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Explaining deep neural networks: A survey on the global interpretation methods}
+      \field{volume}{513}
+      \field{year}{2022}
+      \field{pages}{165\bibrangedash 180}
+      \range{pages}{16}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neucom.2022.09.129
+      \endverb
+      \verb{file}
+      \verb :C\:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/01_Material/02_Other/Saleem et al._Explaining deep neural networks A survey on the global interpretation.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231222012218
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231222012218
+      \endverb
+      \keyw{Artificial intelligence,Deep neural networks,Black box Models,Explainable artificial intelligence,Global interpretation}
     \endentry
     \entry{Teodorescu2020}{article}{}
       \name{author}{4}{}{%
