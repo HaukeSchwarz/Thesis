@@ -15,6 +15,11 @@
 \contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{5}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{6}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{6}{subsection.1.2.4}%
-\contentsline {chapter}{\nonumberline Bibliography}{8}{chapter*.8}%
+\contentsline {chapter}{\numberline {2}Data and Methodology}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Data}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}HMDA Data}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Enrichment Data}{8}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Methodology}{8}{section.2.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{9}{chapter*.8}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
