@@ -6,20 +6,23 @@
 \contentsline {chapter}{\nonumberline List of Tables}{IV}{chapter*.4}%
 \contentsline {chapter}{List of Formulas}{V}{chapter*.5}%
 \contentsline {chapter}{List of Abbreviations}{VI}{table.0.1}%
-\contentsline {chapter}{\numberline {1}Literature Review}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Fairness in Algorithmic Decision Making}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Overview of Fairness in Algorithmic Decision Making}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Fairness in Practice}{3}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Explainability and Interpretability in Machine Learning}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Inherently Interpretable Models vs. Black Box Models}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Explainability Algorithms}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Application of Explainability Algorithms}{6}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Explainability and Fairness}{6}{subsection.1.2.4}%
-\contentsline {chapter}{\numberline {2}Data and Methodology}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Data}{8}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}HMDA Data}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Enrichment Data}{8}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Methodology}{8}{section.2.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{9}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Research Objective and Significance}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Summary of the Main Findings}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fairness in Algorithmic Decision Making}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Overview of Fairness in Algorithmic Decision Making}{2}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Fairness in Practice}{4}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Explainability and Interpretability in Machine Learning}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Inherently Interpretable Models vs. Black Box Models}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Explainability Algorithms}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Application of Explainability Algorithms}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Explainability and Fairness}{7}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Data and Methodology}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}HMDA Data}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Enrichment Data}{9}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Methodology}{9}{section.3.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{10}{chapter*.8}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
