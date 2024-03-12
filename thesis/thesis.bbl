@@ -2139,6 +2139,49 @@
       \endverb
       \keyw{AOM Annual Meeting Proceedings 2020}
     \endentry
+    \entry{wachter2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=59ac5c27b9899cd85e028b00eb90b236}{%
+           family={Wachter},
+           familyi={W\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=679ae40882b0f242219bac2316e5b296}{%
+           family={Mittelstadt},
+           familyi={M\bibinitperiod},
+           given={Brent},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c40407f768dd3e8b296a11750ad77f41}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{a3284a24f007233fcdc5a68b03f8bbf1}
+      \strng{fullhash}{584603fb415d7e6a18195803c5ad6676}
+      \strng{bibnamehash}{584603fb415d7e6a18195803c5ad6676}
+      \strng{authorbibnamehash}{584603fb415d7e6a18195803c5ad6676}
+      \strng{authornamehash}{a3284a24f007233fcdc5a68b03f8bbf1}
+      \strng{authorfullhash}{584603fb415d7e6a18195803c5ad6676}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harv. JL \& Tech.}
+      \field{title}{Counterfactual explanations without opening the black box: Automated decisions and the GDPR}
+      \field{volume}{31}
+      \field{year}{2017}
+      \field{pages}{841\bibrangedash 887}
+      \range{pages}{47}
+    \endentry
     \entry{Zafar2017}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=651ed744d2d757bbdb4ef8519fdb9745}{%

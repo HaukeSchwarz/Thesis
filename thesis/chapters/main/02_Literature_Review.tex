@@ -123,17 +123,12 @@ However, there is increased demand for models that have a high predictive accura
 
 \subsection{Explainability Algorithms}\label{subsec:algorithms}
 
-%To-Do:
-%Base on Zhou, Saleem and Molnar - quick list of most important terms (just short theoretical)
-%   Feature importance vs. counterfactuals (does that fit here? - base on Zhou) / Partial Dependence
-%   Add deeper dive into method used
-%   Bild aus Saleem einfügen
-
-This section will provide a brief overview of the different categories of Explainability algorithms. % !!! ... and provide some additional information on the method XXX, which will be used in this thesis. !!!
+This section will provide a brief overview of the different categories of Explainability algorithms. % !!! ... and provide some additional information on the method XXX, which will be used in this thesis. - Comment that others will not be touched upon due to scope constraints, but point to Saleem or Molnar !!!
 In the academic literature, Explainability methods are usually categorized based on their properties, such as:
 \begin{itemize}
     \item \textbf{Model-specific vs. Model-agnostic}: \textit{Model-specific} methods are designed to explain the outcomes of a specific model, while \textit{model-agnostic} methods are designed to be applicable to (nearly) any model by describing how individual features influence the model outcome on average \parencite{Molnar2023}.
     \item \textbf{Local vs. Global}: Model-agnostic methods can be either \textit{local} or \textit{global} \parencite{Molnar2023}. Local methods are designed to explain individual predictions, while global methods should explain the model's behavior as a whole \parencite{SALEEM2022165}.
+    \item A special case of model-agnostic local explanations are \textbf{Counterfactual Explanations}, which aim to explain predictions by analyzing how the input features would need to be changed in order to change the model's prediction \parencite{wachter2017}.
     \item \textbf{Post-hoc vs. Ante-hoc}: \textit{Post-hoc} methods are applied after the model outcome has been generated, but can only explain individual outcomes without making the model workings transparent \parencite{Lipton2018}, while \textit{ante-hoc} methods are usually model-specific algorithms that aim to make all the steps taken by a model transparent. \parencite{SALEEM2022165}.
 \end{itemize}
 
@@ -145,6 +140,8 @@ In the academic literature, Explainability methods are usually categorized based
     \caption{Explainability overview, from \cite{SALEEM2022165}}
     \label{fig:explainability_overview}
 \end{figure}
+
+% Deep dive into method used here
 
 \subsection{Application of Explainability Algorithms}\label{subsec:application}
 
@@ -166,13 +163,13 @@ Subsequently, approaches to connect both concepts have been proposed in academic
 However, these concepts are only stated on theoretical level without practical implications in this paper and are therefore not directly applicable for practitioners.
 
 
-Following Zhou's line of reasoning \parencite{Zhou2022}, other important approaches to merge the ideas of Fairness and Explainability in academic literature include:
+% Following Zhou's line of reasoning \parencite{Zhou2022}, other important approaches to merge the ideas of Fairness and Explainability in academic literature include:
 
-\textbf{Explanation as a way of guaranteeing Fairness}: ... Papers!
+% \textbf{Explanation as a way of guaranteeing Fairness}: ... Papers!
 
-\textbf{Explanation as a way of shaping the perception of Fairness}: ... Papers!
+% \textbf{Explanation as a way of shaping the perception of Fairness}: ... Papers!
 
-\textbf{Perceived Fairness of feature properties}: ... Papers!
+% \textbf{Perceived Fairness of feature properties}: ... Papers!
 
 
 Another promising approach to merge the concepts of Fairness and Explainability is the identification of root-causes for a certain model behavior by identifying \textit{influential subsets} within the underlying datasets as proposed by Pradhan \parencite{Pradhan2022}\footnote{For additional information on the proposed model see https://github.com/romilapradhan/gopher}.
