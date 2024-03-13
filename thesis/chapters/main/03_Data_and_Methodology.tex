@@ -21,8 +21,6 @@ The underlying data for this analysis was obtained \textit{\href{https://ffiec.c
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
-% See ydata report
-
 The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{USDA ERS page}}. All available reports were downloaded, specifically the following datasets:
 
 \begin{itemize}
@@ -44,5 +42,43 @@ Where there were more features available than would be useful for the analysis, 
 \end{itemize}
 
 All datasets were \textit{pivoted} in order to use the attributes as feature names and \textit{indexed} by the FIPS code and the name of the respective county. After basic \textit{checks for completeness}, the feature columns were \textit{renamed} for clarity. Finally, all datasets were \textit{merged} into a single dataframe, which was then \textit{exported} as a pickle file for further use in the analysis.
+
+% Reasoning!
+
+The cleaned data are \textit{complete} in a way that there are values available for all features and for all of the 58 counties. Basic summary statistics can be found in \textbf{Table \ref{tab:enrichment_summary}}. Expectedly, there is a high correlation between some of the features, see \textbf{Figure \ref{fig:CH03_Enrichment_Correlation}}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{llllll}
+    \hline
+     & \textbf{Count} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{Max} \\
+    \hline
+    College Degree (Perc.) & 58.00 & 33.19 & 5.77 & 17.89 & 44.23 \\
+    \hline
+    Bachelor Degree or Higher (Perc.) & 58.00 & 28.55 & 12.27 & 11.77 & 60.15 \\
+    \hline
+    High School Degree (Perc.) & 58.00 & 23.77 & 5.84 & 10.17 & 38.42 \\
+    \hline
+    Less than High School Degree (Perc.) & 58.00 & 14.49 & 7.02 & 4.87 & 29.65 \\
+    \hline
+    Population (thousands) & 58.00 & 672.92 & 1,428.89 & 1.19 & 9,721.14 \\
+    \hline
+    Poverty Rate (Perc.) & 58.00 & 13.63 & 3.96 & 6.60 & 21.90 \\
+    \hline
+    Median Household Income (thousands) & 58.00 & 75.30 & 21.89 & 45.51 & 141.16 \\
+    \hline
+    Unemployment Rate (Perc.) & 58.00 & 4.84 & 2.07 & 2.40 & 14.70 \\
+    \hline
+    \end{tabularx}
+    \caption{Summary Statistics of the Enrichment Data}
+    \label{tab:enrichment_summary}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/CH03_Enrichment_Correlation.png}
+    \caption{Correlation Between the Enrichment Features}
+    \label{fig:CH03_Enrichment_Correlation}
+\end{figure}
 
 \section{Methodology}\label{sec:Methodology}

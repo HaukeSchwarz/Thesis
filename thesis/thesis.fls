@@ -1796,6 +1796,11 @@ INPUT ./chapters/main/03_Data_and_Methodology.tex
 INPUT chapters/main/03_Data_and_Methodology.tex
 INPUT ./chapters/main/03_Data_and_Methodology.tex
 INPUT chapters/main/03_Data_and_Methodology.tex
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
