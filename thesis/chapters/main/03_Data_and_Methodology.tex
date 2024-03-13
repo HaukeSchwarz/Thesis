@@ -10,12 +10,15 @@
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
-% Geography: California - Why? (Large state, high amount of data - quote results from summary table)
-% Time: 2022 (!)
-% No filter on financial institutions - Why?
-% Filter: "Single Family (1-4 Units):Site-Built" - Why?
+The underlying data for this analysis was obtained \textit{\href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via the HMDA Data Browser}}. \@
 
-The underlying data for this analysis was obtained \textit{\href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via the HMDA Data Browser}}.
+XXX UPDATE! XXX
+
+The data was filtered to only include entries from California, as it is the largest state in the US and thus provides a high amount of data. 
+The time frame was set to 2022, as it is the most recent year available (!!!!!!!!!!). No filter was applied to the financial institutions, as the analysis is not focused on the institutions themselves. 
+The data was further filtered to only include entries for single-family homes, as these are the most common type of homes and therefore provide the most data.
+
+The raw dataset resulting from these filters contains $XXX$ entries and $XXX$ features, with a total sum of loan applications amounting to $XXX$ USD.
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
@@ -31,7 +34,7 @@ The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov
 \end{itemize}
 
 In order to clean and reshape the data in a easily analyzable format, the following steps were taken\footnote{For all detail, see the corresponding cleaning notebook at !!! XXX !!!}:
-All datasets were \textit{filtered} to only contain county-level data, not the aggregated values for the full state and, in case multiple years of analysis were available, to only include the newest datapoints. 
+All datasets were \textit{filtered} to only contain CA county-level data, not the aggregated values for the full state of California and, in case multiple years of analysis were available, to only include the newest datapoints. 
 Where there were more features available than would be useful for the analysis, the datasets were \textit{reduced} to only include the most relevant features, being:
 
 \begin{itemize}
