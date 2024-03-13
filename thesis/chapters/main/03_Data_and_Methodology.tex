@@ -10,12 +10,39 @@
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
+% Geography: California - Why? (Large state, high amount of data - quote results from summary table)
+% Time: 2022 (!)
+% No filter on financial institutions - Why?
+% Filter: "Single Family (1-4 Units):Site-Built" - Why?
+
 The underlying data for this analysis was obtained \textit{\href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via the HMDA Data Browser}}.
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
-The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{USDA ERS page}}.
+% See ydata report
+
+The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{USDA ERS page}}. All available reports were downloaded, specifically the following datasets:
+
+\begin{itemize}
+    \item \textbf{Poverty} (2021 latest)
+    \item \textbf{Population} (2022 latest)
+    \item \textbf{Unemployment, and Median Household Income} (annual average 2022 unemployment and 2021 median income latest)
+    \item \textbf{Education} (2017–21, 5-year average latest).
+\end{itemize}
+
+In order to clean and reshape the data in a easily analyzable format, the following steps were taken\footnote{For all detail, see the corresponding cleaning notebook at !!! XXX !!!}:
+All datasets were \textit{filtered} to only contain county-level data, not the aggregated values for the full state and, in case multiple years of analysis were available, to only include the newest datapoints. 
+Where there were more features available than would be useful for the analysis, the datasets were \textit{reduced} to only include the most relevant features, being:
+
+\begin{itemize}
+    \item \textbf{Poverty:} Only the percentage of the population living in poverty (PCTPOVALL\_2021) was included
+    \item \textbf{Population:} Only the total population (POP\_ESTIMATE\_2022) was included
+    \item \textbf{Unemployment, and Median Household Income:} The unemployment rate (Unemployment\_rate\_2022) and the median household income (Median\_Household\_Income\_2021) were included
+    \item \textbf{Education:} All relative values, i.e.\ percentages of adults with their corresponding highest degrees were included.
+\end{itemize}
+
+All datasets were \textit{pivoted} in order to use the attributes as feature names and \textit{indexed} by the FIPS code and the name of the respective county. After basic \textit{checks for completeness}, the feature columns were \textit{renamed} for clarity. Finally, all datasets were \textit{merged} into a single dataframe, which was then \textit{exported} as a pickle file for further use in the analysis.
 
 \section{Methodology}\label{sec:Methodology}
