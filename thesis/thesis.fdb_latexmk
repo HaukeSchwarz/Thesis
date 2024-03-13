@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber thesis"] 1710333492 "thesis.bcf" "thesis.bbl" "thesis" 1710343389 0
+["biber thesis"] 1710333492 "thesis.bcf" "thesis.bbl" "thesis" 1710343780 0
   "./literature/thesis_lib.bib" 1710278393 96278 6376fc5a1dd43b0ff7dbad228038414c ""
-  "thesis.bcf" 1710343387 111594 79f0d2535ec57167c0e2798be11e4f3d "pdflatex"
+  "thesis.bcf" 1710343779 111594 79f0d2535ec57167c0e2798be11e4f3d "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1710343379 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1710343389 0
-  "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1710343367 5210 8433081dc8be618b82dcaf78229a0c17 ""
+["pdflatex"] 1710343771 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1710343780 0
+  "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1710343760 5243 15fd0d0d86b854700ce323a42083744c ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc" 1659260033 3136 aac2e2476de8af6c827239df395814ee ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -288,14 +288,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1710343387 25549 54c186949e77b422581df8967cd2924d "pdflatex"
+  "thesis.aux" 1710343779 25549 8b8581a41136937d696a6dc7a2048769 "pdflatex"
   "thesis.bbl" 1710333496 129327 46231a72b15db0edf5ab4289d33935e7 "biber thesis"
-  "thesis.frm" 1710343387 472 40f08d9cda9a3dc92308c494665f9421 "pdflatex"
-  "thesis.lof" 1710343387 518 ffb315a0bf29f8860c7098546cd8a0a7 "pdflatex"
-  "thesis.lot" 1710343387 353 a01c599f75f006d7d234fe92aed5b2e5 "pdflatex"
-  "thesis.run.xml" 1710343387 2382 cf642240fff5b9255eaaf6e6e0ba6f2b "pdflatex"
-  "thesis.tex" 1710343367 5210 8433081dc8be618b82dcaf78229a0c17 ""
-  "thesis.toc" 1710343387 2193 e9766eedc3a2914e9c4ed82b59440f02 "pdflatex"
+  "thesis.frm" 1710343779 472 40f08d9cda9a3dc92308c494665f9421 "pdflatex"
+  "thesis.lof" 1710343779 518 ffb315a0bf29f8860c7098546cd8a0a7 "pdflatex"
+  "thesis.lot" 1710343779 353 a01c599f75f006d7d234fe92aed5b2e5 "pdflatex"
+  "thesis.run.xml" 1710343779 2382 cf642240fff5b9255eaaf6e6e0ba6f2b "pdflatex"
+  "thesis.tex" 1710343760 5243 15fd0d0d86b854700ce323a42083744c ""
+  "thesis.toc" 1710343779 2193 e9766eedc3a2914e9c4ed82b59440f02 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
