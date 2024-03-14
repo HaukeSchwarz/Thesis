@@ -22,7 +22,24 @@ The data was further filtered to only include entries for single-family homes, a
 The raw dataset resulting from these filters contains $XXX$ entries and $XXX$ features, with a total sum of loan applications amounting to $XXX$ USD. The column types are $XXX$ of numeric, and $XXX$ of object dtype. $XXX$ columns contain missing values. \@
 Due to the size of the dataset, a step-by-step description of the analysis and all cleaning steps taken is too extensive for this thesis. Therefore, this chapter will only outline the key assumptions incorporated, decisions made, and steps taken for data analysis and cleaning. For full detail, please refer to the corresponding notebook at XXX.
 
+After the initial EDA, the first step was to \textit{drop} all features that are not relevant for the analysis in order to reduce dimensionality and improve the model learning process. \@ 
+In this initial step, the amount of features was reduced from $XXX$ to $XXX$ with the following reasoning:
+\begin{itemize}
+    \item \textbf{activity\_year}: Does not provide value as the year is already pre-filtered
+    \item \textbf{lei}: Does not matter as all financial institutions are used
+    \item \textbf{derived\_msa-md}: Does not matter as county code is the geographical variable used in the analysis
+    \item \textbf{state\_code}: Does not matter as the state is already pre-filtered
+    \item \textbf{census\_tract}: Not relevant for the analysis
+    \item \textbf{derived\_dwelling\_category}: Does not matter as the building category is already pre-filtered
+    \item All information regarding \textbf{co-applicants} were dropped as the focus is on the main applicant
+    \item All available \textbf{Reasons for Denial} were dropped as the focus is only on \textit{if} the loan was approved
+    \item The dataset contains geographical information based on census tracts. As, however, the analysis of geographical features will be based on county level, the \textbf{census tract} is dropped.
+\end{itemize}
 
+The dataset contains both actual information on protected attributes (e.g.\ \mbox{applicant\_ethnicity-1} to \mbox{applicant\_ethniciy-5}) and derived information that aggregate the former into one overarching category (e.g.\ \mbox{derived\_ethnicity}). 
+As this analysis focuses on fairness concerns, where such protected attributes play an important role, the derived information is dropped in favor of the actual information in order to achieve a higher granularity of this important type of data.  
+However, as only few applicants have made use of all the fields (for example, only 0.07\% of applicants have reported more than two ethnicities), the amount of features is reduced by only including the top two selections for each protected attribute. 
+This is done in order to avoid a high amount of missing values in the dataset as well as to strike a balance between the amount of features (and therefore model performance) and the granularity of the data.
 
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
