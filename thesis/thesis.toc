@@ -5,7 +5,7 @@
 \contentsline {chapter}{\nonumberline List of Figures}{III}{chapter*.3}%
 \contentsline {chapter}{\nonumberline List of Tables}{IV}{chapter*.4}%
 \contentsline {chapter}{List of Formulas}{V}{chapter*.5}%
-\contentsline {chapter}{List of Abbreviations}{VI}{table.0.1}%
+\contentsline {chapter}{List of Abbreviations}{VII}{table.0.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Objective and Significance}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Summary of the Main Findings}{1}{section.1.2}%
