@@ -26,7 +26,7 @@ In this initial step, the amount of features was reduced from $XXX$ to $XXX$ wit
     \item \textbf{derived\_msa-md}: Does not matter as county code is the geographical variable used in the analysis
     \item \textbf{state\_code}: Does not matter as the state is already pre-filtered
     \item \textbf{census\_tract}: Not relevant for the analysis
-    \item \textbf{derived\_dwelling\_category}: Does not matter as the building category is already pre-filtered
+    \item \textbf{derived\_dwelling\_category} and \textbf{construction\_method}: Do not matter as the building category is already pre-filtered
     \item All information regarding \textbf{co-applicants} were dropped as the focus is on the main applicant
     \item All available \textbf{Reasons for Denial} were dropped as the focus is only on \textit{if} the loan was approved
     \item The dataset contains geographical information based on census tracts. As, however, the analysis of geographical features will be based on county level, the \textbf{census tract} is dropped.
@@ -41,7 +41,7 @@ This is done in order to avoid a high amount of missing values in the dataset as
 % Handling of other columns with a lot of NA
 % Exempt: Reasoning for imputation, procedure, graphs
 % Remove initial outliers to check distribution for initial imputation - comment on distributions
-% Data Types: Except inferral and categorization
+% Data Types: Except inferral and categorization - note: Some of the columns need further recasting (e.g. float to int / vice versa or numerical to categorical). At this stage however, the data is prepared for the next steps.
 
 
 \section{Enrichment Data}\label{sec:Enrichment_Data}
