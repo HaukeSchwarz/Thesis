@@ -1,12 +1,8 @@
-\chapter{Data and Methodology}\label{ch:Data_and_Methodology}
+\chapter{Data}\label{ch:Data}
 
 
 
-\section{Data}\label{sec:Data}
-
-
-
-\subsection{HMDA Data}\label{subsec:HMDA_Data}
+\section{HMDA Data}\label{sec:HMDA_Data}
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
@@ -41,8 +37,14 @@ As this analysis focuses on fairness concerns, where such protected attributes p
 However, as only few applicants have made use of all the fields (for example, only 0.07\% of applicants have reported more than two ethnicities), the amount of features is reduced by only including the top two selections for each protected attribute. 
 This is done in order to avoid a high amount of missing values in the dataset as well as to strike a balance between the amount of features (and therefore model performance) and the granularity of the data.
 
+% Dropping of columns with high amount of NA including reasoning (add one or two pictures from missingno)
+% Handling of other columns with a lot of NA
+% Exempt: Reasoning for imputation, procedure, graphs
+% Remove initial outliers to check distribution for initial imputation - comment on distributions
+% Data Types: Except inferral and categorization
 
-\subsection{Enrichment Data}\label{subsec:Enrichment_Data}
+
+\section{Enrichment Data}\label{sec:Enrichment_Data}
 
 % Follow structure from presentation Ana: From where, why, which steps etc. - probably add in appendix the code for the enrichment?
 
@@ -105,5 +107,3 @@ The cleaned data are \textit{complete} in a way that there are values available 
     \caption{Correlation Between the Enrichment Features}
     \label{fig:CH03_Enrichment_Correlation}
 \end{figure}
-
-\section{Methodology}\label{sec:Methodology}
