@@ -91,3 +91,4 @@ target/
 # Files ignored
 *.pdf
 *.csv
+*HMDA_cleaned.pkl
