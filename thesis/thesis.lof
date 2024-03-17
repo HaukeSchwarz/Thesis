@@ -4,7 +4,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Explainability overview, from \blx@tocontentsinit {0}\cite {SALEEM2022165}\relax }}{7}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Correlation Between the Enrichment Features\relax }}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual Inspection of Missingness in the missingno package\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation Between the Enrichment Features\relax }}{13}{figure.caption.10}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 

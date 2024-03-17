@@ -1,6 +1,11 @@
 \chapter{Data}\label{ch:Data}
 
-
+% Start with ‘what’ 
+%  • What is the research question? And what kind of methods are suitable to answer it? 
+%  • What kind of data you need to answer this? How was it collected? 
+% Start with ‘why’ 
+%  • Why is this valid methodology? 
+% Don’t forget to cite all relevant papers  - probably on mortgage data or HMDA specifically
 
 \section{HMDA Data}\label{sec:HMDA_Data}
 
@@ -37,9 +42,27 @@ As this analysis focuses on fairness concerns, where such protected attributes p
 However, as only few applicants have made use of all the fields (for example, only 0.07\% of applicants have reported more than two ethnicities), the amount of features is reduced by only including the top two selections for each protected attribute. 
 This is done in order to avoid a high amount of missing values in the dataset as well as to strike a balance between the amount of features (and therefore model performance) and the granularity of the data.
 
-% Dropping of columns with high amount of NA including reasoning (add one or two pictures from missingno)
-% Handling of other columns with a lot of NA
-% Exempt: Reasoning for imputation, procedure, graphs
+Several columns contain a very high amount of missing values XXX DETAIL OF FINAL DATA HERE? XXX. In order to assess how to proceed with them, the missingness was analyzed closer. While the amount of available features would have allowed for the \textit{dropping} of predominantly missing feature columns, this might have introduced bias or impacted variable distributions if the missingness was not completely at random (MCAR).
+Therefore, missingness was analyzed numerically and visually (see \textbf{Figure \ref{fig:CH03_OLD!_Missingno_Completeness}} for how the missingno package was utilized to scan for patterns in the missingness), leading to the following procedure decision for the features with the highest amounts of missing values:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/CH03_OLD!_Missingno_Completeness.png}
+    \caption{Visual Inspection of Missingness in the missingno package}
+    \label{fig:CH03_OLD!_Missingno_Completeness}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{multifamily\_affordable\_units}: This column seems to be erroneous, as it contains only one unique value ("Exempt"), whereas it is supposed to contain percentages according to the documentation. It is therefore dropped.
+    \item \textbf{total\_points\_and\_fees}, \textbf{prepayment\_penalty\_term}, \textbf{lender\_credits}, \textbf{discount\_points}, and \textbf{intro\_rate\_period}: These might have been interesting to include in the analysis. However, the sheer amount of missingness (which seems to be MCAR from visual inspection) makes them unsuitable for the analysis. They are therefore dropped.
+    \item \textbf{aus-2}: This column refers to a second underwriting system for the loan. As the vast majority of loans only have one underwriting system and, opposed to the second variables for the protected attributes, information on aus-2 does not add value to the analysis, this column is dropped.
+    \item \textbf{applicant\_ethnicity-2} and \textbf{applicant\_race-2}: As discussed above, these are part of the highly important protected attributes. Even though the amount of missing values is high and imputation is not suitable here for logical reasons, these columns will be kept including their missing values in order to not lose the granularity of the data.
+    \item \textbf{total\_loan\_costs} and \textbf{origination\_charges} are (expectably) heavily correlated. In order to benefit the analysis, one of them (origination\_charges) is dropped, while the other is kept for further analysis on how to handle the missing values.
+    \item \textbf{rate\_spread} and \textbf{interest\_rate} are highly important variables for the analysis. However, the amount of missing values is high. As the missingness seems to be MAR from visual inspection, imputation of the missing values will be tried.
+    \item \textbf{debt\_to\_income\_ratio} and \textbf{loan\_to\_value\_ratio} are highly correlated. In order to benefit the analysis, one of them (debt\_to\_income\_ratio) is dropped, while the other is kept for further analysis on how to handle the missing values.
+\end{itemize}
+
+% Exempt: Reasoning for imputation, procedure, graphs - not strictly logical but ok for modelling reasons and not many values
 % Remove initial outliers to check distribution for initial imputation - comment on distributions
 % Data Types: Except inferral and categorization - note: Some of the columns need further recasting (e.g. float to int / vice versa or numerical to categorical). At this stage however, the data is prepared for the next steps.
 % Missingness: Four different strategies based on type of missingness (go into detail imputation and maybe use graph or two)
@@ -108,7 +131,7 @@ The cleaned data are \textit{complete} in a way that there are values available 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/CH03_Enrichment_Correlation.png}
+    \includegraphics[width=0.85\textwidth]{images/CH03_Enrichment_Correlation.png}
     \caption{Correlation Between the Enrichment Features}
     \label{fig:CH03_Enrichment_Correlation}
 \end{figure}
