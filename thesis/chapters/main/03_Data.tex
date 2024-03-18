@@ -20,7 +20,7 @@ The data was filtered to only include entries from California, as it is the larg
 The time frame was set to 2022, as it is the most recent year available (!!!!!!!!!!). No filter was applied to the financial institutions, as the analysis is not focused on the institutions themselves. 
 The data was further filtered to only include entries for single-family homes, as these are the most common type of homes and therefore provide the most data.
 
-The raw dataset resulting from these filters contains $XXX$ entries and $XXX$ features, with a total sum of loan applications amounting to $XXX$ USD. The column types are $XXX$ of numeric, and $XXX$ of object dtype. $XXX$ columns contain missing values. \@
+The raw dataset resulting from these filters contained $XXX$ entries and $XXX$ features, with a total sum of loan applications amounting to $XXX$ USD. The column types were $XXX$ of numeric, and $XXX$ of object dtype. $XXX$ columns contained missing values. \@
 Due to the size of the dataset, a step-by-step description of the analysis and all cleaning steps taken is too extensive for this thesis. Therefore, this chapter will only outline the key assumptions incorporated, decisions made, and steps taken for data analysis and cleaning. For full detail, please refer to the corresponding notebook at XXX.
 
 After the initial EDA, the first step was to \textit{drop} all features that are not relevant for the analysis in order to reduce dimensionality and improve the model learning process. \@ 
@@ -37,12 +37,12 @@ In this initial step, the amount of features was reduced from $XXX$ to $XXX$ wit
     \item The dataset contains geographical information based on census tracts. As, however, the analysis of geographical features will be based on county level, the \textbf{census tract} is dropped.
 \end{itemize}
 
-The dataset contains both actual information on protected attributes (e.g.\ \mbox{applicant\_ethnicity-1} to \mbox{applicant\_ethniciy-5}) and derived information that aggregate the former into one overarching category (e.g.\ \mbox{derived\_ethnicity}). 
-As this analysis focuses on fairness concerns, where such protected attributes play an important role, the derived information is dropped in favor of the actual information in order to achieve a higher granularity of this important type of data.  
-However, as only few applicants have made use of all the fields (for example, only 0.07\% of applicants have reported more than two ethnicities), the amount of features is reduced by only including the top two selections for each protected attribute. 
-This is done in order to avoid a high amount of missing values in the dataset as well as to strike a balance between the amount of features (and therefore model performance) and the granularity of the data.
+The dataset contained both actual information on protected attributes (e.g.\ \mbox{applicant\_ethnicity-1} to \mbox{applicant\_ethniciy-5}) and derived information that aggregate the former into one overarching category (e.g.\ \mbox{derived\_ethnicity}). 
+As this analysis focuses on fairness concerns, where such protected attributes play an important role, the derived information was dropped in favor of the actual information in order to achieve a higher granularity of this important type of data.  
+However, as only few applicants have made use of all the fields (for example, only 0.07\% of applicants have reported more than two ethnicities), the amount of features was reduced by only including the top two selections for each protected attribute. 
+This was done in order to avoid a high amount of missing values in the dataset as well as to strike a balance between the amount of features (and therefore model performance) and the granularity of the data.
 
-Several columns contain a very high amount of missing values XXX DETAIL OF FINAL DATA HERE? XXX. In order to assess how to proceed with them, the missingness was analyzed closer. While the amount of available features would have allowed for the \textit{dropping} of predominantly missing feature columns, this might have introduced bias or impacted variable distributions if the missingness was not completely at random (MCAR).
+Several columns contained a very high amount of missing values XXX DETAIL OF FINAL DATA HERE? XXX. In order to assess how to proceed with them, the missingness was analyzed closer. While the amount of available features would have allowed for the \textit{dropping} of predominantly missing feature columns, this might have introduced bias or impacted variable distributions if the missingness was not completely at random (MCAR).
 Therefore, missingness was analyzed numerically and visually (see \textbf{Figure \ref{fig:CH03_OLD!_Missingno_Completeness}} for how the missingno package was utilized to scan for patterns in the missingness), leading to the following procedure decision for the features with the highest amounts of missing values:
 
 \begin{figure}[h]
