@@ -368,6 +368,63 @@
       \verb https://www.federalreserve.gov/econres/feds/how-much-does-racial-bias-affect-mortgage-lending.htm
       \endverb
     \endentry
+    \entry{Bogen2020}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e55a6eac4ba89479e807e30fd9c4c0b8}{%
+           family={Bogen},
+           familyi={B\bibinitperiod},
+           given={Miranda},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e625c8a90bb69376547030b6091035f}{%
+           family={Rieke},
+           familyi={R\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb7cfda96a7a346733b3f8eb4633c005}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Shazeda},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{28a939f68f26a22060e29d932bc79474}
+      \strng{fullhash}{e96c32d9fa0c76acfaecafd01e31cba1}
+      \strng{bibnamehash}{e96c32d9fa0c76acfaecafd01e31cba1}
+      \strng{authorbibnamehash}{e96c32d9fa0c76acfaecafd01e31cba1}
+      \strng{authornamehash}{28a939f68f26a22060e29d932bc79474}
+      \strng{authorfullhash}{e96c32d9fa0c76acfaecafd01e31cba1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Organizations cannot address demographic disparities that they cannot see. Recent research on machine learning and fairness has emphasized that awareness of sensitive attributes, such as race and sex, is critical to the development of interventions. However, on the ground, the existence of these data cannot be taken for granted.This paper uses the domains of employment, credit, and healthcare in the United States to surface conditions that have shaped the availability of sensitive attribute data. For each domain, we describe how and when private companies collect or infer sensitive attribute data for antidiscrimination purposes. An inconsistent story emerges: Some companies are required by law to collect sensitive attribute data, while others are prohibited from doing so. Still others, in the absence of legal mandates, have determined that collection and imputation of these data are appropriate to address disparities.This story has important implications for fairness research and its future applications. If companies that mediate access to life opportunities are unable or hesitant to collect or infer sensitive attribute data, then proposed techniques to detect and mitigate bias in machine learning models might never be implemented outside the lab. We conclude that today's legal requirements and corporate practices, while highly inconsistent across domains, offer lessons for how to approach the collection and inference of sensitive data in appropriate circumstances. We urge stakeholders, including machine learning practitioners, to actively help chart a path forward that takes both policy goals and technical needs into account.}
+      \field{booktitle}{Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency}
+      \field{isbn}{9781450369367}
+      \field{series}{FAT* '20}
+      \field{title}{Awareness in practice: tensions in access to sensitive attribute data for antidiscrimination}
+      \field{year}{2020}
+      \field{pages}{492\bibrangedash 500}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3351095.3372877
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3351095.3372877
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3351095.3372877
+      \endverb
+    \endentry
     \entry{Burrell2016}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e4fb32e340f29cc5617fb36a94abe804}{%
@@ -1108,6 +1165,38 @@
       \verb https://doi.org/10.1145/2783258.2783311
       \endverb
       \keyw{machine learning,fairness,disparate impact}
+    \endentry
+    \entry{Ghoba}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d020ed37e43c2c581c802b13e056cfdc}{%
+           family={Ghoba},
+           familyi={G\bibinitperiod},
+           given={Sama},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4694eb42b0761c0b44b5e6f1267d92ee}{%
+           family={Colaner},
+           familyi={C\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4d6ea92c6dc18dd413e875f61182f305}
+      \strng{fullhash}{4d6ea92c6dc18dd413e875f61182f305}
+      \strng{bibnamehash}{4d6ea92c6dc18dd413e875f61182f305}
+      \strng{authorbibnamehash}{4d6ea92c6dc18dd413e875f61182f305}
+      \strng{authornamehash}{4d6ea92c6dc18dd413e875f61182f305}
+      \strng{authorfullhash}{4d6ea92c6dc18dd413e875f61182f305}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{35th Conference on Neural Information Processing Systems (NeurIPS 2021), Sydney, Australia}
+      \field{month}{12}
+      \field{title}{Counterfactual Fairness in Mortgage Lending via Matching and Randomization}
+      \field{year}{2021}
     \endentry
     \entry{Guidotti2018}{article}{}
       \name{author}{6}{}{%
@@ -2072,6 +2161,80 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0925231222012218
       \endverb
       \keyw{Artificial intelligence,Deep neural networks,Black box Models,Explainable artificial intelligence,Global interpretation}
+    \endentry
+    \entry{Singh2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=12c3d092e1f20293653dbcaa29e7dce5}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Arashdeep},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71ae7b3e6f2021b413fb074cc539b637}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Jashandeep},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=018d724e6e7b10415a8ff6d088c7e986}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Ariba},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03916c48bb0313ed7fe0ac3630b7d410}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Amar},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{3e72b7bbffd9552672190c05bfc3f223}
+      \strng{fullhash}{94d218c4ef120b73047cbf8ed132b119}
+      \strng{bibnamehash}{3e72b7bbffd9552672190c05bfc3f223}
+      \strng{authorbibnamehash}{3e72b7bbffd9552672190c05bfc3f223}
+      \strng{authornamehash}{3e72b7bbffd9552672190c05bfc3f223}
+      \strng{authorfullhash}{94d218c4ef120b73047cbf8ed132b119}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Machine learning (ML) models are increasingly being used for high-stake applications that can greatly impact people’s lives. Sometimes, these models can be biased toward certain social groups on the basis of race, gender, or ethnicity. Many prior works have attempted to mitigate this “model discrimination” by updating the training data (pre-processing), altering the model learning process (in-processing), or manipulating the model output (post-processing). However, more work can be done in extending this situation to intersectional fairness, where we consider multiple sensitive parameters (e.g., race) and sensitive options (e.g., black or white), thus allowing for greater real-world usability. Prior work in fairness has also suffered from an accuracy–fairness trade-off that prevents both accuracy and fairness from being high. Moreover, the previous literature has not clearly presented holistic fairness metrics that work with intersectional fairness. In this paper, we address all three of these problems by (a) creating a bias mitigation technique called DualFair and (b) developing a new fairness metric (i.e., AWI, a measure of bias of an algorithm based upon inconsistent counterfactual predictions) that can handle intersectional fairness. Lastly, we test our novel mitigation method using a comprehensive U.S. mortgage lending dataset and show that our classifier, or fair loan predictor, obtains relatively high fairness and accuracy metrics.}
+      \field{issn}{2504-4990}
+      \field{journaltitle}{Machine Learning and Knowledge Extraction}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shorttitle}{Developing a {Novel} {Fair}-{Loan} {Classifier} through a {Multi}-{Sensitive} {Debiasing} {Pipeline}}
+      \field{title}{Developing a {Novel} {Fair}-{Loan} {Classifier} through a {Multi}-{Sensitive} {Debiasing} {Pipeline}: {DualFair}}
+      \field{urlday}{19}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{4}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{240\bibrangedash 253}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.3390/make4010011
+      \endverb
+      \verb{file}
+      \verb :Singh2022 - Developing a Novel Fair Loan Classifier through a Multi Sensitive Debiasing Pipeline_ DualFair.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2504-4990/4/1/11
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2504-4990/4/1/11
+      \endverb
+      \keyw{machine learning,algorithmic fairness,bias mitigation,mortgage lending,accuracy–fairness trade-off}
     \endentry
     \entry{Teodorescu2020}{article}{}
       \name{author}{4}{}{%
