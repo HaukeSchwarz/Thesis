@@ -62,12 +62,10 @@ Even though recent studies have suggested that racial bias might not be as preva
 it is still apparent that bias-related fairness concerns are a major issue in algorithmic decision making \parencite{Mehrabi2021}.
 Moreover, race is just one of the protected attributes present in the dataset analyzed in this thesis, meaning that other features present in the data can still be a source of unfairness.
 
-
-!!! Update once a final decision has been made !!!
 There already is extensive research available on the topic of fairness in algorithmic decision making, even specifically to the field of mortgage lending.
-Nevertheless, this thesis aims to make a novel contribution to this field not only by its combined analysis of Fairness and Explainability (as will be discussed in chapter XXX),
-but also by the data being used: The analyses in this thesis are based on the 2023 HMDA (Home Mortgage Disclosure Act) dataset, which has only been made publicly available in March 2024.
-Moreover, the dataset has been enriched with additional data sources based on geographical information, which will be discussed in chapter XXX.
+Nevertheless, this thesis aims to make a novel contribution to this field not only by its combined analysis of Fairness and Explainability (as will be discussed in \textbf{chapter \ref{ch:Data_and_Methodology}}),
+but also by the data being used: The analyses in this thesis are based on the 2022 HMDA (Home Mortgage Disclosure Act) dataset, which is a more recent data source than the academic literature analyzed relied upon.
+Moreover, the dataset has been enriched with additional data sources based on geographical information, which will be discussed in \textbf{chapter \ref{subsec:Enrichment_Data}}.
 This enrichment does not only serve the purpose of an improved Explainability, but also aims to tackle the issue of \textit{indirect discrimination} (i.e.\ discrimination through non-sensitive attributes like zip codes being correlated with sensitive attributes like race), 
 which has been discussed in academic literature as a major issue in the field of Fairness \parencite{Mehrabi2021}.
 
@@ -100,17 +98,24 @@ A concrete approach on how to implement fair ML algorithms in organizations and 
 The proposed framework has three phases: \textit{Design}, \textit{Development} and \textit{Post-hoc Model Assessment}. Based on the presence and relevance of protected attributes (see \autoref{subsec:overview}), the authors propose different decision steps to rule out potential unfairness in the algorithm implementation.
 Although being out of the scope of this thesis, this framework is a promising approach to implement fair ML algorithms in practice.
 
+\subsection{Applications of Fairness in Mortgage Lending}\label{subsec:mortgage_lending_fairness}
+
+Several studies and papers have been concerned with specifically analyzing the fairness of algorithmic decision making in the field of mortgage lending.
+Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they used Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
+Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
+
+Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
+While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
+
 \section{Explainability and Interpretability in Machine Learning}\label{sec:explainability}
 
 Given the constantly increasing research into AI Interpretability and Explainability, there is surprisingly little consent on how to precisely define these concepts and how to distinguish them \parencite{Linardatos2021}. 
 While both terms are used interchangeably in a multitude of publications, several studies have tried to distinguish both concepts in terms of their scope, giving rise to terms like 'xAI' (Explainable Artificial Intelligence) \parencite{Gunning2019} and occasionally also introducing related concepts like \textit{Understandability}, \textit{Comprehensibility} \parencite{Guidotti2018}, or \textit{Intelligibility} \parencite{Caruana2015}.
 
-
 One of the most adapted definitions for \textit{Interpretability} has been made by Doshi-Velez and Kim, who define it as the “ability to explain or to present in understandable terms to a human” \parencite{DoshiVelez2017}. 
 However, this definition does not only heavily intersect with common definitions of Explainability, it also appears to be rather general and not easily applicable in a scientific context. 
 Among other unclear definitions, this has led Lipton to state that in the scientific discussion, the term Interpretability is “ill-defined”, leading to many papers in this research area only exhibiting a “quasi-scientific character” \parencite{Lipton2018}, while other authors deemed Interpretability to be a “broad, poorly defined concept” \parencite{Murdoch2019}. 
 Usually, the concept of Interpretability is focused on the ability to logically comprehend the inner workings of AI algorithms, i.e.\ the user being able to predict outputs from inputs~\parencite{Kim2016}.
-
 
 \textit{Explainability} or \textit{xAI} (which will be used interchangeably with the term Interpretability in this work), even though being subject to a similarly wide range of definitions, is usually defined to be more concerned with explaining the rationale behind decisions made to generate trust instead of precisely dissecting the inner workings mathematically \parencite{Gunning2019}. 
 Compared to interpretable AI, which has been discussed in academic literature for a comparably longer timeframe, Explainability is a newer concept, which however seems to gather momentum in academic interest very fast, most likely due to the more and more widespread adoption of not inherently explainable Deep Learning Models \parencite{BarredoArrieta2020}.
@@ -144,11 +149,6 @@ In the academic literature, Explainability methods are usually categorized based
 
 % Deep dive into method used here
 
-\subsection{Application of Explainability Algorithms}\label{subsec:application}
-
-%To-Do:
-%After decision on A/B/C and model to be used: Find similar examples on similar data
-
 \subsection{Explainability and Fairness}\label{subsec:explainability_fairness}
 
 In order to conclude this literature review, this section will evaluate how the the concepts of Fairness and Explainability are related to each other, showing that the analysis of each adds separate value to this thesis.
@@ -180,3 +180,6 @@ By combining Explainability criteria ('Why is a certain subgroup influential on 
 %Go through sources of Zhou and list important ones
 %Mention specifically newly added analysis in this thesis
 %Circle back to introduction: Why do both add value?
+
+This thesis will add value to the discussion of Fairness and Explainability in Machine Learning by providing a novel approach to the analysis of both concepts in the field of mortgage lending: 
+By using explainability algorithms and enrichment data, the analysis of fairness will be supported and iteratively optimised.

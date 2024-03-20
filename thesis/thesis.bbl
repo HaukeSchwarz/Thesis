@@ -1917,6 +1917,64 @@
       \verb https://www.pnas.org/doi/full/10.1073/pnas.1900654116
       \endverb
     \endentry
+    \entry{Nam2022}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b2ffe898894c6db14b6a665172d81763}{%
+           family={Nam},
+           familyi={N\bibinitperiod},
+           given={Tong-yob},
+           giveni={T\bibinithyphendelim y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b286727f863a3ccb09171e68ed1c2fa6}{%
+           family={Yun},
+           familyi={Y\bibinitperiod},
+           given={Hayong},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{e4de589f76043b75e0b8a2325645e64b}
+      \strng{fullhash}{e4de589f76043b75e0b8a2325645e64b}
+      \strng{bibnamehash}{e4de589f76043b75e0b8a2325645e64b}
+      \strng{authorbibnamehash}{e4de589f76043b75e0b8a2325645e64b}
+      \strng{authornamehash}{e4de589f76043b75e0b8a2325645e64b}
+      \strng{authorfullhash}{e4de589f76043b75e0b8a2325645e64b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper uses a machine-learning-based framework to analyze lending decisions. We develop an adversarial learning model that learns the mortgage lending rules for non-minority borrowers and decompose loan decisions into model explained, favorable disagreement, and unfavorable disagreement segments by comparing lenders’ decisions against model predictions. We apply this approach to HMDA data and illustrate various ways to explore differences across different applicant groups, such as the presence of asymmetric disagreement of loan decisions with ML predictions, linking to ex-ante applicant attributes and to ex-post loan performances. The decomposed loan decisions can further uncover economically meaningful information beyond the aggregated counterpart.}
+      \field{month}{10}
+      \field{number}{4261484}
+      \field{shorttitle}{Algorithms and {Fairness} in {Lending} {Markets}}
+      \field{title}{Algorithms and {Fairness} in {Lending} {Markets}: {When} {Do} {Humans} and {Machines} {Disagree}?}
+      \field{type}{techreport}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.4261484
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:https\://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4261484_code410573.pdf?abstractid=4261484&mirid=1:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=4261484
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=4261484
+      \endverb
+      \keyw{fair lending,machine learning,anomaly detection,generative adversarial network.}
+    \endentry
     \entry{Deepak2021}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1836ce1e72a133641077f8df764789c8}{%
@@ -2162,6 +2220,67 @@
       \endverb
       \keyw{Artificial intelligence,Deep neural networks,Black box Models,Explainable artificial intelligence,Global interpretation}
     \endentry
+    \entry{Sharma2022}{report}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2ebc97c1eab4d7f7cc603b0a80ad4c33}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Shubham},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9d765b8fa85488f34e4b0abdf160c3d}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Jette},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a42c5ff0154e1a6dbc0fb496130986db}{%
+           family={Ghosh},
+           familyi={G\bibinitperiod},
+           given={Joydeep},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{cd5ebb29056cfd0aeaae900de0ffd14b}
+      \strng{fullhash}{9a485b0bcbc39f187a5672924ee6b5be}
+      \strng{bibnamehash}{9a485b0bcbc39f187a5672924ee6b5be}
+      \strng{authorbibnamehash}{9a485b0bcbc39f187a5672924ee6b5be}
+      \strng{authornamehash}{cd5ebb29056cfd0aeaae900de0ffd14b}
+      \strng{authorfullhash}{9a485b0bcbc39f187a5672924ee6b5be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Three key properties that are desired of trustworthy machine learning models deployed in high-stakes environments are fairness, explainability, and an ability to account for various kinds of "drift". While drifts in model accuracy, for example due to covariate shift, have been widely investigated, drifts in fairness metrics over time remain largely unexplored. In this paper, we propose FEAMOE, a novel "mixture-of-experts" inspired framework aimed at learning fairer, more explainable/interpretable models that can also rapidly adjust to drifts in both the accuracy and the fairness of a classifier. We illustrate our framework for three popular fairness measures and demonstrate how drift can be handled with respect to these fairness constraints. Experiments on multiple datasets show that our framework as applied to a mixture of linear experts is able to perform comparably to neural networks in terms of accuracy while producing fairer models. We then use the large-scale HMDA dataset and show that while various models trained on HMDA demonstrate drift with respect to both accuracy and fairness, FEAMOE can ably handle these drifts with respect to all the considered fairness measures and maintain model accuracy as well. We also prove that the proposed framework allows for producing fast Shapley value explanations, which makes computationally efficient feature attribution based explanations of model decisions readily available via FEAMOE.}
+      \field{month}{10}
+      \field{note}{arXiv:2210.04995 [cs] type: article}
+      \field{shorttitle}{{FEAMOE}}
+      \field{title}{{FEAMOE}: {Fair}, {Explainable} and {Adaptive} {Mixture} of {Experts}}
+      \field{type}{techreport}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2210.04995
+      \endverb
+      \verb{file}
+      \verb :Sharma2022 - FEAMOE_ Fair, Explainable and Adaptive Mixture of Experts.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2210.04995
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2210.04995
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computers and Society}
+    \endentry
     \entry{Singh2022}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=12c3d092e1f20293653dbcaa29e7dce5}{%
@@ -2235,6 +2354,76 @@
       \verb https://www.mdpi.com/2504-4990/4/1/11
       \endverb
       \keyw{machine learning,algorithmic fairness,bias mitigation,mortgage lending,accuracy–fairness trade-off}
+    \endentry
+    \entry{So2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fee330aa685491e9e7c4844d2547abce}{%
+           family={So},
+           familyi={S\bibinitperiod},
+           given={Wonyoung},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85bc23b42b9358452cdecb08f7df05c1}{%
+           family={Lohia},
+           familyi={L\bibinitperiod},
+           given={Pranay},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea8f8270c6d15d89a58c55bcf1947c57}{%
+           family={Pimplikar},
+           familyi={P\bibinitperiod},
+           given={Rakesh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bda08c4ff2da147e664df5abf84fbaca}{%
+           family={Hosoi},
+           familyi={H\bibinitperiod},
+           given={A.E.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa14be7f7438870db52252e1f969def5}{%
+           family={D'Ignazio},
+           familyi={D\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Seoul, Republic of Korea}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{629796e52617a7289b97b82e1fe4dc3d}
+      \strng{fullhash}{2ef7601e1ccdf8369e1d8fc51ef389d3}
+      \strng{bibnamehash}{629796e52617a7289b97b82e1fe4dc3d}
+      \strng{authorbibnamehash}{629796e52617a7289b97b82e1fe4dc3d}
+      \strng{authornamehash}{629796e52617a7289b97b82e1fe4dc3d}
+      \strng{authorfullhash}{2ef7601e1ccdf8369e1d8fc51ef389d3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fairness in Machine Learning (ML) has mostly focused on interrogating the fairness of a particular decision point with assumptions made that the people represented in the data have been fairly treated throughout history. However, fairness cannot be ultimately achieved if such assumptions are not valid. This is the case for mortgage lending discrimination in the US, which should be critically understood as the result of historically accumulated injustices that were enacted through public policies and private practices including redlining, racial covenants, exclusionary zoning, and predatory inclusion, among others. With the erroneous assumptions of historical fairness in ML, Black borrowers with low income and low wealth are considered as a given condition in a lending algorithm, thus rejecting loans to them would be considered a “fair” decision even though Black borrowers were historically excluded from homeownership and wealth creation. To emphasize such issues, we introduce case studies using contemporary mortgage lending data as well as historical census data in the US. First, we show that historical housing discrimination has differentiated each racial group’s baseline wealth which is a critical input for algorithmically determining mortgage loans. The second case study estimates the cost of housing reparations in the algorithmic lending context to redress historical harms because of such discriminatory housing policies. Through these case studies, we envision what reparative algorithms would look like in the context of housing discrimination in the US. This work connects to emerging scholarship on how algorithmic systems can contribute to redressing past harms through engaging with reparations policies and programs.}
+      \field{booktitle}{Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency}
+      \field{isbn}{9781450393522}
+      \field{series}{FAccT '22}
+      \field{title}{Beyond Fairness: Reparative Algorithms to Address Historical Injustices of Housing Discrimination in the US}
+      \field{year}{2022}
+      \field{pages}{988\bibrangedash 1004}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1145/3531146.3533160
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3531146.3533160
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3531146.3533160
+      \endverb
+      \keyw{reparations,racial wealth gap,mortgage lending,housing,fairness}
     \endentry
     \entry{Teodorescu2020}{article}{}
       \name{author}{4}{}{%

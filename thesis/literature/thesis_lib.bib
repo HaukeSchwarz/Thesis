@@ -1003,6 +1003,62 @@
   urldate    = {2024-03-19},
 }
 
+ 
+@TechReport{Nam2022,
+  author     = {Nam, Tong-yob and Yun, Hayong},
+  title      = {Algorithms and {Fairness} in {Lending} {Markets}: {When} {Do} {Humans} and {Machines} {Disagree}?},
+  year       = {2022},
+  address    = {Rochester, NY},
+  month      = oct,
+  number     = {4261484},
+  abstract   = {This paper uses a machine-learning-based framework to analyze lending decisions. We develop an adversarial learning model that learns the mortgage lending rules for non-minority borrowers and decompose loan decisions into model explained, favorable disagreement, and unfavorable disagreement segments by comparing lenders’ decisions against model predictions. We apply this approach to HMDA data and illustrate various ways to explore differences across different applicant groups, such as the presence of asymmetric disagreement of loan decisions with ML predictions, linking to ex-ante applicant attributes and to ex-post loan performances. The decomposed loan decisions can further uncover economically meaningful information beyond the aggregated counterpart.},
+  doi        = {10.2139/ssrn.4261484},
+  file       = {Full Text PDF:https\://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4261484_code410573.pdf?abstractid=4261484&mirid=1:application/pdf},
+  groups     = {HMDA Fairness},
+  keywords   = {fair lending, machine learning, anomaly detection, generative adversarial network.},
+  language   = {en},
+  shorttitle = {Algorithms and {Fairness} in {Lending} {Markets}},
+  url        = {https://papers.ssrn.com/abstract=4261484},
+  urldate    = {2024-03-20},
+}
+
+@InProceedings{So2022,
+  author    = {So, Wonyoung and Lohia, Pranay and Pimplikar, Rakesh and Hosoi, A.E. and D'Ignazio, Catherine},
+  booktitle = {Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency},
+  title     = {Beyond Fairness: Reparative Algorithms to Address Historical Injustices of Housing Discrimination in the US},
+  year      = {2022},
+  address   = {New York, NY, USA},
+  pages     = {988–1004},
+  publisher = {Association for Computing Machinery},
+  series    = {FAccT '22},
+  abstract  = {Fairness in Machine Learning (ML) has mostly focused on interrogating the fairness of a particular decision point with assumptions made that the people represented in the data have been fairly treated throughout history. However, fairness cannot be ultimately achieved if such assumptions are not valid. This is the case for mortgage lending discrimination in the US, which should be critically understood as the result of historically accumulated injustices that were enacted through public policies and private practices including redlining, racial covenants, exclusionary zoning, and predatory inclusion, among others. With the erroneous assumptions of historical fairness in ML, Black borrowers with low income and low wealth are considered as a given condition in a lending algorithm, thus rejecting loans to them would be considered a “fair” decision even though Black borrowers were historically excluded from homeownership and wealth creation. To emphasize such issues, we introduce case studies using contemporary mortgage lending data as well as historical census data in the US. First, we show that historical housing discrimination has differentiated each racial group’s baseline wealth which is a critical input for algorithmically determining mortgage loans. The second case study estimates the cost of housing reparations in the algorithmic lending context to redress historical harms because of such discriminatory housing policies. Through these case studies, we envision what reparative algorithms would look like in the context of housing discrimination in the US. This work connects to emerging scholarship on how algorithmic systems can contribute to redressing past harms through engaging with reparations policies and programs.},
+  doi       = {10.1145/3531146.3533160},
+  groups    = {HMDA Fairness},
+  isbn      = {9781450393522},
+  keywords  = {reparations, racial wealth gap, mortgage lending, housing, fairness},
+  location  = {Seoul, Republic of Korea},
+  numpages  = {17},
+  url       = {https://doi.org/10.1145/3531146.3533160},
+}
+
+ 
+@TechReport{Sharma2022,
+  author     = {Sharma, Shubham and Henderson, Jette and Ghosh, Joydeep},
+  title      = {{FEAMOE}: {Fair}, {Explainable} and {Adaptive} {Mixture} of {Experts}},
+  year       = {2022},
+  month      = oct,
+  note       = {arXiv:2210.04995 [cs] type: article},
+  abstract   = {Three key properties that are desired of trustworthy machine learning models deployed in high-stakes environments are fairness, explainability, and an ability to account for various kinds of "drift". While drifts in model accuracy, for example due to covariate shift, have been widely investigated, drifts in fairness metrics over time remain largely unexplored. In this paper, we propose FEAMOE, a novel "mixture-of-experts" inspired framework aimed at learning fairer, more explainable/interpretable models that can also rapidly adjust to drifts in both the accuracy and the fairness of a classifier. We illustrate our framework for three popular fairness measures and demonstrate how drift can be handled with respect to these fairness constraints. Experiments on multiple datasets show that our framework as applied to a mixture of linear experts is able to perform comparably to neural networks in terms of accuracy while producing fairer models. We then use the large-scale HMDA dataset and show that while various models trained on HMDA demonstrate drift with respect to both accuracy and fairness, FEAMOE can ably handle these drifts with respect to all the considered fairness measures and maintain model accuracy as well. We also prove that the proposed framework allows for producing fast Shapley value explanations, which makes computationally efficient feature attribution based explanations of model decisions readily available via FEAMOE.},
+  doi        = {10.48550/arXiv.2210.04995},
+  file       = {:Sharma2022 - FEAMOE_ Fair, Explainable and Adaptive Mixture of Experts.pdf:PDF},
+  groups     = {HMDA Fairness},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Computers and Society},
+  school     = {arXiv},
+  shorttitle = {{FEAMOE}},
+  url        = {http://arxiv.org/abs/2210.04995},
+  urldate    = {2024-03-20},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
