@@ -105,3 +105,5 @@ In order to prepare the data for the prediction task, the numerical variables \t
     \label{eq:Z-Score Standardization}
     \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Z-Score Standardization}
 \end{equation}
+The target variable \textit{loan\_granted} was \textbf{encoded} as a binary variable. Furthermore, all categorical variables were replaced with \textbf{dummy values} using one-hot encoding, dropping the first column to avoid multicollinearity.
+The data was \textbf{split} into \textit{train, test}, and \textit{validation} sets with an 80/20 split each using the \textit{train\_test\_split} function from sklearn.
