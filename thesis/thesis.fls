@@ -1805,6 +1805,10 @@ INPUT ./images/CH03_Missingno_Completeness.png
 INPUT images/CH03_Missingno_Completeness.png
 INPUT ./images/CH03_Missingno_Completeness.png
 INPUT ./images/CH03_Missingno_Completeness.png
+INPUT ./chapters/main/subchapters_separate/Methodology.tex
+INPUT chapters/main/subchapters_separate/Methodology.tex
+INPUT ./chapters/main/subchapters_separate/Methodology.tex
+INPUT chapters/main/subchapters_separate/Methodology.tex
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
