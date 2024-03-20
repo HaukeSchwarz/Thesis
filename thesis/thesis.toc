@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {3.1}Data}{9}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}HMDA Data}{9}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Enrichment Data}{11}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Methodology}{11}{section.3.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{12}{chapter*.9}%
+\contentsline {section}{\numberline {3.2}Methodology}{12}{section.3.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{14}{chapter*.11}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
