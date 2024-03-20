@@ -1814,6 +1814,10 @@ INPUT ./chapters/main/subchapters_separate/Methodology.tex
 INPUT chapters/main/subchapters_separate/Methodology.tex
 INPUT ./chapters/main/subchapters_separate/Methodology.tex
 INPUT chapters/main/subchapters_separate/Methodology.tex
+INPUT ./images//CH03_Methodology.jpg
+INPUT images//CH03_Methodology.jpg
+INPUT ./images//CH03_Methodology.jpg
+INPUT ./images//CH03_Methodology.jpg
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
