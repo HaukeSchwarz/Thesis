@@ -1822,6 +1822,14 @@ INPUT ./chapters/main/XX_Results.tex
 INPUT chapters/main/XX_Results.tex
 INPUT ./chapters/main/XX_Results.tex
 INPUT chapters/main/XX_Results.tex
+INPUT ./images//CHXX_Numerical_Distributions_1.png
+INPUT images//CHXX_Numerical_Distributions_1.png
+INPUT ./images//CHXX_Numerical_Distributions_1.png
+INPUT ./images//CHXX_Numerical_Distributions_1.png
+INPUT ./images//CHXX_Numerical_Distributions_2.png
+INPUT images//CHXX_Numerical_Distributions_2.png
+INPUT ./images//CHXX_Numerical_Distributions_2.png
+INPUT ./images//CHXX_Numerical_Distributions_2.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png

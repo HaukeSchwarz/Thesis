@@ -10,11 +10,28 @@ In this chapter, the results of the analysis are presented. \textbf{Chapter \ref
 
 \subsection{Data Overview}\label{subsec:Data_Overview}
 
-% Standard Dataset Metrics
+The processed dataset contains two \textit{numerical} features: \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio}.
+Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_1}} and \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
 
-% Histograms of numeric variables from V2 pipeline notebook 
-% Maybe correlation matrix from V2 pipeline notebook
-% Maybe distribution boxplots from V2 pipeline notebook
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_1.png}
+    \caption{Boxplots of the Numerical Features}
+    \label{fig:CHXX_Numerical_Distributions_1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_2.png}
+    \caption{Histograms of the Numerical Features}
+    \label{fig:CHXX_Numerical_Distributions_2}
+\end{figure}
+
+The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here.
+
+% Add analysis of categorical features
+
+% Correlation Analysis?
 
 \subsection{Fairness}\label{subsec:Fairness}
 
