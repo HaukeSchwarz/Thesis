@@ -39,10 +39,8 @@ The model chosen is a comparably simple sequential neural network, implemented w
     \label{tab:CH03_Model_Details}
 \end{table}
 
-
-
 To increase the efficiency of the training process and to prevent overfitting, \textit{callbacks} for early stopping (with a patience of 5 iterations) and best model selection, both based on the validation loss, have been implemented. 
-\textit{Adam} is chosen as the optimizer, loss evaluation is based on \textit{categorical crossentropy}, and \textit{accuracy} is selected as the target metric. Training takes place with a batch size of 48 and for a maximum of 30 epochs. 
+\textit{Adam} is chosen as the optimizer, due to the nature of the classification task, loss evaluation is based on \textit{binary crossentropy}, and \textit{accuracy} is selected as the target metric. Training takes place with a batch size of 48 and for a maximum of 30 epochs. 
 
 % Comment on debt_to_income_ratio imputation impacting accuracy but benefitting fairness (after reweighing)
 
@@ -57,13 +55,26 @@ To increase the efficiency of the training process and to prevent overfitting, \
 % Metrics: Choice of metrics, reasoning, details of application
 % Cross-validation(?): Choice of method, reasoning, details of application
 
+The model originally puts out numerical probabilities, which are then converted to binary values, using a threshold of 0.5.
+Using these original probabilities, \textbf{ROC AUC} curves can be plotted and the ROC AUC score can be calculated, which is used as one of the assessment measures.
+Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score}, are calculated alongside the \textbf{confusion matrix}.
+
 % Get comparable papers!
 
 \subsection{Fairness Assessment}\label{subsec:Fairness_Assessment}
 
-% Metrics: Choice of metrics, reasoning, details of application
+% Describe aequitas procedure
+% Describe aif360 procedure(?)
+% Metrics: Choice of metrics, reasoning, details of application - choose most important ones from aequitas summary
+% Add a more specific analysis of e.g. subgroup precision etc.
 
 \subsection{Iterations}\label{subsec:Iterations}
 
 % Maybe more detail when decision has actually been made?
 % Workflow idea: Training (unadjusted) -> Explainability -> Performance -> Fairness by using aequitas outcome (or checking AIF360) -> new technique by AIF 360 -> aim for similar performance but better fairness
+
+Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iteration_I}}), adjustments to the model and the data preparation process will be made in multiple iterations, aiming to improve at least one of these aspects in each run.
+
+As a first iteration, \textbf{Reweighing} will be applied. This procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
+The practical application of this technique includes the following steps: Initially, the weights of the samples need to be calculated. This can be achieved using the \textit{Reweighing} class of the \textit{aif360.algorithms.preprocessing} module. Being supplied with the training dataset and information on the privileged group (in this case, the \textit{White} applicants) and the unprivileged group (\textit{Black and African American} applicants), the algorithm calculates the weights for each sample. 
+In order to ensure comparability of the results, an exact copy of the neural network described in \textbf{Figure \ref{tab:CH03_Model_Details}} is created and compiled. During fitting however, the weights calculated by the reweighing algorithm are passed to the \textit{sample\_weight} parameter of the model, causing keras to apply them during model fitting. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iteration_I}}.

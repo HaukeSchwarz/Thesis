@@ -34,6 +34,8 @@
 \contentsline {subsection}{\numberline {4.1.1}Data Overview}{17}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Fairness}{17}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Results}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{19}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{19}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Limitations}{19}{section.4.3}%
 \contentsline {chapter}{\nonumberline Bibliography}{20}{chapter*.17}%
 \contentsfinish 
