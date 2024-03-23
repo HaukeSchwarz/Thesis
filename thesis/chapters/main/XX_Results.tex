@@ -48,6 +48,10 @@ Potential unfairness in the underlying data can be identified from assessing the
     \label{tab:loan_granting}%
 \end{table}%
 
+Even though the focus of the analysis is on the \textit{applicant\_race-1} attribute, \textit{applicant\_sex} has been included as a second discriminating factor, as it also constitutes a protected attribute.
+Inspection of the results depicted here does however imply that the issue of racial equality is more pronounced than that of inequality between the sexes.
+A chi-squared test of independence proves that assumption of underlying inequality between races in the data, as the p-value is \textit{<0.01} and therefore H0 (equality in granted loans) can be rejected at any significance level.
+Utilizing the aforementioned \textbf{AIF360} package to assess the mean difference of granted loans between the races in the underlying data amounts to a \textit{14.9\%} difference.
 
 \section{Results}\label{sec:Results}        
 
