@@ -65,7 +65,40 @@ Additionally, a common set of classification metrics, being \textbf{accuracy}, \
 
 % Describe aequitas procedure
 % Describe aif360 procedure(?)
+% Refer to formulas from literature review (and probably move / delete them)
 % Metrics: Choice of metrics, reasoning, details of application - choose most important ones from aequitas summary
+
+Aequitas provides a multitude of fairness metrics to provide model fairness. In order to work with a uniform framework in this thesis, four easy to understand yet highly relevant metrics are chosen: 
+The disparities in \textbf{False Positive Rate} (FPR) and \textbf{False Negative Rate} (FNR), as well as the \textbf{True Positive Rate} (TPR) and \textbf{True Negative Rate} (TNR) are calculated for the different groups.
+Analyzing these will inform about how much more likely the model is to make one of the four predictions for Black or African American Americans compared to White applicants.
+From the original paper \parencite{2018aequitas}, we can infer these formulas for the calculation of the disparities:
+
+\begin{equation}
+    FPR_{g_{\text{disp}}} = \frac{FPR_{a_i}}{FPR_{a_r}} = \frac{\Pr(\hat{Y}=1 | Y=0, A=a_i)}{\Pr(\hat{Y}=1 | Y=0, A=a_r)}
+    \label{eq:FPR_Disparity}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}FPR Disparity}
+\end{equation}
+
+\begin{equation}
+    FNR_{g_{\text{disp}}} = \frac{FNR_{a_i}}{FNR_{a_r}} = \frac{\Pr(\hat{Y}=0 | Y=1, A=a_i)}{\Pr(\hat{Y}=0 | Y=1, A=a_r)}
+    \label{eq:FNR_Disparity}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}FNR Disparity}
+\end{equation}
+
+\begin{equation}
+    TPR_{g_{\text{disp}}} = \frac{TPR_{a_i}}{TPR_{a_r}} = \frac{\Pr(\hat{Y}=1 | Y=1, A=a_i)}{\Pr(\hat{Y}=1 | Y=1, A=a_r)}
+    \label{eq:TPR_Disparity}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}TPR Disparity}
+\end{equation}
+
+\begin{equation}
+    TNR_{g_{\text{disp}}} = \frac{TNR_{a_i}}{TNR_{a_r}} = \frac{\Pr(\hat{Y}=0 | Y=0, A=a_i)}{\Pr(\hat{Y}=0 | Y=0, A=a_r)}
+    \label{eq:TNR_Disparity}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}TNR Disparity}
+\end{equation}
+
+Following the original paper, the optimal value for the disparities is \textbf{1}, as this would indicate parity between the groups. This means, that increased fairness is indicated by values closer to \textbf{1} when comparing model results to each other.
+
 % Add a more specific analysis of e.g. subgroup precision etc.
 
 \subsection{Iterations}\label{subsec:Iterations}

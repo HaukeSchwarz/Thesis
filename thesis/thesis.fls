@@ -1818,6 +1818,7 @@ INPUT ./images//CH03_Methodology.jpg
 INPUT images//CH03_Methodology.jpg
 INPUT ./images//CH03_Methodology.jpg
 INPUT ./images//CH03_Methodology.jpg
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./chapters/main/XX_Results.tex
 INPUT chapters/main/XX_Results.tex
 INPUT ./chapters/main/XX_Results.tex
@@ -1849,6 +1850,8 @@ INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb

@@ -28,15 +28,15 @@
 \contentsline {subsection}{\numberline {3.2.2}Explainability}{15}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Performance Assessment}{15}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Fairness Assessment}{15}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Iterations}{15}{subsection.3.2.5}%
-\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Data Overview}{17}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Fairness}{17}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Results}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{19}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{19}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Limitations}{19}{section.4.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{20}{chapter*.17}%
+\contentsline {subsection}{\numberline {3.2.5}Iterations}{16}{subsection.3.2.5}%
+\contentsline {chapter}{\numberline {4}Results}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{18}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Data Overview}{18}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Fairness}{18}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Results}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{20}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Limitations}{20}{section.4.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{21}{chapter*.17}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

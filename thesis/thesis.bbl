@@ -2387,6 +2387,67 @@
       \endverb
       \keyw{Artificial intelligence,Deep neural networks,Black box Models,Explainable artificial intelligence,Global interpretation}
     \endentry
+    \entry{2018aequitas}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=68081e126ddfa7441fa43e8aa0806a37}{%
+           family={Saleiro},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10ab68d8884d938bf6204f633b503bb5}{%
+           family={Kuester},
+           familyi={K\bibinitperiod},
+           given={Benedict},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ca63f027093145766fa5d0c86607453}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Abby},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d7994552a12a86c99027c1313033b55}{%
+           family={Anisfeld},
+           familyi={A\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c116d06aa84e94a7c4432927587ccddd}{%
+           family={Hinkson},
+           familyi={H\bibinitperiod},
+           given={Loren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61b200c24c6497dadf7a37e419febc79}{%
+           family={London},
+           familyi={L\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cfc641e2ca8f9579534edebf4ffb064}{%
+           family={Ghani},
+           familyi={G\bibinitperiod},
+           given={Rayid},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b7b79bc2825df8278be6adc4ba426ff}
+      \strng{fullhash}{e7e3bbc271da8f40f3fc893ef530ec6f}
+      \strng{bibnamehash}{2b7b79bc2825df8278be6adc4ba426ff}
+      \strng{authorbibnamehash}{2b7b79bc2825df8278be6adc4ba426ff}
+      \strng{authornamehash}{2b7b79bc2825df8278be6adc4ba426ff}
+      \strng{authorfullhash}{e7e3bbc271da8f40f3fc893ef530ec6f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1811.05577}
+      \field{title}{Aequitas: A Bias and Fairness Audit Toolkit}
+      \field{year}{2018}
+    \endentry
     \entry{Sharma2022}{report}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=2ebc97c1eab4d7f7cc603b0a80ad4c33}{%
