@@ -42,8 +42,6 @@ The model chosen is a comparably simple sequential neural network, implemented w
 To increase the efficiency of the training process and to prevent overfitting, \textit{callbacks} for early stopping (with a patience of 5 iterations) and best model selection, both based on the validation loss, have been implemented. 
 \textit{Adam} is chosen as the optimizer, due to the nature of the classification task, loss evaluation is based on \textit{binary crossentropy}, and \textit{accuracy} is selected as the target metric. Training takes place with a batch size of 48 and for a maximum of 30 epochs. 
 
-% Comment on debt_to_income_ratio imputation impacting accuracy but benefitting fairness (after reweighing)
-
 \subsection{Explainability}\label{subsec:Explainability}
 
 % Algorithm choice: Choice of model, reasoning, details of application

@@ -78,7 +78,14 @@ As defined in \textbf{Chapter \ref{subsec:Performance_Assessment}} and \textbf{C
 
 \subsection{Initial Performance}\label{subsec:Initial_Performance}
 
-% Table with initial metrics (define and add in chapters of methodology - create standard table with e.g. ROC AUC, accuracy, precision, recall, F1 score, FPR Disparity, FNR Disparity, explain each value with literature and repeat for every iteration)
+Table XXX shows the results of the initial model run as described in \textbf{Chapter \ref{sec:Methodology}}.
+
+XXX Hier Tabelle von finalem Durchlauf XXX
+
+XXX Basic Kommentare XXX
+
+As already mentioned in \textbf{Chapter \ref{subsec:Performance_Assessment}}, the model behaved somewhat different from the expectations: Imputation of missing values in the \textbf{debt\_to\_income\_ratio} feature led to a significant decrease in both fairness and performance measures of the model.
+Therefore, it must be assumed that missingness in itself is not completely at random and holds information (or that the imputation method via a random forest regressor is not suitable for this task).
 
 \subsection{Iteration I: Reweighing}\label{subsec:Iteration_I}
 
