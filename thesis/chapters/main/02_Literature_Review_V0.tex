@@ -53,9 +53,6 @@ Measuring the impact of these biases on model fairness, several approaches have 
     \end{equation}
 \end{itemize}
 
-% Potentially mention: predictive parity, disparate treatment, individual fairness, group fairness, counterfactual fairness, causal fairness, fairness through awareness, fairness through unawareness and adjust later mentions
-
-
 A crucial element in the Fairness discussion is the concept of \textit{protected} or \textit{sensitive attributes}. These describe attributes that are legally protected from being the basis of potentially discriminatory decisions \parencite{Datta2017}.
 Protected attributes usually contain demographic information like age, race or gender (identity) \parencite{Teodorescu2020}. There are definitions available specifically for the case of mortgage lending \parencite{Chen2019}\footnote{Note that the attributes defined in the paper by Chen et al.\ apply specifically to laws of the United States of America}. 
 Even though recent studies have suggested that racial bias might not be as prevalent in both human-made and algorithmic decisions as it has been assumed \parencite{Bhutta2022}, 
@@ -147,7 +144,8 @@ In the academic literature, Explainability methods are usually categorized based
     \label{fig:explainability_overview}
 \end{figure}
 
-% Deep dive into method used here
+The two most widely adapted local, model-agnostic, post-hoc methods are \textit{SHAP} (SHapley Additive exPlanations) \parencite{Lundberg2017} and \textit{LIME} (Local Interpretable Model-agnostic Explanations) \parencite{Ribeiro2016}.
+% Describe both methods in more detail including formulas
 
 \subsection{Explainability and Fairness}\label{subsec:explainability_fairness}
 

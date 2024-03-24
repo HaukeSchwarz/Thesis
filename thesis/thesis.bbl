@@ -1930,6 +1930,37 @@
       \verb https://arxiv.org/abs/1606.03490
       \endverb
     \endentry
+    \entry{Lundberg2017}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b659ebc88023a12a732b4db9afdede3d}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee964079d93879aaef2382a5fff343d3}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Su-In},
+           giveni={S\bibinithyphendelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{fullhash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{bibnamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authorbibnamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authornamehash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \strng{authorfullhash}{92d799a71ca7ae2c3ebec3ec87e85189}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{A Unified Approach to Interpreting Model Predictions}
+      \field{year}{2017}
+    \endentry
     \entry{Marcinkevics2023}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=68ed0731fd5b9f5c6cc8035be131eb5a}{%
@@ -2384,6 +2415,64 @@
       \verb{url}
       \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
       \endverb
+    \endentry
+    \entry{Ribeiro2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9203dc724f298030e81ba470feb309af}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Marco\bibnamedelima Tulio},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b9694812f0dc77974d99bb875a76d48}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Sameer},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ab8ac486d7f85ac914b1a8e51e512b}{%
+           family={Guestrin},
+           familyi={G\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, California, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{62dda78fe1497685b6e2c1e1adb1ed32}
+      \strng{fullhash}{70906198418f30a779bc9bda0f6ae1f1}
+      \strng{bibnamehash}{70906198418f30a779bc9bda0f6ae1f1}
+      \strng{authorbibnamehash}{70906198418f30a779bc9bda0f6ae1f1}
+      \strng{authornamehash}{62dda78fe1497685b6e2c1e1adb1ed32}
+      \strng{authorfullhash}{70906198418f30a779bc9bda0f6ae1f1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite widespread adoption, machine learning models remain mostly black boxes. Understanding the reasons behind predictions is, however, quite important in assessing trust, which is fundamental if one plans to take action based on a prediction, or when choosing whether to deploy a new model. Such understanding also provides insights into the model, which can be used to transform an untrustworthy model or prediction into a trustworthy one.In this work, we propose LIME, a novel explanation technique that explains the predictions of any classifier in an interpretable and faithful manner, by learning an interpretable model locally varound the prediction. We also propose a method to explain models by presenting representative individual predictions and their explanations in a non-redundant way, framing the task as a submodular optimization problem. We demonstrate the flexibility of these methods by explaining different models for text (e.g. random forests) and image classification (e.g. neural networks). We show the utility of explanations via novel experiments, both simulated and with human subjects, on various scenarios that require trust: deciding if one should trust a prediction, choosing between models, improving an untrustworthy classifier, and identifying why a classifier should not be trusted.}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{isbn}{9781450342322}
+      \field{series}{KDD '16}
+      \field{title}{"Why Should I Trust You?": Explaining the Predictions of Any Classifier}
+      \field{year}{2016}
+      \field{pages}{1135\bibrangedash 1144}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2939672.2939778
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2939672.2939778
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2939672.2939778
+      \endverb
+      \keyw{interpretable machine learning,interpretability,explaining machine learning,black box classifier}
     \endentry
     \entry{Rugh2015}{article}{}
       \name{author}{3}{}{%
