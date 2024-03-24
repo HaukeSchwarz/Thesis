@@ -918,6 +918,79 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Computer Science - Data Structures and Algorithms,Computer Science - Computer Science and Game Theory,Statistics - Machine Learning}
     \endentry
+    \entry{Cooper2024}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=15d0e70ca47f0ede684279057ae9f034}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfca12eba160cc79988e61b7fb6ded42}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=584d857c6113e7bbbc8452fbb5376563}{%
+           family={Choksi},
+           familyi={C\bibinitperiod},
+           given={Madiha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb55e045fbd37698b0b60a60b567ab83}{%
+           family={Barocas},
+           familyi={B\bibinitperiod},
+           given={Solon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0eb0f5a92cc10e79d9d28fdb0a788cb3}{%
+           family={De\bibnamedelima Sa},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdb60775cfb0d1974cbe289eedc73cff}{%
+           family={Grimmelmann},
+           familyi={G\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e405ae3c720db1b0e447ff5b601b968f}{%
+           family={Kleinberg},
+           familyi={K\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93e831e3cf4ad19da7cb8887340fe8c7}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Siddhartha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=894ef0008f880e762c765b732d9c0d52}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Baobao},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8cbd9041dac713dabb208c2b9b8405d0}
+      \strng{fullhash}{72a426719f1d78c3cccae9fb012b309b}
+      \strng{bibnamehash}{8cbd9041dac713dabb208c2b9b8405d0}
+      \strng{authorbibnamehash}{8cbd9041dac713dabb208c2b9b8405d0}
+      \strng{authornamehash}{8cbd9041dac713dabb208c2b9b8405d0}
+      \strng{authorfullhash}{72a426719f1d78c3cccae9fb012b309b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{Arbitrariness and Social Prediction: The Confounding Role of Variance in Fair Classification}
+      \field{year}{2024}
+    \endentry
     \entry{CorbettDavies2023}{report}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=341a17b1faf8ad74034822ff2f891742}{%
@@ -1489,6 +1562,56 @@
       \verb http://arxiv.org/abs/1610.02413
       \endverb
       \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{Hodges2024}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=476638e47849c2f757532f5afd44cde4}{%
+           family={Hodges.},
+           familyi={H\bibinitperiod},
+           given={Hope},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=588f1217ce047a406f86c806c2d46c0c}{%
+           family={Garrity.},
+           familyi={G\bibinitperiod},
+           given={Carolyn},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36d96901b5c83cdb2262fbb3cdd5c12e}{%
+           family={Pope.},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {INSTICC}%
+      }
+      \list{publisher}{1}{%
+        {SciTePress}%
+      }
+      \strng{namehash}{a2d7807a45cfb846cfd97f5f62e9a0e0}
+      \strng{fullhash}{2de23282cb4415c85f7a5b5d8cde19b1}
+      \strng{bibnamehash}{2de23282cb4415c85f7a5b5d8cde19b1}
+      \strng{authorbibnamehash}{2de23282cb4415c85f7a5b5d8cde19b1}
+      \strng{authornamehash}{a2d7807a45cfb846cfd97f5f62e9a0e0}
+      \strng{authorfullhash}{2de23282cb4415c85f7a5b5d8cde19b1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th International Conference on Pattern Recognition Applications and Methods - ICPRAM}
+      \field{isbn}{978-989-758-684-2}
+      \field{issn}{2184-4313}
+      \field{title}{Deep Learning, Feature Selection and Model Bias with Home Mortgage Loan Classification}
+      \field{year}{2024}
+      \field{pages}{248\bibrangedash 255}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.5220/0012326800003654
+      \endverb
     \endentry
     \entry{Kamiran2012}{article}{}
       \name{author}{2}{}{%

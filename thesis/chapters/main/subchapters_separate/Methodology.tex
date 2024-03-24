@@ -52,14 +52,13 @@ To increase the efficiency of the training process and to prevent overfitting, \
 
 \subsection{Performance Assessment}\label{subsec:Performance_Assessment}
 
-% Metrics: Choice of metrics, reasoning, details of application
-% Cross-validation(?): Choice of method, reasoning, details of application
-
 The model originally puts out numerical probabilities, which are then converted to binary values, using a threshold of 0.5.
 Using these original probabilities, \textbf{ROC AUC} curves can be plotted and the ROC AUC score can be calculated, which is used as one of the assessment measures.
 Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score}, are calculated alongside the \textbf{confusion matrix}.
 
-% Get comparable papers!
+Finding comparable benchmarks for model performance in the academic literature is hampered by the recency of the used data and the individual approach to filtering states.
+Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task \parencite{Ghoba} with somewhat comparable data, 
+or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
 
 \subsection{Fairness Assessment}\label{subsec:Fairness_Assessment}
 
@@ -108,6 +107,6 @@ Following the original paper, the optimal value for the disparities is \textbf{1
 
 Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iteration_I}}), adjustments to the model and the data preparation process will be made in multiple iterations, aiming to improve at least one of these aspects in each run.
 
-As a first iteration, \textbf{Reweighing} will be applied. This procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
+As a first iteration, \textbf{Reweighing} will be applied. This \textit{pre-processing} procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
 The practical application of this technique includes the following steps: Initially, the weights of the samples need to be calculated. This can be achieved using the \textit{Reweighing} class of the \textit{aif360.algorithms.preprocessing} module. Being supplied with the training dataset and information on the privileged group (in this case, the \textit{White} applicants) and the unprivileged group (\textit{Black and African American} applicants), the algorithm calculates the weights for each sample. 
 In order to ensure comparability of the results, an exact copy of the neural network described in \textbf{Figure \ref{tab:CH03_Model_Details}} is created and compiled. During fitting however, the weights calculated by the reweighing algorithm are passed to the \textit{sample\_weight} parameter of the model, causing keras to apply them during model fitting. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iteration_I}}.
