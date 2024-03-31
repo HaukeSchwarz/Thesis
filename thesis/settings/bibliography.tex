@@ -1,6 +1,6 @@
 \usepackage[
     backend=biber, 
-    style=authoryear-icomp, % alphabetic
+    style=authoryear, % alphabetic
     citestyle=authoryear-icomp, % alphabetic, authortitle
     date=short,
     % backref=true, % Display pages on which the reference is used
@@ -10,7 +10,10 @@
     isbn=false,    
     % block=ragged, % break urls
     % firstinits=true, % shorten first names
-    backrefstyle=three+ % Combine pages
+    backrefstyle=three+, % Combine pages
+    doi=false,
+    eprint=false,
+    url=false
 ]{biblatex}
 
 % Distance between bibliographical references

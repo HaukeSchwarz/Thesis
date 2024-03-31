@@ -1265,9 +1265,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-compat.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
-INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
-INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
-INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 INPUT c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
@@ -1835,16 +1832,9 @@ INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
-INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-INPUT c:/texlive/2022/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-sc-t1.tfm
 INPUT thesis.aux
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
-INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc
@@ -1855,7 +1845,6 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
-INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb
