@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1711303305 "thesis.bcf" "thesis.bbl" "thesis" 1711911885 0
+["biber thesis"] 1711303305 "thesis.bcf" "thesis.bbl" "thesis" 1711987481 0
   "./literature/thesis_lib.bib" 1711911662 121716 44701c41ea26d0fc7a6f0e7c0265c296 ""
-  "thesis.bcf" 1711911884 112568 51c173cbc870b397e3bf534c2d15d9cb "pdflatex"
+  "thesis.bcf" 1711987480 112568 51c173cbc870b397e3bf534c2d15d9cb "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1711911879 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1711911885 0
+["pdflatex"] 1711987474 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1711987481 0
   "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1711303259 6127 f107b051e08c4d6780bed1ddfd57297a ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -269,13 +269,13 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1678446851 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678447197 7883452 ddb3f3e70e3b4a502b0439dda4f80810 ""
   "c:/texlive/2022/texmf.cnf" 1659261620 713 e69b156964470283e0530f5060668171 ""
-  "chapters/main/01_Introduction.tex" 1710280526 231 5bb036dc0eea57568bfa0d61f54889af ""
-  "chapters/main/02_Literature_Review_V0.tex" 1711303930 22448 a94b5b71481d7d72e05626372fac31ef ""
+  "chapters/main/01_Introduction.tex" 1711987459 338 13622a81f56048ed25a2c1558cdc38da ""
+  "chapters/main/02_Literature_Review_V0.tex" 1711987460 22498 117c97271f413770c606b28abfef49e8 ""
   "chapters/main/03_Data_and_Methodology.tex" 1710931506 180 dba736930e7a4fa4323ab6b5b508bf2a ""
   "chapters/main/XX_Results.tex" 1711911662 4920 069be1cea3743bcf19d654e3803027c3 ""
   "chapters/main/subchapters_separate/Data.tex" 1711298852 11041 1a7564a66666e1b3f931320fb126149d ""
   "chapters/main/subchapters_separate/Methodology.tex" 1711379673 8074 40ff2b4361b73288ffeba56e31631cb6 ""
-  "chapters/other/pre/abstract.tex" 1709229504 182 82f13099735d154412a2e9ee7df94b93 ""
+  "chapters/other/pre/abstract.tex" 1711987460 400 ad7db8a1982abb28bc7af5f8cfba71ee ""
   "images//CH03_Methodology.jpg" 1710953290 59775 3cbc7ff76af183e83d1da0b43e30fc4e ""
   "images//CHXX_Loan_Grant_By_Protected_Attribute.png" 1711197079 25013 556b3fc05bf5b21cffe9fc550a42443c ""
   "images//CHXX_Numerical_Distributions_1.png" 1711205775 21077 2f0ec70e8901489a5dd89b54b5274eb2 ""
@@ -292,14 +292,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1711911884 38681 99c56b6aea17d6e2eed18d7c7a130348 "pdflatex"
+  "thesis.aux" 1711987480 38681 bdc80e68fbf1ee7ca9804ac6275c3a7d "pdflatex"
   "thesis.bbl" 1711303308 175201 15779674f55d94c47e6d56a0d24eac1b "biber thesis"
-  "thesis.frm" 1711911884 937 0ae6e59acb0289186fc724534dbd8550 "pdflatex"
-  "thesis.lof" 1711911884 1154 f9302c6ac981dbb258bd19990bae4447 "pdflatex"
-  "thesis.lot" 1711911884 626 daeedbabbef3fd721165fa7fe52a345e "pdflatex"
-  "thesis.run.xml" 1711911884 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
+  "thesis.frm" 1711987480 937 0ae6e59acb0289186fc724534dbd8550 "pdflatex"
+  "thesis.lof" 1711987480 1154 f9302c6ac981dbb258bd19990bae4447 "pdflatex"
+  "thesis.lot" 1711987480 626 daeedbabbef3fd721165fa7fe52a345e "pdflatex"
+  "thesis.run.xml" 1711987480 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
   "thesis.tex" 1711303259 6127 f107b051e08c4d6780bed1ddfd57297a ""
-  "thesis.toc" 1711911884 3389 65e4788ef0c02a2c8e81cd3f5b825a7e "pdflatex"
+  "thesis.toc" 1711987480 3389 65e4788ef0c02a2c8e81cd3f5b825a7e "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
