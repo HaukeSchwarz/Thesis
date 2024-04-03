@@ -21,15 +21,17 @@ All features were \textbf{cast} to their appropriate types \textit{(county\_code
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/CH03_Missingno_Completeness.png}
     \caption{Visual Inspection of Missingness in the missingno Package}
+    \includegraphics[width=0.85\textwidth]{images/CH03_Missingno_Completeness.png}
+    \caption*{Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.}
     \label{fig:CH03_Missingno_Completeness}
 \end{figure}
 
 All \textit{Exempt} strings were \textbf{recoded} as zero, allowing proper typecasting (float) for the \textit{interest\_rate} and \textit{loan\_to\_value\_ratio} variables. 
 For \textit{\_to\_income\_ratio}, further \textbf{binning} was introduced, creating the new categories \textit{36\%-41\%, 41\%-45\%}, and \textit{46\%-49\%}. Initially, Missingness was encoded as a separate category, bringing the number of distinct values for \textit{debt\_to\_income\_ratio} to eleven. 
 This was kept, because later analysis showed that missingness in the \textit{debt\_to\_income\_ratio} was a feature that heavily impacted predictions: As a comparison, a random forest classifier was trained to predict the missingness in the \textit{debt\_to\_income\_ratio} based on the other features.
-Although only a 63.7\% accuracy was achieved on the test data, the model was used to impute the missing values in the \textit{debt\_to\_income\_ratio} column, as this methodology still is more thorough than other imputation methods for categorical values like using the mode. As per the predictions, most of the missing values (125,312) were imputed as \textit{>61\%}, followed by \textit{50\%-60\%}. Because later analysis proved that encoding as missingness was way more beneficial to the performance metrics, this option was finally included.
+Although only a 63.7\% accuracy was achieved on the test data, the model was used to impute the missing values in the \textit{debt\_to\_income\_ratio} column, as this methodology still is more thorough than other imputation methods for categorical values like using the mode. As per the predictions, most of the missing values (125,312) were imputed as \textit{>61\%}, followed by \textit{50\%-60\%}. 
+Because later analysis proved that encoding as missingness was way more beneficial to the performance metrics, this option was finally included.
 After assessing the distributions of \textit{interest\_rate} and \textit{loan\_to\_value\_ratio}, extreme outlier values \textit{(loan\_to\_value\_ratio > 250)} were \textbf{dropped}. 
 
 To tackle missingness in \textit{interest\_rate} and \textit{loan\_to\_value\_ratio}, \textbf{imputation} was utilized. 
@@ -66,6 +68,7 @@ Expectedly, there is a high correlation between some of the features, see \textb
 
 \begin{table}[h]
     \centering
+    \caption{Summary Statistics of the Enrichment Data}
     \begin{tabularx}{\textwidth}{l *{5}{>{\centering\arraybackslash}X}}
     \hline
      & \textbf{Count} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{Max} \\
@@ -80,15 +83,16 @@ Expectedly, there is a high correlation between some of the features, see \textb
     Unemployment Rate & 469.00 & 3.6\% & 1.21 & 0.60\% & 11.00\% \\
     \hline
     \end{tabularx}
-    \caption{Summary Statistics of the Enrichment Data}
+    \caption*{The summary statistics show that the data is complete and has a wide range of values.}
     \label{tab:enrichment_summary}
 \end{table}
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/CH03_Enrichment_Correlation.png}
     \caption{Correlation Between the Enrichment Features}
+    \includegraphics[width=0.85\textwidth]{images/CH03_Enrichment_Correlation.png}
+    \caption*{Some of the enrichment features expectedly show a high correlation, examples being \textit{median\_household\_income} and \textit{poverty\_rate}.}
     \label{fig:CH03_Enrichment_Correlation}
 \end{figure}
 

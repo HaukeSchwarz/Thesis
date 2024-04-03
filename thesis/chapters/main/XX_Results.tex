@@ -15,19 +15,19 @@ Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distri
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_1.png}
     \caption{Boxplots of the Numerical Features}
+    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_1.png}
+    \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the narrow quartiles.}
     \label{fig:CHXX_Numerical_Distributions_1}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_2.png}
     \caption{Histograms of the Numerical Features}
+    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_2.png}
+    \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the high amount of values at the mean.}
     \label{fig:CHXX_Numerical_Distributions_2}
 \end{figure}
-
-The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here.
 
 % Add analysis of categorical features
 
@@ -42,13 +42,15 @@ Potential unfairness in the underlying data can be identified from assessing the
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{CHXX_Loan_Grant_By_Protected_Attribute.png}
     \caption{Loan Grant by Protected Attribute}
+    \includegraphics[width=0.85\textwidth]{CHXX_Loan_Grant_By_Protected_Attribute.png}
+    \caption*{Discrimination by race is apparent in the data, as the amount of granted loans differs significantly}
     \label{fig:CHXX_Loan_Grant_By_Protected_Attribute}
 \end{figure}
 
 \begin{table}[htbp]
     \centering
+      \caption{Loan Granting Statistics by Applicant Race and Sex}
       \begin{tabular}{lcc}
       \toprule
       \textbf{Applicant Race} & \textbf{Applicant Sex} & \textbf{Loan Granted (\%)} \\
@@ -58,8 +60,8 @@ Potential unfairness in the underlying data can be identified from assessing the
       White & Male    & 60.9 \\
             & Female  & 58.8 \\
       \bottomrule
-      \end{tabular}%
-      \caption{Loan Granting Statistics by Applicant Race and Sex}
+      \end{tabular}
+      \caption*{Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
     \label{tab:loan_granting}%
 \end{table}%
 
