@@ -127,7 +127,7 @@ However, there is increased demand for models that have a high predictive accura
 
 \subsection{Explainability Algorithms}\label{subsec:algorithms}
 
-This section will provide a brief overview of the different categories of Explainability algorithms. % !!! ... and provide some additional information on the method XXX, which will be used in this thesis. - Comment that others will not be touched upon due to scope constraints, but point to Saleem or Molnar !!!
+This section will provide a brief overview of the different categories of Explainability algorithms, and provide additional information on the methods which will be used in this thesis\footnote{As there is a multitude of methods available, not all widely used methods can be detailed here. Valuable overviews are provided e.g. by \cite{SALEEM2022165} or \cite{Molnar2023}}.
 In the academic literature, Explainability methods are usually categorized based on their properties, such as:
 \begin{itemize}
     \item \textbf{Model-specific vs. Model-agnostic}: \textit{Model-specific} methods are designed to explain the outcomes of a specific model, while \textit{model-agnostic} methods are designed to be applicable to (nearly) any model by describing how individual features influence the model outcome on average \parencite{Molnar2023}.
@@ -147,7 +147,21 @@ In the academic literature, Explainability methods are usually categorized based
 \end{figure}
 
 The two most widely adapted local, model-agnostic, post-hoc methods are \textit{SHAP} (SHapley Additive exPlanations) \parencite{Lundberg2017} and \textit{LIME} (Local Interpretable Model-agnostic Explanations) \parencite{Ribeiro2016}.
-% Describe both methods in more detail including formulas
+
+\textbf{SHAP} is based upon the use of Shapley values used in coalitional game theory and aims to weight the importance of each feature to the result by game-theoretically distributing the value of the final prediction among all features being included \parencite{Molnar2023}.
+The key features of SHAP are (based on \cite{Molnar2023})
+\begin{itemize}
+    \item \textbf{Additivity}: All feature contributions can be summed up in a linear way, benefitting understandability of the explanations.
+    \item \textbf{Local Accuracy}: SHAP values are locally accurate, as predictions for a given input can be calculated as a result of the expected model output and the specific score for the local input.
+    \item \textbf{Missingness}: As missingness in features is attributed zero values, missingness does not skew outcomes.
+    \item \textbf{Consistency}: SHAP values do not change upon model change, but only when the actual feature contributions change.
+\end{itemize}
+
+\textbf{LIME} is based upon trying to approximate the model's decision boundary locally by perturbing the input data and observing the change in the model's output \parencite{Molnar2023}.
+
+A way of globally assessing model Explainability is the use of \textbf{(Global) Surrogate Models} (as opposed to e.g. the LIME algorithm, which can be considered a local surrogate model). 
+These aim to make black-box algorithm decisions explainable by implementing white-box models to learn the decision criteria that the black-box model has established by being trained on the black-box predictions (compare e.g. \cite{Karim2023}).
+Instead of making the predictions themselves explainable, these models aim to making the underlying decision criteria understandable \parencite{Molnar2023}.
 
 \subsection{Explainability and Fairness}\label{subsec:explainability_fairness}
 

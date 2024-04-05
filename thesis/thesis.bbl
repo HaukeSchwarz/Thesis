@@ -1740,6 +1740,78 @@
       \field{pages}{35\bibrangedash 50}
       \range{pages}{16}
     \endentry
+    \entry{Karim2023}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=e7148795412b01aaca08276ab15d7411}{%
+           family={Karim},
+           familyi={K\bibinitperiod},
+           given={Rezaul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ec4e93f8bc4197ec586c3fe18dbba0b}{%
+           family={Shajalal},
+           familyi={S\bibinitperiod},
+           given={Md},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21d282e85de11d24420bcacc30ae6763}{%
+           family={Graß},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a08e1b1587d1ffe88c59be8b8ec6b9ed}{%
+           family={Döhmen},
+           familyi={D\bibinitperiod},
+           given={Till},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c01adf25d7d6485016de664d83c46833}{%
+           family={Chala},
+           familyi={C\bibinitperiod},
+           given={Sisay},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a8a52784b1feeaf3c3592944c9b5f66}{%
+           family={Boden},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3bab30b5c784c50d398a35c3682c0fc}{%
+           family={Beecks},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a1e6ec26f3229ee6817fdc4087dc2b0}{%
+           family={Decker},
+           familyi={D\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{56050bbc3a3b0887cd491c878f3660c5}
+      \strng{fullhash}{826a76bca69602c7644835637720687b}
+      \strng{bibnamehash}{56050bbc3a3b0887cd491c878f3660c5}
+      \strng{authorbibnamehash}{56050bbc3a3b0887cd491c878f3660c5}
+      \strng{authornamehash}{56050bbc3a3b0887cd491c878f3660c5}
+      \strng{authorfullhash}{826a76bca69602c7644835637720687b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Interpreting Black-box Machine Learning Models for High Dimensional Datasets}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/DSAA60987.2023.10302562
+      \endverb
+    \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%

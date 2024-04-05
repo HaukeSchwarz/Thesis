@@ -1,8 +1,8 @@
 \chapter{Results}\label{chap:Results}
 
 % Update?
-In this chapter, the results of the analysis are presented. \textbf{Chapter \ref{sec:Exploratory_Data_Analysis}} provides an overview of the data and explores the fairness of the dataset. 
-\textbf{Chapter \ref{sec:Results}} presents the results of the analysis. \textbf{Chapter \ref{sec:Limitations}} discusses the limitations of the analysis.
+% In this chapter, the results of the analysis are presented. \textbf{Chapter \ref{sec:Exploratory_Data_Analysis}} provides an overview of the data and explores the fairness of the dataset. 
+% \textbf{Chapter \ref{sec:Results}} presents the results of the analysis. \textbf{Chapter \ref{sec:Limitations}} discusses the limitations of the analysis.
 
 \section{Exploratory Data Analysis}\label{sec:Exploratory_Data_Analysis}
 
@@ -10,7 +10,7 @@ In this chapter, the results of the analysis are presented. \textbf{Chapter \ref
 
 \subsection{Data Overview}\label{subsec:Data_Overview}
 
-The processed dataset contains two \textit{numerical} features: \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio}.
+The processed dataset contained two \textit{numerical} features: \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio}.
 Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_1}} and \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
 
 \begin{figure}[h]
@@ -66,9 +66,9 @@ Potential unfairness in the underlying data can be identified from assessing the
 \end{table}%
 
 Even though the focus of the analysis is on the \textit{applicant\_race-1} attribute, \textit{applicant\_sex} has been included as a second discriminating factor, as it also constitutes a protected attribute.
-Inspection of the results depicted here does however imply that the issue of racial equality is more pronounced than that of inequality between the sexes.
-A chi-squared test of independence proves that assumption of underlying inequality between races in the data, as the p-value is \textit{<0.01} and therefore H0 (equality in granted loans) can be rejected at any significance level.
-Utilizing the aforementioned \textbf{AIF360} package to assess the mean difference of granted loans between the races in the underlying data amounts to a \textit{14.9\%} difference.
+Inspection of the results depicted here did however imply that the issue of racial equality is more pronounced than that of inequality between the sexes.
+A chi-squared test of independence proved that assumption of underlying inequality between races in the data, as the p-value is \textit{<0.01} and therefore H0 (equality in granted loans) could be rejected at any significance level.
+Utilizing the aforementioned \textbf{AIF360} package to assess the mean difference of granted loans between the races in the underlying data amounted to a \textit{14.9\%} difference.
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
@@ -87,6 +87,8 @@ Table XXX shows the results of the initial model run as described in \textbf{Cha
 XXX Hier Tabelle von finalem Durchlauf XXX
 
 XXX Basic Kommentare XXX
+
+% Comment on SHAP and LIME disagreement and add https://arxiv.org/pdf/2202.01602.pdf - general comment on explainability?
 
 As already mentioned in \textbf{Chapter \ref{subsec:Performance_Assessment}}, the model behaved somewhat different from the expectations: Imputation of missing values in the \textbf{debt\_to\_income\_ratio} feature led to a significant decrease in both fairness and performance measures of the model.
 Therefore, it must be assumed that missingness in itself is not completely at random and holds information (or that the imputation method via a random forest regressor is not suitable for this task).
