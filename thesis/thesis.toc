@@ -26,17 +26,17 @@
 \contentsline {section}{\numberline {3.2}Methodology}{15}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Training and Prediction}{15}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Explainability}{16}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Performance Assessment}{16}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment}{17}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Iterations}{18}{subsection.3.2.5}%
-\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{19}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Data Overview}{19}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Fairness}{19}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Enrichment Data}{20}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Results}{20}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{21}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{21}{subsection.4.2.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{22}{chapter*.17}%
+\contentsline {subsection}{\numberline {3.2.3}Performance Assessment}{17}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment}{18}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Iterations}{19}{subsection.3.2.5}%
+\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{20}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Data Overview}{20}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Fairness}{20}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Enrichment Data}{21}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Results}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{22}{subsection.4.2.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{23}{chapter*.17}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

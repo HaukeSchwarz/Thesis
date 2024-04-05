@@ -46,13 +46,17 @@ To increase the efficiency of the training process and to prevent overfitting, \
 
 \subsection{Explainability}\label{subsec:Explainability}
 
-% Algorithm choice: Choice of model, reasoning, details of application
-% Enrichment data: Explain use of geographical detail 
+As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
+A total of three different Explainability algorithms (see \textbf{chapter\ref{subsec:algorithms}} for theoretical background) is utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
+\begin{itemize}
+    \item The \textbf{SHAP} algorithm will be applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
+    \item The \textbf{LIME} algorithm will be used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
+    \item A \textbf{Global Surrogate Model} will be trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
+\end{itemize}
+The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
 
-% Two Local and Two global (LIME, SHAP + 2 Surrogate Models) - Reasoning for each choice!
-
-As layed out in the research question for this thesis, an important part of assessing the models fairness is the ability to actually explain its decisions.
-
+An additional approach to Explainability is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it is possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
+While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
 
 \subsection{Performance Assessment}\label{subsec:Performance_Assessment}
 
