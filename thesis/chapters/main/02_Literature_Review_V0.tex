@@ -90,11 +90,17 @@ The increasing importance of Fairness considerations in Machine Learning has als
 Two of the most prominent libraries are \textit{Aequitas}\footnote{https://github.com/dssg/aequitas} and \textit{AI Fairness 360 (AIF360)}\footnote{https://github.com/Trusted-AI/AIF360}.
 Both of these libraries offer a range of features from the fair modeling and Fairness assessment steps mentioned above.
 
-% Maybe extend with https://edwinwenink.github.io/ai-ethics-tool-landscape/
-
 A concrete approach on how to implement fair ML algorithms in organizations and monitor their performance is proposed by Teodorescu et al.\ \parencite{Teodorescu2020}:
 The proposed framework has three phases: \textit{Design}, \textit{Development} and \textit{Post-hoc Model Assessment}. Based on the presence and relevance of protected attributes (see \autoref{subsec:overview}), the authors propose different decision steps to rule out potential unfairness in the algorithm implementation.
 Although being out of the scope of this thesis, this framework is a promising approach to implement fair ML algorithms in practice.
+
+\textbf{Fairness Assessment} \newline
+Fairness Assessment refers to the post-hoc evaluation of the fairness of model results. The scope of fairness can roughly be divided into the following three categories \parencite{Mehrabi2021}:
+\begin{itemize}
+    \item \textbf{Individual Fairness}: Individual Fairness refers to the fairness of the model's predictions for individual instances. Examples are the concept of \textit{Fairness through unawareness} \parencite{Kusner2017},  \textit{Fairness through awareness} \parencite{Dwork2012} or \textit{Fairness through counterfactuals} \parencite{Kusner2017}.
+    \item \textbf{Group Fairness}: Group Fairness refers to the fairness of the model's predictions for different groups. This can be assessed by the measures introduced in \textbf{chapter \ref{subsec:overview}}.
+    \item \textbf{Subgroup Fairness}: Subgroup Fairness combines the aforementioned concepts by attempting to apply group fairness measures to subsets of the underlying dataset \parencite{Kearns2019}
+\end{itemize}
 
 \subsection{Applications of Fairness in Mortgage Lending}\label{subsec:mortgage_lending_fairness}
 

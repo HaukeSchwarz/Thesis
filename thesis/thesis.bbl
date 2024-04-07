@@ -1226,6 +1226,76 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
     \endentry
+    \entry{Dwork2012}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e771760b6d0d33f8b4dfd907d8d57ac2}{%
+           family={Hardt},
+           familyi={H\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1813007d96ae80284b22fd39a7996df9}{%
+           family={Pitassi},
+           familyi={P\bibinitperiod},
+           given={Toniann},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ff631f4e02261486e4a7d47b7aa7d0b}{%
+           family={Reingold},
+           familyi={R\bibinitperiod},
+           given={Omer},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77a44166b8233ae29b20f292779447e0}{%
+           family={Zemel},
+           familyi={Z\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{f676b30234623eef69e5ed6be9df75b0}
+      \strng{fullhash}{da7e8d8f8286359debe7cd945feb7bf5}
+      \strng{bibnamehash}{f676b30234623eef69e5ed6be9df75b0}
+      \strng{authorbibnamehash}{f676b30234623eef69e5ed6be9df75b0}
+      \strng{authornamehash}{f676b30234623eef69e5ed6be9df75b0}
+      \strng{authorfullhash}{da7e8d8f8286359debe7cd945feb7bf5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study fairness in classification, where individuals are classified, e.g., admitted to a university, and the goal is to prevent discrimination against individuals based on their membership in some group, while maintaining utility for the classifier (the university). The main conceptual contribution of this paper is a framework for fair classification comprising (1) a (hypothetical) task-specific metric for determining the degree to which individuals are similar with respect to the classification task at hand; (2) an algorithm for maximizing utility subject to the fairness constraint, that similar individuals are treated similarly. We also present an adaptation of our approach to achieve the complementary goal of "fair affirmative action," which guarantees statistical parity (i.e., the demographics of the set of individuals receiving any classification are the same as the demographics of the underlying population), while treating similar individuals as similarly as possible. Finally, we discuss the relationship of fairness to privacy: when fairness implies privacy, and how tools developed in the context of differential privacy may be applied to fairness.}
+      \field{booktitle}{Proceedings of the 3rd {Innovations} in {Theoretical} {Computer} {Science} {Conference}}
+      \field{isbn}{9781450311151}
+      \field{month}{1}
+      \field{series}{{ITCS} '12}
+      \field{title}{Fairness through awareness}
+      \field{year}{2012}
+      \field{pages}{214\bibrangedash 226}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/2090236.2090255
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1104.3913
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1104.3913
+      \endverb
+    \endentry
     \entry{Faber2013}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9bfd57bd918e9d1b102751e10649a599}{%
@@ -1812,6 +1882,54 @@
       \verb 10.1109/DSAA60987.2023.10302562
       \endverb
     \endentry
+    \entry{Kearns2019}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=17efa7d29b8763456cc47d49b27ade63}{%
+           family={Kearns},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1595660c2346a436f6e6750e4cf793c0}{%
+           family={Neel},
+           familyi={N\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bb323b3c3d2af68def0dcbde8e6795d}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02f6bdc3bac584c637cdeda62ada6f7d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhiwei},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{694dc1a76b002731a5c6f132a28b19bb}
+      \strng{fullhash}{be97b77b6362ba4ab7de87ff7b38636e}
+      \strng{bibnamehash}{694dc1a76b002731a5c6f132a28b19bb}
+      \strng{authorbibnamehash}{694dc1a76b002731a5c6f132a28b19bb}
+      \strng{authornamehash}{694dc1a76b002731a5c6f132a28b19bb}
+      \strng{authorfullhash}{be97b77b6362ba4ab7de87ff7b38636e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{An Empirical Study of Rich Subgroup Fairness for Machine Learning}
+      \field{year}{2019}
+      \field{pages}{100\bibrangedash 109}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3287560.3287592
+      \endverb
+    \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
@@ -1888,6 +2006,50 @@
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2016/file/5680522b8e2bb01943234bce7bf84534-Paper.pdf
       \endverb
+    \endentry
+    \entry{Kusner2017}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a513031020e7ca22e2fe959814b9fcf0}{%
+           family={Kusner},
+           familyi={K\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b072a1ed2f750bfeecb0466a94cc478f}{%
+           family={Loftus},
+           familyi={L\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c40407f768dd3e8b296a11750ad77f41}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4047ee6235adca502c24f37317e79d8e}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8721d6c13bf0e2490cfa82abbaad289c}
+      \strng{fullhash}{83871adb2d45b618f6bc2366b64e465d}
+      \strng{bibnamehash}{8721d6c13bf0e2490cfa82abbaad289c}
+      \strng{authorbibnamehash}{8721d6c13bf0e2490cfa82abbaad289c}
+      \strng{authornamehash}{8721d6c13bf0e2490cfa82abbaad289c}
+      \strng{authorfullhash}{83871adb2d45b618f6bc2366b64e465d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA}
+      \field{month}{03}
+      \field{title}{Counterfactual Fairness}
+      \field{year}{2017}
     \endentry
     \entry{Linardatos2021}{article}{}
       \name{author}{3}{}{%
