@@ -1,11 +1,22 @@
 \chapter{Introduction}\label{ch:Introduction}
 
-% General intro on research
+The Home Mortgage Disclosure Act \parencite{HMDA2022} is a dataset of publicly available U.S. mortgage data. Its nature of including demographic information including such potentially prone to discrimination like gender, race or geography of mortgage applicants alongside information on mortgage approval or disapproval have made the HMDA an often-used source for fairness research ever since its initial release.
 
 \section{Research Objective and Significance}\label{sec:Research_Objective_and_Significance}
 
-% Explain research objective and significance
+Fairness also is part of the scope of the \textbf{Research Question} that this thesis investigates:
+
+\textit{“Can underlying unfairness in mortgage decision-making be detected, explained, and iteratively mitigated without sacrificing predictive performance in a subset of the 2022 HMDA dataset?”}
+
+There already is extensive research available on the topic of fairness in algorithmic decision-making, even specifically in the field of mortgage lending.
+Nevertheless, this thesis aims to make a novel contribution to this field not only by its combined analysis of Fairness and Explainability (as will be discussed in \textbf{chapter \ref{ch:Data_and_Methodology}}),
+but also by the data being used: The analyses in this thesis are based on the 2022 HMDA (Home Mortgage Disclosure Act) dataset, which is a more recent data source than the academic literature analyzed relied upon.
+Moreover, the dataset has been enriched with additional data sources based on geographical information, which will be discussed in \textbf{chapter \ref{subsec:Enrichment_Data}}.
+This enrichment does not only serve the purpose of an improved Explainability, but also aims to tackle the issue of \textit{indirect discrimination} (i.e.\ discrimination through non-sensitive attributes like zip codes being correlated with sensitive attributes like race), 
+which has been discussed in academic literature as a major issue in the field of Fairness \parencite{Mehrabi2021}.
+
+As the Research Question states, the second important object of analysis in this thesis next to fairness will be the aspect of explainability (which will be introduced in more detail in \textbf{chapter \ref{sec:explainability}}. Only by understanding which factors drive model decisions, concrete measures to mitigate potential unfairness can be taken. Therefore, fairness and explainability are considered as two somewhat intertwined concepts in this work.
 
 \section{Summary of the Main Findings}\label{sec:Summary_of_the_Main_Findings}
 
-% Blocker for the main findings
+XXX Required here or doubled with abstract? XXX

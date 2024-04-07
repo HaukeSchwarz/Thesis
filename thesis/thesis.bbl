@@ -1683,6 +1683,31 @@
       \verb 10.5220/0012326800003654
       \endverb
     \endentry
+    \entry{HMDA2022}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learn more about mortgage activity by reviewing HMDA data or download the data for your own analysis.}
+      \field{journaltitle}{Consumer Financial Protection Bureau}
+      \field{month}{9}
+      \field{title}{Home {Mortgage} {Disclosure} {Act} ({HMDA}) {Data}}
+      \field{urlday}{7}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.consumerfinance.gov/data-research/hmda/
+      \endverb
+      \verb{url}
+      \verb https://www.consumerfinance.gov/data-research/hmda/
+      \endverb
+    \endentry
     \entry{Kamiran2012}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=767ab6888ee1d3aa5cdc53f783d7d4e1}{%
