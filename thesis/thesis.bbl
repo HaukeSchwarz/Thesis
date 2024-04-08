@@ -3297,6 +3297,70 @@
       \field{pages}{841\bibrangedash 887}
       \range{pages}{47}
     \endentry
+    \entry{Weerts2023}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=db272c0d584fa8ccdf98f1c8b838016f}{%
+           family={Weerts},
+           familyi={W\bibinitperiod},
+           given={Hilde},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f22170ade97bd945149242679a0c806c}{%
+           family={Dudík},
+           familyi={D\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5cbe52d27d3dd0601d29ea02c2a355e}{%
+           family={Edgar},
+           familyi={E\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=354218cf423d07f5f40c9a3e2335b5a8}{%
+           family={Jalali},
+           familyi={J\bibinitperiod},
+           given={Adrin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a18c342394c3a55d4489cacd0d9b45e}{%
+           family={Lutz},
+           familyi={L\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15b8aa62c2f12a568e8e7b69978904c3}{%
+           family={Madaio},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dfeb14cd58650754fc31858357d1c7c}
+      \strng{fullhash}{cbb5467297cce89c7206ce576a2c4799}
+      \strng{bibnamehash}{3dfeb14cd58650754fc31858357d1c7c}
+      \strng{authorbibnamehash}{3dfeb14cd58650754fc31858357d1c7c}
+      \strng{authornamehash}{3dfeb14cd58650754fc31858357d1c7c}
+      \strng{authorfullhash}{cbb5467297cce89c7206ce576a2c4799}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Mach. Learn. Res.}
+      \field{title}{Fairlearn: Assessing and Improving Fairness of AI Systems}
+      \field{volume}{24}
+      \field{year}{2023}
+      \field{pages}{257:1\bibrangedash 257:8}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:257804972
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:257804972
+      \endverb
+    \endentry
     \entry{Zafar2017}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=651ed744d2d757bbdb4ef8519fdb9745}{%

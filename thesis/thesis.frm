@@ -8,3 +8,4 @@
 \contentsline {formulas}{\numberline {3.3}\hspace {1em}FNR Disparity}{19}{equation.3.2.3}%
 \contentsline {formulas}{\numberline {3.4}\hspace {1em}TPR Disparity}{19}{equation.3.2.4}%
 \contentsline {formulas}{\numberline {3.5}\hspace {1em}TNR Disparity}{19}{equation.3.2.5}%
+\contentsline {formulas}{\numberline {3.6}\hspace {1em}Correlation Remover}{21}{equation.3.2.6}%

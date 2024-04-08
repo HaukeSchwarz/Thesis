@@ -128,10 +128,26 @@ In order to operationalize this approach, the following steps were taken:
 % Maybe more detail when decision has actually been made?
 % Workflow idea: Training (unadjusted) -> Explainability -> Performance -> Fairness by using aequitas outcome (or checking AIF360) -> new technique by AIF 360 -> aim for similar performance but better fairness
 
-Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iteration_I}}), adjustments to the model and the data preparation process will be made in multiple iterations, aiming to improve at least one of these aspects in each run.
+Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iteration_I}}), adjustments to the model and the data preparation process were made in multiple iterations, aiming to improve at least one of these aspects in each run.
 
-As a first iteration, \textbf{Reweighing} will be applied. This \textit{pre-processing} procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
+As a first iteration, \textbf{Reweighing} was applied. This \textit{pre-processing} procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
 The practical application of this technique includes the following steps: Initially, the weights of the samples need to be calculated. This can be achieved using the \textit{Reweighing} class of the \textit{aif360.algorithms.preprocessing} module. Being supplied with the training dataset and information on the privileged group (in this case, the \textit{White} applicants) and the unprivileged group (\textit{Black and African American} applicants), the algorithm calculates the weights for each sample. 
 In order to ensure comparability of the results, an exact copy of the neural network described in \textbf{Figure \ref{tab:CH03_Model_Details}} is created and compiled. During fitting however, the weights calculated by the reweighing algorithm are passed to the \textit{sample\_weight} parameter of the model, causing keras to apply them during model fitting. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iteration_I}}.
+
+The second iteration consisted of the application of the \textbf{Correlation Remover}, another pre-processing technique that was proposed by Weerts et al.\ in their paper on the Fairlearn Python package \parencite{Weerts2023}. It aims to remove any correlation between the sensitive attribute and the features of the dataset, while changes in non-sensitive features are kept as low as possible:
+
+\begin{equation}
+    \begin{aligned}
+        & \underset{z_1, \ldots, z_n}{\text{min}}
+        & & \sum_{i=1}^n ||z_i - x_i||^2 \\
+        & \text{subject to}
+        & & \frac{1}{n} \sum_{i=1}^n z_i (s_i - \bar{s})^T = 0
+        \end{aligned}
+    \label{eq:Correlation_Remover}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Correlation Remover}
+\end{equation}
+
+Practically implementing this technique requires a definition of the sensitive attribute $s$ (as opposed to non-sensitive attributes $z$), which will then be used to fulfill the constraint of the optimization problem as displayed in \textbf{equation \ref{eq:Correlation_Remover}}. 
+Once again, the neural network needs to be retrained on the dataset after the application of the Correlation Remover. It must however be noted, that, as opposed to the reweighing technique, the underlying data are actually altered by this technique, meaning that a model fitted on correlation-removed data will only perform well on correlation-removed validation and testing data. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iteration_II}}.
 
 % One for In-processing and one for post-processing and maybe all of them combined? - Reasoning for each choice!
