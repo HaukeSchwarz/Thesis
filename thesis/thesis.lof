@@ -13,6 +13,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Loan Grant by Protected Attribute\relax }}{23}{figure.caption.16}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces SHAP individual explanations\relax }}{24}{figure.caption.18}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces LIME individual explanations\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{25}{figure.caption.19}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 

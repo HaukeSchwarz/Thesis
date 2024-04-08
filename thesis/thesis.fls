@@ -1881,6 +1881,11 @@ INPUT ./images/CHXX_UPDATE_LIME_individual.png
 INPUT images/CHXX_UPDATE_LIME_individual.png
 INPUT ./images/CHXX_UPDATE_LIME_individual.png
 INPUT ./images/CHXX_UPDATE_LIME_individual.png
+INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
+INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
+INPUT images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
+INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
+INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
 INPUT thesis.aux
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
