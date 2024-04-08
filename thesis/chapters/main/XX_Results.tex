@@ -72,9 +72,9 @@ Utilizing the aforementioned \textbf{AIF360} package to assess the mean differen
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
-% Describe and put all important graphs in here and leave fairness assessment for discussion
+% Describe and put all important graphs in here and leave fairness assessment for discussion 
 
-% The analysis of potential discrimination with regards to the geographical features showed a clear relation between the percentages of granted loans and features like 
+\textbf{Figure \ref{fig:Scatter_White_Applicants_Loan_Grant}} shows a scatterplot that relates the percentage of white applicants to the percentage of granted loans per county. It indicates that a higher percentage of white applicants per county does not only seem to be correlated with a higher percentage of these loans actually being granted, but also with a lower poverty rate on average.
 
 \begin{figure}[h]
     \centering
@@ -83,6 +83,28 @@ Utilizing the aforementioned \textbf{AIF360} package to assess the mean differen
     \caption*{Counties with predominantly White applicants do not only tend to have a lower poverty rate on average, but also see a higher percentage of loans being granted on average.}
     \label{fig:Scatter_White_Applicants_Loan_Grant}
 \end{figure}
+
+It should however be noted that the distributions within the enrichment data themselves are skewed by nature, as there are way higher numbers of white applicants in the data set and only few counties have a substantial number of predicted mortgage grants (see \textbf{Figure \ref{fig:Enrichment_Data_EDA}}).
+
+\begin{figure}[h]
+    \centering
+    \caption{Enrichment Data EDA}
+    \begin{minipage}{0.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/geo_enrich/predictions_per_county.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/geo_enrich/perc_predictions.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/geo_enrich/white_per_county.png}
+    \end{minipage}\hfill
+    \label{fig:Enrichment_Data_EDA}
+    \caption*{Analyzing the enrichment data shows that while the percentage of predictions per county appears to be normally distributed, the distributions of the percentage of White applicants and the percentage of predicted granted loans per county are skewed.}
+\end{figure}
+
 
 \section{Results}\label{sec:Results}        
 

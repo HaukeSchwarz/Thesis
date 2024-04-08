@@ -12,9 +12,10 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Histograms of the Numerical Features\relax }}{22}{figure.caption.15}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Loan Grant by Protected Attribute\relax }}{23}{figure.caption.16}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces SHAP individual explanations\relax }}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces LIME individual explanations\relax }}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Enrichment Data EDA\relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces SHAP individual explanations\relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces LIME individual explanations\relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{26}{figure.caption.21}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 
