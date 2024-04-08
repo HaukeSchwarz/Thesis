@@ -28,7 +28,8 @@
 \contentsline {subsection}{\numberline {3.2.2}Explainability}{17}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Performance Assessment}{18}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Fairness Assessment}{19}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Iterations}{20}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.5}Explainability and Fairness through Enrichment Data}{19}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Iterations}{20}{subsection.3.2.6}%
 \contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{21}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Data Overview}{21}{subsection.4.1.1}%

@@ -42,21 +42,18 @@ The model chosen is a comparably simple sequential neural network, implemented w
 \end{table}
 
 To increase the efficiency of the training process and to prevent overfitting, \textit{callbacks} for early stopping (with a patience of 5 iterations) and best model selection, both based on the validation loss, have been implemented. 
-\textit{Adam} is chosen as the optimizer, due to the nature of the classification task, loss evaluation is based on \textit{binary crossentropy}, and \textit{accuracy} is selected as the target metric. Training takes place with a batch size of 48 and for a maximum of 30 epochs. 
+\textit{Adam} was chosen as the optimizer, due to the nature of the classification task, loss evaluation was based on \textit{binary crossentropy}, and \textit{accuracy} was selected as the target metric. Training took place with a batch size of 48 and for a maximum of 30 epochs. 
 
 \subsection{Explainability}\label{subsec:Explainability}
 
 As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
-A total of three different Explainability algorithms (see \textbf{chapter\ref{subsec:algorithms}} for theoretical background) is utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
+A total of three different Explainability algorithms (see \textbf{chapter\ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
 \begin{itemize}
     \item The \textbf{SHAP} algorithm will be applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
     \item The \textbf{LIME} algorithm will be used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
     \item A \textbf{Global Surrogate Model} will be trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
 \end{itemize}
 The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
-
-An additional approach to Explainability is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it is possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
-While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
 
 \subsection{Performance Assessment}\label{subsec:Performance_Assessment}
 
@@ -107,6 +104,24 @@ From the original paper \parencite{2018aequitas}, we can infer these formulas fo
 Following the original paper, the optimal value for the disparities is \textbf{1}, as this would indicate parity between the groups. This means, that increased fairness is indicated by values closer to \textbf{1} when comparing model results to each other.
 
 % Add a more specific analysis of e.g. subgroup precision etc.
+
+\subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
+
+An additional approach to Explainability is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
+While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
+
+In order to operationalize this approach, the following steps were taken:
+\begin{itemize}
+    \item The data was aggregated on \textit{county\_code} level, using the \textit{groupby} function of the pandas package.
+    \item Aggregated KPIs were created: 
+    \begin{itemize}
+        \item \textbf{Sum of Applications}: The total number of applications per county, mainly important to filter out counties with a low number of applications.
+        \item \textbf{Percentage of Grants}: The overall likelihood of a positive decision per county.
+        \item \textbf{Percentage White Applicants}: The percentage of White applicants per county.
+    \end{itemize}
+    \item These KPIs were then related to the predictions made by the model by creating the \textbf{Perc. Pred. Grants} feature, which is the percentage of granted loans per county predicted by the model.
+    \item Based on this set of information, several scatterplots relating these factors were created to analyze the distribution of granted loans across different regions, incorporating information on potentially discriminating factors. 
+\end{itemize}
 
 \subsection{Iterations}\label{subsec:Iterations}
 
