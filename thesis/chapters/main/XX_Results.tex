@@ -72,7 +72,7 @@ Utilizing the aforementioned \textbf{AIF360} package to assess the mean differen
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
-% If required - probably describe here and put graphs in appendix
+% Describe and put all important graphs in here and leave fairness assessment for discussion
 
 \section{Results}\label{sec:Results}        
 
@@ -82,16 +82,54 @@ As defined in \textbf{Chapter \ref{subsec:Performance_Assessment}} and \textbf{C
 
 \subsection{Initial Performance}\label{subsec:Initial_Performance}
 
+The initial run serving as a benchmark was conducted training the neural network described in \textbf{Chapter \ref{subsec:Model_Training_and_Prediction}} on the unadjusted training data (see \textbf{Chapter \ref{subsec:HMDA_Data}}).
+
+\textbf{Explainability}
+
+% Add explainability results here (not required for further iterations)
+% Comment on SHAP and LIME disagreement and add https://arxiv.org/pdf/2202.01602.pdf
+
+As was intended in \textbf{chapter \ref{subsec:Explainability}}, three different explainability algorithms were utilized to challenge each other's results and analyze overall patterns. \textbf{Figure \ref{fig:SHAP_explanations}} and \textbf{Figure \ref{fig:LIME_explanations}} show the individual explanations for the first 150 observations of the test set provided by SHAP and LIME, respectively. 
+As already mentioned in \textbf{Chapter \ref{subsec:Performance_Assessment}}, the model behaved somewhat different from the expectations: Imputation of missing values in the \textit{debt\_to\_income\_ratio} feature led to a significant decrease in both fairness and performance measures of the model.
+Therefore, it must be assumed that missingness in itself is not completely at random and holds information (or that the imputation method via a random forest regressor is not suitable for this task).
+While SHAP considers that missingness to be the most important influence on model predictions, LIME weighs the \textit{debt\_to\_income\_ratio} features higher in general.
+None of the algorithms consider the protected attributes to be of high direct impact on the results.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,height=5cm,keepaspectratio]{images/CHXX_UPDATE_SHAP_individual.png}
+        \caption{SHAP individual explanations}
+        \label{fig:SHAP_explanations}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,height=5cm,keepaspectratio]{images/CHXX_UPDATE_LIME_individual.png}
+        \caption{LIME individual explanations}
+        \label{fig:LIME_explanations}
+    \end{minipage}
+    \caption*{Directly comparing LIME and SHAP explanations for the first 150 observations of the test set: While \textit{debt\_to\_income\_ratio} is an important factor in both explanations, its actual impact varies, as LIME also considers the \textit{loan\_type} feature to be of high importance. Default plotting options were kept: SHAP values are displayed as absolutes, while LIME values show the direction of their impact.}
+\end{figure}
+
+While the overall trends are similar with both algorithms, the actual impact of the features varies significantly. While this is not a direct threat to the quality of the results of this thesis, it is a reminder that explainability algorithms need to be analyzed carefully. 
+This ties with the findings of Krishna et al. \parencite{Krishna2022}, who emphasize the importance of understanding the underlying assumptions of explainability algorithms and the need for a more comprehensive evaluation of their results.
+
+% Also include results surrogate model
+
+\textbf{Performance}
+
+% Add performance results here (all iterations)
+
+\textbf{Fairness}
+
+% Add fairness results here (all iterations)
+
 Table XXX shows the results of the initial model run as described in \textbf{Chapter \ref{sec:Methodology}}.
 
 XXX Hier Tabelle von finalem Durchlauf XXX
 
 XXX Basic Kommentare XXX
-
-% Comment on SHAP and LIME disagreement and add https://arxiv.org/pdf/2202.01602.pdf - general comment on explainability?
-
-As already mentioned in \textbf{Chapter \ref{subsec:Performance_Assessment}}, the model behaved somewhat different from the expectations: Imputation of missing values in the \textbf{debt\_to\_income\_ratio} feature led to a significant decrease in both fairness and performance measures of the model.
-Therefore, it must be assumed that missingness in itself is not completely at random and holds information (or that the imputation method via a random forest regressor is not suitable for this task).
 
 \subsection{Iteration I: Reweighing}\label{subsec:Iteration_I}
 

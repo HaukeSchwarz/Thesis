@@ -1871,6 +1871,16 @@ INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
+INPUT ./images/CHXX_UPDATE_SHAP_individual.png
+INPUT ./images/CHXX_UPDATE_SHAP_individual.png
+INPUT images/CHXX_UPDATE_SHAP_individual.png
+INPUT ./images/CHXX_UPDATE_SHAP_individual.png
+INPUT ./images/CHXX_UPDATE_SHAP_individual.png
+INPUT ./images/CHXX_UPDATE_LIME_individual.png
+INPUT ./images/CHXX_UPDATE_LIME_individual.png
+INPUT images/CHXX_UPDATE_LIME_individual.png
+INPUT ./images/CHXX_UPDATE_LIME_individual.png
+INPUT ./images/CHXX_UPDATE_LIME_individual.png
 INPUT thesis.aux
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
