@@ -38,6 +38,6 @@
 \contentsline {section}{\numberline {4.2}Results}{22}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Initial Performance}{23}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Iteration I: Reweighing}{24}{subsection.4.2.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{26}{chapter*.20}%
+\contentsline {chapter}{\nonumberline Bibliography}{26}{chapter*.21}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

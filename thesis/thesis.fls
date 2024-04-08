@@ -1871,6 +1871,11 @@ INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images//CHXX_Loan_Grant_By_Protected_Attribute.png
+INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
+INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
+INPUT images/CHXX_Perc_Grants_vs_Perc_White.png
+INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
+INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
 INPUT ./images/CHXX_UPDATE_SHAP_individual.png
 INPUT ./images/CHXX_UPDATE_SHAP_individual.png
 INPUT images/CHXX_UPDATE_SHAP_individual.png
