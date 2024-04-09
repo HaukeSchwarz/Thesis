@@ -179,6 +179,44 @@ XXX
 
 \subsection{Iteration III:\ Calibrated Equalized Odds}\label{subsec:Iteration_III}
 
-% Alle Ergebnisse einzeln oder am Ende Gesamttabelle mit allen Iterationen?
+XXX
+
+\subsection{Results Summary}\label{subsec:Results_Summary}
+
+\begin{figure}[h]
+    \centering
+    \caption{Racial Disparities Among Iterations}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/initial.png}
+        \caption{Initial Model Disparity}
+        \label{fig:Initial_Disparity}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/reweighted.png}
+        \caption{Reweighed Model Disparity}
+        \label{fig:Reweighed_Disparity}
+    \end{minipage}
+    
+    \vspace{1em} % Adjust vertical spacing between rows
+    
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/correlation_removed.png}
+        \caption{Correlation Removed Model Disparity}
+        \label{fig:Correlation_Removed_Disparity}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/calibrated_eqodds.png} 
+        \caption{Calibrated Equalized Odds Model Disparity}
+        \label{fig:Calibrated_EqOdds_Disparity}
+    \end{minipage}
+    
+    \label{fig:Racial_Disparities}
+    \caption*{Apart from the Calibrated Equalized Odds model, which exhibits a higher amount of overall predicted grants, none of the iterations were able to substantially reduce the disparity in granted loans among races.}
+\end{figure}
+
 
 % \section{Limitations}\label{sec:Limitations} - hier oder am Ende?

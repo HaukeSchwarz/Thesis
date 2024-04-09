@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1712661823 "thesis.bcf" "thesis.bbl" "thesis" 1712661906 0
+["biber thesis"] 1712661823 "thesis.bcf" "thesis.bbl" "thesis" 1712671921 0
   "./literature/thesis_lib.bib" 1712661694 124422 760a58dc28b97fc17bd358226a7344a0 ""
-  "thesis.bcf" 1712661904 113625 76b252275f12b24c0b3a2296d9009875 "pdflatex"
+  "thesis.bcf" 1712671919 113625 76b252275f12b24c0b3a2296d9009875 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1712661898 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1712661906 0
+["pdflatex"] 1712671908 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1712671921 0
   "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1712504637 6601 f43adf8eb809df61fb8738ff79f67d2e ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -277,7 +277,7 @@
   "chapters/main/01_Introduction.tex" 1712569438 2596 1b25938f9d8971bc785193d474088dfd ""
   "chapters/main/02_Literature_Review_V0.tex" 1712602520 24078 ea644c7bf7e402b74e42ea96ddc51502 ""
   "chapters/main/03_Data_and_Methodology.tex" 1710931506 180 dba736930e7a4fa4323ab6b5b508bf2a ""
-  "chapters/main/XX_Results.tex" 1712661694 11185 f03b7267ca457cd325c80db557c22986 ""
+  "chapters/main/XX_Results.tex" 1712671883 12745 8e0a8e33fbb72898c9f34aec3f83fd8a ""
   "chapters/main/subchapters_separate/Data.tex" 1712150148 11570 b9e01bb7693a2981324ac07703a01745 ""
   "chapters/main/subchapters_separate/Methodology.tex" 1712661897 14135 e4e396cf37a91c11f5d3945fffd1e52d ""
   "chapters/other/pre/abstract.tex" 1712503028 2223 0ee2f111dbda3f4bc6c41cc203a0b8dc ""
@@ -297,6 +297,10 @@
   "images/geo_enrich/perc_predictions.png" 1712587980 28565 db3969dfec1f5cedf05842c98ea96b20 ""
   "images/geo_enrich/predictions_per_county.png" 1712587955 23027 1d63fd5dbf9b729417e3b9c6dc7c5031 ""
   "images/geo_enrich/white_per_county.png" 1712588005 24649 e3dbfade5b1312decba6cedcd2406c1a ""
+  "images/loan_grants_by_protected_attributes/calibrated_eqodds.png" 1712583498 17161 5b766587bcda52e18f529d9615d7fc87 ""
+  "images/loan_grants_by_protected_attributes/correlation_removed.png" 1712583468 16174 99fe42bdba091ea44f420c4b9942f517 ""
+  "images/loan_grants_by_protected_attributes/initial.png" 1712583147 15406 f6fcac6d416a5e54e609c9fb55578fdc ""
+  "images/loan_grants_by_protected_attributes/reweighted.png" 1712583163 16817 68b6d3f33448c6fdbab3702dcd12b6fd ""
   "settings/bibliography.tex" 1711911866 970 23511ab81cea878df22d55659c7d2f12 ""
   "settings/bookmarks.tex" 1709140638 269 5aa3b1580a4ee028846ad7996f981ab2 ""
   "settings/colors.tex" 1709140638 1533 b0628104e1d20799fec33f99cdb3b83e ""
@@ -306,14 +310,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1712661904 45268 8434260717d3e3e7ec38805a49884d6d "pdflatex"
+  "thesis.aux" 1712671919 47167 0545273d94b3497659c5dadc779d6541 "pdflatex"
   "thesis.bbl" 1712661826 195665 f891c652ac4b7a7705c843404a9a9b09 "biber thesis"
-  "thesis.frm" 1712661904 1034 84cfbc3815ff95c0907f974cf6f8d513 "pdflatex"
-  "thesis.lof" 1712661904 1787 5126ec85795528b684e1301325563f9f "pdflatex"
-  "thesis.lot" 1712661904 627 e73d80be382101b1eb008891b03c19af "pdflatex"
-  "thesis.run.xml" 1712661904 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
+  "thesis.frm" 1712671919 1034 84cfbc3815ff95c0907f974cf6f8d513 "pdflatex"
+  "thesis.lof" 1712671919 2395 d8d10657d9864fb41482aca7082c4028 "pdflatex"
+  "thesis.lot" 1712671919 627 e73d80be382101b1eb008891b03c19af "pdflatex"
+  "thesis.run.xml" 1712671919 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
   "thesis.tex" 1712504637 6601 f43adf8eb809df61fb8738ff79f67d2e ""
-  "thesis.toc" 1712661904 3729 a6216087eb68c708097f57e558784ef1 "pdflatex"
+  "thesis.toc" 1712671919 3815 76b8da8fba574fb776583bb7cb004529 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
