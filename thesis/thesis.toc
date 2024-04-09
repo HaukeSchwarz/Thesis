@@ -39,6 +39,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Initial Performance}{24}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Iteration I:\ Reweighing}{26}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Iteration II:\ Correlation Remover}{26}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Iteration III:\ Calibrated Equalized Odds}{26}{subsection.4.2.4}%
 \contentsline {chapter}{\nonumberline Bibliography}{28}{chapter*.22}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
