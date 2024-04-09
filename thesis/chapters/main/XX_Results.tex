@@ -183,6 +183,8 @@ XXX
 
 \subsection{Results Summary}\label{subsec:Results_Summary}
 
+XXX Update all when ready and add explanations XXX
+
 \begin{figure}[h]
     \centering
     \caption{Racial Disparities Among Iterations}
@@ -199,7 +201,7 @@ XXX
         \label{fig:Reweighed_Disparity}
     \end{minipage}
     
-    \vspace{1em} % Adjust vertical spacing between rows
+    \vspace{1em} 
     
     \begin{minipage}{0.5\textwidth}
         \centering
@@ -218,5 +220,51 @@ XXX
     \caption*{Apart from the Calibrated Equalized Odds model, which exhibits a higher amount of overall predicted grants, none of the iterations were able to substantially reduce the disparity in granted loans between races.}
 \end{figure}
 
+\begin{table}[h]
+    \centering
+    \caption{Model Performance and Fairness Comparison}
+    \begin{tabular}{l *{4}{>{$}c<{$}}}
+    \toprule
+    & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
+    \midrule
+    \textbf{accuracy} & 0.90 & 0.90 & 0.73 & \textbf{0.91} \\
+    \textbf{precision} & 0.88 & 0.88 & 0.69 & \textbf{0.88} \\
+    \textbf{recall} & \textbf{0.97} & 0.97 & 0.97 & 0.97 \\
+    \textbf{f1} & 0.92 & 0.92 & 0.81 & \textbf{0.92} \\
+    \textbf{roc\_auc} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.99 & \textbf{1.00} & 0.95 & 0.94 \\
+    \textbf{fpr\_disparity} & 0.96 & \textbf{1.00} & 0.43 & 0.76 \\
+    \textbf{tnr\_disparity} & 1.01 & \textbf{1.00} & 2.23 & 1.06 \\
+    \textbf{fnr\_disparity} & 1.42 & \textbf{1.20} & 3.25 & 3.42 \\
+    \bottomrule
+    \end{tabular}
+    \caption*{XXX Comment when ready XXX}
+    \label{tab:model_performance_fairness_results}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Subgroup Fairness Assessment}
+    \begin{tabular}{l *{4}{>{$}c<{$}}}
+    \toprule
+    & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
+    \midrule
+    \textbf{Accuracy White} & 0.91 & 0.91 & 0.72 & \textbf{0.91} \\
+    \textbf{Precision White} & \textbf{0.89} & 0.89 & 0.68 & 0.89 \\
+    \textbf{Recall White} & 0.97 & 0.97 & \textbf{0.98} & 0.98 \\
+    \textbf{F1 Score White} & 0.93 & 0.93 & 0.81 & \textbf{0.93} \\
+    \textbf{AUC White} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
+    \midrule
+    \textbf{Accuracy Black} & 0.88 & 0.88 & 0.81 & \textbf{0.88} \\
+    \textbf{Precision Black} & 0.82 & 0.81 & 0.73 & 0.84 \\
+    \textbf{Recall Black} & 0.96 & \textbf{0.97} & 0.93 & 0.92 \\
+    \textbf{F1 Score Black} & \textbf{0.88} & 0.88 & 0.82 & 0.88 \\
+    \textbf{AUC Black} & \textbf{0.95} & 0.95 & \text{NA} & \text{NA} \\
+    \bottomrule
+    \end{tabular}
+    \caption*{XXX Comment when ready XXX}
+    \label{tab:subgroup_fairness_results}
+\end{table}
 
 % \section{Limitations}\label{sec:Limitations} - hier oder am Ende?
