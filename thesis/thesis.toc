@@ -37,10 +37,10 @@
 \contentsline {subsection}{\numberline {4.1.3}Enrichment Data}{25}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Results}{25}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Initial Performance}{26}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Iteration I:\ Reweighing}{27}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Iteration I:\ Reweighing}{28}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Iteration II:\ Correlation Remover}{28}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Iteration III:\ Calibrated Equalized Odds}{28}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Results Summary}{28}{subsection.4.2.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.25}%
+\contentsline {subsection}{\numberline {4.2.5}Results Summary}{29}{subsection.4.2.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.27}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

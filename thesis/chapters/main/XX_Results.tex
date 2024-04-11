@@ -106,9 +106,7 @@ It should however be noted that the distributions within the enrichment data the
 
 \section{Results}\label{sec:Results}        
 
-As defined in \textbf{chapter \ref{subsec:Performance_Assessment}} and \textbf{chapter \ref{subsec:Fairness_Assessment}}, the model is evaluated based on XXX
-
-
+As defined in \textbf{chapter \ref{subsec:Performance_Assessment}} and \textbf{chapter \ref{subsec:Fairness_Assessment}}, each outcome is assessed in terms of performance and fairness with two pre-defined metric sets. Additionally, the aspect of explainability will be demonstrated examplarily for the initial model run.
 
 \subsection{Initial Performance}\label{subsec:Initial_Performance}
 
@@ -155,17 +153,67 @@ It is apparent that the overall trends of SHAP and LIME are close to the global 
 
 \textbf{Performance}
 
-% Add performance results here (all iterations)
+Even without directly comparable benchmarks available (see \textbf{chapter \ref{subsec:Performance_Assessment}}), the initial model performance can be considered as good. Details can be found in \textbf{table \ref{tab:initial_model_performance_results_1}}.
+
+\begin{table}[h]
+    \centering
+    \caption{Metrics \#1: Initial Model}
+    \begin{tabular}{l c}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{accuracy} & 0.90 \\
+    \textbf{precision} & 0.88 \\
+    \textbf{recall} & 0.96 \\
+    \textbf{f1} & 0.92 \\
+    \textbf{roc\_auc} & 0.94 \\
+    \bottomrule
+    \end{tabular}
+    \caption*{The initial model shows a high accuracy and recall, but a lower precision and f1 score. The overall performance can be considered good.}
+    \label{tab:initial_model_performance_results_1}
+\end{table}
 
 \textbf{Fairness}
 
-% Add fairness results here (all iterations)
+\textbf{Table \ref{tab:initial_model_fairness_results_1}} shows the results of the fairness assessment of the initial model. The disparities in the true positive rate and false positive rate are relatively low, while the disparities in the true negative rate and false negative rate are higher.
 
-Table XXX shows the results of the initial model run as described in \textbf{Chapter \ref{sec:Methodology}}.
-
-XXX Hier Tabelle von finalem Durchlauf XXX
-
-XXX Basic Kommentare XXX
+\begin{table}[h]
+    \caption{Metrics \#2: Initial Model}
+    \begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \begin{tabular}{lr}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{Accuracy White} & 0.91 \\
+    \textbf{Precision White} & 0.89 \\
+    \textbf{Recall White} & 0.97 \\
+    \textbf{F1 Score White} & 0.93 \\
+    \textbf{AUC White} & 0.94 \\
+    \textbf{Accuracy Black} & 0.89 \\
+    \textbf{Precision Black} & 0.84 \\
+    \textbf{Recall Black} & 0.92 \\
+    \textbf{F1 Score Black} & 0.88 \\
+    \textbf{AUC Black} & 0.95 \\
+    \bottomrule
+    \end{tabular}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \begin{tabular}{lr}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.95 \\
+    \textbf{fpr\_disparity} & 0.77 \\
+    \textbf{tnr\_disparity} & 1.05 \\
+    \textbf{fnr\_disparity} & 2.51 \\
+    \bottomrule
+    \end{tabular}
+    \end{minipage}
+    \label{tab:initial_model_fairness_results_1}
+    \caption*{The initial model shows a higher accuracy and recall for White applicants, but a higher precision and F1 score for Black applicants. The AUC is higher for Black applicants. The disparities in the true positive rate and false positive rate are relatively low, while the disparities in the true negative rate and false negative rate are higher.}
+\end{table}
 
 \subsection{Iteration I:\ Reweighing}\label{subsec:Iteration_I}
 
