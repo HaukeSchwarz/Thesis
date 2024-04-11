@@ -8,19 +8,19 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation Between the Enrichment Features\relax }}{16}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Methodology\relax }}{17}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Boxplots of the Numerical Features\relax }}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Histograms of the Numerical Features\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Loan Grant by Protected Attribute\relax }}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Enrichment Data EDA\relax }}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces SHAP individual explanations\relax }}{27}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces LIME individual explanations\relax }}{27}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{28}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Racial Disparities Among Iterations\relax }}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Initial Model Disparity\relax }}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Reweighed Model Disparity\relax }}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Corr. Rem. Model Disparity\relax }}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Cal. Eq. Odds Model Disparity\relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Boxplots of the Numerical Features\relax }}{23}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Histograms of the Numerical Features\relax }}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Loan Grant by Protected Attribute\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Enrichment Data EDA\relax }}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces SHAP individual explanations\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces LIME individual explanations\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Racial Disparities Among Iterations\relax }}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Initial Model Disparity\relax }}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Reweighed Model Disparity\relax }}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Corr. Rem. Model Disparity\relax }}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Cal. Eq. Odds Model Disparity\relax }}{30}{figure.caption.22}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 

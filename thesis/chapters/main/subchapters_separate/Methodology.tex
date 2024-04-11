@@ -49,17 +49,18 @@ To increase the efficiency of the training process and to prevent overfitting, \
 As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
 A total of three different Explainability algorithms (see \textbf{chapter\ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
 \begin{itemize}
-    \item The \textbf{SHAP} algorithm will be applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
-    \item The \textbf{LIME} algorithm will be used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
-    \item A \textbf{Global Surrogate Model} will be trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
+    \item The \textbf{SHAP} algorithm was applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
+    \item The \textbf{LIME} algorithm was used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
+    \item A \textbf{Global Surrogate Model} was trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
 \end{itemize}
 The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
 
 \subsection{Performance Assessment}\label{subsec:Performance_Assessment}
 
-The model originally puts out numerical probabilities, which are then converted to binary values, using a threshold of 0.5.
-Using these original probabilities, \textbf{ROC AUC} curves can be plotted and the ROC AUC score can be calculated, which is used as one of the assessment measures.
+The model originally put out numerical probabilities, which were then converted to binary values, using a threshold of 0.5.
+Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score can be calculated, which was used as one of the assessment measures.
 Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score}, are calculated alongside the \textbf{confusion matrix}.
+This set of performance metrics is referred to as \textit{metrics \#1} in the methodology (see \textbf{figure \ref{fig:CH03_Methodology}}).
 
 Finding comparable benchmarks for model performance in the academic literature is hampered by the recency of the used data and the individual approach to filtering states.
 Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task \parencite{Ghoba} with somewhat comparable data, 
@@ -102,8 +103,17 @@ From the original paper \parencite{2018aequitas}, we can infer these formulas fo
 \end{equation}
 
 Following the original paper, the optimal value for the disparities is \textbf{1}, as this would indicate parity between the groups. This means, that increased fairness is indicated by values closer to \textbf{1} when comparing model results to each other.
+Analyzing these disparities result in the first set of fairness metrics assessed, denoted as \textit{metrics \#2} in the methodology (see \textbf{figure \ref{fig:CH03_Methodology}}).
 
-% Add a more specific analysis of e.g. subgroup precision etc.
+The second part of \textit{metrics \#2} is a more specified analysis of the model performance for the different groups. If the model performed vastly different for the races in question, this would indicate a potential bias in the model. Therefore, race-specific performance metrics were analyzed.
+More precisely, the outcomes were masked to only include either \textbf{White} or \textbf{Black or African American} applicants respectively, and the following metrics were calculated for each group:
+\begin{itemize}
+    \item \textbf{Accuracy}: The percentage of correct predictions made by the model.
+    \item \textbf{Precision}: The percentage of correct positive predictions made by the model.
+    \item \textbf{Recall}: The percentage of actual positive cases that were correctly predicted by the model.
+    \item \textbf{F1 Score}: The harmonic mean of precision and recall.
+    \item \textbf{AUC} (where applicable): The area under the ROC curve.
+\end{itemize}
 
 \subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
 
