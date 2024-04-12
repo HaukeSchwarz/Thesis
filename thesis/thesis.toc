@@ -41,6 +41,6 @@
 \contentsline {subsection}{\numberline {4.2.3}Iteration II:\ Correlation Remover}{28}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Iteration III:\ Calibrated Equalized Odds}{28}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Results Summary}{29}{subsection.4.2.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.27}%
+\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.28}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

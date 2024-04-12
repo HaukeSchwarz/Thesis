@@ -1933,6 +1933,11 @@ INPUT ./images/loan_grants_by_protected_attributes/calibrated_eqodds.png
 INPUT ./images/loan_grants_by_protected_attributes/calibrated_eqodds.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
+INPUT ./images/CHXX_UPDATE_Results_Line.png
+INPUT ./images/CHXX_UPDATE_Results_Line.png
+INPUT images/CHXX_UPDATE_Results_Line.png
+INPUT ./images/CHXX_UPDATE_Results_Line.png
+INPUT ./images/CHXX_UPDATE_Results_Line.png
 INPUT thesis.aux
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml

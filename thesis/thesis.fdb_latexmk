@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1712850226 "thesis.bcf" "thesis.bbl" "thesis" 1712851363 0
+["biber thesis"] 1712850226 "thesis.bcf" "thesis.bbl" "thesis" 1712937786 0
   "./literature/thesis_lib.bib" 1712661694 124422 760a58dc28b97fc17bd358226a7344a0 ""
-  "thesis.bcf" 1712851360 113625 76b252275f12b24c0b3a2296d9009875 "pdflatex"
+  "thesis.bcf" 1712937784 113625 76b252275f12b24c0b3a2296d9009875 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1712851350 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1712851363 0
+["pdflatex"] 1712937777 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1712937786 0
   "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1712672914 6743 a956f2e530fa1d938d1a140977082816 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -277,7 +277,7 @@
   "chapters/main/01_Introduction.tex" 1712569438 2596 1b25938f9d8971bc785193d474088dfd ""
   "chapters/main/02_Literature_Review_V0.tex" 1712602520 24078 ea644c7bf7e402b74e42ea96ddc51502 ""
   "chapters/main/03_Data_and_Methodology.tex" 1710931506 180 dba736930e7a4fa4323ab6b5b508bf2a ""
-  "chapters/main/XX_Results.tex" 1712851328 18482 302a6014112d9992fadeae386eed7c6c ""
+  "chapters/main/XX_Results.tex" 1712937756 18958 048d83cd58bcaac827cff0819af89852 ""
   "chapters/main/subchapters_separate/Data.tex" 1712150148 11570 b9e01bb7693a2981324ac07703a01745 ""
   "chapters/main/subchapters_separate/Methodology.tex" 1712847701 15362 31cd25c0ea664415c875a76a30934f7b ""
   "chapters/other/pre/abstract.tex" 1712503028 2223 0ee2f111dbda3f4bc6c41cc203a0b8dc ""
@@ -292,6 +292,7 @@
   "images/CH03_Missingno_Completeness.png" 1710878746 73364 531ad634ae5542fafa8f384b9896e1d4 ""
   "images/CHXX_Perc_Grants_vs_Perc_White.png" 1712586533 50955 f28f93d3891f552438c78321d74ad38c ""
   "images/CHXX_UPDATE_LIME_individual.png" 1712573612 112510 964c29553d27e16e74781806abd327ea ""
+  "images/CHXX_UPDATE_Results_Line.png" 1712937457 75107 50a2700fb60150ae67aca034e4423675 ""
   "images/CHXX_UPDATE_SHAP_individual.png" 1712572718 88573 b9133970de748172ce8e9e79be84eb1f ""
   "images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png" 1712577983 20651 b3aad4fa1d76ec9b020c032ddd285508 ""
   "images/geo_enrich/perc_predictions.png" 1712587980 28565 db3969dfec1f5cedf05842c98ea96b20 ""
@@ -310,14 +311,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1712851360 48228 c78dc4cdd46f10fa1ef038f73287f38b "pdflatex"
+  "thesis.aux" 1712937784 48492 735538f6a8d92db8da8555f64f17b28c "pdflatex"
   "thesis.bbl" 1712850231 195665 f891c652ac4b7a7705c843404a9a9b09 "biber thesis"
-  "thesis.frm" 1712851360 1034 84cfbc3815ff95c0907f974cf6f8d513 "pdflatex"
-  "thesis.lof" 1712851360 2374 efeba08f3e995d9691f2365b32432e84 "pdflatex"
-  "thesis.lot" 1712851360 1096 3253e35e73eaef0c8e3192da01c966f5 "pdflatex"
-  "thesis.run.xml" 1712851360 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
+  "thesis.frm" 1712937784 1034 84cfbc3815ff95c0907f974cf6f8d513 "pdflatex"
+  "thesis.lof" 1712937784 2489 15c20963ff75d6029b7e80d71203929e "pdflatex"
+  "thesis.lot" 1712937784 1096 3253e35e73eaef0c8e3192da01c966f5 "pdflatex"
+  "thesis.run.xml" 1712937784 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
   "thesis.tex" 1712672914 6743 a956f2e530fa1d938d1a140977082816 ""
-  "thesis.toc" 1712851360 3815 26311913f6990d9d036b84b5d8b15352 "pdflatex"
+  "thesis.toc" 1712937784 3815 cb292d29f0e566c30f4d39198e4f8dec "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
