@@ -99,10 +99,10 @@ Several studies and papers have been concerned with specifically analyzing the f
 Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they used Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
 Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
 Their point is backed by other studies, such as the ones by Rugh et al. \parencite{Rugh2015} and Faber \parencite{Faber2013}, who prove that indirect discrimination is present in mortgage lending data and that it is a major issue in the field of Fairness in mortgage lending.
-Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
+Research concerning both fairness and Explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
 While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
 
-\section{Explainability and Interpretability in Machine Learning}\label{sec:explainability}
+\section{Explainability and Interpretability in Machine Learning}\label{sec:Explainability}
 
 Given the constantly increasing research into AI Interpretability and Explainability, there is surprisingly little consent on how to precisely define these concepts and how to distinguish them \parencite{Linardatos2021}. 
 While both terms are used interchangeably in a multitude of publications, several studies have tried to distinguish both concepts in terms of their scope, giving rise to terms like 'xAI' (Explainable Artificial Intelligence) \parencite{Gunning2019} and occasionally also introducing related concepts like \textit{Understandability}, \textit{Comprehensibility} \parencite{Guidotti2018}, or \textit{Intelligibility} \parencite{Caruana2015}.
@@ -133,14 +133,14 @@ In the academic literature, Explainability methods are usually categorized based
     \item \textbf{Post-hoc vs. Ante-hoc}: \textit{Post-hoc} methods are applied after the model outcome has been generated, but can only explain individual outcomes without making the model workings transparent \parencite{Lipton2018}, while \textit{ante-hoc} methods are usually model-specific algorithms that aim to make all the steps taken by a model transparent. \parencite{SALEEM2022165}.
 \end{itemize}
 
-\textbf{Figure \ref{fig:explainability_overview}} provides an extended overview of the categorizations introduced above:
+\textbf{Figure \ref{fig:Explainability_overview}} provides an extended overview of the categorizations introduced above:
 
 \begin{figure}[h]
     \centering
     \caption{Explainability Overview, from \cite{SALEEM2022165}}
     \includegraphics[width=0.7\textwidth]{images/CH02_algorithms_overview_Saleem.jpg}
     \caption*{Overview of the concepts related to Explainability algorithms.}
-    \label{fig:explainability_overview}
+    \label{fig:Explainability_overview}
 \end{figure}
 
 The two most widely adapted local, model-agnostic, post-hoc methods are \textit{SHAP} (SHapley Additive exPlanations) \parencite{Lundberg2017} and \textit{LIME} (Local Interpretable Model-agnostic Explanations) \parencite{Ribeiro2016}.
@@ -160,7 +160,7 @@ A way of globally assessing model Explainability is the use of \textbf{(Global) 
 These aim to make black-box algorithm decisions explainable by implementing white-box models to learn the decision criteria that the black-box model has established by being trained on the black-box predictions (compare e.g. \cite{Karim2023}).
 Instead of making the predictions themselves explainable, these models aim to making the underlying decision criteria understandable \parencite{Molnar2023}.
 
-\subsection{Explainability and Fairness}\label{subsec:explainability_fairness}
+\subsection{Explainability and Fairness}\label{subsec:Explainability_fairness}
 
 In order to conclude this literature review, this section will evaluate how the the concepts of Fairness and Explainability are related to each other, showing that the analysis of each adds separate value to this thesis.
 
@@ -193,4 +193,4 @@ By combining Explainability criteria ('Why is a certain subgroup influential on 
 %Circle back to introduction: Why do both add value?
 
 This thesis will add value to the discussion of Fairness and Explainability in Machine Learning by providing a novel approach to the analysis of both concepts in the field of mortgage lending: 
-By using explainability algorithms and enrichment data, the analysis of fairness will be supported and iteratively optimized.
+By using Explainability algorithms and enrichment data, the analysis of fairness will be supported and iteratively optimized.

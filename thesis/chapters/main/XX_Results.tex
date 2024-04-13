@@ -106,7 +106,7 @@ It should however be noted that the distributions within the enrichment data the
 
 \section{Results}\label{sec:Results}        
 
-As defined in \textbf{chapter \ref{subsec:Performance_Assessment}} and \textbf{chapter \ref{subsec:Fairness_Assessment}}, each outcome is assessed in terms of performance and fairness with two pre-defined metric sets. Additionally, the aspect of explainability will be demonstrated examplarily for the initial model run.
+As defined in \textbf{chapter \ref{subsec:Performance_Assessment}} and \textbf{chapter \ref{subsec:Fairness_Assessment}}, each outcome is assessed in terms of performance and fairness with two pre-defined metric sets. Additionally, the aspect of Explainability will be demonstrated examplarily for the initial model run.
 
 \subsection{Initial Performance}\label{subsec:Initial_Performance}
 
@@ -114,7 +114,7 @@ The initial run serving as a benchmark was conducted training the neural network
 
 \textbf{Explainability}
 
-As was intended in \textbf{chapter \ref{subsec:Explainability}}, three different explainability algorithms were utilized to challenge each other's results and analyze overall patterns. \textbf{Figure \ref{fig:SHAP_explanations}} and \textbf{Figure \ref{fig:LIME_explanations}} show the individual explanations for the first 150 observations of the test set provided by SHAP and LIME, respectively. 
+As was intended in \textbf{chapter \ref{subsec:Explainability}}, three different Explainability algorithms were utilized to challenge each other's results and analyze overall patterns. \textbf{Figure \ref{fig:SHAP_explanations}} and \textbf{Figure \ref{fig:LIME_explanations}} show the individual explanations for the first 150 observations of the test set provided by SHAP and LIME, respectively. 
 As already mentioned in \textbf{Chapter \ref{subsec:Performance_Assessment}}, the model behaved somewhat different from the expectations: Imputation of missing values in the \textit{debt\_to\_income\_ratio} feature led to a significant decrease in both fairness and performance measures of the model.
 Therefore, it must be assumed that missingness in itself is not completely at random and holds information (or that the imputation method via a random forest regressor is not suitable for this task).
 While SHAP considers that missingness to be the most important influence on model predictions, LIME weighs the \textit{debt\_to\_income\_ratio} features higher in general.
@@ -137,8 +137,8 @@ None of the algorithms consider the protected attributes to be of high direct im
     \caption*{Directly comparing LIME and SHAP explanations for the first 150 observations of the test set: While \textit{debt\_to\_income\_ratio} is an important factor in both explanations, its actual impact varies, as LIME also considers the \textit{loan\_type} feature to be of high importance. Default plotting options were kept: SHAP values are displayed as absolutes, while LIME values show the direction of their impact.}
 \end{figure}
 
-While the overall trends are similar with both algorithms, the actual impact of the features varies significantly. While this is not a direct threat to the quality of the results of this thesis, it is a reminder that explainability algorithms need to be analyzed carefully. 
-This ties with the findings of Krishna et al. \parencite{Krishna2022}, who emphasize the importance of understanding the underlying assumptions of explainability algorithms and the need for a more comprehensive evaluation of their results.
+While the overall trends are similar with both algorithms, the actual impact of the features varies significantly. While this is not a direct threat to the quality of the results of this thesis, it is a reminder that Explainability algorithms need to be analyzed carefully. 
+This ties with the findings of Krishna et al. \parencite{Krishna2022}, who emphasize the importance of understanding the underlying assumptions of Explainability algorithms and the need for a more comprehensive evaluation of their results.
 
 To validate the results of the local explanations, a \textit{Global Surrogate Model} was used. \textbf{Figure \ref{fig:Global_Surrogate}} shows the results of the global surrogate model. Specifically, the five most important features according to the global surrogate model are compared to the SHAP and LIME explanations in terms of their relative performance.
 It is apparent that the overall trends of SHAP and LIME are close to the global explanations.

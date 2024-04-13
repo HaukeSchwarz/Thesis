@@ -6,11 +6,11 @@ The methodology used in this research is summarized in the flowchart in \textbf{
     \centering
     \caption{Methodology}
     \includegraphics[width=0.85\textwidth]{CH03_Methodology.jpg}
-    \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, explainability and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated until a satisfactory model is achieved.}
+    \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, Explainability and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated until a satisfactory model is achieved.}
     \label{fig:CH03_Methodology}
 \end{figure}
 
-Data Preparation and Splitting have already been discussed in \textbf{Chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
+Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
 
 \subsection{Model Training and Prediction}\label{subsec:Model_Training_and_Prediction}
 
@@ -47,7 +47,7 @@ To increase the efficiency of the training process and to prevent overfitting, \
 \subsection{Explainability}\label{subsec:Explainability}
 
 As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
-A total of three different Explainability algorithms (see \textbf{chapter\ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
+A total of three different Explainability algorithms (see \textbf{chapter \ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
 \begin{itemize}
     \item The \textbf{SHAP} algorithm was applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
     \item The \textbf{LIME} algorithm was used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
@@ -58,7 +58,7 @@ The combination of these three algorithms aims to benefit not only model underst
 \subsection{Performance Assessment}\label{subsec:Performance_Assessment}
 
 The model originally put out numerical probabilities, which were then converted to binary values, using a threshold of 0.5.
-Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score can be calculated, which was used as one of the assessment measures.
+Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score could be calculated, which was used as one of the assessment measures.
 Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score}, are calculated alongside the \textbf{confusion matrix}.
 This set of performance metrics is referred to as \textit{metrics \#1} in the methodology (see \textbf{figure \ref{fig:CH03_Methodology}}).
 
@@ -118,7 +118,7 @@ More precisely, the outcomes were masked to only include either \textbf{White} o
 \subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
 
 An additional approach to Explainability is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
-While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
+While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both Explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
 
 In order to operationalize this approach, the following steps were taken:
 \begin{itemize}
@@ -136,9 +136,8 @@ In order to operationalize this approach, the following steps were taken:
 \subsection{Iterations}\label{subsec:Iterations}
 
 % Maybe more detail when decision has actually been made?
-% Workflow idea: Training (unadjusted) -> Explainability -> Performance -> Fairness by using aequitas outcome (or checking AIF360) -> new technique by AIF 360 -> aim for similar performance but better fairness
 
-Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iteration_I}}), adjustments to the model and the data preparation process were made in multiple iterations, aiming to improve at least one of these aspects in each run.
+Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iterations}}), adjustments to the model and the data preparation process were made in multiple iterations, aiming to improve at least one of these aspects in each run.
 
 As a first iteration, \textbf{Reweighing} was applied. This \textit{pre-processing} procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
 The practical application of this technique includes the following steps: Initially, the weights of the samples need to be calculated. This can be achieved using the \textit{Reweighing} class of the \textit{aif360.algorithms.preprocessing} module. Being supplied with the training dataset and information on the privileged group (in this case, the \textit{White} applicants) and the unprivileged group (\textit{Black and African American} applicants), the algorithm calculates the weights for each sample. 
@@ -158,9 +157,9 @@ The second iteration consisted of the application of the \textbf{Correlation Rem
 \end{equation}
 
 Practically implementing this technique requires a definition of the sensitive attribute $s$ (as opposed to non-sensitive attributes $z$), which will then be used to fulfill the constraint of the optimization problem as displayed in \textbf{equation \ref{eq:Correlation_Remover}}. 
-Once again, the neural network needs to be retrained on the dataset after the application of the Correlation Remover. It must however be noted, that, as opposed to the reweighing technique, the underlying data are actually altered by this technique, meaning that a model fitted on correlation-removed data will only perform well on correlation-removed validation and testing data. The results of this iteration can be found in \textbf{chapter \ref{subsec:Iteration_II}}.
+Once again, the neural network needs to be retrained on the dataset after the application of the Correlation Remover. It must however be noted, that, as opposed to the reweighing technique, the underlying data are actually altered by this technique, meaning that a model fitted on correlation-removed data will only perform well on correlation-removed validation and testing data. The results of this iteration can be found in \textbf{chapter \ref{subsec:Iterations}}.
 
 As a third iteration, a post-processing technique was applied: The \textbf{Calibrated Equalized Odds Postprocessing} algorithm, initially proposed by Pleiss et al. \parencite{Pleiss2017}. It aims to satisfy the \textit{Equalized Odds} criterion (see \textbf{chapter \ref{subsec:overview}}) while keeping the results \textit{calibrated}, i.e. making sure that the predictions probabilities are interpretable as levels of confidence.
-This algorithm has been implemented in the \textit{AIF360} package \footnote{More information on practical applications can be found under \url{https://github.com/Trusted-AI/AIF360/blob/main/examples/demo_calibrated_eqodds_postprocessing.ipynb}} and can be applied to the model's predictions after the model has been trained by transforming the data with regards to the selected fairness constraint. The results of this iteration can be found in \textbf{chapter \ref{subsec:Iteration_III}}. 
+This algorithm has been implemented in the \textit{AIF360} package \footnote{More information on practical applications can be found under \url{https://github.com/Trusted-AI/AIF360/blob/main/examples/demo_calibrated_eqodds_postprocessing.ipynb}} and can be applied to the model's predictions after the model has been trained by transforming the data with regards to the selected fairness constraint. The results of this iteration can be found in \textbf{chapter \ref{subsec:Iterations}}. 
 
 % Add reasoning for each iteration!!!
