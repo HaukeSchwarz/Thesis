@@ -34,7 +34,7 @@ Aside from missingness in the \textit{debt\_to\_income\_ratio} feature, which al
 
 \subsection{Fairness}\label{subsec:Fairness}
 
-Following the scope of this thesis specified in \textbf{chapter \ref{sec:Introduction}}, a special needs to be put focus on fairness, specifically equality with regards to the protected attribute(s).
+Following the scope of this thesis specified in \textbf{chapter \ref{ch:Introduction}}, a special needs to be put focus on fairness, specifically equality with regards to the protected attribute(s).
 This potential unfairness in the underlying data can be identified from assessing the distribution of the target variable across different groups.
 \textbf{Figure \ref{fig:CHXX_Loan_Grant_By_Protected_Attribute}} shows the amount of (not) granted loans per race and by sex, the probabilities of being granted a loan across these groups can be found in \textbf{Table \ref{tab:loan_granting}}.\@
 
@@ -215,21 +215,10 @@ Even without directly comparable benchmarks available (see \textbf{chapter \ref{
     \caption*{The initial model shows a higher accuracy and recall for White applicants, but a higher precision and F1 score for Black applicants. The AUC is higher for Black applicants. The disparities in the true positive rate and false positive rate are relatively low, while the disparities in the true negative rate and false negative rate are higher.}
 \end{table}
 
-\subsection{Iteration I:\ Reweighing}\label{subsec:Iteration_I}
+\subsection{Results of the Iterations}\label{subsec:Iterations}
 
-The results of the \textit{reweighed} model (see \textbf{Chapter \ref{subsec:Iterations}}) are promising. XXX
-
-\subsection{Iteration II:\ Correlation Remover}\label{subsec:Iteration_II}
-
-XXX
-
-\subsection{Iteration III:\ Calibrated Equalized Odds}\label{subsec:Iteration_III}
-
-XXX
-
-\subsection{Results Summary}\label{subsec:Results_Summary}
-
-XXX Update all when ready and add explanations - restructured! XXX
+None of the techniques applied in the iterations led to a significant increase in fairness. The \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the same level of fairness. 
+% The results of the iterations are summarized in \textbf{table \ref{tab:model_performance_fairness_results}} and \textbf{table \ref{tab:subgroup_fairness_results}}. The fairness comparison chart can be found in \textbf{figure \ref{fig:Fairness_Comparison_Chart}}.
 
 \begin{figure}[h]
     \centering
