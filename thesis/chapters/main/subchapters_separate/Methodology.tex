@@ -6,7 +6,7 @@ The methodology used in this research is summarized in the flowchart in \textbf{
     \centering
     \caption{Methodology}
     \includegraphics[width=0.85\textwidth]{CH03_Methodology.jpg}
-    \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, Explainability and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated until a satisfactory model is achieved.}
+    \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, explainability, fairness, and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated for multiple iterations, aiming to improve one or more of the criteria.}
     \label{fig:CH03_Methodology}
 \end{figure}
 
@@ -76,7 +76,7 @@ or reported an accuracy of 91\% using a deep neural network for classification \
 Aequitas provides a multitude of fairness metrics to provide model fairness. In order to work with a uniform framework in this thesis, four easy to understand yet highly relevant metrics are chosen: 
 The disparities in \textbf{False Positive Rate} (FPR) and \textbf{False Negative Rate} (FNR), as well as the \textbf{True Positive Rate} (TPR) and \textbf{True Negative Rate} (TNR) are calculated for the different groups.
 Analyzing these will inform about how much more likely the model is to make one of the four predictions for Black or African American Americans compared to White applicants.
-From the original paper \parencite{2018aequitas}, we can infer these formulas for the calculation of the disparities:
+From the original paper \parencite{2018aequitas}, the formulas for the calculation of the disparities can be inferred:
 
 \begin{equation}
     FPR_{g_{\text{disp}}} = \frac{FPR_{a_i}}{FPR_{a_r}} = \frac{\Pr(\hat{Y}=1 | Y=0, A=a_i)}{\Pr(\hat{Y}=1 | Y=0, A=a_r)}
@@ -141,7 +141,7 @@ Based on the results of the performance and fairness assessments for the initial
 
 As a first iteration, \textbf{Reweighing} was applied. This \textit{pre-processing} procedure was initially developed by Calders et al. \parencite{Calders2009} and is implemented in the \textbf{AIF360} package. It works by adding a weight to each sample in the training data with the aim of balancing the weights of the different groups without actually adjusting any values.
 The practical application of this technique includes the following steps: Initially, the weights of the samples need to be calculated. This can be achieved using the \textit{Reweighing} class of the \textit{aif360.algorithms.preprocessing} module. Being supplied with the training dataset and information on the privileged group (in this case, the \textit{White} applicants) and the unprivileged group (\textit{Black and African American} applicants), the algorithm calculates the weights for each sample. 
-In order to ensure comparability of the results, an exact copy of the neural network described in \textbf{Figure \ref{tab:CH03_Model_Details}} is created and compiled. During fitting however, the weights calculated by the reweighing algorithm are passed to the \textit{sample\_weight} parameter of the model, causing keras to apply them during model fitting. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iteration_I}}.
+In order to ensure comparability of the results, an exact copy of the neural network described in \textbf{Figure \ref{tab:CH03_Model_Details}} is created and compiled. During fitting however, the weights calculated by the reweighing algorithm are passed to the \textit{sample\_weight} parameter of the model, causing keras to apply them during model fitting. The results of this iteration can be found in \textbf{Chapter \ref{subsec:Iterations}}.
 
 The second iteration consisted of the application of the \textbf{Correlation Remover}, another pre-processing technique that was proposed by Weerts et al.\ in their paper on the Fairlearn Python package \parencite{Weerts2023}. It aims to remove any correlation between the sensitive attribute and the features of the dataset, while changes in non-sensitive features are kept as low as possible:
 
