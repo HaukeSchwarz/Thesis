@@ -214,11 +214,10 @@ Even without directly comparable benchmarks available (see \textbf{chapter \ref{
 \subsection{Results of the Iterations}\label{subsec:Iterations}
 
 None of the techniques applied in the iterations led to a significant increase in fairness. The \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the same level of fairness. 
-% The results of the iterations are summarized in \textbf{table \ref{tab:model_performance_fairness_results}} and \textbf{table \ref{tab:subgroup_fairness_results}}. The fairness comparison chart can be found in \textbf{figure \ref{fig:Fairness_Comparison_Chart}}.
+Figures \textbf{\ref{fig:Initial_Disparity}} to \textbf{\ref{fig:Calibrated_EqOdds_Disparity}} show that the disparity in loan grants between \textit{White} and \textit{Black or African American} applicants was not substantially reduced by any of the iterations, with the calibrated equalized odds algorithm even increasing the disparity.
 
 \begin{figure}[h]
     \centering
-    \caption{Racial Disparities Among Iterations}
     \begin{minipage}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/initial.png}
@@ -251,32 +250,32 @@ None of the techniques applied in the iterations led to a significant increase i
     \caption*{Apart from the Calibrated Equalized Odds model, which exhibits a higher amount of overall predicted grants, none of the iterations were able to substantially reduce the disparity in granted loans between races.}
 \end{figure}
 
+In terms of \textbf{performance}, the iterations did not lead to a significant increase in performance, with the \textit{Calibrated Equalized Odds} model even showing a significant decrease in performance. \textbf{Table \ref{tab:metrics_1_iterations}} shows the results of the performance assessment of the iterations.
+All iterations tended to be closer to each other than expected. The best value (which is marked in bold), was only achieved at the third or fourth digit after the comma in many cases, leading to changes in the "best" model across different iterations.
+
 \begin{table}[h]
     \centering
-    \caption{Model Performance and Fairness Comparison}
+    \caption{Metrics \#1: Iterations}
     \begin{tabular}{l *{4}{>{$}c<{$}}}
     \toprule
     & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
     \midrule
     \textbf{accuracy} & 0.90 & 0.90 & 0.73 & \textbf{0.91} \\
     \textbf{precision} & 0.88 & 0.88 & 0.69 & \textbf{0.88} \\
-    \textbf{recall} & \textbf{0.97} & 0.97 & 0.97 & 0.97 \\
+    \textbf{recall} & 0.96 & \textbf{0.97} & 0.97 & 0.97 \\
     \textbf{f1} & 0.92 & 0.92 & 0.81 & \textbf{0.92} \\
     \textbf{roc\_auc} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
-    \midrule
-    \textbf{tpr\_disparity} & 0.99 & \textbf{1.00} & 0.95 & 0.94 \\
-    \textbf{fpr\_disparity} & 0.96 & \textbf{1.00} & 0.43 & 0.76 \\
-    \textbf{tnr\_disparity} & 1.01 & \textbf{1.00} & 2.23 & 1.06 \\
-    \textbf{fnr\_disparity} & 1.42 & \textbf{1.20} & 3.25 & 3.42 \\
     \bottomrule
     \end{tabular}
-    \caption*{XXX Comment when ready XXX}
-    \label{tab:model_performance_fairness_results}
+    \caption*{Except the Calibrated Equalized Odds Model, all iterations show a similar performance to the initial model. The Correlation Removal Model shows a slightly higher accuracy and f1 score.}
+    \label{tab:metrics_1_iterations}
 \end{table}
+
+Similarly to the performance, the iterations did not lead to a significant increase in (subgroup) fairness. The \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the same level of fairness. \textbf{Table \ref{tab:metrics_2_1_iterations}} shows the results of the fairness assessment of the iterations for the first part of \textit{metrics \#2}.
 
 \begin{table}[h]
     \centering
-    \caption{Subgroup Fairness Assessment}
+    \caption{Metrics \#2 (1): Iterations}
     \begin{tabular}{l *{4}{>{$}c<{$}}}
     \toprule
     & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
@@ -284,19 +283,41 @@ None of the techniques applied in the iterations led to a significant increase i
     \textbf{Accuracy White} & 0.91 & 0.91 & 0.72 & \textbf{0.91} \\
     \textbf{Precision White} & \textbf{0.89} & 0.89 & 0.68 & 0.89 \\
     \textbf{Recall White} & 0.97 & 0.97 & \textbf{0.98} & 0.98 \\
-    \textbf{F1 Score White} & 0.93 & 0.93 & 0.81 & \textbf{0.93} \\
+    \textbf{F1 Score White} & 0.93 & 0.92 & 0.81 & \textbf{0.93} \\
     \textbf{AUC White} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
     \midrule
-    \textbf{Accuracy Black} & 0.88 & 0.88 & 0.81 & \textbf{0.88} \\
-    \textbf{Precision Black} & 0.82 & 0.81 & 0.73 & 0.84 \\
-    \textbf{Recall Black} & 0.96 & \textbf{0.97} & 0.93 & 0.92 \\
-    \textbf{F1 Score Black} & \textbf{0.88} & 0.88 & 0.82 & 0.88 \\
-    \textbf{AUC Black} & \textbf{0.95} & 0.95 & \text{NA} & \text{NA} \\
+    \textbf{Accuracy Black} & \textbf{0.89} & 0.88 & 0.81 & 0.88 \\
+    \textbf{Precision Black} & 0.84 & 0.81 & 0.73 & \textbf{0.85} \\
+    \textbf{Recall Black} & 0.92 & \textbf{0.97} & 0.93 & 0.92 \\
+    \textbf{F1 Score Black} & 0.88 & \textbf{0.88} & 0.82 & 0.88 \\
+    \textbf{AUC Black} & 0.95 & \textbf{0.95} & \text{NA} & \text{NA} \\
     \bottomrule
     \end{tabular}
-    \caption*{XXX Comment when ready XXX}
-    \label{tab:subgroup_fairness_results}
+    \caption*{Once again, the Calibrated Equalized Odds Model shows a significant decrease in performance. The other models show a similar performance to the initial model.}
+    \label{tab:metrics_2_1_iterations}
 \end{table}
+
+In terms of disparities (see \textbf{table \ref{tab:metrics_2_2_iterations}}), the \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the level of the initial model.
+While across different model runs the disparities for the iterated models were very comparable, with the \textit{reweighing} technique consistently outperformung the other iterations, the performance in terms of disparities of the initial model varied strongly across different runs.
+
+\begin{table}[h]
+    \centering
+    \caption{Metrics \#2 (2): Iterations}
+    \begin{tabular}{l *{4}{>{$}c<{$}}}
+    \toprule
+    & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.95 & \textbf{1.00} & 0.95 & 0.94 \\
+    \textbf{fpr\_disparity} & 0.77 & \textbf{1.00} & 0.43 & 0.76 \\
+    \textbf{tnr\_disparity} & 1.01 & \textbf{1.00} & 2.23 & 1.06 \\
+    \textbf{fnr\_disparity} & 2.51 & \textbf{0.84} & 3.25 & 3.42 \\
+    \bottomrule
+    \end{tabular}
+    \caption*{In terms of disparities, the positive effects of reweighing show, with the algorithm outperforming the other iterations.}
+    \label{tab:metrics_2_2_iterations}
+\end{table}
+
+Visualizing the results of the iterations in a comparison chart (\textbf{figure \ref{fig:Fairness_Comparison_Chart}}) shows that while the initial model managed to put out values with a comparably high fairness as measured by disparities, reweighing managed to improve this overall performance. The other two models however did not manage to reach the same level of fairness.
 
 \begin{figure}
     \centering
