@@ -1,7 +1,5 @@
 \chapter{Literature Review}\label{chap:lit}
 
-Intro here
-
 \section{Fairness in Algorithmic Decision Making}\label{sec:fairness}
 
 Due to the increasing use of decision-making algorithms for varying applications, the topic of \textit{Fairness} has become a heavily researched topic in the field of Machine Learning and AI.\@
@@ -167,11 +165,12 @@ In order to conclude this literature review, this section will evaluate how the 
 Explainability and Fairness within the field of Machine Learning do not inherently share the same scope. On the one hand, as an example, Explainability is a rather objective concept, focusing on describing a model's inner workings neutrally. 
 Comparing that to Fairness it becomes apparent that the latter is a more subjective concept, as it is dependent on the context and man-made definitions, which are often rooted in certain (e.g.\ political) interpretations of Fairness \parencite{Deepak2021}.
 Yet, both concepts are somewhat dependent as assessing model fairness requires an understanding of the factors influencing a prediction \parencite{Zhou2022}.
-Subsequently, approaches to connect both concepts have been proposed in academic literature. Two different approaches are proposed by Deepak \parencite{Deepak2021}: 
-\begin{itemize}
-    \item \textbf{Interpretability for Fairness (IFF)}: IFF is a framework intending to ensure that supposedly fair decisions made by AI are truly fair. The two steps in order to achieve that are \textit{clearly laying out the values supposed to adhered to} and \textit{explaining decisions made with regards to how they relate to those values}.
-    \item \textbf{Fairness and Interpretations (F\&I)}: F\&I is a multi-layered approach, which, in the first step, aims to satisfy both Fairness and Interpretability requirements based on given constraints. If both criteria in combination cannot satisfyingly be met, the user needs to be informed that the model is not sufficiently interpretable, but yet adheres to at least one of the two desired properties.
-\end{itemize}
+Subsequently, approaches to connect both concepts have been proposed in academic literature. 
+%Two different approaches are proposed by Deepak \parencite{Deepak2021}: 
+%\begin{itemize}
+%    \item \textbf{Interpretability for Fairness (IFF)}: IFF is a framework intending to ensure that supposedly fair decisions made by AI are truly fair. The two steps in order to achieve that are \textit{clearly laying out the values supposed to adhered to} and \textit{explaining decisions made with regards to how they relate to those values}.
+%    \item \textbf{Fairness and Interpretations (F\&I)}: F\&I is a multi-layered approach, which, in the first step, aims to satisfy both Fairness and Interpretability requirements based on given constraints. If both criteria in combination cannot satisfyingly be met, the user needs to be informed that the model is not sufficiently interpretable, but yet adheres to at least one of the two desired properties.
+%\end{itemize}
 However, these concepts are only stated on theoretical level without practical implications in this paper and are therefore not directly applicable for practitioners.
 
 
@@ -193,4 +192,4 @@ By combining Explainability criteria ('Why is a certain subgroup influential on 
 %Circle back to introduction: Why do both add value?
 
 This thesis will add value to the discussion of Fairness and Explainability in Machine Learning by providing a novel approach to the analysis of both concepts in the field of mortgage lending: 
-By using Explainability algorithms and enrichment data, the analysis of fairness will be supported and iteratively optimized.
+By using explainability algorithms and enrichment data, the analysis of fairness will be supported and iteratively adjusted with the aim of finding the optimal balance of both concepts.
