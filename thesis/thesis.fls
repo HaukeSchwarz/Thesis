@@ -1864,10 +1864,6 @@ INPUT ./chapters/main/XX_Results.tex
 INPUT chapters/main/XX_Results.tex
 INPUT ./chapters/main/XX_Results.tex
 INPUT chapters/main/XX_Results.tex
-INPUT ./images//CHXX_Numerical_Distributions_1.png
-INPUT images//CHXX_Numerical_Distributions_1.png
-INPUT ./images//CHXX_Numerical_Distributions_1.png
-INPUT ./images//CHXX_Numerical_Distributions_1.png
 INPUT ./images//CHXX_Numerical_Distributions_2.png
 INPUT images//CHXX_Numerical_Distributions_2.png
 INPUT ./images//CHXX_Numerical_Distributions_2.png

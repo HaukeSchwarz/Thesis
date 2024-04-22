@@ -5,21 +5,22 @@
 \subsection{Data Overview}\label{subsec:Data_Overview}
 
 The processed dataset contained two \textit{numerical} features: \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio}.
-Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_1}} and \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
+% Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_1}} and \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
+Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
 Both are positively correlated with a correlation coefficient of \textit{0.54}. 
 
-\begin{figure}[h]
-    \centering
-    \caption{Boxplots of the Numerical Features}
-    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_1.png}
-    \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the narrow quartiles.}
-    \label{fig:CHXX_Numerical_Distributions_1}
-\end{figure}
+%\begin{figure}[h]
+%    \centering
+%    \caption{Boxplots of the Numerical Features}
+%    \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_1.png}
+%    \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the narrow quartiles.}
+%    \label{fig:CHXX_Numerical_Distributions_1}
+%\end{figure}
 
 \begin{figure}[h]
     \centering
-    \caption{Histograms of the Numerical Features}
     \includegraphics[width=0.85\textwidth]{CHXX_Numerical_Distributions_2.png}
+    \caption{Histograms of the Numerical Features}
     \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the high amount of values at the mean.}
     \label{fig:CHXX_Numerical_Distributions_2}
 \end{figure}
@@ -36,15 +37,14 @@ This potential unfairness in the underlying data can be identified from assessin
 
 \begin{figure}[h]
     \centering
-    \caption{Loan Grant by Protected Attribute}
     \includegraphics[width=0.85\textwidth]{CHXX_Loan_Grant_By_Protected_Attribute.png}
+    \caption{Loan Grant by Protected Attribute}
     \caption*{Discrimination by race is apparent in the data, as the amount of granted loans differs significantly}
     \label{fig:CHXX_Loan_Grant_By_Protected_Attribute}
 \end{figure}
 
 \begin{table}[htbp]
     \centering
-      \caption{Loan Granting Statistics by Applicant Race and Sex}
       \begin{tabular}{lcc}
       \toprule
       \textbf{Applicant Race} & \textbf{Applicant Sex} & \textbf{Loan Granted (\%)} \\
@@ -55,7 +55,8 @@ This potential unfairness in the underlying data can be identified from assessin
             & Female  & 58.8 \\
       \bottomrule
       \end{tabular}
-      \caption*{Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
+      \caption{Loan Granting Statistics by Applicant Race and Sex}
+      \caption*{Analyzing the differences in percentages of loans being granted among race and sex of applicants shows differences in the underlying data: Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
     \label{tab:loan_granting}%
 \end{table}%
 
@@ -72,8 +73,8 @@ A sign of potential discrimination in the data could be the correlation between 
 
 \begin{figure}[h]
     \centering
-    \caption{Relationship between Applicant Race, Poverty Rate and Loan Grants}
     \includegraphics[width=0.85\textwidth]{images/CHXX_Perc_Grants_vs_Perc_White.png}
+    \caption{Relationship between Applicant Race, Poverty Rate and Loan Grants}
     \caption*{Counties with predominantly White applicants do not only tend to have a lower poverty rate on average, but also see a higher percentage of loans being granted on average.}
     \label{fig:Scatter_White_Applicants_Loan_Grant}
 \end{figure}
@@ -141,8 +142,8 @@ It is apparent that the overall trends of SHAP and LIME are close to the global 
 
 \begin{figure}[h]
     \centering
-    \caption{Global Surrogate Model compared to SHAP and LIME}
     \includegraphics[width=0.85\textwidth]{images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png}
+    \caption{Global Surrogate Model compared to SHAP and LIME}
     \caption*{Analyzing the 5 most important features according to the global surrogate model implies that the overall trends of SHAP and LIME are close to the global explanations.}
     \label{fig:Global_Surrogate}
 \end{figure}
@@ -153,7 +154,6 @@ Even without directly comparable benchmarks available (see \textbf{chapter \ref{
 
 \begin{table}[h]
     \centering
-    \caption{Metrics \#1: Initial Model}
     \begin{tabular}{l c}
     \toprule
     \textbf{Metric} & \textbf{Value} \\
@@ -165,6 +165,7 @@ Even without directly comparable benchmarks available (see \textbf{chapter \ref{
     \textbf{roc\_auc} & 0.94 \\
     \bottomrule
     \end{tabular}
+    \caption{Metrics \#1: Initial Model}
     \caption*{The initial model shows a high accuracy and recall, but a lower precision and f1 score. The overall performance can be considered good.}
     \label{tab:initial_model_performance_results_1}
 \end{table}

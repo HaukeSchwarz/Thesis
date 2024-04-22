@@ -4,8 +4,8 @@ The methodology used in this research is summarized in the flowchart in \textbf{
 
 \begin{figure}[h]
     \centering
-    \caption{Methodology}
     \includegraphics[width=0.85\textwidth]{CH03_Methodology.jpg}
+    \caption{Methodology}
     \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, explainability, fairness, and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated for multiple iterations, aiming to improve one or more of the criteria.}
     \label{fig:CH03_Methodology}
 \end{figure}
@@ -18,7 +18,6 @@ The model chosen is a comparably simple sequential neural network, implemented w
 
 \begin{table}[h]
     \centering
-    \caption{Summary of the Neural Network}
     \begin{tabularx}{\textwidth}{lXr}
     \hline
     \textbf{Layer (type)} & \textbf{Output Shape} & \textbf{Param \#} \\
@@ -37,6 +36,7 @@ The model chosen is a comparably simple sequential neural network, implemented w
     \textbf{Non-trainable params} & & 0 \\
     \hline
     \end{tabularx}
+    \caption{Summary of the Neural Network}
     \caption*{The neural network consists of 5 dense layers (with 32, 64, 128, 64, and 1 neuron per layer), with 3 dropout layers (with dropout rates of 0.1, 0.25, and 0.1 respectively) in between. L2 regularization (0.001) is utilized in each dense layer. The total number of parameters is 19,393.}
     \label{tab:CH03_Model_Details}
 \end{table}
