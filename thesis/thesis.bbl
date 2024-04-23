@@ -2140,6 +2140,65 @@
       \field{title}{Counterfactual Fairness}
       \field{year}{2017}
     \endentry
+    \entry{Lee2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=8177fbe7cf26e842c1207a76e659284e}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Michelle\bibnamedelimb Seng\bibnamedelima Ah},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=0d57a43cc17e895c38b6d1656af4ece5}{%
+           family={Floridi},
+           familyi={F\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{deda8201c52498c70c15efaebdeb40f2}
+      \strng{fullhash}{deda8201c52498c70c15efaebdeb40f2}
+      \strng{bibnamehash}{deda8201c52498c70c15efaebdeb40f2}
+      \strng{authorbibnamehash}{deda8201c52498c70c15efaebdeb40f2}
+      \strng{authornamehash}{deda8201c52498c70c15efaebdeb40f2}
+      \strng{authorfullhash}{deda8201c52498c70c15efaebdeb40f2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{To address the rising concern that algorithmic decision-making may reinforce discriminatory biases, researchers have proposed many notions of fairness and corresponding mathematical formalizations. Each of these notions is often presented as a one-size-fits-all, absolute condition; however, in reality, the practical and ethical trade-offs are unavoidable and more complex. We introduce a new approach that considers fairness—not as a binary, absolute mathematical condition—but rather, as a relational notion in comparison to alternative decisionmaking processes. Using US mortgage lending as an example use case, we discuss the ethical foundations of each definition of fairness and demonstrate that our proposed methodology more closely captures the ethical trade-offs of the decision-maker, as well as forcing a more explicit representation of which values and objectives are prioritised.}
+      \field{issn}{1572-8641}
+      \field{journaltitle}{Minds and Machines}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shorttitle}{Algorithmic {Fairness} in {Mortgage} {Lending}}
+      \field{title}{Algorithmic {Fairness} in {Mortgage} {Lending}: from {Absolute} {Conditions} to {Relational} {Trade}-offs}
+      \field{urlday}{27}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{31}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{165\bibrangedash 191}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s11023-020-09529-4
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:https\://link.springer.com/content/pdf/10.1007%2Fs11023-020-09529-4.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11023-020-09529-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11023-020-09529-4
+      \endverb
+      \keyw{Algorithmic fairness,Mortgage discrimination,Fairness trade-offs,Machine learning,Technology ethics}
+    \endentry
     \entry{Linardatos2021}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=b1cb6820f7c44b05374180a54934adb3}{%
@@ -2261,12 +2320,12 @@
            given={Scott},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee964079d93879aaef2382a5fff343d3}{%
+        {{un=1,uniquepart=given,hash=ee964079d93879aaef2382a5fff343d3}{%
            family={Lee},
            familyi={L\bibinitperiod},
            given={Su-In},
            giveni={S\bibinithyphendelim I\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{92d799a71ca7ae2c3ebec3ec87e85189}
       \strng{fullhash}{92d799a71ca7ae2c3ebec3ec87e85189}
