@@ -8,18 +8,9 @@ they need to be considered in applications like hiring processes or criminal jus
 %As this thesis is based on mortgage lending data and builds upon the analysis of demographic attributes like race or gender, fairness concerns are of utmost importance and will be discussed in the following sections.
 This is the case in the research question of this work, which focuses on mortgage lending and takes into consideration demographic attributes like gender or race, making it crucial to focus on fairness concerns.
 
-\subsection{Applications of Fairness in Mortgage Lending}\label{subsec:mortgage_lending_fairness}
+\subsection{Overview of Fairness in Algorithmic Decision Making}\label{subsec:overview}
 
 XXX
-
-Several studies and papers have focused on specifically analyzing the fairness of algorithmic decision making in the field of mortgage lending.
-Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they used Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
-Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
-Their point is backed by other studies, such as the ones by Rugh et al. \parencite{Rugh2015} and Faber \parencite{Faber2013}, who prove that indirect discrimination is present in mortgage lending data and that it is a major issue in the field of fairness in mortgage lending.
-Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
-While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
-
-\subsection{Overview of Fairness in Algorithmic Decision Making}\label{subsec:overview}
 
 The intensive research of fairness in algorithmic decision making results in a wide range of definitions of fairness as well as methods to assess it \parencite{CorbettDavies2023}.
 Most of these are of \textit{mathematical} or quantitative nature, however, there also is a somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
@@ -106,6 +97,20 @@ Fairness Assessment refers to the post-hoc evaluation of the fairness of model r
 %To-Do:
 %Fairness assessment (methods and metrics with formulas - aequitas, Onetto, Chouldechova, Corbett-Davies and Pessach)
 
+\subsection{Applications of Fairness in Mortgage Lending}\label{subsec:mortgage_lending_fairness}
+
+XXX
+
+Several studies and papers have focused on specifically analyzing the fairness of algorithmic decision making in the field of mortgage lending.
+Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they used Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
+Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
+Their point is backed by other studies, such as the ones by Rugh et al. \parencite{Rugh2015} and Faber \parencite{Faber2013}, who prove that indirect discrimination is present in mortgage lending data and that it is a major issue in the field of fairness in mortgage lending.
+Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
+While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
+
+Finding benchmarks for model performance directly comparable to the scope of this work in the academic literature is hampered by the recency of the used data and the individual approach to filtering states (see \textbf{chapter \ref{subsec:HMDA_Data}}).
+Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
+or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
 
 \section{Explainability and Interpretability in Machine Learning}\label{sec:Explainability}
 
