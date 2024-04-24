@@ -108,6 +108,21 @@ Their point is backed by other studies, such as the ones by Rugh et al. \parenci
 Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
 While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
 
+One of the most frequented sources for fairness research specifically in the area of mortgage lending is the publicly available HMDA (Home Mortgage Disclosure Act) Data Browser\footnote{The Data Browser can be found \href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via this link}.}, a database on mortgage applications, originally created in 1975 to tackle discrimination against low-income borrowers \parencite{Bogen2020}.
+Examples of the HMDA data being use to assess fairness are the paper by Ghoba and Colaner \parencite{Ghoba}, who use counterfactuals to tackle the issue of fairness in a 2019 version of the HDMA Dataset, or Singh et al. \parencite{Singh2022}, who use HMDA data from 2018 to 2020, filtered to pre-defined states in order to develop the \textit{DualFair} loan classifier algorithm. 
+While Singh et al. only excluded features that had a missingness >25\%, Ghoba and Colaner narrowed the features used down further, only including the following:
+\begin{itemize}
+    \item \textit{interest rate}
+    \item \textit{applicant sex}
+    \item \textit{income}
+    \item \textit{applicant race}
+    \item \textit{state code}
+    \item \textit{loan type}
+    \item \textit{debt to income ratio}
+    \item \textit{loan to value ratio}
+    \item \textit{lien status}
+\end{itemize}
+
 Finding benchmarks for model performance directly comparable to the scope of this work in the academic literature is hampered by the recency of the used data and the individual approach to filtering states (see \textbf{chapter \ref{subsec:HMDA_Data}}).
 Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
 or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
