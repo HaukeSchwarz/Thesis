@@ -3,9 +3,9 @@
 The methodology used in this research is summarized in the flowchart in \textbf{figure \ref{fig:CH03_Methodology}}. It shows the three different main tasks that were focused on in this work:
 
 \begin{enumerate}
-    \item A Neural Network model aiming to predict mortgage approval was trained and tested on the mortgage dataset, serving as a \textbf{Benchmark}. Its performance was evaluated using a set of predefined metrics, \textit{metrics \#1}, and its fairness was assessed using a set of fairness metrics, \textit{metrics \#2}.
-    \item Insights into the decision criteria of the benchmark model were gained through the application of three different \textbf{Explainability} algorithms: SHAP, LIME, and a Global Surrogate Model. Furthermore, geographical \textit{Enrichment Data} were utilized to further the understanding of which criteria may influence mortgage approval.
-    \item Finally, three different \textbf{Fairness Adjustments} algorithms were applied to the model or the data preparation process iteratively, each aiming to improve either \textit{metrics \#1} or \textit{metrics \#2}. 
+    \item A Neural Network model aiming to predict mortgage approval was trained and tested on the HMDA mortgage dataset, serving as a \textbf{Benchmark} (see \textbf{chapter \ref{subsec:Model_Training_and_Prediction}}). Its performance was evaluated using a set of predefined metrics, \textit{metrics \#1} (see \textbf{chapter \ref{subsec:Performance_Assessment}}), and its fairness was assessed using a set of fairness metrics, \textit{metrics \#2} (see \textbf{chapter \ref{subsec:Fairness_Assessment}}). 
+    \item Insights into the decision criteria of the benchmark model were gained through the application of three different \textbf{Explainability} algorithms: SHAP, LIME, and a Global Surrogate Model. Furthermore, geographical \textit{Enrichment Data} were utilized to further the understanding of which criteria may influence mortgage approval. For details on that step see \textbf{chapter \ref{subsec:Explainability}}.
+    \item Finally, three different \textbf{Fairness Adjustments} algorithms were applied to the model or the data preparation process iteratively, each aiming to improve either \textit{metrics \#1} or \textit{metrics \#2}. These algorithms are described in \textbf{chapter \ref{subsec:Iterations}}.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -20,13 +20,22 @@ The methodology used in this research is summarized in the flowchart in \textbf{
     \label{fig:CH03_Methodology}
 \end{figure}
 
+In order to prepare the HMDA data for the classification task, the numerical variables \textit{(interest\_rate, loan\_to\_value\_ratio)} were \textit{standardized} using Z-score standardization: 
 
+\begin{equation}
+    z = \frac{x - \mu}{\sigma}
+    \label{eq:Z-Score Standardization}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Z-Score Standardization}
+\end{equation}
+
+The target variable \textit{loan\_granted} was \textbf{encoded} as a binary variable. Furthermore, all categorical variables were \textbf{one-hot encoded}, dropping the first column to avoid multicollinearity.
+The data was \textbf{split} into \textit{train, test}, and \textit{validation} sets with an 80/20 split each using the \textit{train\_test\_split} function from sklearn.
 
 % Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
 
 \subsection{Mortgage Classifier (Benchmark)}\label{subsec:Model_Training_and_Prediction}
 
-Initially, a model aiming to predict mortgage approval as a classification task has been set up. The model chosen is a comparably simple sequential neural network, implemented with the keras package. Model details are provided in \textbf{Table \ref{tab:CH03_Model_Details}}.
+Initially, a model aiming to predict mortgage approval as a classification task was set up. The model chosen is a comparably simple sequential neural network, implemented with the keras package. Model details are provided in \textbf{Table \ref{tab:CH03_Model_Details}}.
 
 \begin{table}[h]
     \centering
@@ -59,7 +68,7 @@ To increase the efficiency of the training process and to prevent overfitting, \
 \subsection{Explainability}\label{subsec:Explainability}
 
 As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
-A total of three different Explainability algorithms (see \textbf{chapter \ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
+A total of three different explainability algorithms (see \textbf{chapter \ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
 \begin{itemize}
     \item The \textbf{SHAP} algorithm was applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
     \item The \textbf{LIME} algorithm was used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
@@ -68,7 +77,7 @@ A total of three different Explainability algorithms (see \textbf{chapter \ref{s
 The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
 
 A separate approach to uncover factors that might influence the predictions of the model and therefore improve the ability to explain it is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
-While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both Explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
+While this procedure does not build upon the usage of an explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
 
 In order to operationalize this approach, the following steps were taken:
 \begin{itemize}
