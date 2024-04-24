@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{15}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Explainability}{16}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Performance Assessment (metrics \#1)}{17}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment (metrics \#2)}{17}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment (metrics \#2)}{18}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Fairness Adjustments}{19}{subsection.3.2.5}%
 \contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{21}{section.4.1}%

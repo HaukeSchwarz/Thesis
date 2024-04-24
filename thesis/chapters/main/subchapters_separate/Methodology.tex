@@ -96,8 +96,33 @@ In order to operationalize this approach, the following steps were taken:
 
 The model originally put out numerical probabilities, which were then converted to binary values, using a threshold of 0.5.
 Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score could be calculated, which was used as one of the assessment measures.
-Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score}, are calculated alongside the \textbf{confusion matrix}.
+Additionally, a common set of classification metrics, being \textbf{accuracy}, \textbf{precision}, \textbf{recall}, and \textbf{F1 score} (see \textbf{formula \ref{eq:Accuracy}} to \textbf{formula \ref{eq:F1}}), are calculated alongside the \textbf{confusion matrix}.
 This set of performance metrics is referred to as \textit{metrics \#1} in the methodology (see \textbf{figure \ref{fig:CH03_Methodology}}).
+
+\begin{equation}
+    \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+    \label{eq:Accuracy}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Accuracy}
+\end{equation}
+
+\begin{equation}
+    \text{Precision} = \frac{TP}{TP + FP}
+    \label{eq:Precision}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Precision}
+\end{equation}
+
+\begin{equation}
+    \text{Recall} = \frac{TP}{TP + FN}
+    \label{eq:Recall}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}Recall}
+\end{equation}
+
+\begin{equation}
+    F_1 = \frac{2 \cdot TP}{2 \cdot TP + FP + FN}
+    \label{eq:F1}
+    \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}F1 Score}
+\end{equation}
+
 
 \subsection{Fairness Assessment (metrics \#2)}\label{subsec:Fairness_Assessment}
 
