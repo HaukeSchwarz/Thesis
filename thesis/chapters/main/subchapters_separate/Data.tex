@@ -13,9 +13,31 @@ The features included for the analysis are close to the ones proposed by Ghoba a
 \textit{action\_taken, county\_code, interest\_rate, applicant\_sex, applicant\_race-1, loan\_type, debt\_to\_income\_ratio, loan\_to\_value\_ratio,} and \textit{lien\_status}\footnote{Datasheets can be found under \href{https://ffiec.cfpb.gov/documentation/publications/loan-level-datasets/lar-data-fields}{this link}}. 
 Missing values were present in \textit{interest\_rate (320.335), loan\_to\_value\_ratio (257.408), debt\_to\_income\_ratio (229.442),} and \textit{county\_code (9.053)}. 
 Furthermore, three columns contained the string \textit{Exempt} as a value \textit{(interest\_rate: 20.591 occurrences; loan\_to\_value\_ratio, and debt\_to\_income\_ratio: 20.533 occurrences each)}, preventing them from initially being cast as numerical types.
+In order to clean and reshape the data in a easily analyzable format, several steps were taken that are described in the following and summarized in \textbf{table \ref{tab:HMDA_transformation_summary}}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l *{3}{>{\centering\arraybackslash}X}}
+    \hline
+     & \textbf{Transformation Step} & \textbf{Reasoning} \\
+    \hline
+    \textbf{Rows with missing county code} & Dropping & insignificant amount, imputation not feasible, presumably MCAR \\
+    \textbf{All variables} & Typecasting & Required for further analysis \\
+    \textbf{loan\_granted} & Creation & Target variable for the classification task \\
+    \textbf{Exempt} & Recoding & Recoding to zero for proper typecasting \\
+    \textbf{debt\_to\_income\_ratio} & Binning & Reduction of total categories \\
+    \textbf{loan\_to\_value\_ratio} & Outlier Removal & Few outliers skewed the initial distribution \\
+    \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio} & Imputation & Mean Imputation to tackle missingness \\
+    \hline
+    \end{tabularx}
+    \caption{Transformation Steps in the HMDA Mortgage Data}
+    \small
+    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+    \label{tab:HMDA_transformation_summary}
+\end{table}
 
 All rows including missing values for the \textit{county\_code} were \textbf{dropped}, as their relative amount was insignificant, imputation was not logically possible for this variable, and missingness completely at random could be assumed from visual inspection using the missingno package (see \textbf{Figure~\ref{fig:CH03_Missingno_Completeness}}). 
-All features were \textbf{cast} to their appropriate types \textit{(county\_code: string; applicant\_race-1, applicant\_sex, lien\_status, loan\_type: category)}. Furthermore, a \textbf{new target variable} \textit{(loan\_granted)} was initiated from \textit{action\_taken} (which was dropped), assuming 1 for granted loans and 0 for denials instead of including different reasons for (dis-)approval.
+All features were \textbf{cast} to their appropriate types \textit{(county\_code: string; applicant\_race-1, applicant\_sex, lien\_status, loan\_type: category)}. Furthermore, a \textbf{new target variable} \textit{(loan\_granted)} was created from \textit{action\_taken} (which was dropped), assuming 1 for granted loans and 0 for denials instead of including different reasons for (dis-)approval.
 
 \begin{figure}[h]
     \centering
@@ -28,10 +50,11 @@ All features were \textbf{cast} to their appropriate types \textit{(county\_code
 \end{figure}
 
 All \textit{Exempt} strings were \textbf{recoded} as zero, allowing proper typecasting (float) for the \textit{interest\_rate} and \textit{loan\_to\_value\_ratio} variables. 
-For \textit{\_to\_income\_ratio}, further \textbf{binning} was introduced, creating the new categories \textit{36\%-41\%, 41\%-45\%}, and \textit{46\%-49\%}. Initially, Missingness was encoded as a separate category, bringing the number of distinct values for \textit{debt\_to\_income\_ratio} to eleven. 
-This was kept, because later analysis showed that missingness in the \textit{debt\_to\_income\_ratio} was a feature that heavily impacted predictions: As a comparison, a random forest classifier was trained to predict the missingness in the \textit{debt\_to\_income\_ratio} based on the other features.
-Although only a 63.7\% accuracy was achieved on the test data, the model was used to impute the missing values in the \textit{debt\_to\_income\_ratio} column, as this methodology still is more thorough than other imputation methods for categorical values like using the mode. As per the predictions, most of the missing values (125,312) were imputed as \textit{>61\%}, followed by \textit{50\%-60\%}. 
-Because later analysis proved that encoding as missingness was way more beneficial to the performance metrics, this option was finally included.
+For \textit{\_to\_income\_ratio}, further \textbf{binning} was introduced, creating the new categories \textit{36\%-41\%, 41\%-45\%}, and \textit{46\%-49\%}. %Initially, Missingness was encoded as a separate category, bringing the number of distinct values for \textit{debt\_to\_income\_ratio} to eleven. 
+%This was kept, because later analysis showed that missingness in the \textit{debt\_to\_income\_ratio} was a feature that heavily impacted predictions: As a comparison, a random forest classifier was trained to predict the missingness in the \textit{debt\_to\_income\_ratio} based on the other features.
+%Although only a 63.7\% accuracy was achieved on the test data, the model was used to impute the missing values in the \textit{debt\_to\_income\_ratio} column, as this methodology still is more thorough than other imputation methods for categorical values like using the mode. As per the predictions, most of the missing values (125,312) were imputed as \textit{>61\%}, followed by \textit{50\%-60\%}. 
+%Because later analysis proved that encoding as missingness was way more beneficial to the performance metrics, this option was finally included.
+As later analysis proved that missingness in the \textit{debt\_to\_income\_ratio} was a feature that heavily impacted predictions, the missingness was encoded as a separate category.
 After assessing the distributions of \textit{interest\_rate} and \textit{loan\_to\_value\_ratio}, extreme outlier values \textit{(loan\_to\_value\_ratio > 250)} were \textbf{dropped}. 
 
 To tackle missingness in \textit{interest\_rate} and \textit{loan\_to\_value\_ratio}, \textbf{imputation} was utilized. 
