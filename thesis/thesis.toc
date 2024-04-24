@@ -22,17 +22,17 @@
 \contentsline {section}{\numberline {3.2}Methodology}{14}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{15}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Explainability}{16}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Performance Assessment (metrics \#1)}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Performance Assessment (metrics \#1)}{19}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Fairness Assessment (metrics \#2)}{19}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Fairness Adjustments}{20}{subsection.3.2.5}%
-\contentsline {chapter}{\numberline {4}Results}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Data Overview}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Fairness}{22}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Enrichment Data}{24}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Results}{24}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{25}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Results of the Iterations}{27}{subsection.4.2.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.30}%
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Data Overview}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Fairness}{23}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Enrichment Data}{25}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Results}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{26}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Results of the Iterations}{28}{subsection.4.2.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.31}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

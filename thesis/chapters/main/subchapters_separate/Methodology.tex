@@ -30,6 +30,31 @@ In order to prepare the HMDA data for the classification task, the numerical var
 
 The target variable \textit{loan\_granted} was \textbf{encoded} as a binary variable. Furthermore, all categorical variables were \textbf{one-hot encoded}, dropping the first column to avoid multicollinearity.
 The data was \textbf{split} into \textit{train, test}, and \textit{validation} sets with an 80/20 split each using the \textit{train\_test\_split} function from sklearn.
+These steps add to the list of transformation steps that were applied to the HMDA mortgage data, which are summarized in \textbf{table \ref{tab:HMDA_transformation_summary_2}}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l *{3}{>{\centering\arraybackslash}X}}
+    \hline
+     & \textbf{Transformation Step} & \textbf{Reasoning} \\
+    \hline
+    \textbf{Rows with missing county code} & Dropping & insignificant amount, imputation not feasible, presumably MCAR \\
+    \textbf{All variables} & Typecasting & Required for further analysis \\
+    \textbf{loan\_granted} & Creation & Target variable for the classification task \\
+    \textbf{Exempt} & Recoding & Recoding to zero for proper typecasting \\
+    \textbf{debt\_to\_income\_ratio} & Binning & Reduction of total categories \\
+    \textbf{loan\_to\_value\_ratio} & Outlier Removal & Few outliers skewed the initial distribution \\
+    \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio} & Imputation & Mean Imputation to tackle missingness \\
+    \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio} & Standardization & Z-Score Standardization for better model performance \\
+    \textbf{Categorical Variables} & One-Hot Encoding & Required for model training \\
+    \textbf{Data} & Splitting & Train, Test, and Validation sets for model training and testing \\
+    \hline
+    \end{tabularx}
+    \caption{Transformation Steps in the HMDA Mortgage Data (including preparation for model training and testing)}
+    \small
+    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+    \label{tab:HMDA_transformation_summary_2}
+\end{table}
 
 % Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
 
