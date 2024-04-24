@@ -63,7 +63,7 @@ This multivariate imputing technique is supposed to infer feature values from ot
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
-The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{USDA ERS page}}. All data used are structured, tabular data that are publicly available. Privacy concerns are not relevant, as the data is anonymized and aggregated. All available reports were downloaded, specifically the following datasets:
+The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{USDA ERS page}}\footnote{See \textit{\href{https://www.ers.usda.gov/data-products/county-level-data-sets/}{this link}}}. All data used are structured, tabular data that are publicly available. Privacy concerns are not relevant, as the data is anonymized and aggregated. All available reports were downloaded, specifically the following datasets:
 
 \begin{itemize}
     \item \textbf{Poverty} (2021 latest)
@@ -108,8 +108,11 @@ Where there were more features available than would be useful for the analysis, 
 All datasets were \textit{pivoted} in order to use the attributes as feature names and \textit{indexed} by the FIPS code and the name of the respective county. 
 After basic \textit{checks for completeness}, the feature columns were \textit{renamed} for clarity. Finally, all datasets were \textit{merged} into a single dataframe, which was then \textit{exported} as a pickle file for further use in the analysis.
 
-The cleaned data are \textit{complete} in a way that there are values available for all features and for all of the 469 counties. Basic summary statistics can be found in \textbf{Table \ref{tab:enrichment_summary}}. 
-Expectedly, there is a high correlation between some of the features, see \textbf{Figure \ref{fig:CH03_Enrichment_Correlation}}.
+The cleaned data are \textit{complete} in a way that there are values available for all features and for all of the 469 counties. Basic summary statistics can be found in \textbf{table \ref{tab:enrichment_summary}}. 
+Across all 469 counties that are included in this analysis, a high school degree is the most common highest degree, with the mean of population percentages with that degree being \textbf{32.9\%} overall, followed by a college degree with \textbf{30.9\%}. 
+A high discrepancy in the educational standard between the different observational units becomes apparent when considering the presence of counties where \textbf{81.6\%} of the population have less than a high school degree, while in others, \textbf{55.2\%} have a bachelors degree or higher.
+In terms of population, the counties in this analysis are heterogenous as well, with the mean population being \textbf{85.36 thousand} with standard deviation of \textbf{318.70 thousand} and the most inhabited county having nearly 100,000 times as many inhabitants as the least inhabited.
+The socio-economic factors expose a wide range of values as well, with the poverty rate ranging from \textbf{3.9\%} to \textbf{43.5\%}, the median household income from \textbf{25.65 thousand} to \textbf{124.35 thousand}, and the unemployment rate from \textbf{0.6\%} to \textbf{11.0\%}.
 
 \begin{table}[h]
     \centering
@@ -133,6 +136,9 @@ Expectedly, there is a high correlation between some of the features, see \textb
     \label{tab:enrichment_summary}
 \end{table}
 
+Expectedly, there is a high correlation between some of the features (see \textbf{figure \ref{fig:CH03_Enrichment_Correlation}}).
+While a bachelors degree or higher tends to be associated with a higher median household income (positive correlation of \textbf{0.62}), a high school degree or less than a high school degree as a highest degree is associated with a higher poverty rate (positive correlation of \textbf{0.33} and \textbf{0.54} respectively).
+A similar relation of socio-economic factors with education can be observed in the correlation of the unemployment rate with the highest degree, with a negative correlation of \textbf{-0.42} for holders of a bachelors degree or higher, compared to a positive correlation of \textbf{0.53} for less than a high school degree, implying that on average, observational units with less than a high school degree a more likely to be unemployed than those with a bachelors degree or higher.
 
 \begin{figure}[h]
     \centering

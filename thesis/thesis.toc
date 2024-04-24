@@ -19,12 +19,12 @@
 \contentsline {section}{\numberline {3.1}Data}{10}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}HMDA Data}{10}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Enrichment Data}{12}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Methodology}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Explainability}{16}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.2}Methodology}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Explainability}{18}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Performance Assessment (metrics \#1)}{19}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment (metrics \#2)}{19}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Fairness Adjustments}{20}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.4}Fairness Assessment (metrics \#2)}{20}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Fairness Adjustments}{21}{subsection.3.2.5}%
 \contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{23}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Data Overview}{23}{subsection.4.1.1}%
