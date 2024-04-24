@@ -20,7 +20,7 @@ As \textbf{figure \ref{fig:CH03_Methodology}} outlines, three different main tas
 
 % Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
 
-\subsection{Model Training and Prediction}\label{subsec:Model_Training_and_Prediction}
+\subsection{Mortgage Classifier (Benchmark)}\label{subsec:Model_Training_and_Prediction}
 
 The model chosen is a comparably simple sequential neural network, implemented with the keras package. Model details are provided in \textbf{Table \ref{tab:CH03_Model_Details}}.
 
@@ -63,7 +63,23 @@ A total of three different Explainability algorithms (see \textbf{chapter \ref{s
 \end{itemize}
 The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
 
-\subsection{Performance Assessment}\label{subsec:Performance_Assessment}
+A separate approach to uncover factors that might influence the predictions of the model and therefore improve the ability to explain it is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
+While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both Explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
+
+In order to operationalize this approach, the following steps were taken:
+\begin{itemize}
+    \item The data was aggregated on \textit{county\_code} level, using the \textit{groupby} function of the pandas package.
+    \item Aggregated KPIs were created: 
+    \begin{itemize}
+        \item \textbf{Sum of Applications}: The total number of applications per county, mainly important to filter out counties with a low number of applications.
+        \item \textbf{Percentage of Grants}: The overall likelihood of a positive decision per county.
+        \item \textbf{Percentage White Applicants}: The percentage of White applicants per county.
+    \end{itemize}
+    \item These KPIs were then related to the predictions made by the model by creating the \textbf{Perc. Pred. Grants} feature, which is the percentage of granted loans per county predicted by the model.
+    \item Based on this set of information, several scatterplots relating these factors were created to analyze the distribution of granted loans across different regions, incorporating information on potentially discriminating factors. 
+\end{itemize}
+
+\subsection{Performance Assessment (metrics \#1)}\label{subsec:Performance_Assessment}
 
 The model originally put out numerical probabilities, which were then converted to binary values, using a threshold of 0.5.
 Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score could be calculated, which was used as one of the assessment measures.
@@ -71,20 +87,20 @@ Additionally, a common set of classification metrics, being \textbf{accuracy}, \
 This set of performance metrics is referred to as \textit{metrics \#1} in the methodology (see \textbf{figure \ref{fig:CH03_Methodology}}).
 
 Finding comparable benchmarks for model performance in the academic literature is hampered by the recency of the used data and the individual approach to filtering states.
-Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task \parencite{Ghoba} with somewhat comparable data, 
+Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
 or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
 
-\subsection{Fairness Assessment}\label{subsec:Fairness_Assessment}
+\subsection{Fairness Assessment (metrics \#2)}\label{subsec:Fairness_Assessment}
 
 % Describe aequitas procedure
 % Describe aif360 procedure(?)
 % Refer to formulas from literature review (and probably move / delete them)
 % Metrics: Choice of metrics, reasoning, details of application - choose most important ones from aequitas summary
 
-Aequitas provides a multitude of fairness metrics to provide model fairness. In order to work with a uniform framework in this thesis, four easy to understand yet highly relevant metrics are chosen: 
+The aequitas package provides a multitude of fairness metrics to provide model fairness. In order to work with a uniform framework in this thesis, four easy to understand yet highly relevant metrics are chosen: 
 The disparities in \textbf{False Positive Rate} (FPR) and \textbf{False Negative Rate} (FNR), as well as the \textbf{True Positive Rate} (TPR) and \textbf{True Negative Rate} (TNR) are calculated for the different groups.
 Analyzing these will inform about how much more likely the model is to make one of the four predictions for Black or African American Americans compared to White applicants.
-From the original paper \parencite{2018aequitas}, the formulas for the calculation of the disparities can be inferred:
+From the original paper \parencite{2018aequitas}, the formulas for the calculation of the disparities can be inferred (see \textbf{equations \ref{eq:FPR_Disparity}} to \textbf{\ref{eq:TNR_Disparity}}):
 
 \begin{equation}
     FPR_{g_{\text{disp}}} = \frac{FPR_{a_i}}{FPR_{a_r}} = \frac{\Pr(\hat{Y}=1 | Y=0, A=a_i)}{\Pr(\hat{Y}=1 | Y=0, A=a_r)}
@@ -123,25 +139,9 @@ More precisely, the outcomes were masked to only include either \textbf{White} o
     \item \textbf{AUC} (where applicable): The area under the ROC curve.
 \end{itemize}
 
-\subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
+% \subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
 
-An additional approach to Explainability is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
-While this procedure does not build upon the usage of an Explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both Explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
-
-In order to operationalize this approach, the following steps were taken:
-\begin{itemize}
-    \item The data was aggregated on \textit{county\_code} level, using the \textit{groupby} function of the pandas package.
-    \item Aggregated KPIs were created: 
-    \begin{itemize}
-        \item \textbf{Sum of Applications}: The total number of applications per county, mainly important to filter out counties with a low number of applications.
-        \item \textbf{Percentage of Grants}: The overall likelihood of a positive decision per county.
-        \item \textbf{Percentage White Applicants}: The percentage of White applicants per county.
-    \end{itemize}
-    \item These KPIs were then related to the predictions made by the model by creating the \textbf{Perc. Pred. Grants} feature, which is the percentage of granted loans per county predicted by the model.
-    \item Based on this set of information, several scatterplots relating these factors were created to analyze the distribution of granted loans across different regions, incorporating information on potentially discriminating factors. 
-\end{itemize}
-
-\subsection{Iterations}\label{subsec:Iterations}
+\subsection{Fairness Adjustments}\label{subsec:Iterations}
 
 % Maybe more detail when decision has actually been made?
 
