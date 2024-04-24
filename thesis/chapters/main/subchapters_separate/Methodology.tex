@@ -1,16 +1,24 @@
 \section{Methodology}\label{sec:Methodology}
 
-The methodology used in this research is summarized in the flowchart in \textbf{Figure \ref{fig:CH03_Methodology}}. 
+The methodology used in this research is summarized in the flowchart in \textbf{figure \ref{fig:CH03_Methodology}}. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{CH03_Methodology.jpg}
     \caption{Methodology}
-    \caption*{The procedure chosen for this thesis follows an iterative approach: After the initial model training and prediction, explainability, fairness, and performance are assessed. Based on these results, adjustments are made to the model and the data preparation process. The fairness of the model is then evaluated using the Aequitas framework. This process is repeated for multiple iterations, aiming to improve one or more of the criteria.}
+    \caption*{The procedure chosen for this thesis follows an iterative approach: An initial model for classification of mortgage (dis)approval is trained and tested, serving as a \textit{Benchmark}. For this benchmark, fairness and performance are assessed based on a predefined set of metrics, \textit{metrics \#1} for model performance and \textit{metrics \#2} for model fairness. Additionally, different \textit{Explainability} techniques will be leveraged to gain insight into the decision criteria underlying the predictions of the benchmark model. Subsequently, three different \textit{Fairness Adjustments} are made to the model and the data preparation process iteratively, each aiming to improve one or more of the metrics. The results of each iteration are once again evaluated using the pre-defined metric sets.}
     \label{fig:CH03_Methodology}
 \end{figure}
 
-Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
+As \textbf{figure \ref{fig:CH03_Methodology}} outlines, three different main tasks were focused on in this work:
+
+\begin{enumerate}
+    \item A Neural Network model aiming to predict mortgage approval was trained and tested on the mortgage dataset, serving as a \textbf{Benchmark}. Its performance was evaluated using a set of predefined metrics, \textit{metrics \#1}, and its fairness was assessed using a set of fairness metrics, \textit{metrics \#2}.
+    \item Insights into the decision criteria of the benchmark model were gained through the application of three different \textbf{Explainability} algorithms: SHAP, LIME, and a Global Surrogate Model. Furthermore, geographical \textit{Enrichment Data} were utilized to further the understanding of which criteria may influence mortgage approval.
+    \item Finally, three different \textbf{Fairness Adjustments} algorithms were applied to the model or the data preparation process iteratively, each aiming to improve either \textit{metrics \#1} or \textit{metrics \#2}. 
+\end{enumerate}
+
+% Data Preparation and Splitting have already been discussed in \textbf{chapter \ref{subsec:Data_Preparation}}, details on the remaining steps will be provided in the following.
 
 \subsection{Model Training and Prediction}\label{subsec:Model_Training_and_Prediction}
 
