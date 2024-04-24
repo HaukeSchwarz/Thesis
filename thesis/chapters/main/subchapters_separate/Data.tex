@@ -21,7 +21,9 @@ All features were \textbf{cast} to their appropriate types \textit{(county\_code
     \centering
     \includegraphics[width=0.85\textwidth]{images/CH03_Missingno_Completeness.png}
     \caption{Visual Inspection of Missingness in the missingno Package}
-    \caption*{Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.}
+    \medskip
+    \small
+    Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.
     \label{fig:CH03_Missingno_Completeness}
 \end{figure}
 
@@ -47,7 +49,29 @@ The enrichment data was obtained from the \textit{\href{https://www.ers.usda.gov
     \item \textbf{Education} (2017–21, 5-year average latest).
 \end{itemize}
 
-In order to clean and reshape the data in a easily analyzable format, the following steps were taken\footnote{For all detail, see the corresponding cleaning notebook at !!! XXX !!!}:
+In order to clean and reshape the data in a easily analyzable format, several steps were taken that are described in the following and summarized in \textbf{table \ref{tab:enrichment_transformation_summary}}. %\footnote{For all detail, see the corresponding cleaning notebook at !!! XXX !!!}:
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l *{3}{>{\centering\arraybackslash}X}}
+    \hline
+     & \textbf{Transformation Step} & \textbf{Reasoning} \\
+    \hline
+    \textbf{Geography} & Filtering & Only include the five states in question \textit{("SD", "LA", "UT", "TX", "MT")} \\
+    \textbf{Year} (where applicable) & Filtering & Only include the newest datapoints \\
+    \textbf{Features} & Reducing & Only include the most relevant features \textit{(Poverty, Population, Unemployment and Median Household Income, Education)} \\
+    \textbf{Data Structure} & Pivoting & Use the attributes as feature names \\
+    \textbf{Indexing} & Indexing & Use the FIPS code and the name of the respective county as index \\
+    \textbf{Renaming} & Renaming & Rename the feature columns for clarity \\
+    \textbf{Merging} & Merging & Merge all datasets into a single dataframe \\
+    \hline
+    \end{tabularx}
+    \caption{Transformation Steps in the Enrichment Data}
+    \small
+    Several transformation steps have been applied to the geographical enrichment data in order to make it easily analyzable.
+    \label{tab:enrichment_transformation_summary}
+\end{table}
+
 All datasets were \textit{filtered} to only contain county-level data for the five states in question \textit{("SD", "LA", "UT", "TX", "MT")}, not the aggregated values for the full states, and, in case multiple years of analysis were available, to only include the newest datapoints. 
 Where there were more features available than would be useful for the analysis, the datasets were \textit{reduced} to only include the most relevant features, being:
 
@@ -81,7 +105,8 @@ Expectedly, there is a high correlation between some of the features, see \textb
     \hline
     \end{tabularx}
     \caption{Summary Statistics of the Enrichment Data}
-    \caption*{The summary statistics show that the data is complete and has a wide range of values.}
+    \small
+    The summary statistics show that the data is complete and has a wide range of values.
     \label{tab:enrichment_summary}
 \end{table}
 
@@ -90,6 +115,8 @@ Expectedly, there is a high correlation between some of the features, see \textb
     \centering
     \includegraphics[width=0.85\textwidth]{images/CH03_Enrichment_Correlation.png}
     \caption{Correlation Between the Enrichment Features}
-    \caption*{Some of the enrichment features expectedly show a high correlation, examples being \textit{median\_household\_income} and \textit{poverty\_rate}.}
+    \medskip
+    \small
+    Some of the enrichment features expectedly show a high correlation, an example being \textit{median\_household\_income} and \textit{poverty\_rate}.
     \label{fig:CH03_Enrichment_Correlation}
 \end{figure}
