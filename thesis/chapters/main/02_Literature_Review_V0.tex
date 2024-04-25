@@ -2,7 +2,7 @@
 
 \section{Fairness in Algorithmic Decision Making}\label{sec:fairness}
 
-Due to the increasing use of decision-making algorithms for varying applications, the topic of \textit{Fairness} has become a heavily researched topic in the field of Machine Learning and AI.\@
+Due to the increasing use of decision-making algorithms for varying applications (compare e.g. \cite{Mehrabi2021}), the topic of \textit{Fairness} has become a heavily researched topic in the field of Machine Learning and AI.\@
 While fairness concerns do not take an important role in all kinds of algorithmic decision making (some algorithms simply do not have grave enough implications to make fairness a concern, an example being buying recommendation algorithms \parencite{Marcinkevics2023}), 
 they need to be considered in applications like hiring processes or criminal justice systems, where the decisions could heavily impact individuals \parencite{Barocas2016}.
 %As this thesis is based on mortgage lending data and builds upon the analysis of demographic attributes like race or gender, fairness concerns are of utmost importance and will be discussed in the following sections.
@@ -10,9 +10,10 @@ This is the case in the research question of this work, which focuses on mortgag
 
 \subsection{Overview of Fairness in Algorithmic Decision Making}\label{subsec:overview}
 
-XXX
+The increasing use of automated decision-making via Artificial Intelligence has shed light on how difficult it is to ensure that these algorithms act in a way humans would perceive as fair. 
+Recent examples like an automated Amazon hiring algorithm systematically discriminating against women \parencite{Chang2023} prove that even the use of highly sophisticated algorithms cannot guarantee fair results when they rely on biased training data.
 
-The intensive research of fairness in algorithmic decision making results in a wide range of definitions of fairness as well as methods to assess it \parencite{CorbettDavies2023}.
+The intensive research of fairness in algorithmic decision making sparked by issues like this results in a wide range of definitions of fairness as well as methods to assess it \parencite{CorbettDavies2023}.
 Most of these are of \textit{mathematical} or quantitative nature, however, there also is a somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
 %Before presenting the most prominent mathematical measures of fairness, it 
 It should be noted that while there are different reasons for unfairness to arise (see~\cite{Chouldechova2018} for a brief overview), bias in the underlying data (through discrimination, erroneous inputs or imbalances in the distributions) 
@@ -99,10 +100,13 @@ Fairness Assessment refers to the post-hoc evaluation of the fairness of model r
 
 \subsection{Applications of Fairness in Mortgage Lending}\label{subsec:mortgage_lending_fairness}
 
-XXX
+Specifically in the Banking and Finance sector, algorithmic decision-making is rapidly being adopted due to the vast amount of data available and the potential upsides in terms of efficiency \parencite{Holli2022}.
+Common usage examples include risk management, loan approvals, or the assessment of creditworthiness. While the actual level of automatization in these areas varies strongly based on factors like the bank or the amount in question, it is often hard to determine whether and to what extent decisions have been made by a human or by a machine, as in many areas, banks do not need to disclose details on that topic \parencite{Bafin2023}.
+In Europe, this is in part addressed by the General Data Protection Regulation (GDPR), which, in certain cases, requires disclosure of what factors influenced a decision \parencite{GDPR}.
+But just as in other sectors that are partly or completely reliant on algorithms to facilitate decision-making, potential discrimination is an issue.  In the USA, it is assumed that People of Color are 40-80\% more likely to be denied a loan than their White counterparts, based on 2019 application data \parencite{Martinez2021}.
 
 Several studies and papers have focused on specifically analyzing the fairness of algorithmic decision making in the field of mortgage lending.
-Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they used Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
+Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they use Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
 Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
 Their point is backed by other studies, such as the ones by Rugh et al. \parencite{Rugh2015} and Faber \parencite{Faber2013}, who prove that indirect discrimination is present in mortgage lending data and that it is a major issue in the field of fairness in mortgage lending.
 Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
@@ -126,6 +130,8 @@ While Singh et al. only excluded features that had a missingness >25\%, Ghoba an
 Finding benchmarks for model performance directly comparable to the scope of this work in the academic literature is hampered by the recency of the used data and the individual approach to filtering states (see \textbf{chapter \ref{subsec:HMDA_Data}}).
 Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
 or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
+
+XXX Results on important factors for prediction here XXX
 
 \section{Explainability and Interpretability in Machine Learning}\label{sec:Explainability}
 

@@ -705,6 +705,38 @@
       \endverb
       \keyw{additive models,classification,healthcare,intelligibility,interaction detection,logistic regression,risk prediction}
     \endentry
+    \entry{Chang2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cdbf80845b331261314d1cd150ab1458}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cdbf80845b331261314d1cd150ab1458}
+      \strng{fullhash}{cdbf80845b331261314d1cd150ab1458}
+      \strng{bibnamehash}{cdbf80845b331261314d1cd150ab1458}
+      \strng{authorbibnamehash}{cdbf80845b331261314d1cd150ab1458}
+      \strng{authornamehash}{cdbf80845b331261314d1cd150ab1458}
+      \strng{authorfullhash}{cdbf80845b331261314d1cd150ab1458}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Economics, Management and Political Sciences}
+      \field{month}{09}
+      \field{title}{Gender Bias in Hiring: An Analysis of the Impact of Amazon's Recruiting Algorithm}
+      \field{volume}{23}
+      \field{year}{2023}
+      \field{pages}{134\bibrangedash 140}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.54254/2754-1169/23/20230367
+      \endverb
+    \endentry
     \entry{Chen2019}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=69bd6c70a08a67d2841abb1b24a5ccfa}{%
@@ -1955,6 +1987,44 @@
       \verb 10.1145/3287560.3287592
       \endverb
     \endentry
+    \entry{Bafin2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=910d7e4fe2004de1ca61c545f0707997}{%
+           family={Kelp},
+           familyi={K\bibinitperiod},
+           given={Dr\bibnamedelima Torsten},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c33e6c04398daf4383c8275902a65824}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Dr\bibnamedelima Martina},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \strng{fullhash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \strng{bibnamehash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \strng{authorbibnamehash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \strng{authornamehash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \strng{authorfullhash}{6377a25edb1bf178b3806bc9408d6cc7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BaFin Expert Articles}
+      \field{month}{07}
+      \field{title}{When an algorithm decides on the loan}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Fachartikel/2023/fa_bj_2305_Algorithmen_Kreditvergabe_en.html
+      \endverb
+      \verb{url}
+      \verb https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Fachartikel/2023/fa_bj_2305_Algorithmen_Kreditvergabe_en.html
+      \endverb
+    \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
@@ -2396,6 +2466,45 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.1493
       \endverb
       \keyw{explainability,interpretability,machine learning,neural networks}
+    \endentry
+    \entry{Martinez2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fd7854438f7362cfaae5b4e9cfe0653c}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2839b86b8666c075c9d0a7fa27fcada6}{%
+           family={Kirchner},
+           familyi={K\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{12fc9f4a055019cbbfbedde1efae6038}
+      \strng{fullhash}{12fc9f4a055019cbbfbedde1efae6038}
+      \strng{bibnamehash}{12fc9f4a055019cbbfbedde1efae6038}
+      \strng{authorbibnamehash}{12fc9f4a055019cbbfbedde1efae6038}
+      \strng{authornamehash}{12fc9f4a055019cbbfbedde1efae6038}
+      \strng{authorfullhash}{12fc9f4a055019cbbfbedde1efae6038}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Markup found that lenders in 2019 denied mortgages to Black applicants at a higher rate than any other group.}
+      \field{journaltitle}{The Markup}
+      \field{month}{08}
+      \field{title}{The Secret Bias Hidden in Mortgage-Approval Algorithms}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://themarkup.org/denied/2021/08/25/the-secret-bias-hidden-in-mortgage-approval-algorithms
+      \endverb
+      \verb{url}
+      \verb https://themarkup.org/denied/2021/08/25/the-secret-bias-hidden-in-mortgage-approval-algorithms
+      \endverb
     \endentry
     \entry{Mehrabi2021}{article}{}
       \name{author}{5}{}{%
@@ -3140,6 +3249,36 @@
       \field{journaltitle}{arXiv preprint arXiv:1811.05577}
       \field{title}{Aequitas: A Bias and Fairness Audit Toolkit}
       \field{year}{2018}
+    \endentry
+    \entry{Holli2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8865f523c2707ce115d61651cfb98f24}{%
+           family={Sargeant},
+           familyi={S\bibinitperiod},
+           given={Holli},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8865f523c2707ce115d61651cfb98f24}
+      \strng{fullhash}{8865f523c2707ce115d61651cfb98f24}
+      \strng{bibnamehash}{8865f523c2707ce115d61651cfb98f24}
+      \strng{authorbibnamehash}{8865f523c2707ce115d61651cfb98f24}
+      \strng{authornamehash}{8865f523c2707ce115d61651cfb98f24}
+      \strng{authorfullhash}{8865f523c2707ce115d61651cfb98f24}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI and Ethics}
+      \field{month}{11}
+      \field{title}{Algorithmic decision-making in financial services: economic and normative outcomes in consumer credit}
+      \field{volume}{3}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s43681-022-00236-7
+      \endverb
     \endentry
     \entry{Sharma2022}{report}{}
       \name{author}{3}{}{%
