@@ -17,7 +17,7 @@ The intensive research of fairness in algorithmic decision making sparked by iss
 Most of these are of \textit{mathematical} or quantitative nature, however, there also is a somewhat separate approach of assessing fairness \textit{individually} in a qualitative way \parencite{Chouldechova2018}.
 %Before presenting the most prominent mathematical measures of fairness, it 
 It should be noted that while there are different reasons for unfairness to arise (see~\cite{Chouldechova2018} for a brief overview), bias in the underlying data (through discrimination, erroneous inputs or imbalances in the distributions) 
-is the main reason for unfairness to arise \parencite{Choras2020}\footnote{The reasons for bias in the underlying data are a highly interesting area of research, but out of the scope of this thesis. See~\cite{Mehrabi2021} for an extensive list and discussion for types and reasons for biased data}.
+is the main reason for unfairness to arise \parencite{Choras2020}\footnote{The reasons for bias in the underlying data are a highly interesting area of research, but out of the scope of this thesis. See~\cite{Mehrabi2021} or \cite{Jui2024} for an extensive list and discussion for types and reasons for biased data}.
 %Measuring the impact of these biases on model fairness, several approaches have gained increased attention from researchers\footnote{This selection is based on the paper by Pessach and Shmueli \parencite{Pessach2020}, who also provide a more extensive overview of measurements not as commonly used in academic literature}:
 %\begin{itemize}
 %    \item \textbf{Disparate Impact} is based on the expected positive prediction rate for each group. For a fair outcome, the rate of positive predictions for any group should be on par or just slightly below the rate for any other group. Formally: 
@@ -127,11 +127,13 @@ While Singh et al. only excluded features that had a missingness >25\%, Ghoba an
     \item \textit{lien status}
 \end{itemize}
 
+It is suggested by previous works that protected attributes do in fact play a statistically significant role in the decision-making process of mortgage lending.
+Exemplarily, Lindsey-Taliefero and Kelly analyzed the role of race, age, and gender on the probability of mortgage lending specifically to research mortgages with the 2019 HMDA dataset and came to the conclusion that all of these factors had a measurable impact on the probability of a mortgage being granted \parencite{LT2021}.
+Their results are backed by the study of Cyree and Winters \cite{Cyree2023}, who analyzed HMDA data from 2007 to 2016 and found that every subgroup in their data was statistically discriminated when compared to White males with co-applicants.
+
 Finding benchmarks for model performance directly comparable to the scope of this work in the academic literature is hampered by the recency of the used data and the individual approach to filtering states (see \textbf{chapter \ref{subsec:HMDA_Data}}).
 Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
 or reported an accuracy of 91\% using a deep neural network for classification \parencite{Hodges2024}, albeit with a different timeframe and a higher amount of used features. 
-
-XXX Results on important factors for prediction here XXX
 
 \section{Explainability and Interpretability in Machine Learning}\label{sec:Explainability}
 

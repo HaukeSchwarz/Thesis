@@ -1095,6 +1095,41 @@
       \endverb
       \keyw{Computer Science - Computers and Society}
     \endentry
+    \entry{Cyree2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=12068faf6efd82b0c770697742c7ec65}{%
+           family={Cyree},
+           familyi={C\bibinitperiod},
+           given={K.B.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efc09ec1b35915f64563a3aed26032b0}{%
+           family={Winters},
+           familyi={W\bibinitperiod},
+           given={D.B.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a2ccbce88b7ea359a9932869d270810}
+      \strng{fullhash}{8a2ccbce88b7ea359a9932869d270810}
+      \strng{bibnamehash}{8a2ccbce88b7ea359a9932869d270810}
+      \strng{authorbibnamehash}{8a2ccbce88b7ea359a9932869d270810}
+      \strng{authornamehash}{8a2ccbce88b7ea359a9932869d270810}
+      \strng{authorfullhash}{8a2ccbce88b7ea359a9932869d270810}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{month}{07}
+      \field{number}{197}
+      \field{title}{Investigating bank lending discrimination in the US using CRA-rated banks’ HMDA loan data}
+      \field{year}{2023}
+      \field{pages}{371\bibrangedash 395}
+      \range{pages}{25}
+    \endentry
     \entry{Alessandro2017}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=acb904779b7c0a2a2cb560f566b410e2}{%
@@ -1740,6 +1775,41 @@
       \verb https://www.consumerfinance.gov/data-research/hmda/
       \endverb
     \endentry
+    \entry{Jui2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2f065fc762927c755d10965c769c459a}{%
+           family={Jui},
+           familyi={J\bibinitperiod},
+           given={T.D.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=739991268f8a0b676785597311655971}{%
+           family={Rivas},
+           familyi={R\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d3045bef8649b67f69feb2af8b014ada}
+      \strng{fullhash}{d3045bef8649b67f69feb2af8b014ada}
+      \strng{bibnamehash}{d3045bef8649b67f69feb2af8b014ada}
+      \strng{authorbibnamehash}{d3045bef8649b67f69feb2af8b014ada}
+      \strng{authornamehash}{d3045bef8649b67f69feb2af8b014ada}
+      \strng{authorfullhash}{d3045bef8649b67f69feb2af8b014ada}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Machine Learning and Cybernetics}
+      \field{month}{01}
+      \field{title}{Fairness issues, current approaches, and challenges in machine learning models}
+      \field{year}{2024}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s13042-023-02083-2
+      \endverb
+    \endentry
     \entry{Kamiran2012}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=767ab6888ee1d3aa5cdc53f783d7d4e1}{%
@@ -2332,6 +2402,43 @@
       \verb https://www.mdpi.com/1099-4300/23/1/18
       \endverb
       \keyw{xai,machine learning,explainability,interpretability,fairness,sensitivity,black-box}
+    \endentry
+    \entry{LT2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9deee4e0b5563dd4baacd6043ac95482}{%
+           family={Lindsey-Taliefero},
+           familyi={L\bibinithyphendelim T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea6aaad8400de815d2edab01d83eff0c}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \strng{fullhash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \strng{bibnamehash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \strng{authorbibnamehash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \strng{authornamehash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \strng{authorfullhash}{9d9d2f338d3112e64ffd3130619b55d2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int Adv Econ Res}
+      \field{number}{27}
+      \field{title}{Reverse Mortgage Lending Disparities and the Economically Vulnerable}
+      \field{year}{2021}
+      \field{pages}{159\bibrangedash 169}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s11294-021-09831-6
+      \endverb
     \endentry
     \entry{Lipton2018}{article}{}
       \name{author}{1}{}{%
