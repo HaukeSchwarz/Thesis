@@ -19,6 +19,102 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Shiam2024}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=4deda33e4f0db3d106e020ce6445727f}{%
+           family={Al\bibnamedelima Shiam},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Sarder\bibnamedelima Abdulla},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ba523e475b644c06503c2dd3c29bae7}{%
+           family={Hasan\bibnamedelima Md},
+           familyi={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Mahdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7c7a459ef56b4d30bcd4707a74ae65c}{%
+           family={Pantho\bibnamedelima Md},
+           familyi={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jubair},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03bb042b204d36e7550ef14dae524a06}{%
+           family={Shochona},
+           familyi={S\bibinitperiod},
+           given={Sarmin\bibnamedelima Akter},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fda9c0325eca1a6d4dafa39fffe285e}{%
+           family={Nayeem\bibnamedelima Md},
+           familyi={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Boktiar},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13f44a37a65096a6ba65797a14d55ee7}{%
+           family={Choudhury},
+           familyi={C\bibinitperiod},
+           given={M\bibnamedelima Tazwar\bibnamedelima Hossain},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1feeea4cdf83989a89d1079c94d96d67}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tuan\bibnamedelima Ngoc},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9983bebd3ced1118a7785025af220d1d}
+      \strng{fullhash}{92470f09dad20f8d45ba2da74f46fdf4}
+      \strng{bibnamehash}{9983bebd3ced1118a7785025af220d1d}
+      \strng{authorbibnamehash}{9983bebd3ced1118a7785025af220d1d}
+      \strng{authornamehash}{9983bebd3ced1118a7785025af220d1d}
+      \strng{authorfullhash}{92470f09dad20f8d45ba2da74f46fdf4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business and Management Studies}
+      \field{number}{6}
+      \field{title}{Credit Risk Prediction Using Explainable AI}
+      \field{volume}{2}
+      \field{year}{2024}
+      \field{pages}{61\bibrangedash 66}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.32996/jbms.2024.6.2.6
+      \endverb
+    \endentry
+    \entry{Anderson2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c8a174520f512c1ef75018c34d89ccf4}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={A.A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c8a174520f512c1ef75018c34d89ccf4}
+      \strng{fullhash}{c8a174520f512c1ef75018c34d89ccf4}
+      \strng{bibnamehash}{c8a174520f512c1ef75018c34d89ccf4}
+      \strng{authorbibnamehash}{c8a174520f512c1ef75018c34d89ccf4}
+      \strng{authornamehash}{c8a174520f512c1ef75018c34d89ccf4}
+      \strng{authorfullhash}{c8a174520f512c1ef75018c34d89ccf4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{title}{Testing machine learning explanation methods}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{18073\bibrangedash 18084}
+      \range{pages}{12}
+    \endentry
     \entry{Barocas2016}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cb55e045fbd37698b0b60a60b567ab83}{%
@@ -2519,6 +2615,56 @@
       \field{month}{12}
       \field{title}{A Unified Approach to Interpreting Model Predictions}
       \field{year}{2017}
+    \endentry
+    \entry{Maass2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1b7071d23a59fcc869863e969ca2e992}{%
+           family={Maass},
+           familyi={M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2c5f4ba124ea8b418b665f37686d45d}{%
+           family={Castellanos},
+           familyi={C\bibinitperiod},
+           given={Arturo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce1ed07766f5bb691128c61478dfd231}{%
+           family={Tremblay},
+           familyi={T\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd49bc0771c88c62c54909ea9b7cae17}{%
+           family={Lukyanenko},
+           familyi={L\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37d4dd46bcabd8d5212e88353214cd54}{%
+           family={Storey},
+           familyi={S\bibinitperiod},
+           given={Veda\bibnamedelima C.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{889c346b72043b233508d2f60174d413}
+      \strng{fullhash}{40f9d81953f11c7f06910f01aab8cc16}
+      \strng{bibnamehash}{889c346b72043b233508d2f60174d413}
+      \strng{authorbibnamehash}{889c346b72043b233508d2f60174d413}
+      \strng{authornamehash}{889c346b72043b233508d2f60174d413}
+      \strng{authorfullhash}{40f9d81953f11c7f06910f01aab8cc16}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICIS 2022 Proceedings}
+      \field{title}{AI Explainability: Embedding Conceptual Models}
+      \field{volume}{12}
+      \field{year}{2022}
     \endentry
     \entry{Marcinkevics2023}{article}{}
       \name{author}{2}{}{%

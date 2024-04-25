@@ -221,6 +221,16 @@ However, these concepts are only stated on theoretical level without practical i
 Another promising approach to merge the concepts of fairness and explainability is the identification of root-causes for a certain model behavior by identifying \textit{influential subsets} within the underlying datasets as proposed by Pradhan \parencite{Pradhan2022}\footnote{For additional information on the proposed model see https://github.com/romilapradhan/gopher}.
 By combining explainability criteria ('Why is a certain subgroup influential on the model's outcome?') with fairness criteria ('In how far can intervention in the training data regarding these subsets improve fairness?'), the authors manage to implement an efficient algorithm combining both concepts.
 
+Just as it is the case for the aspect of fairness (as discussed in \textbf{chapter \ref{subsec:mortgage_lending_fairness}}), the field of mortgage lending has been specifically targeted by previous research on the aspect of explainability.
+Maass et al. \parencite{Maass2022} contribute to the discussion by proposing the use of \textit{conceptual models} to capture the relationships in data, exemplarily using the HMDA 2020 dataset to predict mortgage approvals.
+By using a total of 52 features clustered into different \textit{concepts} (i.e. abstracted groups of features), they determine the most important concepts relative to one another for the model's decision-making process.
+
+In a comparative review of different explainability methods, Anderson evaluates the accuracy of explanations of different ML models on the 2019 HMDA dataset \parencite{Anderson2023}.
+While all of the algorithms reviewed \textit{(most points lost, Shapley values, Shapley additive explanations, and the method of integrated gradients)} were able to provide explanations for the model's decisions, the accuracy of the explanations varied greatly between the different methods, with SHAP being the overall best-performing approach.
+
+A very recent contribution to a research question from a similar field as this thesis has been made by Shiam et al. \parencite{Shiam2024}, who leverage explainable AI to assess the risk of credit default (as opposed to mortgage approval focused in this work), who leverage SHAP to explain predictions of a default classifier
+
+
 %To-Do:
 %Go through sources of Zhou and list important ones
 %Mention specifically newly added analysis in this thesis
