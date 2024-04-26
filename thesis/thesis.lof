@@ -8,21 +8,22 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation Between the Enrichment Features\relax }}{17}{figure.caption.13}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Methodology\relax }}{18}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Distribution of the Target Variable\relax }}{25}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Correlation of the Target Variable with Categorical Features\relax }}{26}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Correlation Between the Numerical Features\relax }}{27}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Histograms of the Numerical Features\relax }}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Loan Grant by Protected Attribute\relax }}{29}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{30}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Enrichment Data EDA\relax }}{31}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces SHAP individual explanations\relax }}{32}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces LIME individual explanations\relax }}{32}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{33}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Initial Model Disparity\relax }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Reweighed Model Disparity\relax }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Corr. Rem. Model Disparity\relax }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Cal. Eq. Odds Model Disparity\relax }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fairness Comparison Chart\relax }}{36}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces HMDA: Distribution of the Target Variable\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation of the Target Variable with Categorical Features\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Correlation Between the Numerical Features\relax }}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Histograms of the Numerical Features\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features\relax }}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute\relax }}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{35}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA\relax }}{36}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces SHAP individual explanations\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces LIME individual explanations\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{37}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Initial Model Disparity\relax }}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Reweighed Model Disparity\relax }}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Corr. Rem. Model Disparity\relax }}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Cal. Eq. Odds Model Disparity\relax }}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Fairness Comparison Chart\relax }}{39}{figure.caption.34}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 
