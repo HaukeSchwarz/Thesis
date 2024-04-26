@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1714149314 "thesis.bcf" "thesis.bbl" "thesis" 1714149402 0
+["biber thesis"] 1714149314 "thesis.bcf" "thesis.bbl" "thesis" 1714151305 0
   "./literature/thesis_lib.bib" 1714073345 128159 aeeaee3cd57ef01feb006b5178aebed3 ""
-  "thesis.bcf" 1714149401 114590 24107c0176b3a0959bb74683a89ff09e "pdflatex"
+  "thesis.bcf" 1714151303 114590 24107c0176b3a0959bb74683a89ff09e "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1714149394 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1714149402 0
+["pdflatex"] 1714151292 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1714151305 0
   "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1714149031 6860 464347f19ebb653e7e5f69a79286ad09 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -277,7 +277,7 @@
   "chapters/main/01_Introduction.tex" 1713857798 2366 fab36cfcea493b6f1922831fdc809f45 ""
   "chapters/main/02_Literature_Review_V0.tex" 1714073210 30718 36c8237cfdd6970b79e8d59515386ea5 ""
   "chapters/main/03_Data_and_Methodology.tex" 1710931506 180 dba736930e7a4fa4323ab6b5b508bf2a ""
-  "chapters/main/XX_Results.tex" 1714149393 11502 4bfe3255e3da9f9d4f3e7f461e78cb70 ""
+  "chapters/main/XX_Results.tex" 1714151278 11959 2f071a80b10760f32e510cce33aba98d ""
   "chapters/main/subchapters_separate/Data.tex" 1714031419 16547 76d79a05a8d807296ed13fc6efa3b060 ""
   "chapters/main/subchapters_separate/Methodology.tex" 1714032031 19898 311755dab3664da852ec432bc372fac2 ""
   "chapters/main/subchapters_separate/Results/Results_V1.tex" 1714149298 14436 3359abe9c106c0563f6d6ab46617cafe ""
@@ -289,7 +289,8 @@
   "images/CH02_algorithms_overview_Saleem.jpg" 1710253919 221561 61cbe98db4bf819b14e2fc53b111e6ef ""
   "images/CH03_Enrichment_Correlation.png" 1714031972 180546 d7a0f057fd332416e9c7a022a4c66ee5 ""
   "images/CH03_Missingno_Completeness.png" 1714032271 115610 f2628c26195d95a80252e6000a753364 ""
-  "images/CHXX_Numerical_Distributions_2.png" 1711206087 17986 652ec86bf4e796de52f9c8e5adf5bdcb ""
+  "images/CHXX_Numerical_Distributions_2_IR.png" 1714150750 10707 a1fd4940bcdbcec3353675d77819798c ""
+  "images/CHXX_Numerical_Distributions_2_LTVR.png" 1714150771 11509 e0189ecb5d6d6e53356559846e15def0 ""
   "images/CHXX_Perc_Grants_vs_Perc_White.png" 1712586533 50955 f28f93d3891f552438c78321d74ad38c ""
   "images/CHXX_Target_Correlation_Categorical.png" 1714140323 25000 5beb800705220e29b6c0fc709dd27467 ""
   "images/CHXX_Target_Correlation_Numerical.png" 1714140355 23946 952b9294afa20b35ba9388512c022636 ""
@@ -319,14 +320,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1714149401 46907 e9e5b1e992d5a311a09226f5bc225ad4 "pdflatex"
+  "thesis.aux" 1714151303 46907 59dfaab475da898451bf1e3f44546a23 "pdflatex"
   "thesis.bbl" 1714149318 215961 41ec32e75423f96cfde2ca77ba7239a5 "biber thesis"
-  "thesis.frm" 1714149401 907 66433fd82de29cfa6b56b862b536a3ac "pdflatex"
-  "thesis.lof" 1714149401 2809 de64ff38b6ef1c1a462d896d66f7545d "pdflatex"
-  "thesis.lot" 1714149401 1641 6f21012faef12d7ee7ea7c905c207b54 "pdflatex"
-  "thesis.run.xml" 1714149401 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
+  "thesis.frm" 1714151303 907 66433fd82de29cfa6b56b862b536a3ac "pdflatex"
+  "thesis.lof" 1714151303 2809 e53d2344048f576194bdd307e7347904 "pdflatex"
+  "thesis.lot" 1714151303 1641 afc09dffb6881a0921c5fca7efa00fb7 "pdflatex"
+  "thesis.run.xml" 1714151303 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
   "thesis.tex" 1714149031 6860 464347f19ebb653e7e5f69a79286ad09 ""
-  "thesis.toc" 1714149401 2989 63cb09524a2ff1ab7f90fc9247cfaada "pdflatex"
+  "thesis.toc" 1714151303 2989 32ae5dd02d67163dad2b8f78a3bdd688 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"

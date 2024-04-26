@@ -63,9 +63,22 @@ Their distributions can be seen in \textbf{figure \ref{fig:CHXX_Numerical_Distri
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/CHXX_Numerical_Distributions_2.png}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/CHXX_Numerical_Distributions_2_IR.png}
+        \small
+        Interest Rate
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/CHXX_Numerical_Distributions_2_LTVR.png}
+        \small
+        Loan to Value Ratio
+    \end{minipage}    
     \caption{HMDA: Histograms of the Numerical Features}
-    \caption*{The results of the KNNImputer applying mean (annotated in red) values for all missing values show clearly here by the high amount of values at the mean.}
+    \medskip
+    \small
+    The results of the KNNImputer applying mean (\textit{4.56\%} for the interest rate and \textit{71.24\%} for the Loan to Value Ratio) values for the loan to value ratio values for all missing values show clearly here by the high amount of values at the mean.
     \label{fig:CHXX_Numerical_Distributions_2}
 \end{figure}
 
@@ -73,9 +86,6 @@ Exploratory data analysis of the categorical variables showed that the majority 
 Most loans applied for are \textbf{Conventional} (82\%) and \textbf{First Lien} (86\%).
 Aside from missingness in the \textit{debt\_to\_income\_ratio} feature, which alone accounts for 26\% of all values, the data in this feature are roughly normally distributed, with the mode being 14\% of values in the \textbf{36\%-41\%} range. 
 The distributions of the categorical variables can be seen in \textbf{figure \ref{fig:HMDA_Categorical_Features_Distributions}}.
-
-
-
 
 \begin{figure}[h]
     \centering
