@@ -2,12 +2,56 @@
 
 \section{Exploratory Data Analysis}\label{sec:Exploratory_Data_Analysis}
 
-\subsection{Data Overview}\label{subsec:Data_Overview}
+\subsection{HMDA Data}\label{subsec:HMDA_EDA}
+
+After all preparation steps detailed in \textbf{chapter \ref{subsec:HMDA_Data}}, the dataset contained \textit{851,936} observations and \textit{9} features (including the target variable, \textit{loan\_granted}). 
+
+\textbf{EDA of the Target Variable}
+
+The target variable, \textit{loan\_granted}, is binary (\textit{Granted} or \textit{Not Granted}) and imbalanced, with \textit{57.9\%} of all loans being granted. 
+There are no missing values. The distribution of the target variable can be seen in \textbf{Figure \ref{fig:CHXX_Target_Variable_Distribution}}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/CHXX_Target_Variable_Distribution.png}
+    \caption{Distribution of the Target Variable}
+    \medskip
+    \small
+    The target variable is imbalanced, with 57.9\% (493,290) of all loans being granted.
+    \label{fig:CHXX_Target_Variable_Distribution}
+\end{figure}
+
+Analyzing the correlation of the target variable with the categorical and numerical features showed that the \textit{debt\_to\_income\_ratio} feature has the highest correlation (moderate negative correlation of \textbf{-0.61}) with the target variable, while the other features show only weak correlations. 
+The correlation of the target variable with the numerical and categorical features can be seen in \textbf{figure \ref{fig:CHXX_Target_Correlation_Categorical}} and \textbf{figure \ref{fig:CHXX_Target_Correlation_Numerical}}, respectively.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{images/CHXX_Target_Correlation_Categorical.png}
+    \caption{Correlation of the Target Variable with Categorical Features}
+    \medskip
+    \small
+    While there are only weak correlations between \textit{loan\_granted} and \textit{applicant\_race-1, loan\_type, lien\_status}, and \textit{applicant\_sex}, there is a moderate negative correlation of \textbf{-0.61} between \textit{loan\_granted} and \textit{debt\_to\_income\_ratio}.
+    \label{fig:CHXX_Target_Correlation_Categorical}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{images/CHXX_Target_Correlation_Numerical.png}
+    \caption{Correlation Between the Numerical Features}
+    \medskip
+    \small
+    While both numerical features are only weakly correlated with \textit{loan\_granted}, there is a moderate positive correlation of \textbf{0.54} inbetween them.
+    \label{fig:CHXX_Target_Correlation_Numerical}
+\end{figure}
+
+% \subsection{Data Overview}\label{subsec:Data_Overview}
+
+\textbf{EDA of the Features}
 
 The processed dataset contained two \textit{numerical} features: \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio}.
 % Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_1}} and \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
 Their distributions can be seen in \textbf{Figure \ref{fig:CHXX_Numerical_Distributions_2}}.
-Both are positively correlated with a correlation coefficient of \textit{0.54}. 
+% Both are positively correlated with each other with a correlation coefficient of \textit{0.54}. 
 
 %\begin{figure}[h]
 %    \centering
@@ -29,7 +73,7 @@ Exploratory data analysis of the categorical variables (XXX Detail in appendix a
 Most loans applied for are \textbf{Conventional} (82\%) and \textbf{First Lien} (86\%).
 Aside from missingness in the \textit{debt\_to\_income\_ratio} feature, which alone accounts for 26\% of all values, the data in this feature are roughly normally distributed, with the mode being 14\% of values in the \textbf{36\%-41\%} range. 
 
-\subsection{Fairness}\label{subsec:Fairness}
+% \subsection{Fairness}\label{subsec:Fairness}
 
 Following the scope of this thesis specified in \textbf{chapter \ref{ch:Introduction}}, a special focus needs to be put  on fairness, specifically equality with regards to the protected attribute(s).
 This potential unfairness in the underlying data can be identified from assessing the distribution of the target variable across different groups.
@@ -67,7 +111,7 @@ Utilizing the aforementioned \textbf{AIF360} package to assess the mean differen
 
 \subsection{Enrichment Data}\label{subsec:Enrichment_Data}
 
-As stated before, analyzing the geographical information provided in the enrichment dataset (see \textbf{chapter \ref{subsec:Enrichment_Data_Methodology}} and \textbf{chapter \ref{subsec:Enrichment_Data}}) was expected to provide additional insights into the fairness of the model.
+As stated before, analyzing the geographical information provided in the enrichment dataset (see \textbf{chapter \ref{subsec:Explainability}}) was expected to provide additional insights into the fairness of the model.
 A sign of potential discrimination in the data could be the correlation between race and potentially favorable outcomes, such as a higher percentage of granted loans or a lower poverty rate.
 \textbf{Figure \ref{fig:Scatter_White_Applicants_Loan_Grant}} shows a scatterplot that relates the percentage of White applicants to the percentage of granted loans per county. It indicates that a higher percentage of white applicants per county does not only seem to be correlated with a higher percentage of these loans actually being granted, but also with a lower poverty rate on average.
 
