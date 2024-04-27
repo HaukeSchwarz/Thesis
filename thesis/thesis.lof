@@ -12,18 +12,13 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation of the Target Variable with Categorical Features\relax }}{26}{figure.caption.18}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Correlation Between the Numerical Features\relax }}{27}{figure.caption.19}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Histograms of the Numerical Features\relax }}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features\relax }}{33}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute\relax }}{34}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{34}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA\relax }}{35}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces SHAP individual explanations\relax }}{35}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces LIME individual explanations\relax }}{35}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{36}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Initial Model Disparity\relax }}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Reweighed Model Disparity\relax }}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Corr. Rem. Model Disparity\relax }}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Cal. Eq. Odds Model Disparity\relax }}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Fairness Comparison Chart\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features\relax }}{31}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute\relax }}{32}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{32}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA\relax }}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{35}{figure.caption.29}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 

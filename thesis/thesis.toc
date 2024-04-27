@@ -30,8 +30,9 @@
 \contentsline {subsection}{\numberline {4.1.1}HMDA Data}{25}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Enrichment Data}{27}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Results}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Initial Performance}{29}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Results of the Iterations}{30}{subsection.4.2.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.35}%
+\contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Explainability}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{30}{subsection.4.2.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{36}{chapter*.30}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
