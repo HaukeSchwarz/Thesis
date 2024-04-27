@@ -90,34 +90,7 @@ Initially, a model aiming to predict mortgage approval as a classification task 
 To increase the efficiency of the training process and to prevent overfitting, \textit{callbacks} for early stopping (with a patience of 5 iterations) and best model selection, both based on the validation loss, have been implemented. 
 \textit{Adam} was chosen as the optimizer, due to the nature of the classification task, loss evaluation was based on \textit{binary crossentropy}, and \textit{accuracy} was selected as the target metric. Training took place with a batch size of 48 and for a maximum of 30 epochs. 
 
-\subsection{Explainability}\label{subsec:Explainability}
-
-As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
-A total of three different explainability algorithms (see \textbf{chapter \ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
-\begin{itemize}
-    \item The \textbf{SHAP} algorithm was applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
-    \item The \textbf{LIME} algorithm was used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
-    \item A \textbf{Global Surrogate Model} was trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
-\end{itemize}
-The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
-
-A separate approach to uncover factors that might influence the predictions of the model and therefore improve the ability to explain it is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
-While this procedure does not build upon the usage of an explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
-
-In order to operationalize this approach, the following steps were taken:
-\begin{itemize}
-    \item The data was aggregated on \textit{county\_code} level, using the \textit{groupby} function of the pandas package.
-    \item Aggregated KPIs were created: 
-    \begin{itemize}
-        \item \textbf{Sum of Applications}: The total number of applications per county, mainly important to filter out counties with a low number of applications.
-        \item \textbf{Percentage of Grants}: The overall likelihood of a positive decision per county.
-        \item \textbf{Percentage White Applicants}: The percentage of White applicants per county.
-    \end{itemize}
-    \item These KPIs were then related to the predictions made by the model by creating the \textbf{Perc. Pred. Grants} feature, which is the percentage of granted loans per county predicted by the model.
-    \item Based on this set of information, several scatterplots relating these factors were created to analyze the distribution of granted loans across different regions, incorporating information on potentially discriminating factors. 
-\end{itemize}
-
-\subsection{Performance Assessment (metrics \#1)}\label{subsec:Performance_Assessment}
+\textbf{Performance Assessment (metrics \#1)}
 
 The model originally put out numerical probabilities, which were then converted to binary values, using a threshold of 0.5.
 Using these original probabilities, \textbf{ROC AUC} curves could be plotted and the ROC AUC score could be calculated, which was used as one of the assessment measures.
@@ -148,13 +121,7 @@ This set of performance metrics is referred to as \textit{metrics \#1} in the me
     \addcontentsline{frm}{formulas}{\protect\numberline{\theequation}\hspace{1em}F1 Score}
 \end{equation}
 
-
-\subsection{Fairness Assessment (metrics \#2)}\label{subsec:Fairness_Assessment}
-
-% Describe aequitas procedure
-% Describe aif360 procedure(?)
-% Refer to formulas from literature review (and probably move / delete them)
-% Metrics: Choice of metrics, reasoning, details of application - choose most important ones from aequitas summary
+\textbf{Fairness Assessment (metrics \#2)}
 
 The aequitas package provides a multitude of fairness metrics to provide model fairness. In order to work with a uniform framework in this thesis, four easy to understand yet highly relevant metrics are chosen: 
 The disparities in \textbf{False Positive Rate} (FPR) and \textbf{False Negative Rate} (FNR), as well as the \textbf{True Positive Rate} (TPR) and \textbf{True Negative Rate} (TNR) are calculated for the different groups.
@@ -198,11 +165,40 @@ More precisely, the outcomes were masked to only include either \textbf{White} o
     \item \textbf{AUC} (where applicable): The area under the ROC curve.
 \end{itemize}
 
+\subsection{Explainability}\label{subsec:Explainability}
+
+As laid out in the research question for this thesis (see \textbf{chapter \ref{ch:Introduction}}), an important part of assessing the models fairness is the ability to actually explain its decisions.
+A total of three different explainability algorithms (see \textbf{chapter \ref{subsec:algorithms}} for theoretical background) were utilized for two reasons: Firstly, to provide a comprehensive overview of the models' decision-making process, and secondly, to understand potential differences in the results of the algorithms, in case any may arise.
+\begin{itemize}
+    \item The \textbf{SHAP} algorithm was applied to a set of individual predictions, aiming to understand feature importance and the impact of individual features on the model's decision.
+    \item The \textbf{LIME} algorithm was used to challenge the predictions made by the SHAP algorithms to assess whether both provide comparable explanations.
+    \item A \textbf{Global Surrogate Model} was trained on the model's prediction to assess whether the local explanations made by LIME and SHAP are also reflected on a global level.
+\end{itemize}
+The combination of these three algorithms aims to benefit not only model understanding, but also the analysis of potential differences in the predictions.
+
+A separate approach to uncover factors that might influence the predictions of the model and therefore improve the ability to explain it is the use of geographical data (see \textbf{chapter \ref{subsec:Enrichment_Data}}). As the dataset contains information on the geographical location of the applicants, it was possible to analyze the distribution of granted loans across different regions by joining the mortgage data to economic variables of the corresponding regions using FIPS identifiers. 
+While this procedure does not build upon the usage of an explainability algorithm per se, it does support the understanding of the model's decision-making process (thereby addressing both explainability and fairness concerns) by providing additional context that might not be directly grasped from the data itself.
+
+In order to operationalize this approach, the following steps were taken:
+\begin{itemize}
+    \item The data was aggregated on \textit{county\_code} level, using the \textit{groupby} function of the pandas package.
+    \item Aggregated KPIs were created: 
+    \begin{itemize}
+        \item \textbf{Sum of Applications}: The total number of applications per county, mainly important to filter out counties with a low number of applications.
+        \item \textbf{Percentage of Grants}: The overall likelihood of a positive decision per county.
+        \item \textbf{Percentage White Applicants}: The percentage of White applicants per county.
+    \end{itemize}
+    \item These KPIs were then related to the predictions made by the model by creating the \textbf{Perc. Pred. Grants} feature, which is the percentage of granted loans per county predicted by the model.
+    \item Based on this set of information, several scatterplots relating these factors were created to analyze the distribution of granted loans across different regions, incorporating information on potentially discriminating factors. 
+\end{itemize}
+
+% \subsection{Performance Assessment (metrics \#1)}\label{subsec:Performance_Assessment}
+
+% \subsection{Fairness Assessment (metrics \#2)}\label{subsec:Fairness_Assessment}
+
 % \subsection{Explainability and Fairness through Enrichment Data}\label{subsec:Enrichment_Data_Methodology}
 
 \subsection{Fairness Adjustments}\label{subsec:Iterations}
-
-% Maybe more detail when decision has actually been made?
 
 Based on the results of the performance and fairness assessments for the initial model run (see \textbf{Chapter \ref{subsec:Iterations}}), adjustments to the model and the data preparation process were made in multiple iterations, aiming to improve at least one of these aspects in each run.
 
