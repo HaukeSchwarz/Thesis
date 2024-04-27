@@ -108,12 +108,62 @@ In terms of disparities (where the optimal value is \textbf{1}), the model perfo
 
 \subsection{Explainability}\label{Explainability Results}
 
-
+As stated in \textbf{chapter \ref{subsec:Explainability}}, three different approaches to explainability were utilized not only to support the analysis of fairness by providing insights into the model's decision-making process, but also to provide a better understanding of the model's behavior: \textit{SHAP}, \textit{LIME}, and a \textit{Global Surrogate Model}. 
 
 \textbf{SHAP}
 
+XXX
+
+The \textit{expected value} of the SHAP values (i.e. the baseline before consideration of any feature importance) was \textit{0.57}. This corresponds to the imbalance in the original HMDA data (see \textbf{chapter \ref{fig:CHXX_Target_Variable_Distribution}}).
+
+XXX
+
+% Try point summary plot for individual prediction
+
+\textbf{Figure \ref{fig:SHAP_Individual_Analyses}} shows the SHAP values for four selected applicants. The force plots displayed show how the individual values of the features influence the model's decision according to SHAP. 
+Each individual prediction results from the aforementioned \textit{expected value} and the sum of inferred importances of the features (exemplarily, in the first plot displayed in \textbf{figure \ref{fig:SHAP_Individual_Analyses}}, the feature importances amount to roughly positive 0.4, leading to a total value of 0.97 and therefore a positive prediction, i.e. a granted mortgage).
+It shows that SHAP attributes a high importance to (missingness of) the Debt to income ratio. Due to the values being scaled, a value of \textit{-0.59} corresponds to \textit{debt\_to\_income\_ratio\_missing == False} and a value of \textit{1.68} corresponds to \textit{debt\_to\_income\_ratio\_missing == True}. Therefore, SHAP considers missingness in this variable as negative and availability as positive.
+Considering the last applicant displayed (\textit{Black or African American Male, Debt to Income Ratio available}), it does however show that even availabilty of the Debt to Income Ratio does not guarantee a positive model decision.
+According to SHAP, none of the decisions displayed here (and in the whole set of predictions in general) were significantly informed by any protected attribute. However, confounding factors might still be present, as the model might have learned to discriminate based on other features that are correlated with the protected attributes.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_0.png}
+    \small
+    White Male, Debt to Income Ratio available
+    \includegraphics[width=1\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_1.png}
+    \small
+    White Male, Debt to Income Ratio missing
+    \includegraphics[width=1\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_21.png}
+    \small
+    Black or African American Male, Debt to Income Ratio missing
+    \includegraphics[width=1\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_139.png}
+    \small
+    Black or African American Male, Debt to Income Ratio available
+    \caption{Selected SHAP Individual Analyses}
+    \medskip
+    \small
+    Comparing four selected Male applicants with different characteristics shows that, in general, SHAP attributes a high importance to (missingness of) the Debt to Income Ratio. However, it is not the sole decision criterion, as the last applicant displayed shows.
+    \label{fig:SHAP_Individual_Analyses}
+\end{figure}
+
 \textbf{LIME}
 
+
+
 \textbf{Global Surrogate Model}
+
+To validate the results of the local explanations, a \textit{Global Surrogate Model} was used. \textbf{figure \ref{fig:Global_Surrogate}} shows the results of the global surrogate model. Specifically, the five most important features according to the global surrogate model are compared to the SHAP and LIME explanations in terms of their relative performance.
+It shows that all three explanation algorithms agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png}
+    \caption{Global Surrogate Model compared to SHAP and LIME}
+    \medskip
+    \small
+    Analyzing the 5 most important features according to the global surrogate model implies that the overall trends of SHAP and LIME are close to the global explanations.
+    \label{fig:Global_Surrogate}
+\end{figure}
 
 \subsection{Fairness Adjustments}\label{Fairness Adjustments Results}
