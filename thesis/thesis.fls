@@ -1962,6 +1962,11 @@ INPUT ./images/Model_Training/Initial_Confusion_Matrix.png
 INPUT images/Model_Training/Initial_Confusion_Matrix.png
 INPUT ./images/Model_Training/Initial_Confusion_Matrix.png
 INPUT ./images/Model_Training/Initial_Confusion_Matrix.png
+INPUT ./images/SHAP_Individual_Analyses/beeswarm.png
+INPUT ./images/SHAP_Individual_Analyses/beeswarm.png
+INPUT images/SHAP_Individual_Analyses/beeswarm.png
+INPUT ./images/SHAP_Individual_Analyses/beeswarm.png
+INPUT ./images/SHAP_Individual_Analyses/beeswarm.png
 INPUT ./images/SHAP_Individual_Analyses/SHAP_individual_0.png
 INPUT ./images/SHAP_Individual_Analyses/SHAP_individual_0.png
 INPUT images/SHAP_Individual_Analyses/SHAP_individual_0.png

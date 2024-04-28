@@ -112,7 +112,24 @@ As stated in \textbf{chapter \ref{subsec:Explainability}}, three different appro
 
 \textbf{SHAP}
 
-XXX
+As stated in \textbf{chapter \ref{subsec:algorithms}}, the SHAP algorithm tries to game-theoretically distribute the value of the final prediction among the individual features considered.
+\textbf{Figure \ref{fig:SHAP_beeswarm}} shows the SHAP beeswarm plot, which displays the distribution of the SHAP values for each feature in the dataset. The color indicates the feature value (red = higher; blue = lower), while the x-axis shows the SHAP value (left of center = negative; right of center = positive). The y-axis shows the feature name. The plot includes 150 values from the SHAP values of the test dataset.
+It showed that the most influential features according to SHAP were \textit{debt\_to\_income\_ratio\_missing, interest\_rate, loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio\_>60\%}.
+While it was apparent how missingness in the debt to income ratio (missingness is negative, availability is positive) and values >60\% in the debt to income ratio (higher is negative, lower is positive) affected the model decision, interest rates and the loan-to-value-ratios as the numerical variables were less intuitive to interpret.
+Although most medium to high interest rates seemed to be related with slight negative impacts, there also was a cluster of higher values for these variables corresponding with positive prediction influences.
+As all other variables were categorical, their interpretations were straightforward. Albeit their absolute impact in terms of SHAP values was limited, it is noteworthy that the \textit{protected variables} of race and sex were in fact picked up on by the model.
+In every case where a decision was negatively influenced by the \textit{race} of the applicant, the applicant in question was Black or African American (as can be inferred from all values left of the center of the x-axis for \textit{applicant\_race-1\_White} being colored blue for this feature, meaning a lower value, which in turn means Black or African American ethnicity).
+A similar picture was observed for the \textit{sex} of the applicant: In most cases where the model picked up on the sex being an influential factor on the model decision, the applicant in question was \textit{female} and vice versa.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/SHAP_Individual_Analyses/beeswarm.png}
+    \caption{SHAP beeswarm plot}
+    \medskip
+    \small
+    The SHAP beeswarm plot shows the distribution of the SHAP values for each feature in the dataset. The color indicates the feature value, while the x-axis shows the SHAP value. The y-axis shows the feature name.
+    \label{fig:SHAP_beeswarm}
+\end{figure}
 
 The \textit{expected value} of the SHAP values (i.e. the baseline before consideration of any feature importance) was \textit{0.57}. This corresponds to the imbalance in the original HMDA data (see \textbf{chapter \ref{fig:CHXX_Target_Variable_Distribution}}).
 \textbf{Figure \ref{fig:SHAP_Individual_Analyses}} shows the SHAP values for four selected applicants. The force plots displayed show how the individual values of the features influence the model's decision according to SHAP. 
@@ -126,7 +143,7 @@ According to SHAP, none of the decisions displayed here (and in the whole set of
     \includegraphics[width=0.95\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_0.png}
     \small
     White Male, Debt to Income Ratio available
-    \includegraphics[width=1\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_1.png}
+    \includegraphics[width=0.95\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_1.png}
     \small
     White Male, Debt to Income Ratio missing
     \includegraphics[width=0.95\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_21.png}
@@ -149,7 +166,7 @@ XXX
 \textbf{Global Surrogate Model}
 
 To validate the results of the local explanations, a \textit{Global Surrogate Model} was used. \textbf{figure \ref{fig:Global_Surrogate}} shows the results of the global surrogate model. Specifically, the five most important features according to the global surrogate model are compared to the SHAP and LIME explanations in terms of their relative performance.
-It shows that all three explanation algorithms agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
+It showed that all three explanation algorithms agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
 
 \begin{figure}[h]
     \centering
