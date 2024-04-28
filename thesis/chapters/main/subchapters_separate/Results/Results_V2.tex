@@ -3,7 +3,7 @@
 \subsection{Mortgage Classifier (Benchmark)}\label{subsec:Mortgage Classifier (Benchmark) Results}
 
 In order to assess whether a predictive algorithm would pick up on and reproduce bias in the data, an initial classification model (as described in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} and detailed in \textbf{table \ref{tab:CH03_Model_Details}}) was trained on the HMDA dataset (see \textbf{chapter \ref{subsec:HMDA_Data}}) with the goal of predicting whether a mortgage would be granted or not for a given applicant.
-The results of this model were assessed in terms of performance and fairness as described in \textbf{chapter \ref{subsec:Performance_Assessment}} and \textbf{chapter \ref{subsec:Fairness_Assessment}}, respectively.
+The results of this model were assessed in terms of performance and fairness.
 
 \textbf{Performance Assessment}
 
@@ -28,7 +28,7 @@ The history of the training process is depicted in \textbf{figure \ref{fig:Model
 \end{figure}
 
 The model was then evaluated on the test dataset, which was not seen by the model during training. The results of the performance evaluation (i.e. \textit{metrics \#1}) are shown in \textbf{table \ref{tab:Model_Evaluation}}. The model achieved an \textit{accuracy} of 0.90, a \textit{precision} of 0.88, a \textit{recall} of 0.97, and an \textit{F1-score} of 0.92. 
-As stated in \textbf{chapter\ref{subsec:Performance_Assessment}}, the original model output were probabilities between 0 and 1. These could be used to calculate ROC AUC and plot the corresponding ROC curve, which can be seen in \textbf{figure \ref{fig:Model_Training_ROC}}. The \textit{ROC-AUC} score was 0.94, indicating a high level of model performance. 
+As stated in \textbf{chapter\ref{subsec:Model_Training_and_Prediction}}, the original model output were probabilities between 0 and 1. These could be used to calculate ROC AUC and plot the corresponding ROC curve, which can be seen in \textbf{figure \ref{fig:Model_Training_ROC}}. The \textit{ROC-AUC} score was 0.94, indicating a high level of model performance. 
 Converting the probabilities into predictions with a threshold of 0.5 fulfilled the classification requirement. The \textit{confusion matrix} is depicted in \textbf{figure \ref{fig:Model_Confusion_Matrix}}. The model managed to achieve a high number of true positives and true negatives, while the number of false negatives was low. However, the number of false positives was nearly 8\% of all predictions.
 
 \begin{table}[h]
@@ -71,7 +71,7 @@ Converting the probabilities into predictions with a threshold of 0.5 fulfilled 
 
 \textbf{Fairness Assessment}
 
-Following the research question (see \textbf{chapter \ref{ch:Introduction}}), the \textit{detection of unfairness} in the predictions is an explicit goal of this thesis. To address this, the fairness assessment outlined in \textbf{chapter \ref{subsec:Fairness_Assessment}} was applied to the predictions. The results of the fairness assessment (i.e. \textit{metrics \#2}) are shown in \textbf{table \ref{tab:Fairness_Assessment_Initial}}. 
+Following the research question (see \textbf{chapter \ref{ch:Introduction}}), the \textit{detection of unfairness} in the predictions is an explicit goal of this thesis. To address this, the fairness assessment outlined in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} was applied to the predictions. The results of the fairness assessment (i.e. \textit{metrics \#2}) are shown in \textbf{table \ref{tab:Fairness_Assessment_Initial}}. 
 The model performed slightly better for \textit{White} applicants than for \textit{Black} applicants. The \textit{accuracy} for \textit{White} applicants was 0.91, while it was 0.88 for \textit{Black} applicants. The \textit{precision} for \textit{White} applicants was 0.89, while it was 0.82 for \textit{Black} applicants. The \textit{recall} for \textit{White} applicants was 0.97, while it was 0.96 for \textit{Black} applicants. 
 The \textit{F1-score} for \textit{White} applicants was 0.93, while it was 0.88 for \textit{Black} applicants. The \textit{AUC} for \textit{White} applicants was 0.94, while it was 0.95 for \textit{Black} applicants. 
 In terms of disparities (where the optimal value is \textbf{1}), the model performed comparably well in all disciplines except the \textit{fnr\_disparity}, which was 1.42. This indicates that the model was more likely to predict a false negative for \textit{Black} applicants than for \textit{White} applicants.
@@ -166,7 +166,7 @@ XXX
 \textbf{Global Surrogate Model}
 
 To validate the results of the local explanations, a \textit{Global Surrogate Model} was used. \textbf{figure \ref{fig:Global_Surrogate}} shows the results of the global surrogate model. Specifically, the five most important features according to the global surrogate model are compared to the SHAP and LIME explanations in terms of their relative performance.
-It showed that all three explanation algorithms agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
+It showed that all three explanation algorithms mainly agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
 
 \begin{figure}[h]
     \centering
@@ -181,7 +181,7 @@ It showed that all three explanation algorithms agree on the three most importan
 \subsection{Fairness Adjustments}\label{Fairness Adjustments Results}
 
 While the performance of the benchmark mortgage classifier detailed in \textbf{chapter \ref{subsec:Mortgage Classifier (Benchmark) Results}} was satisfactory, the scope of this thesis (see \textbf{chapter \ref{ch:Introduction}}) included taking an iterative approach to improve fairness without sacrificing predictive performance, as outlined in \textbf{chapter \ref{subsec:Iterations}}.
-To this end, the following fairness adjustments were applied to the model: \textit{Reweighing}, \textit{Correlation Remover} and \textit{Calibrated Equalized Odds}. The aim was to reach improvement in at least one of the two metric sets, comapred to the benchmark performance depicted in \textbf{table \ref{tab:Model_Evaluation}} (\textit{metrics \#1}) and \textbf{table \ref{tab:Fairness_Assessment_Initial}} (\textit{metrics \#2}).
+To this end, the following fairness adjustments were applied to the model: \textit{Reweighing}, \textit{Correlation Remover} and \textit{Calibrated Equalized Odds}. The aim was to reach improvement in at least one of the two metric sets, compared to the benchmark performance depicted in \textbf{table \ref{tab:Model_Evaluation}} (\textit{metrics \#1}) and \textbf{table \ref{tab:Fairness_Assessment_Initial}} (\textit{metrics \#2}).
 
 \textbf{Reweighing}
 
