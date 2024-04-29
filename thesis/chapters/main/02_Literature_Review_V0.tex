@@ -157,7 +157,7 @@ However, there is increased demand for models that have a high predictive accura
 
 \subsection{Explainability Algorithms}\label{subsec:algorithms}
 
-This section will provide a brief overview of the different categories of explainability algorithms (see \textbf{\ref{fig:Explainability_overview}}), and provide additional information on the methods which will be used in this thesis\footnote{As there is a multitude of methods available, not all widely used methods can be detailed here. Valuable overviews are provided e.g. by \cite{SALEEM2022165} or \cite{Molnar2023}}.
+This section will provide a brief overview of the different categories of explainability algorithms (see \textbf{figure \ref{fig:Explainability_overview}}), and provide additional information on the methods which will be used in this thesis\footnote{As there is a multitude of methods available, not all widely used methods can be detailed here. Valuable overviews are provided e.g. by \cite{SALEEM2022165} or \cite{Molnar2023}}.
 In the academic literature, explainability methods are usually categorized based on their properties, such as:
 \begin{itemize}
     \item \textbf{Model-specific vs. Model-agnostic}: \textit{Model-specific} methods are designed to explain the outcomes of a specific model, while \textit{model-agnostic} methods are designed to be applicable to (nearly) any model by describing how individual features influence the model outcome on average \parencite{Molnar2023}.
@@ -168,11 +168,18 @@ In the academic literature, explainability methods are usually categorized based
 
 %\textbf{Figure \ref{fig:Explainability_overview}} provides an extended overview of the categorizations introduced above:
 
-\begin{figure}[h]
+%\begin{center}
+%	\includegraphics[width=1\textwidth]{images/CH02_algorithms_overview_Saleem.jpg}%
+%	\captionof{Explainability Overview, from \cite{SALEEM2022165}}{Overview of the concepts related to explainability %algorithms.}\label{fig:Explainability_overview}%
+%\end{center}
+
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=1\textwidth]{images/CH02_algorithms_overview_Saleem.jpg}
     \caption{Explainability Overview, from \cite{SALEEM2022165}}
-    \caption*{Overview of the concepts related to explainability algorithms.}
+    \medskip
+    \small
+    Overview of the concepts related to explainability algorithms.
     \label{fig:Explainability_overview}
 \end{figure}
 
