@@ -200,7 +200,56 @@ To this end, the following fairness adjustments were applied to the model: \text
 
 \textbf{Reweighing}
 
-XXX
+Using the \textit{reweighing} pre-processing algorithm to assign specific weights to the training data without actually adjusting the underlying data (for details, refer to \textbf{chapter \ref{subsec:Iterations}}), yielded positive results in terms of model performance.
+While the predictive performance of the model (as measured by \textit{metrics \#1}) could be kept on the same level that was reached by the benchmark model (see \textbf{table \ref{tab:Model_Evaluation_Reweighing}}), the fairness in terms of the disparities in predictions between \textit{White} and \textit{Black or African American} applicants could be reduced in comparison (see \textbf{table \ref{tab:Fairness_Assessment_Reweighing}})
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l c}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{accuracy} & 0.90 \\
+    \textbf{precision} & 0.88 \\
+    \textbf{recall} & 0.97 \\
+    \textbf{f1} & 0.92 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#1: Reweighing}
+    \small
+    The performance of the \textit{reweighed} model was on par with the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+    \label{tab:Model_Evaluation_Reweighing}
+\end{table}
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{lr}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{Accuracy White} & 0.91 \\
+    \textbf{Precision White} & 0.89 \\
+    \textbf{Recall White} & 0.97 \\
+    \textbf{F1 Score White} & 0.93 \\
+    \textbf{AUC White} & 0.94 \\
+    \midrule
+    \textbf{Accuracy Black} & 0.88 \\
+    \textbf{Precision Black} & 0.81 \\
+    \textbf{Recall Black} & 0.97 \\
+    \textbf{F1 Score Black} & 0.88 \\
+    \textbf{AUC Black} & 0.95 \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.99 \\
+    \textbf{fpr\_disparity} & 1.00 \\
+    \textbf{tnr\_disparity} & 1.00 \\
+    \textbf{fnr\_disparity} & 1.20 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#2: Reweighing}
+    \label{tab:Fairness_Assessment_Reweighing}
+    \small
+    While the subgroup performances of the \textit{reweighed} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities were nearly nullified with the exception of the \textit{fnr disparity}, which still is on a satisfactory level with 1.20.
+\end{table}
 
 \textbf{Correlation Remover}
 

@@ -31,6 +31,6 @@
 \contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{32}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Explainability}{36}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{41}{subsection.4.2.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.39}%
+\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.41}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
