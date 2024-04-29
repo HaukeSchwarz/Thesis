@@ -253,11 +253,63 @@ While the predictive performance of the model (as measured by \textit{metrics \#
 
 \textbf{Correlation Remover}
 
-XXX
+As described in \textbf{chapter \ref{subsec:Iterations}}, the \textit{correlation remover} algorithm aims to minimize any correlation of selected protected attributes with any other variables within the data.
+While the performance of the model (see \textbf{table \ref{tab:Model_Evaluation_Corr_Rem}}) with the accordingly data pre-processed was comparable to or in parts slightly better than the benchmark model (compare \textbf{table \ref{tab:Model_Evaluation}}), it did not perform well in terms of fairness (see \textbf{table \ref{tab:Fairness_Assessment_Corr_Rem}}).
+Subgroup performance could not be optimized compared to the benchmark and the disparities were higher, indicating less equality in the model predictions.
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l c}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{accuracy} & 0.91 \\
+    \textbf{precision} & 0.88 \\
+    \textbf{recall} & 0.97 \\
+    \textbf{f1} & 0.92 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#1: Correlation Remover}
+    \small
+    The performance of the \textit{correlation remover} model was very similar to the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+    \label{tab:Model_Evaluation_Corr_Rem}
+\end{table}
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{lr}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{Accuracy White} & 0.91 \\
+    \textbf{Precision White} & 0.89 \\
+    \textbf{Recall White} & 0.97 \\
+    \textbf{F1 Score White} & 0.93 \\
+    \textbf{AUC White} & \text{NA} \\
+    \midrule
+    \textbf{Accuracy Black} & 0.89 \\
+    \textbf{Precision Black} & 0.84 \\
+    \textbf{Recall Black} & 0.93 \\
+    \textbf{F1 Score Black} & 0.88 \\
+    \textbf{AUC Black} & \text{NA} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.96 \\
+    \textbf{fpr\_disparity} & 0.80 \\
+    \textbf{tnr\_disparity} & 1.05 \\
+    \textbf{fnr\_disparity} & 2.67 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#2: Correlation Remover}
+    \label{tab:Fairness_Assessment_Corr_Rem}
+    \small
+    While the subgroup performances of the \textit{correlation remover} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities had higher absolute distances from 1, indicating a lower level of fairness.
+\end{table}
 
 \textbf{Calibrated Equalized Odds}
 
 XXX
+
+
 
 \textbf{Summary}
 
