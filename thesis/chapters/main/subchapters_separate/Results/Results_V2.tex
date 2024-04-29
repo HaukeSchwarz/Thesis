@@ -31,7 +31,7 @@ The model was then evaluated on the test dataset, which was not seen by the mode
 As stated in \textbf{chapter\ref{subsec:Model_Training_and_Prediction}}, the original model output were probabilities between 0 and 1. These could be used to calculate ROC AUC and plot the corresponding ROC curve, which can be seen in \textbf{figure \ref{fig:Model_Training_ROC}}. The \textit{ROC-AUC} score was 0.94, indicating a high level of model performance. 
 Converting the probabilities into predictions with a threshold of 0.5 fulfilled the classification requirement. The \textit{confusion matrix} is depicted in \textbf{figure \ref{fig:Model_Confusion_Matrix}}. The model managed to achieve a high number of true positives and true negatives, while the number of false negatives was low. However, the number of false positives was nearly 8\% of all predictions.
 
-\begin{table}[h]
+\begin{table}[!htbp]
     \centering
     \begin{tabular}{l c}
     \toprule
@@ -76,7 +76,7 @@ The model performed slightly better for \textit{White} applicants than for \text
 The \textit{F1-score} for \textit{White} applicants was 0.93, while it was 0.88 for \textit{Black} applicants. The \textit{AUC} for \textit{White} applicants was 0.94, while it was 0.95 for \textit{Black} applicants. 
 In terms of disparities (where the optimal value is \textbf{1}), the model performed comparably well in all disciplines except the \textit{fnr\_disparity}, which was 1.42. This indicates that the model was more likely to predict a false negative for \textit{Black} applicants than for \textit{White} applicants.
 
-\begin{table}[h]
+\begin{table}[!htbp]
     \centering
     \begin{tabular}{lr}
     \toprule
@@ -121,7 +121,7 @@ As all other variables were categorical, their interpretations were straightforw
 In every case where a decision was negatively influenced by the \textit{race} of the applicant, the applicant in question was Black or African American (as can be inferred from all values left of the center of the x-axis for \textit{applicant\_race-1\_White} being colored blue for this feature, meaning a lower value, which in turn means Black or African American ethnicity).
 A similar picture was observed for the \textit{sex} of the applicant: In most cases where the model picked up on the sex being an influential factor on the model decision, the applicant in question was \textit{female} and vice versa.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/SHAP_Individual_Analyses/beeswarm.png}
     \caption{SHAP beeswarm plot}
@@ -138,7 +138,7 @@ It shows that SHAP attributes a high importance to (missingness of) the Debt to 
 Considering the last applicant displayed (\textit{Black or African American Male, Debt to Income Ratio available}), it does however show that even availabilty of the Debt to Income Ratio does not guarantee a positive model decision.
 According to SHAP, none of the decisions displayed here (and in the whole set of predictions in general) were significantly informed by any protected attribute. However, confounding factors might still be present, as the model might have learned to discriminate based on other features that are correlated with the protected attributes.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_0.png}
     \small
@@ -165,7 +165,7 @@ The LIME algorithm, in contrast to SHAP, tries to explain the model's decision o
 \textbf{Figure \ref{fig:LIME_Individual_Analyses}} shows the LIME individual feature importance plot for a selected applicant, specifically the same applicant that is denoted as \textit{White Male, Debt to Income Ratio available} in \textbf{figure \ref{fig:SHAP_Individual_Analyses}}. The x-axis shows the feature importance, while the y-axis shows the feature name.
 It showed that LIME attributes a high importance to the \textit{loan type} and the \textit{debt to income ratio}. Once again, the \textit{protected attributes} had very little absolute influence on the model's decision according to LIME.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_LIME_individual.png}
     \caption{LIME Individual Feature Importance}
@@ -183,7 +183,7 @@ This ties with the findings of Krishna et al. \parencite{Krishna2022}, who empha
 To validate the results of the local explanations, a \textit{Global Surrogate Model} was used. \textbf{figure \ref{fig:Global_Surrogate}} shows the results of the global surrogate model. Specifically, the five most important features according to the global surrogate model are compared to the SHAP and LIME explanations in terms of their relative performance.
 It showed that all three explanation algorithms mainly agree on the three most important features in the data (\textit{debt\_to\_income\_ratio\_missing, interest\_rate}, and \textit{debt\_to\_income\_ratio\_>60\%}), although LIME attributes a different order of importance to them compared to SHAP and the global surrogate model.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png}
     \caption{Global Surrogate Model compared to SHAP and LIME}

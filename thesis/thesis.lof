@@ -19,10 +19,10 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{33}{figure.caption.26}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{34}{figure.caption.28}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{35}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot\relax }}{40}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses\relax }}{41}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance\relax }}{42}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{42}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot\relax }}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses\relax }}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance\relax }}{40}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{41}{figure.caption.34}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 
