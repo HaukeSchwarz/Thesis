@@ -307,9 +307,56 @@ Subgroup performance could not be optimized compared to the benchmark and the di
 
 \textbf{Calibrated Equalized Odds}
 
-XXX
+The only postprocessing algorithm within the fairness adjustments, the \textit{calibrated equalized odds} algorithm (see \textbf{chapter \ref{subsec:Iterations}} for details), aims to adjust the model's predictions to ensure equalized odds between the protected attributes while keeping the results calibrated.
+\textbf{Tables \ref{tab:Model_Evaluation_Cal_Eq_Odd}} and \textbf{\ref{tab:Fairness_Assessment_Cal_Eq_Odd}} show that the performance of this algorithm is not optimal within the context of this thesis. Both \textit{Metrics \#1} and \textit{Metrics \#2} indicate a lower performance of this algorithm compared to the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
 
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l c}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{accuracy} & 0.73 \\
+    \textbf{precision} & 0.69 \\
+    \textbf{recall} & 0.97 \\
+    \textbf{f1} & 0.81 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#1: Calibrated Equalized Odds}
+    \small
+    Compared to the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the model performance of the \textit{calibrated equalized odds} is significantly worse. Besides the \textit{recall}, which was kept on the same level, all performance metrics are well below those of the benchmark model.
+    \label{tab:Model_Evaluation_Cal_Eq_Odd}
+\end{table}
 
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{lr}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \textbf{Accuracy White} & 0.72 \\
+    \textbf{Precision White} & 0.68 \\
+    \textbf{Recall White} & 0.98 \\
+    \textbf{F1 Score White} & 0.81 \\
+    \textbf{AUC White} & \text{NA} \\
+    \midrule
+    \textbf{Accuracy Black} & 0.81 \\
+    \textbf{Precision Black} & 0.73 \\
+    \textbf{Recall Black} & 0.93 \\
+    \textbf{F1 Score Black} & 0.82 \\
+    \textbf{AUC Black} & \text{NA} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.95 \\
+    \textbf{fpr\_disparity} & 0.43 \\
+    \textbf{tnr\_disparity} & 2.23 \\
+    \textbf{fnr\_disparity} & 3.25 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#2: Calibrated Equalized Odds}
+    \label{tab:Fairness_Assessment_Cal_Eq_Odd}
+    \small
+    Similar to the total performance of the model (see \textbf{table \ref{tab:Model_Evaluation_Cal_Eq_Odd}}), the performance of the \textit{calibrated equalized odds} model in terms of fairness was significantly worse than that of the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) for both subgroups, as were the disparities.
+\end{table}
 
 \textbf{Summary}
 
