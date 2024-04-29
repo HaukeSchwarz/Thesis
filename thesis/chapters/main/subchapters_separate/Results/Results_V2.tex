@@ -161,7 +161,22 @@ According to SHAP, none of the decisions displayed here (and in the whole set of
 
 \textbf{LIME}
 
-XXX
+The LIME algorithm, in contrast to SHAP, tries to explain the model's decision on a local level by approximating the model's behavior around a single prediction (see \textbf{chapter \ref{subsec:algorithms}}).
+\textbf{Figure \ref{fig:LIME_Individual_Analyses}} shows the LIME individual feature importance plot for a selected applicant, specifically the same applicant that is denoted as \textit{White Male, Debt to Income Ratio available} in \textbf{figure \ref{fig:SHAP_Individual_Analyses}}. The x-axis shows the feature importance, while the y-axis shows the feature name.
+It showed that LIME attributes a high importance to the \textit{loan type} and the \textit{debt to income ratio}. Once again, the \textit{protected attributes} had very little absolute influence on the model's decision according to LIME.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/CHXX_LIME_individual.png}
+    \caption{LIME Individual Feature Importance}
+    \medskip
+    \small
+    The LIME individual feature importance plot shows the direction and the impact of the features on the model's decision for a selected applicant. The x-axis shows the feature importance, while the y-axis shows the feature name.
+    \label{fig:LIME_Individual_Analyses}
+\end{figure}
+
+While the overall explanations on which features are influential are similar for both SHAP and LIME, the actual impact of the features varies significantly. While this is not a direct threat to the quality of the results of this thesis, it is a reminder that explainability algorithms need to be analyzed carefully. 
+This ties with the findings of Krishna et al. \parencite{Krishna2022}, who emphasize the importance of understanding the underlying assumptions of explainability algorithms and the need for a more comprehensive evaluation of their results.
 
 \textbf{Global Surrogate Model}
 

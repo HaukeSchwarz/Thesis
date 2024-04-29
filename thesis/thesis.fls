@@ -1998,6 +1998,11 @@ INPUT ./images/SHAP_Individual_Analyses/SHAP_individual_139.png
 INPUT images/SHAP_Individual_Analyses/SHAP_individual_139.png
 INPUT ./images/SHAP_Individual_Analyses/SHAP_individual_139.png
 INPUT ./images/SHAP_Individual_Analyses/SHAP_individual_139.png
+INPUT ./images/CHXX_LIME_individual.png
+INPUT ./images/CHXX_LIME_individual.png
+INPUT images/CHXX_LIME_individual.png
+INPUT ./images/CHXX_LIME_individual.png
+INPUT ./images/CHXX_LIME_individual.png
 INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
 INPUT ./images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
 INPUT images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png
