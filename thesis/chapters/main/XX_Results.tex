@@ -11,7 +11,7 @@ After all preparation steps detailed in \textbf{chapter \ref{subsec:HMDA_Data}},
 The target variable, \textit{loan\_granted}, is binary (\textit{Granted} or \textit{Not Granted}) and imbalanced, with \textit{57.9\%} of all loans being granted. 
 There were no missing values. The distribution of the target variable can be seen in \textbf{figure \ref{fig:CHXX_Target_Variable_Distribution}}.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.6\textwidth]{images/CHXX_Target_Variable_Distribution.png}
     \caption{HMDA: Distribution of the Target Variable}
@@ -34,9 +34,9 @@ The correlation of the target variable with the numerical and categorical featur
     \label{fig:CHXX_Target_Correlation_Categorical}
 \end{figure}
 
-\begin{figure}[hbt!]
+\begin{figure}[!htbp]
     \centering
-    \includegraphics[width=1\textwidth]{images/CHXX_Target_Correlation_Numerical.png}
+    \includegraphics[width=0.8\textwidth]{images/CHXX_Target_Correlation_Numerical.png}
     \caption{HMDA: Correlation Between the Numerical Features}
     \medskip
     \small
@@ -61,7 +61,7 @@ Their distributions can be seen in \textbf{figure \ref{fig:CHXX_Numerical_Distri
 %    \label{fig:CHXX_Numerical_Distributions_1}
 %\end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
@@ -87,7 +87,7 @@ Most loans applied for are \textbf{Conventional} (82\%) and \textbf{First Lien} 
 Aside from missingness in the \textit{debt\_to\_income\_ratio} feature, which alone accounts for 26\% of all values, the data in this feature are roughly normally distributed, with the mode being 14\% of values in the \textbf{36\%-41\%} range. 
 The distributions of the categorical variables can be seen in \textbf{figure \ref{fig:HMDA_Categorical_Features_Distributions}}.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \begin{minipage}{0.5\textwidth}
         \centering
@@ -140,7 +140,7 @@ Following the scope of this thesis specified in \textbf{chapter \ref{ch:Introduc
 This potential unfairness in the underlying data can be identified from assessing the distribution of the target variable across different groups.
 \textbf{Figure \ref{fig:CHXX_Loan_Grant_By_Protected_Attribute}} shows the amount of (not) granted loans per race and by sex, the probabilities of being granted a loan across these groups can be found in \textbf{table \ref{tab:loan_granting}}.\@
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{CHXX_Loan_Grant_By_Protected_Attribute.png}
     \caption{Loan Grant by Protected Attribute}
@@ -176,7 +176,7 @@ As stated before, analyzing the geographical information provided in the enrichm
 A sign of potential discrimination in the data could be the correlation between race and potentially favorable outcomes, such as a higher percentage of granted loans or a lower poverty rate.
 \textbf{Figure \ref{fig:Scatter_White_Applicants_Loan_Grant}} shows a scatterplot that relates the percentage of White applicants to the percentage of granted loans per county. It indicates that a higher percentage of white applicants per county does not only seem to be correlated with a higher percentage of these loans actually being granted, but also with a lower poverty rate on average.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_Perc_Grants_vs_Perc_White.png}
     \caption{Relationship between Applicant Race, Poverty Rate and Loan Grants}
@@ -186,7 +186,7 @@ A sign of potential discrimination in the data could be the correlation between 
 
 It should however be noted that the distributions within the enrichment data themselves are skewed by nature, as there are way higher numbers of White applicants in the data set and only few counties have a substantial number of predicted mortgage grants (see \textbf{figure \ref{fig:Enrichment_Data_EDA}}).
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \begin{minipage}{0.33\textwidth}
         \centering
@@ -212,6 +212,8 @@ It should however be noted that the distributions within the enrichment data the
     \small
     Analyzing the enrichment data shows that while the percentage of predictions per county appears to be normally distributed, the distributions of the percentage of White applicants and the percentage of predicted granted loans per county are skewed.
 \end{figure}
+
+\newpage
 
 %\input{chapters/main/subchapters_separate/Results/Results_V1.tex}
 \input{chapters/main/subchapters_separate/Results/Results_V2.tex}

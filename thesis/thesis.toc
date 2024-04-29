@@ -26,11 +26,11 @@
 \contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{25}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}HMDA Data}{25}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Enrichment Data}{27}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Results}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{28}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Explainability}{30}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{33}{subsection.4.2.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{42}{chapter*.35}%
+\contentsline {subsection}{\numberline {4.1.2}Enrichment Data}{30}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Results}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Explainability}{36}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{39}{subsection.4.2.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.35}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
