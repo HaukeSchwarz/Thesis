@@ -212,11 +212,30 @@ XXX
 
 \textbf{Summary}
 
-In conclusion, none of the techniques applied in the iterations led to a significant increase in fairness. The \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the same level of fairness. 
+Considering the overall \textit{performance} of the different approaches, all models except the \textit{calibrated equalized odds} algorithms performed on a similar, good level (see \textbf{table \ref{tab:metrics_1_iterations_summary}}).
+The \textit{correlation removal} algorithm managed to slightly outperform the benchmark model in terms of \textit{accuracy}, \textit{precision}, and \textit{f1-score}, while the \textit{calibrated equalized odds} algorithm managed to slightly outperform the benchmark model in terms of \textit{recall}.
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l *{4}{>{$}c<{$}}}
+    \toprule
+    & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
+    \midrule
+    \textbf{accuracy} & 0.90 & 0.90 & 0.73 & \textbf{0.91} \\
+    \textbf{precision} & 0.88 & 0.88 & 0.69 & \textbf{0.88} \\
+    \textbf{recall} & 0.97 & 0.97 & \textbf{0.97} & 0.97 \\
+    \textbf{f1} & 0.92 & 0.92 & 0.81 & \textbf{0.92} \\
+    \textbf{roc\_auc} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#1: Fairness Adjustments Summary}
+    \small
+    Results of \textit{metrics \#1} for all applied algorithms. The values are rounded, the highest scores are marked \textbf{bold}.
+    \label{tab:metrics_1_iterations_summary}
+\end{table}
+
+In terms of \textit{fairness}, no significant optimizations could be achieved. The \textit{reweighing} technique managed to improve the overall fairness of the model, but the other techniques did not manage to reach the same level of fairness. 
 \textbf{Figure \ref{fig:Bar_Grant_per_Race}} shows that the differences in loan grants between \textit{White} and \textit{Black or African American} applicants was not substantially reduced by any of the iterations, with the calibrated equalized odds algorithm even increasing the difference.
-\textbf{Figure \ref{fig:Fairness_Adjustments_Results_Line}} shows the results of the fairness adjustments in terms of the \textit{disparities} of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. 
-The disparities were calculated for the \textit{White} and \textit{Black or African American} applicants. As they are relative terms, only the relation of the disparities to the other group is shown.
-The disparities were comparably low for the \textit{true positive rate}, while all the other disparities show at least one outlier. The \textit{reweighed} model is the only one that produces satisfactory results in terms of fairness as measured by disparities across all four KPIs, with the benchmark model coming in second.
 
 \begin{figure}[!htbp]
     \centering
@@ -253,14 +272,49 @@ The disparities were comparably low for the \textit{true positive rate}, while a
     Apart from the Calibrated Equalized Odds model, which exhibits a higher amount of overall predicted grants, none of the iterations were able to substantially reduce the disparity in granted loans between races.
 \end{figure}
 
+\textbf{Figure \ref{fig:Fairness_Adjustments_Results_Line}} shows the results of the fairness adjustments in terms of the \textit{disparities} of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. 
+The disparities were calculated for the \textit{White} and \textit{Black or African American} applicants. As they are relative terms, only the relation of the disparities to the other group is shown.
+The disparities were comparably low for the \textit{true positive rate}, while all the other disparities show at least one outlier. The \textit{reweighed} model was the only one that produces satisfactory results in terms of fairness as measured by disparities across all four KPIs, with the benchmark model coming in second.
+
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_Update_Results_Line.png}
     \caption{Fairness Adjustments Results}
     \medskip
     \small
-    The results of the fairness adjustments in terms of the disparities of the model. The disparities were calculated for the true positive rate, the false positive rate, the true negative rate, and the false negative rate. The disparities were calculated for the White and Black or African American applicants. Values closer to 1 are optimal, the gray area represents a good level of fairness.
+    The results of the fairness adjustments in terms of the disparities of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. They were calculated for the \textit{White} and \textit{Black or African American applicants}. Values closer to 1 are better, the gray area represents a good level of fairness.
     \label{fig:Fairness_Adjustments_Results_Line}
 \end{figure}
 
-XXX - images / tables!
+Adding up all fairness metrics for all iterations (see \textbf{table \ref{tab:metrics_2_iterations_summary}}) resulted in a mixed picture.
+While the \textit{reweighing} algorithm managed to improve the fairness of the outcomes in terms of disparities (as can also be inferred from \textbf{figure \ref{fig:Fairness_Adjustments_Results_Line}}), the predictive power of the model for subgroups did not show a single optimal model.
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l *{4}{>{$}c<{$}}}
+    \toprule
+    & \textbf{Initial Model} & \textbf{Reweighing} & \textbf{Calibrated Equalized Odds} & \textbf{Correlation Removal} \\
+    \midrule
+    \textbf{Accuracy White} & 0.91 & 0.91 & 0.72 & \textbf{0.91} \\
+    \textbf{Precision White} & \textbf{0.89} & 0.89 & 0.68 & 0.89 \\
+    \textbf{Recall White} & 0.97 & 0.97 & \textbf{0.98} & 0.98 \\
+    \textbf{F1 Score White} & 0.93 & 0.93 & 0.81 & \textbf{0.93} \\
+    \textbf{AUC White} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
+    \midrule
+    \textbf{Accuracy Black} & 0.88 & 0.88 & 0.81 & \textbf{0.89} \\
+    \textbf{Precision Black} & 0.82 & 0.81 & 0.73 & \textbf{0.84} \\
+    \textbf{Recall Black} & 0.96 & \textbf{0.97} & 0.93 & 0.93 \\
+    \textbf{F1 Score Black} & 0.88 & \textbf{0.88} & 0.82 & 0.88 \\
+    \textbf{AUC Black} & \textbf{0.95} & 0.95 & \text{NA} & \text{NA} \\
+    \midrule
+    \textbf{tpr\_disparity} & 0.99 & \textbf{0.99} & 0.95 & 0.96 \\
+    \textbf{fpr\_disparity} & 0.96 & \textbf{1.00} & 0.43 & 0.80 \\
+    \textbf{tnr\_disparity} & 1.01 & \textbf{1.00} & 2.23 & 1.05 \\
+    \textbf{fnr\_disparity} & 1.42 & \textbf{1.20} & 3.25 & 2.67 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Metrics \#2: Fairness Adjustments Summary}
+    \small
+    Results of \textit{metrics \#2} for all applied algorithms. The values are rounded, the highest scores (respectively those closest to 1 for the disparity calculations) are marked \textbf{bold}.
+    \label{tab:metrics_2_iterations_summary}
+\end{table}
