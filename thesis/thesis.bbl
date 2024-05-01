@@ -1347,12 +1347,12 @@
            given={Finale},
            giveni={F\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+        {{un=1,uniquepart=given,hash=a11a6718c039f3e3f3f31167e5094c10}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Been},
            giveni={B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{institution}{1}{%
         {arXiv}%
@@ -2193,12 +2193,12 @@
     \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+        {{un=1,uniquepart=given,hash=a11a6718c039f3e3f3f31167e5094c10}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Been},
            giveni={B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=a3d9b23b97482af55601d7db22cbf99e}{%
            family={Khanna},
            familyi={K\bibinitperiod},
@@ -2266,6 +2266,46 @@
       \endverb
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2016/file/5680522b8e2bb01943234bce7bf84534-Paper.pdf
+      \endverb
+    \endentry
+    \entry{Kim2023}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=1f9696b79009af504e326d67b77929db}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Savina\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=4161c1f4d55a11c92418ee4d8db9306d}{%
+           family={Andreeva},
+           familyi={A\bibinitperiod},
+           given={Galina},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f29901f223935f4f58b02d3ebe8316a4}{%
+           family={Rovatsos},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{208bb7316f707a3641d2676dbdde5fab}
+      \strng{fullhash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{bibnamehash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{authorbibnamehash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{authornamehash}{208bb7316f707a3641d2676dbdde5fab}
+      \strng{authorfullhash}{98e5e8d1fcc25003b90679fe85505765}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{The 40-year journey for fairness in credit: A systematic review and future research directions}
+      \field{year}{2023}
+      \verb{doi}
+      \verb http://dx.doi.org/10.2139/ssrn.4669379
       \endverb
     \endentry
     \entry{Krishna2022}{article}{}
