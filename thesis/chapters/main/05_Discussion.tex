@@ -1,2 +1,20 @@
 \chapter{Discussion}\label{ch:discussion}
 
+This thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
+
+XXX
+
+Although the explainability algorithms used did not find the potentially discriminatory protected attributes to be a major influence on the model’s decision-making (compare \textbf{figure \ref{fig:SHAP_beeswarm}, \ref{fig:LIME_Individual_Analyses}}, and \textbf{\ref{fig:Global_Surrogate}}), the patterns of the predicted data prove that the models do catch up on patterns within the data that promote inequality. 
+The fact that all models, even those specifically corrected for fairness in the sensitive \textit{applicant\_race-1\_White} mimic the fact present in the underlying data that \textbf{White} applicants have proportionally higher chances of having a mortgage granted (see \textbf{table \ref{tab:loan_granting}}) proves that. 
+It must therefore be assumed that just as So et al. \parencite{So2022} suggested in their study, there is a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage, even when the protected attribute itself is controlled for.
+Even when ignoring \textit{applicant\_race-1\_White} itself as an influencing factor of the decision-making process, the fact that historic inequalities lead to \textbf{Black or African American} applicants living for example in poorer or less educated geographies reintroduces discrimination into the analysis.
+Geography as a factor potentially impacting fairness has been analyzed in \textbf{chapter \ref{subsec:HMDA_EDA}}. While no causation can be assumed from these results alone, it is clear that regions with a higher proportion of \textbf{Black or African American} applicants are correlated with lower chance of having a mortgage granted, hinting towards a potential discrimination based on this feature being present in the data.
+
+XXX
+
+Revisiting the research questions of this thesis (see \textbf{chapter \ref{ch:Introduction}}), it must be concluded that the initial aim of this work could only be achieved in parts. 
+While the exploratory data analysis, coupled with the analysis of the geographical enrichment data was useful to \textit{detect} and partly \textit{explain} unfairness within the data, the \textit{mitigation} of this unfairness proved hard to achieve. 
+This might have been the case because of intrinsic unfairness being too deeply rooted within the data or the algorithms applied were not the optimal choices for this task.
+Other possible causes of the dissatisfactory performance of the fairness adjustments might be the initial imbalance of the HMDA dataset with most of the applicants being White men (compare \textbf{chapter \ref{subsec:HMDA_EDA}}).
+
+Nevertheless, XXX
