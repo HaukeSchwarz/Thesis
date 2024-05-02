@@ -10,15 +10,17 @@ The \textbf{research question} of this thesis (as defined in \textbf{chapter \re
 
 % 2: Summarize Results
 
-XXX
+Indeed, the analyses conducted in this thesis supported the theory that the mortgage decisions according to the 2022 HMDA dataset favored \textbf{White} applicants (who also accounted for the majority of applications), leading to a neural network model trained on it being biased towards favoring \textbf{White} applicants over \textbf{Black or African American} applicants.
+The explainability algorithms used in \textbf{chapter \ref{subsec:Explainability}} showed that the potentially discriminatory protected attributes were not a major influence on the model’s decision-making, but the patterns of the predicted data proved that the models did catch up on patterns within the data that promoted inequality.
+This assumption of a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage was supported by the analysis of the geographical enrichment data in \textbf{chapter \ref{subsec:Enrichment}}, showing that the regions with a higher proportion of \textbf{Black or African American} applicants were correlated with lower chances of having a mortgage granted.
+The fairness adjustments conducted in \textbf{chapter \ref{subsec:Fairness_Adjustments}} partly yielded improvements in fairness, but the models still favored \textbf{White} applicants over \textbf{Black or African American} applicants, even when the protected attribute itself was controlled for.
 
 % 3: Interpret Results (substructure according to results chapter)
 
-% (EDA)
-%	(HMDA)
-%	(Enrichment)
-% Results - maybe just focus here?
-%	Benchmark Model (inc. Fairness and Performance)
+For a deeper interpretation of the results, the individual chapters of this thesis will be revisited in the following paragraphs, starting with the benchmark model in \textbf{chapter \ref{subsec:Benchmark_Model}} and the explainability algorithms in \textbf{chapter \ref{subsec:Explainability}}.
+
+% Results Chapter Structure:
+%	Benchmark Model (incl. Fairness and Performance)
 %	Explainability
 %	Fairness adjustments (three iterations)
 
@@ -38,11 +40,13 @@ Geography as a factor potentially impacting fairness has been analyzed in \textb
 
 \textbf{Fairness Adjustments}
 
+% Comment on Calibrated Equalized Odds paper
+
 XXX
 
 % 4: Limitations
 
-XXX
+
 
 \section{Summary and Outlook}\label{sec:summary}
 
@@ -59,7 +63,7 @@ Other possible causes of the dissatisfactory performance of the fairness adjustm
 
 Nevertheless, XXX
 
-% 2: Outlook
+% 2: Outlook + practical implementation
 
 XXX
 
