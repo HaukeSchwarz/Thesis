@@ -3,10 +3,30 @@
 \section{Discussion, Interpretation, and Limitations}\label{sec:discussion}
 
 % 1: Restate Research Question
+
+The \textbf{research question} of this thesis (as defined in \textbf{chapter \ref{ch:Introduction}}) included investigating the fairness of a machine learning model in mortgage lending and exploring the potential of explainability algorithms to detect and mitigate unfairness in the models:
+
+\textit{“Can underlying unfairness in mortgage decision-making be detected, explained, and iteratively mitigated without sacrificing predictive performance?"} %in a subset of the 2022 HMDA dataset?”}
+
 % 2: Summarize Results
+
+XXX
+
 % 3: Interpret Results (substructure according to results chapter)
 
-This thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
+% (EDA)
+%	(HMDA)
+%	(Enrichment)
+% Results - maybe just focus here?
+%	Benchmark Model (inc. Fairness and Performance)
+%	Explainability
+%	Fairness adjustments (three iterations)
+
+\textbf{Benchmark Model}
+
+XXX
+
+\textbf{Explainability}
 
 XXX
 
@@ -15,6 +35,20 @@ The fact that all models, even those specifically corrected for fairness in the 
 It must therefore be assumed that just as So et al. \parencite{So2022} suggested in their study, there is a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage, even when the protected attribute itself is controlled for.
 Even when ignoring \textit{applicant\_race-1\_White} itself as an influencing factor of the decision-making process, the fact that historic inequalities lead to \textbf{Black or African American} applicants living for example in poorer or less educated geographies reintroduces discrimination into the analysis.
 Geography as a factor potentially impacting fairness has been analyzed in \textbf{chapter \ref{subsec:HMDA_EDA}}. While no causation can be assumed from these results alone, it is clear that regions with a higher proportion of \textbf{Black or African American} applicants are correlated with lower chance of having a mortgage granted, hinting towards a potential discrimination based on this feature being present in the data.
+
+\textbf{Fairness Adjustments}
+
+XXX
+
+% 4: Limitations
+
+XXX
+
+\section{Summary and Outlook}\label{sec:summary}
+
+% 1: Summary
+
+This thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
 
 XXX
 
@@ -25,10 +59,9 @@ Other possible causes of the dissatisfactory performance of the fairness adjustm
 
 Nevertheless, XXX
 
-\section{Summary and Outlook}\label{sec:summary}
-
-% 1: Summary
 % 2: Outlook
+
+XXX
 
 While this thesis used a combination of different approaches to the topic of fairness, one way to truly improve the fairness of the models might be to include an even broader scope in terms of research focuses.
 As Kim et al. \parencite{Kim2023} suggest in their review of fairness in credit, true multidisciplinary research is needed to tackle the issue of fairness in credit scoring.
