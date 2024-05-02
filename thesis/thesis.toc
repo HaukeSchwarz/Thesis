@@ -2,6 +2,7 @@
 \ttl@change@i {\@ne }{chapter}{0em}{\vspace {0.59em}\bfseries }{\contentslabel {0em}\hspace {1em}}{\hspace {0em}}{\titlerule *[0.8pc]{.}\contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 
+~\vspace {-2.5\baselineskip }
 \contentsline {chapter}{\nonumberline List of Figures}{IV}{chapter*.4}%
 \contentsline {chapter}{\nonumberline List of Tables}{V}{chapter*.5}%
 \contentsline {chapter}{List of Formulas}{VI}{chapter*.6}%
@@ -31,7 +32,9 @@
 \contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{32}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Explainability}{36}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{41}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Discussion}{48}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Discussion, Interpretation, and Limitations}{48}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Summary and Outlook}{49}{section.5.2}%
 \contentsline {chapter}{\nonumberline Bibliography}{50}{chapter*.45}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
