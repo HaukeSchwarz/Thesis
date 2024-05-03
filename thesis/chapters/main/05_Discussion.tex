@@ -12,12 +12,12 @@ The \textbf{research question} of this thesis (as defined in \textbf{chapter \re
 
 Indeed, the analyses conducted in this thesis supported the theory that the mortgage decisions according to the 2022 HMDA dataset favored \textbf{White} applicants (who also accounted for the majority of applications), leading to a neural network model trained on it being biased towards favoring \textbf{White} applicants over \textbf{Black or African American} applicants.
 The explainability algorithms used in \textbf{chapter \ref{subsec:Explainability}} showed that the potentially discriminatory protected attributes were not a major influence on the model’s decision-making, but the patterns of the predicted data proved that the models did catch up on patterns within the data that promoted inequality.
-This assumption of a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage was supported by the analysis of the geographical enrichment data in \textbf{chapter \ref{subsec:Enrichment}}, showing that the regions with a higher proportion of \textbf{Black or African American} applicants were correlated with lower chances of having a mortgage granted.
-The fairness adjustments conducted in \textbf{chapter \ref{subsec:Fairness_Adjustments}} partly yielded improvements in fairness, but the models still favored \textbf{White} applicants over \textbf{Black or African American} applicants, even when the protected attribute itself was controlled for.
+This assumption of a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage was supported by the analysis of the geographical enrichment data in \textbf{chapter \ref{subsec:Enrichment_Data}}, showing that the regions with a higher proportion of \textbf{Black or African American} applicants were correlated with lower chances of having a mortgage granted.
+The fairness adjustments conducted in \textbf{chapter \ref{subsec:Iterations}} partly yielded improvements in fairness, but the models still favored \textbf{White} applicants over \textbf{Black or African American} applicants, even when the protected attribute itself was controlled for.
 
 % 3: Interpret Results (substructure according to results chapter)
 
-For a deeper interpretation of the results, the individual chapters of this thesis will be revisited in the following paragraphs, starting with the benchmark model in \textbf{chapter \ref{subsec:Benchmark_Model}} and the explainability algorithms in \textbf{chapter \ref{subsec:Explainability}}.
+For a deeper interpretation of the results, the individual chapters of this thesis will be revisited in the following paragraphs, starting with the benchmark model in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} and the explainability algorithms in \textbf{chapter \ref{subsec:Explainability}}.
 
 % Results Chapter Structure:
 %	Benchmark Model (incl. Fairness and Performance)
@@ -30,13 +30,15 @@ XXX
 
 \textbf{Explainability}
 
-XXX
-
 Although the explainability algorithms used did not find the potentially discriminatory protected attributes to be a major influence on the model’s decision-making (compare \textbf{figure \ref{fig:SHAP_beeswarm}, \ref{fig:LIME_Individual_Analyses}}, and \textbf{\ref{fig:Global_Surrogate}}), the patterns of the predicted data prove that the models do catch up on patterns within the data that promote inequality. 
 The fact that all models, even those specifically corrected for fairness in the sensitive \textit{applicant\_race-1\_White} mimic the fact present in the underlying data that \textbf{White} applicants have proportionally higher chances of having a mortgage granted (see \textbf{table \ref{tab:loan_granting}}) proves that. 
 It must therefore be assumed that just as So et al. \parencite{So2022} suggested in their study, there is a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage, even when the protected attribute itself is controlled for.
 Even when ignoring \textit{applicant\_race-1\_White} itself as an influencing factor of the decision-making process, the fact that historic inequalities lead to \textbf{Black or African American} applicants living for example in poorer or less educated geographies reintroduces discrimination into the analysis.
 Geography as a factor potentially impacting fairness has been analyzed in \textbf{chapter \ref{subsec:HMDA_EDA}}. While no causation can be assumed from these results alone, it is clear that regions with a higher proportion of \textbf{Black or African American} applicants are correlated with lower chance of having a mortgage granted, hinting towards a potential discrimination based on this feature being present in the data.
+
+When comparing the findings of this thesis to the research conducted by Martinez and Kircher \parencite{Martinez2021}, one common factor becomes apparent. Even though the differences in granted mortgages do not vary as extreme between the races analyzed (Martinez and Kircher report \textbf{Black or African American} applicants to have a 40\% - 80\% higher risk of having their applications denied), the factors influencing the decision-making process are similar.
+Just as the findings of the explainability algorithms displayed in \textbf{chapter \ref{subsec:Explainability}} suggest, the \textit{debt to income ratio} appeared to be a major factor in the decision-making process, with \textbf{Black or African American} applicants having a higher risk of being denied a mortgage due to this factor.
+While a direct comparison of the results is not possible due to the different datasets used and the different filters applied, the similarities in the factors influencing the decision-making process suggest that the underlying unfairness in mortgage decision-making is a systemic issue that is not easily mitigated.
 
 \textbf{Fairness Adjustments}
 
@@ -44,9 +46,24 @@ Geography as a factor potentially impacting fairness has been analyzed in \textb
 
 XXX
 
-% 4: Limitations
+\textbf{Limitations}
+
+Limitations of the research conducted in this thesis can be found in the \textbf{data} used, the \textbf{models} applied, and the \textbf{fairness adjustments} conducted.
 
 
+Although the \textbf{data} selection process was thorough and the data was cleaned and preprocessed following strict criteria, only focusing the analysis on five American states naturally limits the generalizability of the results for other geographies within America and internationally.
+In terms of the features used it must be noted that with missingness in the \textit{debt\_to\_income\_ratio} appearing to be the most influential factor in the decision-making process, alternative approaches to handling missing data might have yielded different results.
+Using more of the 99 features available in the HMDA dataset was not feasible from the standpoint of computational efficiency in this thesis but might have also yielded different results, as the assumed unfairness in the data might be more deeply rooted in other features not analyzed in this thesis.
+Neither for the HMDA data, nor for the geographical enrichment data, causation can be assumed from the results presented in this thesis. The correlations found in the data might be due to other factors not analyzed in this thesis.
+
+
+While the \textbf{model} choice of the neural network detailed in \textbf{table \ref{tab:CH03_Model_Details}} can be considered appropriate because of the widespread application of such models in practice, its generally good performance and it being a typical example of a \textit{black-box} algorithm, other models might have yielded different results.
+Specifically, it has not been tested whether a less complex might have been able to achieve comparable results without the trade-off in inherent explainability.
+
+
+The \textbf{fairness adjustments} conducted in this thesis were limited to the three iterations detailed in \textbf{chapter \ref{subsec:Iterations}}. While these adjustments were chosen based on their theoretical soundness, other fairness adjustments might have been appropriate for this task.
+For example, no \textit{in-processing} algorithm was applied to keep the model used identical and therefore comparable across the iterations. This might have contributed to none of the fairness adjustments being able to fully mitigate the unfairness present in the data.
+For the \textit{calibrated equalized odds} model, it must be noted that the authors themselves showed that enforcing calibration and equalized odds at the same time might impact performance in certain settings \parencite{Pleiss2017}, which can be assumed to have been the case in this thesis as well, given the comparably bad results of this adjustment.
 
 \section{Summary and Outlook}\label{sec:summary}
 
