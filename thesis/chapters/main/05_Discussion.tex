@@ -26,6 +26,8 @@ For a deeper interpretation of the results, the individual chapters of this thes
 
 \textbf{Benchmark Model}
 
+The performance of the benchmark model (see \textbf{chapter \ref{tab:Model_Evaluation}}) was satisfactory with an accuracy of 90\%. However, as noted in \textbf{chapter \ref{subsec:mortgage_lending_fairness}}, finding directly comparable benchmarks proved difficult due to the narrowed down scope and filtering of the data in this thesis.
+
 XXX
 
 \textbf{Explainability}
@@ -65,6 +67,14 @@ The \textbf{fairness adjustments} conducted in this thesis were limited to the t
 For example, no \textit{in-processing} algorithm was applied to keep the model used identical and therefore comparable across the iterations. This might have contributed to none of the fairness adjustments being able to fully mitigate the unfairness present in the data.
 For the \textit{calibrated equalized odds} model, it must be noted that the authors themselves showed that enforcing calibration and equalized odds at the same time might impact performance in certain settings \parencite{Pleiss2017}, which can be assumed to have been the case in this thesis as well, given the comparably bad results of this adjustment.
 
+Revisiting the research questions of this thesis (see \textbf{chapter \ref{ch:Introduction}}), it must be concluded that the initial aim of this work could only be achieved in parts. 
+While the exploratory data analysis, coupled with the analysis of the geographical enrichment data was useful to \textit{detect} and partly \textit{explain} unfairness within the data, the \textit{mitigation} of this unfairness proved hard to achieve. 
+This might have been the case because of intrinsic unfairness being too deeply rooted within the data or the algorithms applied were not the optimal choices for this task.
+Other possible causes of the dissatisfactory performance of the fairness adjustments might be the initial imbalance of the HMDA dataset with most of the applicants being white men (compare \textbf{chapter \ref{subsec:HMDA_EDA}}).
+
+% Nevertheless, XXX
+
+
 \section{Summary and Outlook}\label{sec:summary}
 
 % 1: Summary
@@ -72,13 +82,6 @@ For the \textit{calibrated equalized odds} model, it must be noted that the auth
 This thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
 
 XXX
-
-Revisiting the research questions of this thesis (see \textbf{chapter \ref{ch:Introduction}}), it must be concluded that the initial aim of this work could only be achieved in parts. 
-While the exploratory data analysis, coupled with the analysis of the geographical enrichment data was useful to \textit{detect} and partly \textit{explain} unfairness within the data, the \textit{mitigation} of this unfairness proved hard to achieve. 
-This might have been the case because of intrinsic unfairness being too deeply rooted within the data or the algorithms applied were not the optimal choices for this task.
-Other possible causes of the dissatisfactory performance of the fairness adjustments might be the initial imbalance of the HMDA dataset with most of the applicants being white men (compare \textbf{chapter \ref{subsec:HMDA_EDA}}).
-
-Nevertheless, XXX
 
 % 2: Outlook + practical implementation
 
