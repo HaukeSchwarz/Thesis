@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{41}{subsection.4.2.3}%
 \contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Discussion, Interpretation, and Limitations}{48}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Summary and Outlook}{51}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Summary and Outlook}{50}{section.5.2}%
 \contentsline {chapter}{\nonumberline Bibliography}{52}{chapter*.45}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

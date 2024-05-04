@@ -17,20 +17,20 @@ The fairness adjustments conducted in \textbf{chapter \ref{subsec:Iterations}} p
 
 % 3: Interpret Results (substructure according to results chapter)
 
-For a deeper interpretation of the results, the individual chapters of this thesis will be revisited in the following paragraphs, starting with the benchmark model in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} and the explainability algorithms in \textbf{chapter \ref{subsec:Explainability}}.
+% For a more thorough interpretation of the results, the individual chapters of this thesis will be revisited in the following paragraphs, starting with the benchmark model in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} and the explainability algorithms in \textbf{chapter \ref{subsec:Explainability}}.
 
 % Results Chapter Structure:
 %	Benchmark Model (incl. Fairness and Performance)
 %	Explainability
 %	Fairness adjustments (three iterations)
 
-\textbf{Benchmark Model}
+% \textbf{Benchmark Model}
 
 The performance of the benchmark model (see \textbf{chapter \ref{tab:Model_Evaluation}}) was satisfactory with an accuracy of 90\%. However, as noted in \textbf{chapter \ref{subsec:mortgage_lending_fairness}}, finding directly comparable benchmarks proved difficult due to the narrowed down scope and filtering of the data in this thesis.
 
-XXX
+% XXX
 
-\textbf{Explainability}
+% \textbf{Explainability}
 
 Although the explainability algorithms used did not find the potentially discriminatory protected attributes to be a major influence on the model’s decision-making (compare \textbf{figure \ref{fig:SHAP_beeswarm}, \ref{fig:LIME_Individual_Analyses}}, and \textbf{\ref{fig:Global_Surrogate}}), the patterns of the predicted data prove that the models do catch up on patterns within the data that promote inequality. 
 The fact that all models, even those specifically corrected for fairness in the sensitive \textit{applicant\_race-1\_White} mimic the fact present in the underlying data that \textbf{White} applicants have proportionally higher chances of having a mortgage granted (see \textbf{table \ref{tab:loan_granting}}) proves that. 
@@ -42,15 +42,13 @@ When comparing the findings of this thesis to the research conducted by Martinez
 Just as the findings of the explainability algorithms displayed in \textbf{chapter \ref{subsec:Explainability}} suggest, the \textit{debt to income ratio} appeared to be a major factor in the decision-making process, with \textbf{Black or African American} applicants having a higher risk of being denied a mortgage due to this factor.
 While a direct comparison of the results is not possible due to the different datasets used and the different filters applied, the similarities in the factors influencing the decision-making process suggest that the underlying unfairness in mortgage decision-making is a systemic issue that is not easily mitigated.
 
-\textbf{Fairness Adjustments}
+% \textbf{Fairness Adjustments}
 
-% Comment on Calibrated Equalized Odds paper
 
-XXX
 
-\textbf{Limitations}
+% \textbf{Limitations}
 
-Limitations of the research conducted in this thesis can be found in the \textbf{data} used, the \textbf{models} applied, and the \textbf{fairness adjustments} conducted.
+\textbf{Limitations} of the research conducted in this thesis can be found in the \textbf{data} used, the \textbf{models} applied, and the \textbf{fairness adjustments} conducted.
 
 
 Although the \textbf{data} selection process was thorough and the data was cleaned and preprocessed following strict criteria, only focusing the analysis on five American states naturally limits the generalizability of the results for other geographies within America and internationally.
@@ -67,6 +65,7 @@ The \textbf{fairness adjustments} conducted in this thesis were limited to the t
 For example, no \textit{in-processing} algorithm was applied to keep the model used identical and therefore comparable across the iterations. This might have contributed to none of the fairness adjustments being able to fully mitigate the unfairness present in the data.
 For the \textit{calibrated equalized odds} model, it must be noted that the authors themselves showed that enforcing calibration and equalized odds at the same time might impact performance in certain settings \parencite{Pleiss2017}, which can be assumed to have been the case in this thesis as well, given the comparably bad results of this adjustment.
 
+
 Revisiting the research questions of this thesis (see \textbf{chapter \ref{ch:Introduction}}), it must be concluded that the initial aim of this work could only be achieved in parts. 
 While the exploratory data analysis, coupled with the analysis of the geographical enrichment data was useful to \textit{detect} and partly \textit{explain} unfairness within the data, the \textit{mitigation} of this unfairness proved hard to achieve. 
 This might have been the case because of intrinsic unfairness being too deeply rooted within the data or the algorithms applied were not the optimal choices for this task.
@@ -79,13 +78,18 @@ Other possible causes of the dissatisfactory performance of the fairness adjustm
 
 % 1: Summary
 
-This thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
-
-XXX
+Concluding, this thesis added a new perspective to the ongoing discussion of algorithmic fairness by combining the concepts of \textit{fairness} and \textit{explainability} in the context of mortgage lending, leveraging a recent dataset.
+The results of the analyses conducted in this thesis suggest that the underlying unfairness in mortgage decision-making can be detected and partly explained supported by explainability algorithms, but mitigating this unfairness without sacrificing predictive performance remains a challenge.
+This ties with the findings of Ghoba and Colaner \parencite{Ghoba}, who conclude that perfect fairness in comparable prediction tasks might hardly be achievable by incremental changes to the model or the data.
 
 % 2: Outlook + practical implementation
 
 XXX
 
+These results yield important implications for the practical implementation of machine learning models in mortgage lending. Not only must it be taken into account that automated decision-making in critical areas such as mortgage lending might learn from and amplify existing inequalities, but also that these inequalities might not be easily uncovered, even when attempting to explain the decision-making process of the models with common algorithmic techniques.
+This implies that before the widespread application of machine learning models in mortgage lending (or, in fact, any are where the decision-making might have critical impact on individuals), a thorough analysis of the data used and the models applied must be conducted to ensure that the models do not amplify existing inequalities.
+
 While this thesis used a combination of different approaches to the topic of fairness, one way to truly improve the fairness of the models might be to include an even broader scope in terms of research focuses.
 As Kim et al. \parencite{Kim2023} suggest in their review of fairness in credit, true multidisciplinary research is needed to tackle the issue of fairness in credit scoring.
+But even within the narrower scope of this thesis, further research might be conducted to improve the fairness of the models applied. For example, the application of different fairness adjustments, the use of different models, or the inclusion of more features in the analysis might yield different results.
+Other opportunities for future research might include the application of different fairness metrics, the inclusion of more data sources, or the analysis of the impact of different fairness adjustments on the performance of the models.
