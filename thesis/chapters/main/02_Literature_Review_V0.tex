@@ -112,7 +112,7 @@ Their point is backed by other studies, such as the ones by Rugh et al. \parenci
 Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a Mixture of Experts (MoE) model aiming to combine these two aspects as well as the ability to detect drift over time.
 While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
 
-One of the most frequented sources for fairness research specifically in the area of mortgage lending is the publicly available HMDA (Home Mortgage Disclosure Act) Data Browser\footnote{The Data Browser can be found \href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via this link}.}, a database on mortgage applications, originally created in 1975 to tackle discrimination against low-income borrowers \parencite{Bogen2020}.
+One of the most frequented sources for fairness research specifically in the area of mortgage lending is the publicly available HMDA (Home Mortgage Disclosure Act) Data Browser\footnote{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}, a database on mortgage applications, originally created in 1975 to tackle discrimination against low-income borrowers \parencite{Bogen2020}.
 Examples of the HMDA data being use to assess fairness are the paper by Ghoba and Colaner \parencite{Ghoba}, who use counterfactuals to tackle the issue of fairness in a 2019 version of the HDMA Dataset, or Singh et al. \parencite{Singh2022}, who use HMDA data from 2018 to 2020, filtered to pre-defined states in order to develop the \textit{DualFair} loan classifier algorithm. 
 While Singh et al. only excluded features that had a missingness >25\%, Ghoba and Colaner narrowed the features used down further, only including the following:
 \begin{itemize}
@@ -225,7 +225,7 @@ However, these concepts are only stated on theoretical level without practical i
 % \textbf{Perceived fairness of feature properties}: ... Papers!
 
 
-Another promising approach to merge the concepts of fairness and explainability is the identification of root-causes for a certain model behavior by identifying \textit{influential subsets} within the underlying datasets as proposed by Pradhan \parencite{Pradhan2022}\footnote{For additional information on the proposed model see https://github.com/romilapradhan/gopher}.
+Another promising approach to merge the concepts of fairness and explainability is the identification of root-causes for a certain model behavior by identifying \textit{influential subsets} within the underlying datasets as proposed by Pradhan \parencite{Pradhan2022}\footnote{https://github.com/romilapradhan/gopher}.
 By combining explainability criteria ('Why is a certain subgroup influential on the model's outcome?') with fairness criteria ('In how far can intervention in the training data regarding these subsets improve fairness?'), the authors manage to implement an efficient algorithm combining both concepts.
 
 Just as it is the case for the aspect of fairness (as discussed in \textbf{chapter \ref{subsec:mortgage_lending_fairness}}), the field of mortgage lending has been specifically targeted by previous research on the aspect of explainability.
