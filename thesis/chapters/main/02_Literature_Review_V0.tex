@@ -2,7 +2,7 @@
 
 \section{Fairness in Algorithmic Decision Making}\label{sec:fairness}
 
-Due to the increasing use of decision-making algorithms for varying applications (compare e.g. \cite{Mehrabi2021}), the topic of \textit{Fairness} has become a heavily researched topic in the field of Machine Learning and AI.\@
+Due to the increasing use of decision-making algorithms for varying applications \parencite{Mehrabi2021}, the topic of \textit{Fairness} has become a heavily researched area in the field of Machine Learning and AI.\@
 While fairness concerns do not take an important role in all kinds of algorithmic decision making (some algorithms simply do not have grave enough implications to make fairness a concern, an example being buying recommendation algorithms \parencite{Marcinkevics2023}), 
 they need to be considered in applications like hiring processes or criminal justice systems, where the decisions could heavily impact individuals \parencite{Barocas2016}.
 %As this thesis is based on mortgage lending data and builds upon the analysis of demographic attributes like race or gender, fairness concerns are of utmost importance and will be discussed in the following sections.
@@ -62,7 +62,7 @@ Even though recent studies have suggested that racial bias might not be as preva
 it is still apparent that bias-related fairness concerns are a major issue in algorithmic decision making \parencite{Mehrabi2021}.
 Moreover, race is just one of the protected attributes present in the dataset analyzed in this thesis, meaning that other features present in the data can still be a source of unfairness.
 
-There are a multitude of approaches to fair ML algorithms being discussed in academic literature (compare e.g.\ \cite{Mehrabi2021}). The main approaches are \textit{Fair Modeling}, i.e.\ the development of fair ML algorithms, and \textit{Fairness Assessment}, i.e.\ the evaluation of the fairness of a given model
+There are a multitude of approaches to fair ML (Machine Learning) algorithms being discussed in academic literature (compare e.g.\ \cite{Mehrabi2021}). The main approaches are \textit{Fair Modeling}, i.e.\ the development of fair ML algorithms, and \textit{Fairness Assessment}, i.e.\ the evaluation of the fairness of a given model
 
 \textbf{Fair Modeling} \newline
 Fair Modeling is the process of developing fair ML algorithms. This can be done in three different stages: \textit{Pre-processing}, \textit{In-processing} and \textit{Post-processing} \parencite{Pessach2020}. \newline
@@ -79,14 +79,14 @@ Two of the most prominent libraries are \textit{Aequitas}\footnote{https://githu
 Both of these libraries offer a range of features from the fair modeling and fairness assessment steps mentioned above.
 
 A concrete approach on how to implement fair ML algorithms in organizations and monitor their performance is proposed by Teodorescu et al.\ \parencite{Teodorescu2020}:
-The proposed framework has three phases: \textit{Design}, \textit{Development} and \textit{Post-hoc Model Assessment}. Based on the presence and relevance of protected attributes (see \autoref{subsec:overview}), the authors propose different decision steps to rule out potential unfairness in the algorithm implementation.
+The proposed framework has three phases: \textit{Design}, \textit{Development} and \textit{Post-hoc Model Assessment}. Based on the presence and relevance of protected attributes, the authors propose different decision steps to rule out potential unfairness in the algorithm implementation.
 Although being out of the scope of this thesis, this framework is a promising approach to implement fair ML algorithms in practice.
 
 \textbf{Fairness Assessment} \newline
 Fairness Assessment refers to the post-hoc evaluation of the fairness of model results. The scope of fairness can roughly be divided into the following three categories \parencite{Mehrabi2021}:
 \begin{itemize}
     \item \textbf{Individual fairness}: Individual fairness refers to the fairness of the model's predictions for individual instances. Examples are the concept of \textit{Fairness through unawareness} \parencite{Kusner2017},  \textit{Fairness through awareness} \parencite{Dwork2012} or \textit{Fairness through counterfactuals} \parencite{Kusner2017}.
-    \item \textbf{Group fairness}: Group fairness refers to the fairness of the model's predictions for different groups. This can be assessed by the measures introduced in \textbf{chapter \ref{subsec:overview}}.
+    \item \textbf{Group fairness}: Group fairness refers to the fairness of the model's predictions for different groups. % This can be assessed by the measures introduced in \textbf{chapter \ref{subsec:overview}}.
     \item \textbf{Subgroup fairness}: Subgroup fairness combines the aforementioned concepts by attempting to apply group fairness measures to subsets of the underlying dataset \parencite{Kearns2019}
 \end{itemize}
 
@@ -109,7 +109,7 @@ Several studies and papers have focused on specifically analyzing the fairness o
 Nam and Yun \parencite{Nam2022} follow an approach very similar to this thesis when they use Machine Learning (specifically GANs) to infer decision rules underlying the 2018 HMDA data set in order to compare the decisions made by algorithms to man-made decisions.
 Using the 2020 HMDA data set, So et al. \parencite{So2022} raise the point that indirect discrimination is present in historic loan application data and propose \textit{reparative algorithms} to tackle the issue of indirect discrimination in mortgage lending.
 Their point is backed by other studies, such as the ones by Rugh et al. \parencite{Rugh2015} and Faber \parencite{Faber2013}, who prove that indirect discrimination is present in mortgage lending data and that it is a major issue in the field of fairness in mortgage lending.
-Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a MoE model aiming to combine these two aspects as well as the ability to detect drift over time.
+Research concerning both fairness and explainability has been conducted by Sharma et al. \parencite{Sharma2022}, who propose a Mixture of Experts (MoE) model aiming to combine these two aspects as well as the ability to detect drift over time.
 While this research is very promising and in some parts overlaps with the scope of this thesis, its main focus is the time component, which is not part of the scope of this thesis.
 
 One of the most frequented sources for fairness research specifically in the area of mortgage lending is the publicly available HMDA (Home Mortgage Disclosure Act) Data Browser\footnote{The Data Browser can be found \href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via this link}.}, a database on mortgage applications, originally created in 1975 to tackle discrimination against low-income borrowers \parencite{Bogen2020}.
@@ -129,7 +129,7 @@ While Singh et al. only excluded features that had a missingness >25\%, Ghoba an
 
 It is suggested by previous works that protected attributes do in fact play a statistically significant role in the decision-making process of mortgage lending.
 Exemplarily, Lindsey-Taliefero and Kelly analyzed the role of race, age, and gender on the probability of mortgage lending specifically to research mortgages with the 2019 HMDA dataset and came to the conclusion that all of these factors had a measurable impact on the probability of a mortgage being granted \parencite{LT2021}.
-Their results are backed by the study of Cyree and Winters \cite{Cyree2023}, who analyzed HMDA data from 2007 to 2016 and found that every subgroup in their data was statistically discriminated when compared to White males with co-applicants.
+Their results are backed by the study of Cyree and Winters, who analyzed HMDA data from 2007 to 2016 and found that every subgroup in their data was statistically discriminated when compared to White males with co-applicants \parencite{Cyree2023}.
 
 Finding benchmarks for model performance directly comparable to the scope of this work in the academic literature is hampered by the recency of the used data and the individual approach to filtering states (see \textbf{chapter \ref{subsec:HMDA_Data}}).
 Papers with a similar approach were able to achieve a ROC AUC of \textit{0.768} on a regression task aiming to predict mortgage amounts \parencite{Ghoba} with somewhat comparable data, 
@@ -157,8 +157,8 @@ However, there is increased demand for models that have a high predictive accura
 
 \subsection{Explainability Algorithms}\label{subsec:algorithms}
 
-This section will provide a brief overview of the different categories of explainability algorithms (see \textbf{figure \ref{fig:Explainability_overview}}), and provide additional information on the methods which will be used in this thesis\footnote{As there is a multitude of methods available, not all widely used methods can be detailed here. Valuable overviews are provided e.g. by \cite{SALEEM2022165} or \cite{Molnar2023}}.
-In the academic literature, explainability methods are usually categorized based on their properties, such as:
+% This section will provide a brief overview of the different categories of explainability algorithms (see \textbf{figure \ref{fig:Explainability_overview}}), and provide additional information on the methods which will be used in this thesis\footnote{As there is a multitude of methods available, not all widely used methods can be detailed here. Valuable overviews are provided e.g. by \cite{SALEEM2022165} or \cite{Molnar2023}}.
+In the academic literature, explainability methods are usually categorized based on their properties (see \textbf{figure \ref{fig:Explainability_overview}}), such as:
 \begin{itemize}
     \item \textbf{Model-specific vs. Model-agnostic}: \textit{Model-specific} methods are designed to explain the outcomes of a specific model, while \textit{model-agnostic} methods are designed to be applicable to (nearly) any model by describing how individual features influence the model outcome on average \parencite{Molnar2023}.
     \item \textbf{Local vs. Global}: Model-agnostic methods can be either \textit{local} or \textit{global} \parencite{Molnar2023}. Local methods are designed to explain individual predictions, while global methods should explain the model's behavior as a whole \parencite{SALEEM2022165}.
@@ -229,7 +229,7 @@ Another promising approach to merge the concepts of fairness and explainability 
 By combining explainability criteria ('Why is a certain subgroup influential on the model's outcome?') with fairness criteria ('In how far can intervention in the training data regarding these subsets improve fairness?'), the authors manage to implement an efficient algorithm combining both concepts.
 
 Just as it is the case for the aspect of fairness (as discussed in \textbf{chapter \ref{subsec:mortgage_lending_fairness}}), the field of mortgage lending has been specifically targeted by previous research on the aspect of explainability.
-Maass et al. \parencite{Maass2022} contribute to the discussion by proposing the use of \textit{conceptual models} to capture the relationships in data, exemplarily using the HMDA 2020 dataset to predict mortgage approvals.
+Maass et al. contribute to the discussion by proposing the use of \textit{conceptual models} to capture the relationships in data, exemplarily using the HMDA 2020 dataset to predict mortgage approvals \parencite{Maass2022}.
 By using a total of 52 features clustered into different \textit{concepts} (i.e. abstracted groups of features), they determine the most important concepts relative to one another for the model's decision-making process.
 
 In a comparative review of different explainability methods, Anderson evaluates the accuracy of explanations of different ML models on the 2019 HMDA dataset \parencite{Anderson2023}.

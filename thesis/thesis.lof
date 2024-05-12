@@ -2,29 +2,29 @@
 \addvspace {3pt}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Explainability Overview, from \blx@tocontentsinit {0}\cite {SALEEM2022165}\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Explainability Overview, from \blx@tocontentsinit {0}\cite {SALEEM2022165}\relax }}{8}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual Inspection of Missingness in the missingno Package\relax }}{14}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation Between the Enrichment Features\relax }}{17}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Methodology\relax }}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual Inspection of Missingness in the missingno Package\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Correlation Between the Enrichment Features\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Methodology\relax }}{17}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces HMDA: Distribution of the Target Variable\relax }}{25}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation of the Target Variable with Categorical Features\relax }}{26}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Correlation Between the Numerical Features\relax }}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Histograms of the Numerical Features\relax }}{27}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features\relax }}{28}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute\relax }}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{30}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA\relax }}{31}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{33}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{34}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{35}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot\relax }}{38}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses\relax }}{39}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance\relax }}{40}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{41}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Differences in Positive Predictions per Model\relax }}{46}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Fairness Adjustments Results\relax }}{47}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces HMDA: Distribution of the Target Variable\relax }}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation of the Target Variable with Categorical Features\relax }}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Correlation Between the Numerical Features\relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Histograms of the Numerical Features\relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features\relax }}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute\relax }}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants\relax }}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA\relax }}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{32}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{34}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot\relax }}{37}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses\relax }}{38}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance\relax }}{39}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME\relax }}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Differences in Positive Predictions per Model\relax }}{45}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Fairness Adjustments Results\relax }}{46}{figure.caption.43}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
