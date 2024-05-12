@@ -4,7 +4,8 @@
 
 The main dataset was retrieved from the HMDA Data Browser\footnote{The Data Browser can be found \href{https://ffiec.cfpb.gov/data-browser/data/2022?category=states}{via this link}.} (see \textbf{chapter \ref{subsec:mortgage_lending_fairness}}). 
 The data selection process is loosely based on the paper by Ghoba and Colaner (\cite{Ghoba}, see \textbf{chapter \ref{subsec:mortgage_lending_fairness}}), but adjusted to the scope of this thesis (see below).
-All data were generated in \textbf{2022}, which supports the claim of this thesis to provide data that are newer than the studies available and potentially already include effects from the COVID pandemic. \textbf{All financial institutions} were included, but to narrow down the research focus to racial fairness specifically, the approach of Ghoba and Colaner was followed by only including \textbf{non-Hispanic White} and \textbf{Black or African Americans} in the analysis. 
+All data were generated in \textbf{2022}, which supports the claim of this thesis to provide data that are newer than the studies available and potentially already include effects from the COVID pandemic. 
+\textbf{All financial institutions} were included, but to narrow down the research focus to racial fairness specifically, the approach of Ghoba and Colaner was followed by only including the two predominant racial groups (\textbf{Non-Hispanic White} and \textbf{Black or African Americans}) in the analysis. 
 In terms of geographical filtering, inspiration was drawn from the paper by Singh et al. (\cite{Singh2022}, see \textbf{chapter \ref{subsec:mortgage_lending_fairness}}), but instead of including different-sized states, a fairness-based approach was taken: 
 U.S.News publishes a ranking of US states by their equality, by measure of distributions by race, gender and other fairness-related aspects and aggregate them to overall equality levels\footnote{The 2023 ranking can be found \href{https://www.usnews.com/news/best-states/rankings/opportunity/equality?sort=rank-desc}{here}, the corresponding methodology \href{https://www.usnews.com/news/best-states/articles/methodology}{here}}. 
 To use a subset of the HMDA data that is likely to include fairness issues, the five states considered least equal in the year 2023 were included in the data, being \textbf{South Dakota, Louisiana, Utah, Texas,} and \textbf{Montana}. The resulting dataframe has \textit{867.401 rows and 99 columns}.
@@ -21,7 +22,7 @@ In order to clean and reshape the data in a easily analyzable format, several st
     \hline
      & \textbf{Transformation Step} & \textbf{Reasoning} \\
     \hline
-    \textbf{Rows with missing county code} & Dropping & insignificant amount, imputation not feasible, presumably MCAR \\
+    \textbf{Rows with missing county code} & Dropping & Insignificant amount, imputation not feasible, presumably MCAR \\
     \textbf{All variables} & Typecasting & Required for further analysis \\
     \textbf{loan\_granted} & Creation & Target variable for the classification task \\
     \textbf{Exempt} & Recoding & Recoding to zero for proper typecasting \\
