@@ -193,6 +193,12 @@ It showed that all three explanation algorithms mainly agree on the three most i
     \label{fig:Global_Surrogate}
 \end{figure}
 
+\textbf{Summary}
+
+While the SHAP and LIME algorithms agreed on the most important features, the actual impact of these features varied significantly. The global surrogate model confirmed the results of the local explanations, showing that the most important features were the \textit{debt to income ratio} and the \textit{interest rate}. 
+It is noteworthy that missingness in the \textit{debt\_to\_income\_ratio} cannot be considered to be at random as it is highly predictive of the model's decision. 
+While individual values put out by SHAP and LIME might differ due to the different approaches, the overall trends of the explanations were similar, suggesting that the model's decision-making process could be explained with some level of confidence.
+
 \subsection{Fairness Adjustments}\label{Fairness Adjustments Results}
 
 While the performance of the benchmark mortgage classifier detailed in \textbf{chapter \ref{subsec:Mortgage Classifier (Benchmark) Results}} was satisfactory, the scope of this thesis (see \textbf{chapter \ref{ch:Introduction}}) included taking an iterative approach to improve fairness without sacrificing predictive performance, as outlined in \textbf{chapter \ref{subsec:Iterations}}.
