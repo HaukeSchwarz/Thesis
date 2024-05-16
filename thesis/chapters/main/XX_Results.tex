@@ -14,10 +14,11 @@ There were no missing values. The distribution of the target variable can be see
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.6\textwidth]{images/CHXX_Target_Variable_Distribution.png}
-    \caption{HMDA: Distribution of the Target Variable}
-    \medskip
-    \small
-    The target variable is slightly imbalanced, with 57.9\% (493,290) of all loans being granted.
+%    \caption{HMDA: Distribution of the Target Variable}
+%    \medskip
+%    \small
+%    The target variable is slightly imbalanced, with 57.9\% (493,290) of all loans being granted.
+    \caption[HMDA: Distribution of the Target Variable]{\textbf{HMDA: Distribution of the Target Variable} - The target variable is slightly imbalanced, with 57.9\% (493,290) of all loans being granted.}
     \label{fig:CHXX_Target_Variable_Distribution}
 \end{figure}
 
@@ -76,10 +77,11 @@ Their distributions can be seen in \textbf{figure \ref{fig:CHXX_Numerical_Distri
         \small
         Loan to Value Ratio
     \end{minipage}    
-    \caption{HMDA: Histograms of the Numerical Features}
-    \medskip
-    \small
-    The results of the KNNImputer applying mean (\textit{4.56\%} for the interest rate and \textit{71.24\%} for the Loan to Value Ratio) values for the loan to value ratio values for all missing values show clearly here by the high amount of values at the mean.
+%    \caption{HMDA: Histograms of the Numerical Features}
+%    \medskip
+%    \small
+%    The results of the KNNImputer applying mean (\textit{4.56\%} for the interest rate and \textit{71.24\%} for the Loan to Value Ratio) values for the loan to value ratio values for all missing values show clearly here by the high amount of values at the mean.
+    \caption[HMDA: Histograms of the Numerical Features]{\textbf{HMDA: Histograms of the Numerical Features} - The results of the KNNImputer applying mean (\textit{4.56\%} for the interest rate and \textit{71.24\%} for the Loan to Value Ratio) values for the loan to value ratio values for all missing values show clearly here by the high amount of values at the mean.}
     \label{fig:CHXX_Numerical_Distributions_2}
 \end{figure}
 
@@ -144,12 +146,14 @@ This potential unfairness in the underlying data can be identified from assessin
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_Loan_Grant_By_Protected_Attribute.png}
-    \caption{Loan Grant by Protected Attribute}
-    \caption*{Discrimination by race is apparent in the data, as the amount of granted loans differs significantly}
+%    \caption{Loan Grant by Protected Attribute}
+%    \caption*{Discrimination by race is apparent in the data, as the amount of granted loans differs significantly}
+%    \medskip
+    \caption[Loan Grant by Protected Attribute]{\textbf{Loan Grant by Protected Attribute} - Discrimination by race is apparent in the data, as the amount of granted loans differs significantly.}
     \label{fig:CHXX_Loan_Grant_By_Protected_Attribute}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[!htbp]
     \centering
       \begin{tabular}{lcc}
       \toprule
@@ -161,8 +165,10 @@ This potential unfairness in the underlying data can be identified from assessin
             & Female  & 58.8 \\
       \bottomrule
       \end{tabular}
-      \caption{Loan Granting Statistics by Applicant Race and Sex}
-      \caption*{Analyzing the differences in percentages of loans being granted among race and sex of applicants shows differences in the underlying data: Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
+%      \caption{Loan Granting Statistics by Applicant Race and Sex}
+%      \caption*{Analyzing the differences in percentages of loans being granted among race and sex of applicants shows differences in the underlying data: Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
+    \medskip
+    \caption[Loan Granting Statistics by Applicant Race and Sex]{\textbf{Loan Granting Statistics by Applicant Race and Sex} - Analyzing the differences in percentages of loans being granted among race and sex of applicants shows differences in the underlying data: Regardless of their gender, Black or African American applicants are less likely to be granted a loan than White applicants.}
     \label{tab:loan_granting}%
 \end{table}%
 
@@ -179,7 +185,7 @@ A high discrepancy in the educational standard between the different observation
 In terms of population, the counties in this analysis are heterogenous as well, with the mean population being \textbf{85.36 thousand} with standard deviation of \textbf{318.70 thousand} and the most inhabited county having nearly 100,000 times as many inhabitants as the least inhabited.
 The socio-economic factors expose a wide range of values as well, with the poverty rate ranging from \textbf{3.9\%} to \textbf{43.5\%}, the median household income from \textbf{25.65 thousand} to \textbf{124.35 thousand}, and the unemployment rate from \textbf{0.6\%} to \textbf{11.0\%}.
 
-\begin{table}[h]
+\begin{table}[!htbp]
     \centering
     \begin{tabularx}{\textwidth}{l *{5}{>{\centering\arraybackslash}X}}
     \hline
@@ -195,9 +201,11 @@ The socio-economic factors expose a wide range of values as well, with the pover
     Unemployment Rate & 469.00 & 3.6\% & 1.21 & 0.60\% & 11.00\% \\
     \hline
     \end{tabularx}
-    \caption{Summary Statistics of the Enrichment Data}
-    \small
-    The summary statistics show that the data is complete and has a wide range of values.
+%    \caption{Summary Statistics of the Enrichment Data}
+%    \small
+%    The summary statistics show that the data is complete and has a wide range of values.
+    \medskip
+    \caption[Summary Statistics of the Enrichment Data]{\textbf{Summary Statistics of the Enrichment Data} - The summary statistics show that the data is complete and has a wide range of values.}
     \label{tab:enrichment_summary}
 \end{table}
 
@@ -222,10 +230,11 @@ A similar relation of socio-economic factors with education can be observed in t
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CH03_Enrichment_Correlation.png}
-    \caption{Correlation Between the Enrichment Features}
-    \medskip
-    \small
-    Some of the enrichment features expectedly show a high correlation, an example being \textit{median\_household\_income} and \textit{poverty\_rate}.
+%    \caption{Correlation Between the Enrichment Features}
+%    \medskip
+%    \small
+%    Some of the enrichment features expectedly show a high correlation, an example being \textit{median\_household\_income} and \textit{poverty\_rate}.
+    \caption[Correlation Between the Enrichment Features]{\textbf{Correlation Between the Enrichment Features} - Some of the enrichment features expectedly show a high correlation, an example being \textit{median\_household\_income} and \textit{poverty\_rate}.}
     \label{fig:CH03_Enrichment_Correlation}
 \end{figure}
 
@@ -236,12 +245,13 @@ A sign of potential discrimination in the data could be the correlation between 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_Perc_Grants_vs_Perc_White.png}
-    \caption{Relationship between Applicant Race, Poverty Rate and Loan Grants}
-    \caption*{Counties with predominantly White applicants do not only tend to have a lower poverty rate on average, but also see a higher percentage of loans being granted on average.}
+%    \caption{Relationship between Applicant Race, Poverty Rate and Loan Grants}
+%    \caption*{Counties with predominantly White applicants do not only tend to have a lower poverty rate on average, but also see a higher percentage of loans being granted on average.}
+    \caption[Relationship between Applicant Race, Poverty Rate and Loan Grants]{\textbf{Relationship between Applicant Race, Poverty Rate and Loan Grants} - Counties with predominantly White applicants do not only tend to have a lower poverty rate on average, but also see a higher percentage of loans being granted on average.}
     \label{fig:Scatter_White_Applicants_Loan_Grant}
 \end{figure}
 
-It should however be noted that the distributions within the enrichment data themselves are skewed by nature, as there are way higher numbers of White applicants in the data set and only few counties have a substantial number of predicted mortgage grants (see \textbf{figure \ref{fig:Enrichment_Data_EDA}}).
+It should be noted that the distributions within the enrichment data themselves are skewed by nature, as there are way higher numbers of White applicants in the data set and only few counties have a substantial number of predicted mortgage grants (see \textbf{figure \ref{fig:Enrichment_Data_EDA}}).
 
 \begin{figure}[!htbp]
     \centering
@@ -263,11 +273,12 @@ It should however be noted that the distributions within the enrichment data the
         \small
         Percentage of White Applicants
     \end{minipage}\hfill
-    \caption{Enrichment Data EDA}
+%    \caption{Enrichment Data EDA}
+    \caption[Enrichment Data EDA]{\textbf{Enrichment Data EDA} - Analyzing the enrichment data shows that while the percentage of predictions per county appears to be normally distributed, the distributions of the percentage of White applicants and the percentage of predicted loans per county are skewed.}
     \label{fig:Enrichment_Data_EDA}
-    \medskip
-    \small
-    Analyzing the enrichment data shows that while the percentage of predictions per county appears to be normally distributed, the distributions of the percentage of White applicants and the percentage of predicted granted loans per county are skewed.
+%    \medskip
+%    \small
+%    Analyzing the enrichment data shows that while the percentage of predictions per county appears to be normally distributed, the distributions of the percentage of White applicants and the percentage of predicted granted loans per county are skewed.
 \end{figure}
 
 \newpage
