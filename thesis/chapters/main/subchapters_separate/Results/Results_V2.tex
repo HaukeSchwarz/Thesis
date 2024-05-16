@@ -8,7 +8,8 @@ The results of this model were assessed in terms of performance and fairness.
 \textbf{Performance Assessment}
 
 When fitting the neural network to the training data, the \textit{training accuracy} of the model improved rapidly initially, leveling off after a few epochs. The \textit{validation accuracy} started at a high level and constantly improved by small increments, suggesting that both the model learning process as well as the ability to generalize to previously unseen data were successful. 
-The training process was stopped by an early\_stopping callback, with the ninth epoch being the one with the least validation loss. The training results of the best epoch were:
+% The training process was stopped by an early\_stopping callback, with the ninth epoch being the one with the least validation loss. The training results of the best epoch were:
+The training process was stopped by an early\_stopping callback. The training results of the best epoch were:
 \begin{itemize}
     \item \textit{Training Accuracy}: 0.90
     \item \textit{Validation Accuracy}: 0.90
@@ -43,9 +44,11 @@ Converting the probabilities into predictions with a threshold of 0.5 fulfilled 
     \textbf{f1} & 0.92 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#1: Initial Model}
-    \small
-    The mortgage classifier model was evaluated on the test dataset, achieving an accuracy of 0.90, a precision of 0.88, a recall of 0.97, and an F1-score of 0.92.
+%    \caption{Metrics \#1: Initial Model}
+%    \small
+%    The mortgage classifier model was evaluated on the test dataset, achieving an accuracy of 0.90, a precision of 0.88, a recall of 0.97, and an F1-score of 0.92.
+    \medskip
+    \caption[Metrics \#1: Initial Model]{\textbf{Metrics \#1: Initial Model} - The mortgage classifier model was evaluated on the test dataset, achieving an accuracy of 0.90, a precision of 0.88, a recall of 0.97, and an F1-score of 0.92.}
     \label{tab:Model_Evaluation}
 \end{table}
 
@@ -100,10 +103,12 @@ In terms of disparities (where the optimal value is \textbf{1}), the model perfo
     \textbf{fnr\_disparity} & 1.42 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#2: Initial Model}
+%    \caption{Metrics \#2: Initial Model}
+    \medskip
+    \caption[Metrics \#2: Initial Model]{\textbf{Metrics \#2: Initial Model} - The benchmark model showed a slightly better performance for \textit{White} applicants than for \textit{Black} applicants. The disparities were comparably low, except for the \textit{fnr\_disparity}, which was 1.42.}
     \label{tab:Fairness_Assessment_Initial}
-    \small
-    The benchmark model showed a slightly better performance for \textit{White} applicants than for \textit{Black} applicants. The disparities were comparably low, except for the \textit{fnr\_disparity}, which was 1.42.
+%    \small
+%    The benchmark model showed a slightly better performance for \textit{White} applicants than for \textit{Black} applicants. The disparities were comparably low, except for the \textit{fnr\_disparity}, which was 1.42.
 \end{table}
 
 \subsection{Explainability}\label{Explainability Results}
@@ -124,10 +129,11 @@ A similar picture was observed for the \textit{sex} of the applicant: In most ca
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/SHAP_Individual_Analyses/beeswarm.png}
-    \caption{SHAP beeswarm plot}
-    \medskip
-    \small
-    The SHAP beeswarm plot shows the distribution of the SHAP values for each feature in the dataset. The color indicates the feature value, while the x-axis shows the SHAP value. The y-axis shows the feature name.
+%    \caption{SHAP beeswarm plot}
+%    \medskip
+%    \small
+%    The SHAP beeswarm plot shows the distribution of the SHAP values for each feature in the dataset. The color indicates the feature value, while the x-axis shows the SHAP value. The y-axis shows the feature name.
+    \caption[SHAP beeswarm plot]{\textbf{SHAP beeswarm plot} - The SHAP beeswarm plot shows the distribution of the SHAP values for each feature in the dataset. The color indicates the feature value, while the x-axis shows the SHAP value. The y-axis shows the feature name.}
     \label{fig:SHAP_beeswarm}
 \end{figure}
 
@@ -152,10 +158,12 @@ According to SHAP, none of the decisions displayed here (and in the whole set of
     \includegraphics[width=0.95\textwidth]{images/SHAP_Individual_Analyses/SHAP_individual_139.png}
     \small
     Black or African American Male, Debt to Income Ratio available
-    \caption{Selected SHAP Individual Analyses}
+%    \caption{Selected SHAP Individual Analyses}
+%    \medskip
+%    \small
+%    Comparing four selected Male applicants with different characteristics shows that, in general, SHAP attributes a high importance to (missingness of) the Debt to Income Ratio. However, it is not the sole decision criterion, as the last applicant displayed shows.
     \medskip
-    \small
-    Comparing four selected Male applicants with different characteristics shows that, in general, SHAP attributes a high importance to (missingness of) the Debt to Income Ratio. However, it is not the sole decision criterion, as the last applicant displayed shows.
+    \caption[Selected SHAP Individual Analyses]{\textbf{Selected SHAP Individual Analyses} - Comparing four selected Male applicants with different characteristics shows that, in general, SHAP attributes a high importance to (missingness of) the Debt to Income Ratio. However, it is not the sole decision criterion, as the last applicant displayed shows.}
     \label{fig:SHAP_Individual_Analyses}
 \end{figure}
 
@@ -167,11 +175,12 @@ It showed that LIME attributes a high importance to the \textit{loan type} and t
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/CHXX_LIME_individual.png}
-    \caption{LIME Individual Feature Importance}
-    \medskip
-    \small
-    The LIME individual feature importance plot shows the direction and the impact of the features on the model's decision for a selected applicant. The x-axis shows the feature importance, while the y-axis shows the feature name.
+    \includegraphics[width=0.95\textwidth]{images/CHXX_LIME_individual.png}
+%    \caption{LIME Individual Feature Importance}
+%    \medskip
+%    \small
+%    The LIME individual feature importance plot shows the direction and the impact of the features on the model's decision for a selected applicant. The x-axis shows the feature importance, while the y-axis shows the feature name.
+    \caption[LIME Individual Feature Importance]{\textbf{LIME Individual Feature Importance} - The LIME individual feature importance plot shows the direction and the impact of the features on the model's decision for a selected applicant. The x-axis shows the feature importance, while the y-axis shows the feature name.}
     \label{fig:LIME_Individual_Analyses}
 \end{figure}
 
@@ -186,10 +195,11 @@ It showed that all three explanation algorithms mainly agree on the three most i
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png}
-    \caption{Global Surrogate Model compared to SHAP and LIME}
-    \medskip
-    \small
-    Analyzing the 5 most important features according to the global surrogate model implies that the overall trends of SHAP and LIME are close to the global explanations.
+%    \caption{Global Surrogate Model compared to SHAP and LIME}
+%    \medskip
+%    \small
+%    Analyzing the 5 most important features according to the global surrogate model implies that the overall trends of SHAP and LIME are close to the global explanations.
+    \caption[Global Surrogate Model compared to SHAP and LIME]{\textbf{Global Surrogate Model compared to SHAP and LIME} - Analyzing the 5 most important features according to the global surrogate model implies that the overall trends of SHAP and LIME are close to the global explanations.}
     \label{fig:Global_Surrogate}
 \end{figure}
 
@@ -221,13 +231,15 @@ While the predictive performance of the model (as measured by \textit{metrics \#
     \textbf{f1} & 0.92 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#1: Reweighing}
-    \small
-    The performance of the \textit{reweighed} model was on par with the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+%    \caption{Metrics \#1: Reweighing}
+%    \small
+%    The performance of the \textit{reweighed} model was on par with the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+    \medskip
+    \caption[Metrics \#1: Reweighing]{\textbf{Metrics \#1: Reweighing} - The performance of the \textit{reweighed} model was on par with the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).}
     \label{tab:Model_Evaluation_Reweighing}
 \end{table}
 
-\begin{table}[!htbp]
+\begin{table}[h]%[!htbp]
     \centering
     \begin{tabular}{lr}
     \toprule
@@ -251,10 +263,12 @@ While the predictive performance of the model (as measured by \textit{metrics \#
     \textbf{fnr\_disparity} & 1.20 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#2: Reweighing}
+%    \caption{Metrics \#2: Reweighing}
+    \medskip
+    \caption[Metrics \#2: Reweighing]{\textbf{Metrics \#2: Reweighing} - While the subgroup performances of the \textit{reweighed} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities were nearly nullified with the exception of the \textit{fnr disparity}, which still is on a good level with 1.20.}
     \label{tab:Fairness_Assessment_Reweighing}
-    \small
-    While the subgroup performances of the \textit{reweighed} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities were nearly nullified with the exception of the \textit{fnr disparity}, which still is on a satisfactory level with 1.20.
+%    \small
+%    While the subgroup performances of the \textit{reweighed} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities were nearly nullified with the exception of the \textit{fnr disparity}, which still is on a satisfactory level with 1.20.
 \end{table}
 
 \textbf{Correlation Remover}
@@ -275,13 +289,15 @@ Subgroup performance could not be optimized compared to the benchmark and the di
     \textbf{f1} & 0.92 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#1: Correlation Remover}
-    \small
-    The performance of the \textit{correlation remover} model was very similar to the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+%    \caption{Metrics \#1: Correlation Remover}
+%    \small
+%    The performance of the \textit{correlation remover} model was very similar to the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).
+    \medskip
+    \caption[Metrics \#1: Correlation Remover]{\textbf{Metrics \#1: Correlation Remover} - The performance of the \textit{correlation remover} model was very similar to the benchmark (compare \textbf{table \ref{tab:Model_Evaluation}}).}
     \label{tab:Model_Evaluation_Corr_Rem}
 \end{table}
 
-\begin{table}[!htbp]
+\begin{table}[h]%[!htbp]
     \centering
     \begin{tabular}{lr}
     \toprule
@@ -305,10 +321,12 @@ Subgroup performance could not be optimized compared to the benchmark and the di
     \textbf{fnr\_disparity} & 2.67 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#2: Correlation Remover}
+%    \caption{Metrics \#2: Correlation Remover}
+    \medskip
+    \caption[Metrics \#2: Correlation Remover]{\textbf{Metrics \#2: Correlation Remover} - While the subgroup performances of the \textit{correlation remover} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities had higher absolute distances from 1, indicating a lower level of fairness.}
     \label{tab:Fairness_Assessment_Corr_Rem}
-    \small
-    While the subgroup performances of the \textit{correlation remover} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities had higher absolute distances from 1, indicating a lower level of fairness.
+%    \small
+%    While the subgroup performances of the \textit{correlation remover} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities had higher absolute distances from 1, indicating a lower level of fairness.
 \end{table}
 
 \textbf{Calibrated Equalized Odds}
@@ -328,13 +346,15 @@ The only postprocessing algorithm within the fairness adjustments, the \textit{c
     \textbf{f1} & 0.81 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#1: Calibrated Equalized Odds}
-    \small
-    Compared to the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the model performance of the \textit{calibrated equalized odds} is significantly worse. Besides the \textit{recall}, which was kept on the same level, all performance metrics are well below those of the benchmark model.
+%    \caption{Metrics \#1: Calibrated Equalized Odds}
+%    \small
+%    Compared to the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the model performance of the \textit{calibrated equalized odds} is significantly worse. Besides the \textit{recall}, which was kept on the same level, all performance metrics are well below those of the benchmark model.
+    \medskip
+    \caption[Metrics \#1: Calibrated Equalized Odds]{\textbf{Metrics \#1: Calibrated Equalized Odds} - Compared to the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the model performance of the \textit{calibrated equalized odds} is significantly worse. Besides the \textit{recall}, which was kept on the same level, all performance metrics are well below those of the benchmark model.}
     \label{tab:Model_Evaluation_Cal_Eq_Odd}
 \end{table}
 
-\begin{table}[!htbp]
+\begin{table}[h]%[!htbp]
     \centering
     \begin{tabular}{lr}
     \toprule
@@ -358,10 +378,12 @@ The only postprocessing algorithm within the fairness adjustments, the \textit{c
     \textbf{fnr\_disparity} & 3.25 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#2: Calibrated Equalized Odds}
+%    \caption{Metrics \#2: Calibrated Equalized Odds}
+    \medskip
+    \caption[Metrics \#2: Calibrated Equalized Odds]{\textbf{Metrics \#2: Calibrated Equalized Odds} - Similar to the total performance of the model (see \textbf{table \ref{tab:Model_Evaluation_Cal_Eq_Odd}}), the performance of the \textit{calibrated equalized odds} model in terms of fairness was significantly worse than that of the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) for both subgroups, as were the disparities.}
     \label{tab:Fairness_Assessment_Cal_Eq_Odd}
-    \small
-    Similar to the total performance of the model (see \textbf{table \ref{tab:Model_Evaluation_Cal_Eq_Odd}}), the performance of the \textit{calibrated equalized odds} model in terms of fairness was significantly worse than that of the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) for both subgroups, as were the disparities.
+%    \small
+%    Similar to the total performance of the model (see \textbf{table \ref{tab:Model_Evaluation_Cal_Eq_Odd}}), the performance of the \textit{calibrated equalized odds} model in terms of fairness was significantly worse than that of the benchmark model (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) for both subgroups, as were the disparities.
 \end{table}
 
 \textbf{Summary}
@@ -382,9 +404,11 @@ The \textit{correlation removal} algorithm managed to slightly outperform the be
     \textbf{roc\_auc} & \textbf{0.94} & 0.94 & \text{NA} & \text{NA} \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#1: Fairness Adjustments Summary}
-    \small
-    Results of \textit{metrics \#1} for all applied algorithms. The values are rounded, the highest scores are marked \textbf{bold}.
+%    \caption{Metrics \#1: Fairness Adjustments Summary}
+%    \small
+%    Results of \textit{metrics \#1} for all applied algorithms. The values are rounded, the highest scores are marked \textbf{bold}.
+    \medskip
+    \caption[Metrics \#1: Fairness Adjustments Summary]{\textbf{Metrics \#1: Fairness Adjustments Summary} - Results of \textit{metrics \#1} for all applied algorithms. The values are rounded, the highest scores are marked \textbf{bold}.}
     \label{tab:metrics_1_iterations_summary}
 \end{table}
 
@@ -433,10 +457,12 @@ The disparities were comparably low for the \textit{true positive rate}, while a
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{images/CHXX_Update_Results_Line.png}
-    \caption{Fairness Adjustments Results}
-    \medskip
-    \small
-    The results of the fairness adjustments in terms of the disparities of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. They were calculated for the \textit{White} and \textit{Black or African American applicants}. Values closer to 1 are better, the gray area represents a good level of fairness.
+%    \caption{Fairness Adjustments Results}
+%    \medskip
+%    \small
+%    The results of the fairness adjustments in terms of the disparities of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. They were calculated for the \textit{White} and \textit{Black or African American applicants}. Values closer to 1 are better, the gray area represents a good level of fairness.
+    \caption[Fairness Adjustments Results]{\textbf{Fairness Adjustments Results} - The results of the fairness adjustments in terms of the disparities of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. 
+    They were calculated for the \textit{White} and \textit{Black or African American applicants}. Values closer to 1 are better, the gray area represents a good level of fairness.}
     \label{fig:Fairness_Adjustments_Results_Line}
 \end{figure}
 
@@ -467,8 +493,10 @@ While the \textit{reweighing} algorithm managed to improve the fairness of the o
     \textbf{fnr\_disparity} & 1.42 & \textbf{1.20} & 3.25 & 2.67 \\
     \bottomrule
     \end{tabular}
-    \caption{Metrics \#2: Fairness Adjustments Summary}
-    \small
-    Results of \textit{metrics \#2} for all applied algorithms. The values are rounded, the highest scores (respectively those closest to 1 for the disparity calculations) are marked \textbf{bold}.
+%    \caption{Metrics \#2: Fairness Adjustments Summary}
+%    \small
+%    Results of \textit{metrics \#2} for all applied algorithms. The values are rounded, the highest scores (respectively those closest to 1 for the disparity calculations) are marked \textbf{bold}.
+    \medskip
+    \caption[Metrics \#2: Fairness Adjustments Summary]{\textbf{Metrics \#2: Fairness Adjustments Summary} - Results of \textit{metrics \#2} for all applied algorithms. The values are rounded, the highest scores (respectively those closest to 1 for the disparity calculations) are marked \textbf{bold}.}
     \label{tab:metrics_2_iterations_summary}
 \end{table}

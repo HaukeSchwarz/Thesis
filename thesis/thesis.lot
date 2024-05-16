@@ -10,16 +10,16 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Loan Granting Statistics by Applicant Race and Sex}}{27}{table.caption.21}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Summary Statistics of the Enrichment Data}}{28}{table.caption.22}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Metrics \#1: Initial Model\relax }}{32}{table.caption.27}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Metrics \#2: Initial Model\relax }}{34}{table.caption.30}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Metrics \#1: Reweighing\relax }}{40}{table.caption.35}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Metrics \#2: Reweighing\relax }}{40}{table.caption.36}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Metrics \#1: Correlation Remover\relax }}{41}{table.caption.37}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Metrics \#2: Correlation Remover\relax }}{41}{table.caption.38}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Metrics \#1: Calibrated Equalized Odds\relax }}{42}{table.caption.39}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Metrics \#2: Calibrated Equalized Odds\relax }}{42}{table.caption.40}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Metrics \#1: Fairness Adjustments Summary\relax }}{43}{table.caption.41}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Metrics \#2: Fairness Adjustments Summary\relax }}{45}{table.caption.44}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Metrics \#1: Initial Model}}{32}{table.caption.27}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Metrics \#2: Initial Model}}{34}{table.caption.30}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Metrics \#1: Reweighing}}{40}{table.caption.35}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Metrics \#2: Reweighing}}{40}{table.caption.36}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Metrics \#1: Correlation Remover}}{41}{table.caption.37}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Metrics \#2: Correlation Remover}}{41}{table.caption.38}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Metrics \#1: Calibrated Equalized Odds}}{42}{table.caption.39}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Metrics \#2: Calibrated Equalized Odds}}{44}{table.caption.40}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Metrics \#1: Fairness Adjustments Summary}}{44}{table.caption.41}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Metrics \#2: Fairness Adjustments Summary}}{45}{table.caption.44}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
