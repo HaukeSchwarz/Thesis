@@ -1855,11 +1855,6 @@ INPUT images/CH03_Missingno_Completeness.png
 INPUT ./images/CH03_Missingno_Completeness.png
 INPUT ./images/CH03_Missingno_Completeness.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT ./images/CH03_Enrichment_Correlation.png
-INPUT ./images/CH03_Enrichment_Correlation.png
-INPUT images/CH03_Enrichment_Correlation.png
-INPUT ./images/CH03_Enrichment_Correlation.png
-INPUT ./images/CH03_Enrichment_Correlation.png
 INPUT ./chapters/main/subchapters_separate/Methodology.tex
 INPUT chapters/main/subchapters_separate/Methodology.tex
 INPUT ./chapters/main/subchapters_separate/Methodology.tex
@@ -1934,6 +1929,11 @@ INPUT ./images/CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT images/CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images/CHXX_Loan_Grant_By_Protected_Attribute.png
 INPUT ./images/CHXX_Loan_Grant_By_Protected_Attribute.png
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
+INPUT ./images/CH03_Enrichment_Correlation.png
 INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
 INPUT ./images/CHXX_Perc_Grants_vs_Perc_White.png
 INPUT images/CHXX_Perc_Grants_vs_Perc_White.png

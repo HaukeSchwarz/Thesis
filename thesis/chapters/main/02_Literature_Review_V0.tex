@@ -85,7 +85,8 @@ Although being out of the scope of this thesis, this framework is a promising ap
 \textbf{Fairness Assessment} \newline
 Fairness Assessment refers to the post-hoc evaluation of the fairness of model results. The scope of fairness can roughly be divided into the following three categories \parencite{Mehrabi2021}:
 \begin{itemize}
-    \item \textbf{Individual fairness}: Individual fairness refers to the fairness of the model's predictions for individual instances. Examples are the concept of \textit{Fairness through unawareness} \parencite{Kusner2017},  \textit{Fairness through awareness} \parencite{Dwork2012} or \textit{Fairness through counterfactuals} \parencite{Kusner2017}.
+    \item \textbf{Individual fairness}: Individual fairness refers to the fairness of the model's predictions for individual instances. Examples are the concept of \textit{Fairness through unawareness} \parencite{Kusner2017},  \textit{Fairness through awareness} \parencite{Dwork2012} or \textit{Fairness through counterfactuals} \parencite{Kusner2017}. 
+    Counterfactuals (see also \textbf{chapter \ref{subsec:algorithms}}) are a method to assess individual fairness by analyzing how the input features would need to be changed in order to change the model's prediction \parencite{wachter2017}.
     \item \textbf{Group fairness}: Group fairness refers to the fairness of the model's predictions for different groups. % This can be assessed by the measures introduced in \textbf{chapter \ref{subsec:overview}}.
     \item \textbf{Subgroup fairness}: Subgroup fairness combines the aforementioned concepts by attempting to apply group fairness measures to subsets of the underlying dataset \parencite{Kearns2019}
 \end{itemize}
