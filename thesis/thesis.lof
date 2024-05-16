@@ -15,15 +15,13 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Correlation Between the Enrichment Features}}{29}{figure.caption.23}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants}}{30}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA}}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{32}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{33}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{33}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot}}{36}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses}}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance}}{38}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{39}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Differences in Positive Predictions per Model}}{43}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Fairness Adjustments Results}}{45}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History, ROC curve, and Confusion Matrix of the Mortgage Classifier Model}}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces SHAP beeswarm plot}}{36}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Selected SHAP Individual Analyses}}{37}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces LIME Individual Feature Importance}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Differences in Positive Predictions per Model}}{43}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fairness Adjustments Results}}{45}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

@@ -16,21 +16,21 @@ The training process was stopped by an early\_stopping callback. The training re
     \item \textit{Training Loss}: 0.28
     \item \textit{Validation Loss}: 0.28
 \end{itemize}
-The history of the training process is depicted in \textbf{figure \ref{fig:Model_Training_History}}.
+The history of the training process is depicted in subplot a) of \textbf{figure \ref{fig:Model_Training_Results_Panel}}.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_Training_History.png}
-    \caption{Training History of the Mortgage Classifier Model}
-    \medskip
-    \small
-    The training history of the initial mortgage classifier model, showing the training and validation accuracy and loss over the course of the training process. The training accuracy improved constantly until the early\_stopping callback. The validation accuracy constantly improved, suggesting a successful learning process.
-    \label{fig:Model_Training_History}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_Training_History.png}
+%    \caption{Training History of the Mortgage Classifier Model}
+%    \medskip
+%    \small
+%    The training history of the initial mortgage classifier model, showing the training and validation accuracy and loss over the course of the training process. The training accuracy improved constantly until the early\_stopping callback. The validation accuracy constantly improved, suggesting a successful learning process.
+%    \label{fig:Model_Training_History}
+%\end{figure}
 
 The model was then evaluated on the test dataset, which was not seen by the model during training. The results of the performance evaluation (i.e. \textit{metrics \#1}) are shown in \textbf{table \ref{tab:Model_Evaluation}}. The model achieved an \textit{accuracy} of 0.90, a \textit{precision} of 0.88, a \textit{recall} of 0.97, and an \textit{F1-score} of 0.92. 
-As stated in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}}, the original model output were probabilities between 0 and 1. These could be used to calculate ROC AUC and plot the corresponding ROC curve, which can be seen in \textbf{figure \ref{fig:Model_Training_ROC}}. The \textit{ROC-AUC} score was 0.94, indicating a high level of model performance. 
-Converting the probabilities into predictions with a threshold of 0.5 fulfilled the classification requirement. The \textit{confusion matrix} is depicted in \textbf{figure \ref{fig:Model_Confusion_Matrix}}. The model managed to achieve a high number of true positives and true negatives, while the number of false negatives was low. However, the number of false positives was nearly 8\% of all predictions.
+As stated in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}}, the original model output were probabilities between 0 and 1. These could be used to calculate ROC AUC and plot the corresponding ROC curve, which can be seen in subplot b) of \textbf{figure \ref{fig:Model_Training_Results_Panel}}. The \textit{ROC-AUC} score was 0.94, indicating a high level of model performance. 
+Converting the probabilities into predictions with a threshold of 0.5 fulfilled the classification requirement. The \textit{confusion matrix} is depicted in subplot c) of \textbf{figure \ref{fig:Model_Training_Results_Panel}}. The model managed to achieve a high number of true positives and true negatives, while the number of false negatives was low. However, the number of false positives was nearly 8\% of all predictions.
 
 \begin{table}[!htbp]
     \centering
@@ -52,24 +52,67 @@ Converting the probabilities into predictions with a threshold of 0.5 fulfilled 
     \label{tab:Model_Evaluation}
 \end{table}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_ROC_curve.png}
-    \caption{ROC curve of the Mortgage Classifier Model}
-    \medskip
-    \small
-    The ROC curve is significantly above the diagonal baseline, indicating high predictive performance.
-    \label{fig:Model_Training_ROC}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_ROC_curve.png}
+%    \caption{ROC curve of the Mortgage Classifier Model}
+%    \medskip
+%    \small
+%    The ROC curve is significantly above the diagonal baseline, indicating high predictive performance.
+%    \label{fig:Model_Training_ROC}
+%\end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_Confusion_Matrix.png}
-    \caption{Confusion Matrix on the Test Dataset of the Mortgage Classifier Model}
-    \medskip
-    \small
-    The confusion matrix of the mortgage classifier model on the test dataset. The model achieved a high number of true positives and true negatives. The number of false negatives was low, however, false positives made up nearly 8\% of all predictions.
-    \label{fig:Model_Confusion_Matrix}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.85\textwidth]{images/Model_Training/Initial_Confusion_Matrix.png}
+%    \caption{Confusion Matrix on the Test Dataset of the Mortgage Classifier Model}
+%    \medskip
+%    \small
+%    The confusion matrix of the mortgage classifier model on the test dataset. The model achieved a high number of true positives and true negatives. The number of false negatives was low, however, false positives made up nearly 8\% of all predictions.
+%    \label{fig:Model_Confusion_Matrix}
+%\end{figure}
+
+\begin{figure}[!htbp]
+
+    \begin{center}
+
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{a)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/Model_Training/Initial_Training_History_square.png}
+        \end{subfigure}
+    \end{minipage}%
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{b)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/Model_Training/Initial_ROC_curve_square.png}
+        \end{subfigure}
+    \end{minipage}%
+    \hfill\allowbreak%
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{c)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/Model_Training/Initial_Confusion_Matrix.png}
+        \end{subfigure}
+    \end{minipage}
+    \end{center}
+
+    \caption[Training History, ROC curve, and Confusion Matrix of the Mortgage Classifier Model]{\textbf{Training History, ROC curve, and Confusion Matrix of the Mortgage Classifier Model} - a) The training history of the initial mortgage classifier model, showing the training and validation accuracy and loss over the course of the training process. 
+    The training accuracy improved constantly until the early\_stopping callback. The validation accuracy constantly improved, suggesting a successful learning process.
+    b) The ROC curve is significantly above the diagonal baseline, indicating high predictive performance. 
+    c) The confusion matrix of the mortgage classifier model on the test dataset. The model achieved a high number of true positives and true negatives. The number of false negatives was low, however, false positives made up nearly 8\% of all predictions.}
+
+    \label{fig:Model_Training_Results_Panel}
+
 \end{figure}
 
 \textbf{Fairness Assessment}
