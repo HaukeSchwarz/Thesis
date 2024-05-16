@@ -11,11 +11,15 @@ The methodology used in this research is summarized in the flowchart in \textbf{
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{CH03_Methodology.jpg}
-    \caption{Methodology}
-    \caption*{The procedure chosen for this thesis follows an iterative approach: An initial model for classification of mortgage (dis)approval is trained and tested, serving as a \textit{Benchmark}. 
+%    \caption{Methodology}
+%    \caption*{The procedure chosen for this thesis follows an iterative approach: An initial model for classification of mortgage (dis)approval is trained and tested, serving as a \textit{Benchmark}. 
+%    For this benchmark, fairness and performance are assessed based on a predefined set of metrics, \textit{metrics \#1} for model performance and \textit{metrics \#2} for model fairness. 
+%    Additionally, different \textit{Explainability} techniques will be leveraged to gain insight into the decision criteria underlying the predictions of the benchmark model. 
+%    Subsequently, three different \textit{Fairness Adjustments} are made to the model and the data preparation process iteratively, each aiming to improve one or more of the metrics. 
+%    The results of each iteration are once again evaluated using the pre-defined metric sets.}
+    \caption[Methodology]{\textbf{Methodology} - The procedure chosen for this thesis follows an iterative approach: An initial model for classification of mortgage (dis)approval is trained and tested, serving as a \textit{Benchmark}. 
     For this benchmark, fairness and performance are assessed based on a predefined set of metrics, \textit{metrics \#1} for model performance and \textit{metrics \#2} for model fairness. 
-    Additionally, different \textit{Explainability} techniques will be leveraged to gain insight into the decision criteria underlying the predictions of the benchmark model. 
-    Subsequently, three different \textit{Fairness Adjustments} are made to the model and the data preparation process iteratively, each aiming to improve one or more of the metrics. 
+    Additionally, different \textit{Explainability} techniques will be leveraged to gain insight into the decision criteria underlying the predictions of the benchmark model. Subsequently, three different \textit{Fairness Adjustments} are made to the model and the data preparation process iteratively, each aiming to improve one or more of the metrics. 
     The results of each iteration are once again evaluated using the pre-defined metric sets.}
     \label{fig:CH03_Methodology}
 \end{figure}
@@ -46,8 +50,10 @@ Initially, a model aiming to predict mortgage approval as a classification task 
     \textbf{Non-trainable params} & & 0 \\
     \hline
     \end{tabularx}
-    \caption{Summary of the Neural Network}
-    \caption*{The neural network consisted of 5 dense layers (with 32, 64, 128, 64, and 1 neuron per layer), with 3 dropout layers (with dropout rates of 0.1, 0.25, and 0.1 respectively) in between. L2 regularization (0.001) is utilized in each dense layer. The total number of parameters is 19,393.}
+%    \caption{Summary of the Neural Network}
+%    \caption*{The neural network consisted of 5 dense layers (with 32, 64, 128, 64, and 1 neuron per layer), with 3 dropout layers (with dropout rates of 0.1, 0.25, and 0.1 respectively) in between. L2 regularization (0.001) is utilized in each dense layer. The total number of parameters is 19,393.}
+    \medskip   
+    \caption[Summary of the Neural Network]{\textbf{Summary of the Neural Network} - The neural network consisted of 5 dense layers (with 32, 64, 128, 64, and 1 neuron per layer), with 3 dropout layers (with dropout rates of 0.1, 0.25, and 0.1 respectively) in between. L2 regularization (0.001) is utilized in each dense layer. The total number of parameters is 19,393.}
     \label{tab:CH03_Model_Details}
 \end{table}
 
