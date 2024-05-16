@@ -1947,14 +1947,6 @@ INPUT ./images/CHXX_Target_Variable_Distribution.png
 INPUT images/CHXX_Target_Variable_Distribution.png
 INPUT ./images/CHXX_Target_Variable_Distribution.png
 INPUT ./images/CHXX_Target_Variable_Distribution.png
-INPUT ./images/CHXX_Target_Correlation_Categorical.png
-INPUT ./images/CHXX_Target_Correlation_Categorical.png
-INPUT images/CHXX_Target_Correlation_Categorical.png
-INPUT ./images/CHXX_Target_Correlation_Categorical.png
-INPUT ./images/CHXX_Target_Correlation_Categorical.png
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT ./images/CHXX_Target_Correlation_Numerical.png
 INPUT ./images/CHXX_Target_Correlation_Numerical.png
 INPUT images/CHXX_Target_Correlation_Numerical.png
@@ -1965,6 +1957,7 @@ INPUT ./images/CHXX_Numerical_Distributions_2_IR.png
 INPUT images/CHXX_Numerical_Distributions_2_IR.png
 INPUT ./images/CHXX_Numerical_Distributions_2_IR.png
 INPUT ./images/CHXX_Numerical_Distributions_2_IR.png
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./images/CHXX_Numerical_Distributions_2_LTVR.png
 INPUT ./images/CHXX_Numerical_Distributions_2_LTVR.png
 INPUT images/CHXX_Numerical_Distributions_2_LTVR.png

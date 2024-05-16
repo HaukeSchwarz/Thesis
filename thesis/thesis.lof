@@ -8,23 +8,22 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology}}{17}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces HMDA: Distribution of the Target Variable}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation of the Target Variable with Categorical Features\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Correlation Between the Numerical Features\relax }}{24}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Histograms of the Numerical Features}}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces HMDA: Distributions of the Categorical Features}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Loan Grant by Protected Attribute}}{27}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Correlation Between the Enrichment Features}}{29}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants}}{30}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Enrichment Data EDA}}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{32}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{33}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{33}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces SHAP beeswarm plot}}{36}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Selected SHAP Individual Analyses}}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces LIME Individual Feature Importance}}{38}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{39}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Differences in Positive Predictions per Model}}{43}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Fairness Adjustments Results}}{45}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation Between the Numerical Features}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Histograms of the Numerical Features}}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Distributions of the Categorical Features}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Loan Grant by Protected Attribute}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Correlation Between the Enrichment Features}}{29}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants}}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History of the Mortgage Classifier Model\relax }}{32}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC curve of the Mortgage Classifier Model\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Confusion Matrix on the Test Dataset of the Mortgage Classifier Model\relax }}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces SHAP beeswarm plot}}{36}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected SHAP Individual Analyses}}{37}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LIME Individual Feature Importance}}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Differences in Positive Predictions per Model}}{43}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Fairness Adjustments Results}}{45}{figure.caption.43}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
