@@ -31,9 +31,12 @@ In order to clean and reshape the data in a easily analyzable format, several st
     \textbf{interest\_rate} and \textbf{loan\_to\_value\_ratio} & Imputation & Mean Imputation to tackle missingness \\
     \hline
     \end{tabularx}
-    \caption{Transformation Steps in the HMDA Mortgage Data}
-    \small
-    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+    \medskip
+%    \caption{Transformation Steps in the HMDA Mortgage Data}
+%    \small
+%    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+%    \caption[Explainability Overview, from \cite{SALEEM2022165}]{\textbf{Explainability Overview, from \cite{SALEEM2022165}} - The concept of \textit{explainability} must be understood in the context of similar and related concepts like \textit{understandability}.}
+    \caption[Transformation Steps in the HMDA Mortgage Data]{\textbf{Transformation Steps in the HMDA Mortgage Data} - Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.}
     \label{tab:HMDA_transformation_summary}
 \end{table}
 
@@ -43,10 +46,12 @@ All features were \textbf{cast} to their appropriate types \textit{(county\_code
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/CH03_Missingno_Completeness.png}
-    \caption{Visual Inspection of Missingness in the missingno Package}
+%    \caption{Visual Inspection of Missingness in the missingno Package}
+%    \medskip
+%    \small
+%    Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.
     \medskip
-    \small
-    Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.
+    \caption[Visual Inspection of Missingness in the missingno Package]{\textbf{Visual Inspection of Missingness in the missingno Package} - Visual Inspection of Missingness shows that some datapoints seem to be missing at random in \textit{interest\_rate}, \textit{loan\_to\_value\_ratio}, and \textit{debt\_to\_income\_ratio}, while the other features expose no or very little missingness.}
     \label{fig:CH03_Missingno_Completeness}
 \end{figure}
 
@@ -92,9 +97,11 @@ These steps add to the list of transformation steps that were applied to the HMD
     \textbf{Data} & Splitting & Train, Test, and Validation sets for model training and testing \\
     \hline
     \end{tabularx}
-    \caption{Transformation Steps in the HMDA Mortgage Data (including preparation for model training and testing)}
-    \small
-    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+%    \caption{Transformation Steps in the HMDA Mortgage Data (including preparation for model training and testing)}
+%    \small
+%    Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.
+    \medskip
+    \caption[Transformation Steps in the HMDA Mortgage Data (including preparation for model training and testing)]{\textbf{Transformation Steps in the HMDA Mortgage Data (including preparation for model training and testing)} - Several transformation steps have been applied to the HMDA mortgage data in order to make it easily analyzable.}
     \label{tab:HMDA_transformation_summary_2}
 \end{table}
 
@@ -126,9 +133,11 @@ In order to clean and reshape the data in a easily analyzable format, several st
     \textbf{Merging} & Merging & Merge all datasets into a single dataframe \\
     \hline
     \end{tabularx}
-    \caption{Transformation Steps in the Enrichment Data}
-    \small
-    Several transformation steps have been applied to the geographical enrichment data in order to make it easily analyzable.
+%    \caption{Transformation Steps in the Enrichment Data}
+%    \small
+%    Several transformation steps have been applied to the geographical enrichment data in order to make it easily analyzable.
+    \medskip
+    \caption[Transformation Steps in the Enrichment Data]{\textbf{Transformation Steps in the Enrichment Data} - Several transformation steps have been applied to the geographical enrichment data in order to make it easily analyzable.}
     \label{tab:enrichment_transformation_summary}
 \end{table}
 
