@@ -416,38 +416,50 @@ In terms of \textit{fairness}, no significant optimizations could be achieved. T
 \textbf{Figure \ref{fig:Bar_Grant_per_Race}} shows that the differences in loan grants between \textit{White} and \textit{Black or African American} applicants was not substantially reduced by any of the iterations, with the calibrated equalized odds algorithm even increasing the difference.
 
 \begin{figure}[!htbp]
+
     \centering
-    \begin{minipage}{0.5\textwidth}
+
+    \begin{minipage}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/initial.png}
-        \small
-        Benchmark Model
-    \end{minipage}\hfill
-    \begin{minipage}{0.5\textwidth}
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{a)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/loan_grants_by_protected_attributes/initial.png}
+        \end{subfigure}
+    \end{minipage}%
+    \begin{minipage}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/reweighted.png}
-        \small
-        Reweighing
-    \end{minipage}
-    
-    \begin{minipage}{0.5\textwidth}
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{b)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/loan_grants_by_protected_attributes/reweighted.png}
+        \end{subfigure}
+    \end{minipage}%
+    \hfill\allowbreak%
+    \begin{minipage}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/correlation_removed.png}
-        \small
-        Correlation Removal
-    \end{minipage}\hfill
-    \begin{minipage}{0.5\textwidth}
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{c)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/loan_grants_by_protected_attributes/correlation_removed.png}
+        \end{subfigure}
+    \end{minipage}%
+    \begin{minipage}[b]{0.5\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/loan_grants_by_protected_attributes/calibrated_eqodds.png} 
-        \small
-        Calibrated Equalized Odds
-    \end{minipage}
-    
-    \caption{Differences in Positive Predictions per Model}
+        \begin{subfigure}[t]{0.06\textwidth}
+            \textbf{d)}
+        \end{subfigure}
+        \begin{subfigure}[t]{0.9\textwidth}
+            \includegraphics[width=\linewidth, valign=t]{images/loan_grants_by_protected_attributes/calibrated_eqodds.png}
+        \end{subfigure}
+    \end{minipage}%
+    \caption[Differences in Positive Predictions per Model]{\textbf{Differences in Positive Predictions per Model} - Only the \textit{Calibrated Equalized Odds} model d), which exhibits a higher amount of overall predicted grants, changed the ratio of granted mortgages among the races significantly.
+    The \textit{reweighted} model b) and the \textit{correlation removal} model c) did not significantly change the ratio.}
     \label{fig:Bar_Grant_per_Race}
-    \medskip
-    \small
-    Apart from the Calibrated Equalized Odds model, which exhibits a higher amount of overall predicted grants, none of the iterations were able to substantially reduce the disparity in granted loans between races.
+
 \end{figure}
 
 \textbf{Figure \ref{fig:Fairness_Adjustments_Results_Line}} shows the results of the fairness adjustments in terms of the \textit{disparities} of the model. The disparities were calculated for the \textit{true positive rate}, the \textit{false positive rate}, the \textit{true negative rate}, and the \textit{false negative rate}. 

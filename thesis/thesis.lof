@@ -23,7 +23,7 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Selected SHAP Individual Analyses}}{37}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces LIME Individual Feature Importance}}{38}{figure.caption.33}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{39}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Differences in Positive Predictions per Model\relax }}{43}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Differences in Positive Predictions per Model}}{43}{figure.caption.42}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Fairness Adjustments Results}}{45}{figure.caption.43}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
