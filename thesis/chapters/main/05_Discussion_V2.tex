@@ -1,0 +1,49 @@
+\chapter{Conclusion}\label{ch:discussion}
+
+\section{Discussion, Interpretation, and Limitations}\label{sec:discussion}
+
+% Research Question 
+
+% Short Findings Summary
+
+% Interpretation
+%   Introductory Paragraph
+
+\textbf{Interpretation of the EDA}
+
+
+
+\textbf{Interpretation of the Results}
+
+
+
+\textbf{Interpretation Summary}
+
+
+
+\textbf{Limitations}
+
+Limitations of the research conducted in this thesis can be found in the \textbf{data} used, the \textbf{models} applied, and the \textbf{fairness adjustments} conducted.
+
+Although the \textbf{data} selection process was thorough and the data was cleaned and preprocessed following strict criteria, only focusing the analysis on five American states naturally limits the generalizability of the results for other geographies within America and internationally.
+In terms of the features used it must be noted that with missingness in the \textit{debt\_to\_income\_ratio} appearing to be the most influential factor in the decision-making process, alternative approaches to handling missing data might have yielded different results.
+Using more of the 99 features available in the HMDA dataset was not feasible from the standpoint of computational efficiency in this thesis but might have also yielded different results, as the assumed unfairness in the data might be more deeply rooted in other features not analyzed in this thesis.
+Neither for the HMDA data, nor for the geographical enrichment data, causation can be assumed from the results presented in this thesis. The correlations found in the data might be due to other factors not analyzed in this thesis.
+
+While the \textbf{model} choice of the neural network detailed in \textbf{table \ref{tab:CH03_Model_Details}} can be considered appropriate because of the widespread application of such models in practice, its generally good performance and it being a typical example of a \textit{black-box} algorithm, other models might have yielded different results.
+Specifically, it has not been tested whether a less complex might have been able to achieve comparable results without the trade-off in inherent explainability.
+
+The \textbf{fairness adjustments} conducted in this thesis were limited to the three iterations detailed in \textbf{chapter \ref{subsec:Iterations}}. While these adjustments were chosen based on their theoretical soundness, other fairness adjustments might have been appropriate for this task.
+For example, no \textit{in-processing} algorithm was applied to keep the model used identical and therefore comparable across the iterations. This might have contributed to none of the fairness adjustments being able to fully mitigate the unfairness present in the data.
+For the \textit{calibrated equalized odds} model, it must be noted that the authors themselves showed that enforcing calibration and equalized odds at the same time might impact performance in certain settings \parencite{Pleiss2017}, which can be assumed to have been the case in this thesis as well, given the comparably bad results of this adjustment.
+
+Revisiting the research questions of this thesis (see \textbf{chapter \ref{ch:Introduction}}), it must be concluded that the initial aim of this work could only be achieved in parts. 
+While the exploratory data analysis, coupled with the analysis of the geographical enrichment data was useful to \textit{detect} and partly \textit{explain} unfairness within the data, the \textit{mitigation} of this unfairness proved hard to achieve. 
+
+\section{Recommendations and Conclusion}\label{sec:conclusion}
+
+\textbf{Recommendations and Outlook}
+
+
+
+\textbf{Concluding Summary}

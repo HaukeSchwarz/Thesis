@@ -2467,11 +2467,7 @@
     <bcf:citekey order="103" intorder="1">Weerts2023</bcf:citekey>
     <bcf:citekey order="104" intorder="1">Pleiss2017</bcf:citekey>
     <bcf:citekey order="105" intorder="1">Krishna2022</bcf:citekey>
-    <bcf:citekey order="106" intorder="1">So2022</bcf:citekey>
-    <bcf:citekey order="107" intorder="1">Martinez2021</bcf:citekey>
-    <bcf:citekey order="108" intorder="1">Pleiss2017</bcf:citekey>
-    <bcf:citekey order="109" intorder="1">Ghoba</bcf:citekey>
-    <bcf:citekey order="110" intorder="1">Kim2023</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">Pleiss2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

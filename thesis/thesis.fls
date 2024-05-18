@@ -2099,10 +2099,10 @@ INPUT ./images/CHXX_UPDATE_Results_Line.png
 INPUT images/CHXX_UPDATE_Results_Line.png
 INPUT ./images/CHXX_UPDATE_Results_Line.png
 INPUT ./images/CHXX_UPDATE_Results_Line.png
-INPUT ./chapters/main/05_Discussion.tex
-INPUT chapters/main/05_Discussion.tex
-INPUT ./chapters/main/05_Discussion.tex
-INPUT chapters/main/05_Discussion.tex
+INPUT ./chapters/main/05_Discussion_V2.tex
+INPUT chapters/main/05_Discussion_V2.tex
+INPUT ./chapters/main/05_Discussion_V2.tex
+INPUT chapters/main/05_Discussion_V2.tex
 INPUT thesis.aux
 INPUT thesis.run.xml
 OUTPUT thesis.run.xml
