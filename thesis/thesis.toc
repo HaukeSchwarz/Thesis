@@ -6,7 +6,7 @@
 \contentsline {chapter}{\nonumberline List of Figures}{IV}{chapter*.4}%
 \contentsline {chapter}{\nonumberline List of Tables}{V}{chapter*.5}%
 \contentsline {chapter}{List of Formulas}{VI}{chapter*.6}%
-\contentsline {chapter}{List of Abbreviations}{VIII}{table.0.1}%
+\contentsline {chapter}{List of Abbreviations}{IX}{table.0.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Fairness in Algorithmic Decision Making}{2}{section.2.1}%
@@ -35,6 +35,6 @@
 \contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Discussion, Interpretation, and Limitations}{47}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Recommendations and Conclusion}{48}{section.5.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{49}{chapter*.43}%
+\contentsline {chapter}{\nonumberline Bibliography}{51}{chapter*.43}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

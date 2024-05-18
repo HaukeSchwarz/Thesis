@@ -87,6 +87,38 @@
       \verb https://doi.org/10.32996/jbms.2024.6.2.6
       \endverb
     \endentry
+    \entry{Altman2023}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ae3c719946f090ece232b13d46b0def}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8ae3c719946f090ece232b13d46b0def}
+      \strng{fullhash}{8ae3c719946f090ece232b13d46b0def}
+      \strng{bibnamehash}{8ae3c719946f090ece232b13d46b0def}
+      \strng{authorbibnamehash}{8ae3c719946f090ece232b13d46b0def}
+      \strng{authornamehash}{8ae3c719946f090ece232b13d46b0def}
+      \strng{authorfullhash}{8ae3c719946f090ece232b13d46b0def}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{OpenAI}
+      \field{month}{02}
+      \field{title}{Planning for AGI and beyond}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://openai.com/index/planning-for-agi-and-beyond/
+      \endverb
+      \verb{url}
+      \verb https://openai.com/index/planning-for-agi-and-beyond/
+      \endverb
+    \endentry
     \entry{Anderson2023}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c8a174520f512c1ef75018c34d89ccf4}{%
@@ -274,6 +306,83 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1566253519308103
       \endverb
       \keyw{Explainable Artificial Intelligence,Machine Learning,Deep Learning,Data Fusion,Interpretability,Comprehensibility,Transparency,Privacy,Fairness,Accountability,Responsible Artificial Intelligence}
+    \endentry
+    \entry{beck2024}{misc}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=5b05dfa04b4b93c454478fcca783ee91}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7703d33831c93661ff566a98e9c029d6}{%
+           family={Pöppel},
+           familyi={P\bibinitperiod},
+           given={Korbinian},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b36fed8f7a0a602139b6d67aaa887e1}{%
+           family={Spanring},
+           familyi={S\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f331b5a584ef0eb7ab62b16ddf9fc0a8}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78da98b2489f2ae99b4d933370b9303f}{%
+           family={Prudnikova},
+           familyi={P\bibinitperiod},
+           given={Oleksandra},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d93f88df1acd17907db2b3033322d2dc}{%
+           family={Kopp},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd69f2d35665eb16375f92c741a26393}{%
+           family={Klambauer},
+           familyi={K\bibinitperiod},
+           given={Günter},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4954f897f0e2228c69f8903b2e1e25d1}{%
+           family={Brandstetter},
+           familyi={B\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a6d048ec4dafc4942083c5a0f5dc041d}
+      \strng{fullhash}{730d85f5a316ff3e7e9525ec78fd769a}
+      \strng{bibnamehash}{a6d048ec4dafc4942083c5a0f5dc041d}
+      \strng{authorbibnamehash}{a6d048ec4dafc4942083c5a0f5dc041d}
+      \strng{authornamehash}{a6d048ec4dafc4942083c5a0f5dc041d}
+      \strng{authorfullhash}{730d85f5a316ff3e7e9525ec78fd769a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{xLSTM: Extended Long Short-Term Memory}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2405.04517
+      \endverb
     \endentry
     \entry{Bellamy2019}{article}{}
       \name{author}{18}{}{%
@@ -1347,12 +1456,12 @@
            given={Finale},
            giveni={F\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+        {{un=1,uniquepart=given,hash=a11a6718c039f3e3f3f31167e5094c10}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Been},
            giveni={B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{institution}{1}{%
         {arXiv}%
@@ -1796,6 +1905,38 @@
       \endverb
       \keyw{Computer Science - Machine Learning}
     \endentry
+    \entry{Harris2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d788a7f74a9cadb18cb59753f84bdd8}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \strng{fullhash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \strng{bibnamehash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \strng{authorbibnamehash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \strng{authornamehash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \strng{authorfullhash}{8d788a7f74a9cadb18cb59753f84bdd8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Sun}
+      \field{month}{05}
+      \field{title}{AI DO! People will get into ‘deep relationships’ with AI bots as the technology becomes more powerful, Google boss predicts}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.thesun.co.uk/tech/27940600/google-ai-deep-relationships-sundar-pichai/
+      \endverb
+      \verb{url}
+      \verb https://www.thesun.co.uk/tech/27940600/google-ai-deep-relationships-sundar-pichai/
+      \endverb
+    \endentry
     \entry{Hodges2024}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=476638e47849c2f757532f5afd44cde4}{%
@@ -2193,12 +2334,12 @@
     \endentry
     \entry{Kim2016}{inproceedings}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=a11a6718c039f3e3f3f31167e5094c10}{%
+        {{un=1,uniquepart=given,hash=a11a6718c039f3e3f3f31167e5094c10}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Been},
            giveni={B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=a3d9b23b97482af55601d7db22cbf99e}{%
            family={Khanna},
            familyi={K\bibinitperiod},
@@ -2266,6 +2407,46 @@
       \endverb
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2016/file/5680522b8e2bb01943234bce7bf84534-Paper.pdf
+      \endverb
+    \endentry
+    \entry{Kim2023}{article}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=1f9696b79009af504e326d67b77929db}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Savina\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=4161c1f4d55a11c92418ee4d8db9306d}{%
+           family={Andreeva},
+           familyi={A\bibinitperiod},
+           given={Galina},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f29901f223935f4f58b02d3ebe8316a4}{%
+           family={Rovatsos},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{208bb7316f707a3641d2676dbdde5fab}
+      \strng{fullhash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{bibnamehash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{authorbibnamehash}{98e5e8d1fcc25003b90679fe85505765}
+      \strng{authornamehash}{208bb7316f707a3641d2676dbdde5fab}
+      \strng{authorfullhash}{98e5e8d1fcc25003b90679fe85505765}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{The 40-year journey for fairness in credit: A systematic review and future research directions}
+      \field{year}{2023}
+      \verb{doi}
+      \verb http://dx.doi.org/10.2139/ssrn.4669379
       \endverb
     \endentry
     \entry{Krishna2022}{article}{}

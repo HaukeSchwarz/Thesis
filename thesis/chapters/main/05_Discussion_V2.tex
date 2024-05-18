@@ -2,12 +2,17 @@
 
 \section{Discussion, Interpretation, and Limitations}\label{sec:discussion}
 
-% Research Question 
+The \textbf{research question} of this thesis included investigating the fairness of a machine learning model in mortgage lending and exploring the potential of explainability algorithms to detect and mitigate unfairness in the models:
+
+\textit{“Can underlying unfairness in mortgage decision-making be detected, explained, and iteratively mitigated without sacrificing predictive performance?"}
 
 % Short Findings Summary
 
-% Interpretation
-%   Introductory Paragraph
+% Interpretation - Introductory Paragraph
+
+\textbf{Interpretation of Fairness and Explainability}
+
+
 
 \textbf{Interpretation of the EDA}
 
@@ -44,6 +49,31 @@ While the exploratory data analysis, coupled with the analysis of the geographic
 
 \textbf{Recommendations and Outlook}
 
+These results yield important implications for the practical implementation of machine learning models, both in mortgage lending and generally. Not only must it be taken into account that automated decision-making in critical areas such as mortgage lending might learn from and amplify existing inequalities, but also that these inequalities might not be easily uncovered, even when attempting to explain the decision-making process of the models with common algorithmic techniques.
+This implies that before the widespread application of machine learning models in mortgage lending (or, in fact, any are where the decision-making might have critical impact on individuals), a thorough analysis of the data used and the models applied must be conducted to ensure that the models do not amplify existing inequalities.
 
+At the same time, the development of Artificial Intelligence progresses in a staggering and still increasing pace. 
+By the time of writing this thesis, several multimodal Large Language Models (LLMs) are available to the broad public (examples being GPT-4o by OpenAI\footnote{https://openai.com/index/hello-gpt-4o/}, Google Gemini\footnote{https://deepmind.google/technologies/gemini/}, or the Microsoft Copilot\footnote{https://copilot.microsoft.com/}), while other promising model architectures like the Extended Long Short-Term Memory (xLSTM) are already challenging the transformer architecture \parencite{beck2024}.
+These models are not only more powerful in terms of predictive performance but also in terms of their complexity and therefore their \textit{black-box} nature.
+In times where such AI models are becoming an integral part of everyone's daily life to an extent that companies like OpenAI are already planning for the introduction of Artificial General Intelligence (AGI) \parencite{Altman2023}, while Google assumes that users will form 'deep relationships' with AI products \parencite{Harris2024}, it becomes very apparent that the need for explainability and fairness in AI models is dire due to their sheer impact.
+It must be assumed that Artificial Intelligence will be applied to even more sensitive areas in the future (examples being healthcare, military, or the justice system). Consequences of unfairness in the models can be even more severe than in mortgage lending in these cases.
+While some researchers are already tackling this issue by integrating explainability aspects into their work (a recent practical example being the CIMPLE project to tackle information manipulation\footnote{https://www.chistera.eu/projects/cimple}), additional research and practical application is required not only in the field of explainability but specifically also in its intersection with fairness considerations.
+
+This is where this thesis aims to contribute to the field. By incorporating both explainability and fairness considerations into the model evaluation process, it aims not only to raise awareness that both concepts are important both in their own right but also in their intersection, while trying to provide a practical example of how these concepts can be applied in a real-world setting.
+While the methodology of this thesis was focused specifically on unfairness in mortgage lending and does not provide a one-size-fits-all solution, the approach might be generalized to other areas after considering how to specifically adjust it to the given problem:
+\begin{itemize}
+    \item Is the problem one of binary classification or of a different nature?
+    \item Are there subgroups that can be expected to be treated unfairly?
+    \item Must the explainability algorithms be adjusted to the nature of the available data?
+    \item Are the used fairness metrics feasible for the given problem?
+\end{itemize}
+For the data in this thesis, the procedure was feasible, because the data was binary, the subgroups were clearly defined and contained one (\textbf{Black or African American}) that could be expected to be systematically discriminated against), the explainability algorithms were applicable to the data, and the fairness metrics were chosen specifically for subgroup fairness. 
+However, as already stated in the \textbf{limitations} considerations (see \textbf{section \ref{sec:discussion}}), the attempted fairness adjustments might not have been the most appropriate for the given problem.
+
+While this thesis used a combination of different approaches to the topic of fairness, one way to truly improve the fairness of the models might be to include an even broader scope in terms of research focuses.
+As Kim et al. \parencite{Kim2023} suggest in their review of fairness in credit, true multidisciplinary research is needed to tackle the issue of fairness in credit scoring.
+But even within the narrower scope of this thesis, further research might be conducted to improve the fairness of the models applied. For example, the application of different fairness adjustments, the use of different models, or the inclusion of more features in the analysis might yield different results.
+Other opportunities for future research close to the scope of this thesis might include the application of a different geographical scope, different target variables (e.g. the interest rate of the mortgage), or a stronger focus on causal inference to uncover the underlying reasons for the unfairness present in the data.
+In a broader scope, a generalization of a methodology similar to the one applied in this thesis to other areas of machine learning might be a promising approach to improve the fairness of models in general.
 
 \textbf{Concluding Summary}
