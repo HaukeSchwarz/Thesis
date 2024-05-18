@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1715942825 "thesis.bcf" "thesis.bbl" "thesis" 1715942865 0
+["biber thesis"] 1715942825 "thesis.bcf" "thesis.bbl" "thesis" 1716031024 0
   "./literature/thesis_lib.bib" 1714591998 128519 e8daa5dabefcb36423fd2b2638616c07 ""
-  "thesis.bcf" 1715942864 115050 84012403a488698fe31faf03359f128f "pdflatex"
+  "thesis.bcf" 1716031023 115050 84012403a488698fe31faf03359f128f "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1715942856 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1715942865 0
+["pdflatex"] 1716031015 "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" "thesis.pdf" "thesis" 1716031024 0
   "c:/Users/Hauke/OneDrive - ucp.pt/04_Thesis/00_GitHub/Thesis/thesis/thesis.tex" 1715941920 7187 a12fba660864031cbc7cb16caba9dc51 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1659260033 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc" 1659260033 2996 f3810729a083d9d7261cfab13ff32737 ""
@@ -288,7 +288,7 @@
   "chapters/main/XX_Results.tex" 1715887483 21368 60fdffd292935fc4f0edddcb0112ae88 ""
   "chapters/main/subchapters_separate/Data.tex" 1715854937 15680 0b92d34be14ff15ac97d1375fea44ca0 ""
   "chapters/main/subchapters_separate/Methodology.tex" 1715855087 18537 912389ea03b3481360fa23834172a3bf ""
-  "chapters/main/subchapters_separate/Results/Results_V2.tex" 1715942815 40825 c840a6ab17724656cc3433fd311eba4f ""
+  "chapters/main/subchapters_separate/Results/Results_V2.tex" 1716030996 41008 e94fb0cac6b17b552b95cb8961cf0a58 ""
   "chapters/other/pre/abstract.tex" 1714573390 2240 68d3ade04b6ec240ba985fbe3eb479a4 ""
   "chapters/other/pre/abstractp.tex" 1713778827 479 61377af232ebc811e76a3396f15a8455 ""
   "chapters/other/pre/cover_page_v1_pdf.pdf" 1712504434 129017 90b019e8d16bb417e4b2594657f0fc01 ""
@@ -304,7 +304,7 @@
   "images/CHXX_Target_Correlation_Numerical.png" 1715872502 36519 42f34d08b6b7d86623e7a1545c7c05ab ""
   "images/CHXX_Target_Variable_Distribution.png" 1714139981 17038 60094e51cb28f1094e8cf3fae73ae5d2 ""
   "images/CHXX_UPDATE_Results_Line.png" 1714397050 38523 084708abadc3cb0045caa4fdc3ae3d24 ""
-  "images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png" 1712577983 20651 b3aad4fa1d76ec9b020c032ddd285508 ""
+  "images/CHXX_UPDATE_Surrogate_SHAP_LIME_combined.png" 1716030801 50192 24f609511cd823c5e5fea8b973bde72c ""
   "images/HMDA_features/HMDA_features_dtir.png" 1715595808 41573 eb7cf9c008f5c40f15938dff43302ab1 ""
   "images/HMDA_features/HMDA_features_lien.png" 1714144583 18649 6170c00db2897e651b72c6cbba6d55fe ""
   "images/HMDA_features/HMDA_features_race.png" 1714144546 19619 cb64272115763815ffb78aeb731ba6a6 ""
@@ -334,14 +334,14 @@
   "settings/links.tex" 1709140638 206 205516bafdc36e3e8c031583cbe2e452 ""
   "settings/listings.tex" 1709140638 4823 0c7e7c84d1405601f8ddcf270bb408bc ""
   "settings/tables.tex" 1709140638 575 5f8a038d049f2e6ed965df6eca5abe04 ""
-  "thesis.aux" 1715942864 49217 75d5a1e6553ac1e7706f5785c9c8279a "pdflatex"
+  "thesis.aux" 1716031023 49217 dd6e0e8ad95481546fbcbba6ac33a4fb "pdflatex"
   "thesis.bbl" 1715942838 217659 66cc458f12c158e0ecd31108a4910c55 "biber thesis"
-  "thesis.frm" 1715942864 907 302f5fa20eb30d11e6d033a2e6819857 "pdflatex"
-  "thesis.lof" 1715942864 2514 ad96ae64fb83cd9b84711cfeb3ef4491 "pdflatex"
-  "thesis.lot" 1715942864 2325 20d699a5d55dc93c28c9e36ed2c9e548 "pdflatex"
-  "thesis.run.xml" 1715942864 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
+  "thesis.frm" 1716031023 907 302f5fa20eb30d11e6d033a2e6819857 "pdflatex"
+  "thesis.lof" 1716031023 2514 ad96ae64fb83cd9b84711cfeb3ef4491 "pdflatex"
+  "thesis.lot" 1716031023 2325 a2ed487f2c905eb306a7386c72836a9d "pdflatex"
+  "thesis.run.xml" 1716031023 2342 c771b7fe7dd5467d942a8ba870ffea90 "pdflatex"
   "thesis.tex" 1715941920 7187 a12fba660864031cbc7cb16caba9dc51 ""
-  "thesis.toc" 1715942864 3150 15ac43c72e98fdda1e4be819ec5918c8 "pdflatex"
+  "thesis.toc" 1716031023 3150 0c5e50a31726f9ab9c767d54536edd75 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.bcf"
