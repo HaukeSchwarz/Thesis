@@ -12,9 +12,16 @@ The \textbf{research question} of this thesis included investigating the fairnes
 
 \textbf{Interpretation of Fairness and Explainability}
 
+When comparing the findings of this thesis to the research conducted by Martinez and Kircher \parencite{Martinez2021}, one common factor becomes apparent. Even though the differences in granted mortgages do not vary as extreme between the races analyzed (Martinez and Kircher report \textbf{Black or African American} applicants to have a 40\% - 80\% higher risk of having their applications denied), the factors influencing the decision-making process are similar.
+Just as the findings of the explainability algorithms displayed in \textbf{chapter \ref{subsec:Explainability}} suggest, the \textit{debt to income ratio} appeared to be a major factor in the decision-making process, with \textbf{Black or African American} applicants having a higher risk of being denied a mortgage due to this factor.
+While a direct comparison of the results is not possible due to the different datasets used and the different filters applied, the similarities in the factors influencing the decision-making process suggest that the underlying unfairness in mortgage decision-making is a systemic issue that is not easily mitigated.
 
+When taking a historical perspective, the findings of this thesis are not surprising. The systemic discrimination against \textbf{Black or African American} applicants in mortgage lending has been well-documented in the past. 
+Different studies on less recent versions of the HMDA data, such as those by Cherian (\cite{Cherian2014} for the years 1992 to 2003) or Cyree and Winters (\cite{Cyree2023} for the years 2007 to 2016) have shown that \textbf{Black or African American} applicants are systematically discriminated against in mortgage lending.
+The findings of this thesis suggest that this discrimination is still present in the data used for the analysis, even though the data was collected in 2022, which supports the assumption that a big part of that discrimination is not "direct" but rather results from skin color being related to other detrimental decision factors, as has been assessed in \textbf{chapter \ref{subsec:Enrichment_Data}}.
+It can be assumed that a more granular control for these factors might have provided a more detailed explanation of the unfairness present in the data. This is where studies like the one by Delis and Papadopoulos come in. They suggest that, even though discrimination cannot be ruled out for mortgage lending decisions, a tighter control of the omitted variables might show that race alone is not the deciding factor in the decision-making process \parencite{Delis2019}.
 
-\textbf{Interpretation of the EDA}
+\textbf{Interpretation of the EDA} % required in this form?
 
 
 
@@ -67,7 +74,7 @@ While the methodology of this thesis was focused specifically on unfairness in m
     \item Must the explainability algorithms be adjusted to the nature of the available data?
     \item Are the used fairness metrics feasible for the given problem?
 \end{itemize}
-For the data in this thesis, the procedure was feasible, because the data was binary, the subgroups were clearly defined and contained one (\textbf{Black or African American}) that could be expected to be systematically discriminated against), the explainability algorithms were applicable to the data, and the fairness metrics were chosen specifically for subgroup fairness. 
+For the data in this thesis, the procedure was feasible, because the data was binary, the subgroups were clearly defined and contained one (\textbf{Black or African American}) that could be expected to be systematically discriminated against, the explainability algorithms were applicable to the data, and the fairness metrics were chosen specifically for subgroup fairness. 
 However, as already stated in the \textbf{limitations} considerations (see \textbf{section \ref{sec:discussion}}), the attempted fairness adjustments might not have been the most appropriate for the given problem.
 
 While this thesis used a combination of different approaches to the topic of fairness, one way to truly improve the fairness of the models might be to include an even broader scope in terms of research focuses.

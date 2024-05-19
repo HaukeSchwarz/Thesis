@@ -1012,6 +1012,50 @@
       \endverb
       \keyw{Bayesian Improved Surname Geocoding,disparate impact,fair lending,probablistic proxy model,protected class,race imputation,racial discrimination}
     \endentry
+    \entry{Cherian2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5cddb11ca13edb95300984101f813d2e}{%
+           family={Cherian},
+           familyi={C\bibinitperiod},
+           given={Madhavi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Jean Ait Belkhir, Race, Gender & Class Journal}%
+      }
+      \strng{namehash}{5cddb11ca13edb95300984101f813d2e}
+      \strng{fullhash}{5cddb11ca13edb95300984101f813d2e}
+      \strng{bibnamehash}{5cddb11ca13edb95300984101f813d2e}
+      \strng{authorbibnamehash}{5cddb11ca13edb95300984101f813d2e}
+      \strng{authornamehash}{5cddb11ca13edb95300984101f813d2e}
+      \strng{authorfullhash}{5cddb11ca13edb95300984101f813d2e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper investigates the role of race in the mortgage market using data from the Home Mortgage Disclosure Act and the census from 1992 to 2003 for the Indianapolis Metropolitan Statistical Area. A multinomial logit model is used to isolate the effect of race on the final outcome of a loan application, after accounting for individual, loan, neighborhood, and property characteristics. The findings of this paper are consistent with those of previous works in this field, that is, being black or Hispanic lowers the probability of a successful loan application. Although data limitations prevent this paper from claiming explicit discrimination in the mortgage market, the project demonstrates that race is a statistically significant variable in predicting the outcome of a mortgage application.}
+      \field{issn}{10828354}
+      \field{journaltitle}{Race, Gender \& Class}
+      \field{number}{1/2}
+      \field{title}{Race in the Mortgage Market: An Empirical Investigation Using HMDA Data}
+      \field{urlday}{19}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{21}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{48\bibrangedash 63}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/43496959
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/43496959
+      \endverb
+    \endentry
     \entry{Choras2020}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=deaebd093d3ca7945926e214f3f9766a}{%
@@ -1328,12 +1372,14 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Public Choice}
-      \field{month}{07}
-      \field{number}{197}
-      \field{title}{Investigating bank lending discrimination in the US using CRA-rated banks’ HMDA loan data}
+      \field{title}{Investigating bank lending discrimination in the US using CRA-rated banks’ HMDA loan data.}
+      \field{volume}{197}
       \field{year}{2023}
       \field{pages}{371\bibrangedash 395}
       \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s11127-023-01078-5
+      \endverb
     \endentry
     \entry{Alessandro2017}{article}{}
       \name{author}{3}{}{%
@@ -1447,6 +1493,43 @@
       \verb http://arxiv.org/abs/1707.08120
       \endverb
       \keyw{Computer Science - Computers and Society,Computer Science - Machine Learning}
+    \endentry
+    \entry{Delis2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5c218814928ded502dd338b9ed14a91d}{%
+           family={Delis},
+           familyi={D\bibinitperiod},
+           given={M.D.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91bf3ff4da53eb2a48a41c306a5d8c2d}{%
+           family={Papadopoulos},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \strng{fullhash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \strng{bibnamehash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \strng{authorbibnamehash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \strng{authornamehash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \strng{authorfullhash}{f81eee8307abb57890a9ebf2353c1c1a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Services Research}
+      \field{title}{Mortgage Lending Discrimination Across the U.S.: New Methodology and New Evidence}
+      \field{volume}{56}
+      \field{year}{2019}
+      \field{pages}{341\bibrangedash 368}
+      \range{pages}{28}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s10693-018-0290-0
+      \endverb
     \endentry
     \entry{DoshiVelez2017}{report}{}
       \name{author}{2}{}{%
