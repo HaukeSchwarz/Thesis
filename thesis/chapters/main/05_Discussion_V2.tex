@@ -22,7 +22,7 @@ Just as the findings of the explainability algorithms displayed in \textbf{chapt
 While a direct comparison of the results is not possible due to the different datasets used and the different filters applied, the similarities in the factors influencing the decision-making process suggest that the underlying unfairness in mortgage decision-making is a systemic issue that is not easily mitigated.
 
 When taking a historical perspective, the findings of this thesis are not surprising. The systemic discrimination against \textbf{Black or African American} applicants in mortgage lending has been well-documented in the past. 
-Different studies on less recent versions of the HMDA data, such as those by Cherian (\cite{Cherian2014} for the years 1992 to 2003) or Cyree and Winters (\cite{Cyree2023} for the years 2007 to 2016) have shown that \textbf{Black or African American} applicants are systematically discriminated against in mortgage lending.
+Different studies on less recent versions of the HMDA data, such as those by Cherian (\cite{Cherian2014} for the years 1992 to 2003), the US Federal Reserve (\cite{Fed2013} for 2012), or Cyree and Winters (\cite{Cyree2023} for the years 2007 to 2016) have shown that \textbf{Black or African American} applicants are systematically discriminated against in mortgage lending.
 The findings of this thesis suggest that this discrimination is still present in the data used for the analysis, even though the data was collected in 2022, which supports the assumption that a big part of that discrimination is not "direct" but rather results from skin color being related to other detrimental decision factors, as has been assessed in \textbf{chapter \ref{subsec:Enrichment_Data}}.
 It can be assumed that a more granular control for these factors might have provided a more detailed explanation of the unfairness present in the data. This is where studies like the one by Delis and Papadopoulos come in. They suggest that, even though discrimination cannot be ruled out for mortgage lending decisions, a tighter control of the omitted variables might show that race alone is not the deciding factor in the decision-making process \parencite{Delis2019}.
 
@@ -34,8 +34,13 @@ It can be assumed that a more granular control for these factors might have prov
 \textbf{Results}
 
 Both the performance (see \textbf{table \ref{tab:Model_Evaluation}}) and the subgroup performance (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) of the initial model surpass the performance of the algorithms promoted by Ghoba and Colaner \parencite{Ghoba}, which were used as a basis for the variable selection in this thesis. However, direct comparisons are impaired by the fact that no detailed methodology was provided in their paper.
-Additionally, no feature importances have been assessed in this study, so a direct comparison of the results is not possible. Apart from the aforementioned study by Martinez and Kirchner, few papers report on feature importance in comparable setups. 
+Additionally, no feature importance has been assessed in this study, so a direct comparison of the results is not possible. Apart from the aforementioned study by Martinez and Kirchner, few papers report on feature importance in comparable setups. 
 One of them is a pre-print by Alves et al., that suggests high feature importance of \textit{derived\_loan\_product\_type, intro\_rate\_period} (both of which have not been included in this thesis), as well as \textit{race} and \textit{gender} of the applicants, which have been included in this thesis but did not show high feature importance \parencite{alves:hal-03033181}.
+As stated before, it cannot be ruled out that this is the case because of omitted variables impacting the feature values of the included variables instead of reflecting actual feature importance.
+
+The results of this thesis tie in with some of the findings of the study by Zou and Khern-am-Nui \parencite{Zou2023}, who conducted a similar analysis on the 2019 HMDA dataset.
+They did not only come to the conclusion that the HMDA data do contain discrimination against \textbf{Black or African American} applicants, but also that the discrimination is not only present in the data but also amplified in the models trained on it. The findings of this thesis suggest that the same is true for the 2022 HMDA dataset.
+However, Zou and Khern-am-Nui found a more effective way to mitigate the unfairness in the data by using an \textit{exponentiated gradient} algorithm, which was not applied in this thesis. This might be a promising approach for future research to improve the fairness of the models applied.
 
 % \textbf{Interpretation Summary}
 

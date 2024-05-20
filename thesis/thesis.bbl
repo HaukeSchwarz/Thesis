@@ -578,8 +578,44 @@
       \verb 10.1147/JRD.2019.2942287
       \endverb
     \endentry
+    \entry{Fed2013}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7a62444d1a4a95bd1e1d35864402d3ad}{%
+           family={Bhutta},
+           familyi={B\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56287a7a8f1c38dcf3ebd3abb4565de1}{%
+           family={Canner},
+           familyi={C\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \strng{fullhash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \strng{bibnamehash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \strng{authorbibnamehash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \strng{authornamehash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \strng{authorfullhash}{7fb4f23ff33df5eb341d51d81b39a0c5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Federal Reserve Bulletin}
+      \field{month}{01}
+      \field{title}{Mortgage Market Conditions and Borrower Outcomes: Evidence from the 2012 HMDA Data and Matched HMDA--Credit Record Data}
+      \field{volume}{99}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.17016/bulletin.2013.99-4
+      \endverb
+    \endentry
     \entry{Bhutta2022}{article}{}
-      \name{author}{3}{}{%
+      \name{author}{3}{ul=2}{%
         {{un=0,uniquepart=base,hash=7a62444d1a4a95bd1e1d35864402d3ad}{%
            family={Bhutta},
            familyi={B\bibinitperiod},
@@ -602,11 +638,11 @@
       \list{language}{1}{%
         {en}%
       }
-      \strng{namehash}{3a025acab95632eecbfd397b7c68ba87}
+      \strng{namehash}{a810ef8db90ede8b52901e2b199df963}
       \strng{fullhash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
       \strng{bibnamehash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
       \strng{authorbibnamehash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
-      \strng{authornamehash}{3a025acab95632eecbfd397b7c68ba87}
+      \strng{authornamehash}{a810ef8db90ede8b52901e2b199df963}
       \strng{authorfullhash}{d8fcfbc18b94a5b6300b54cb7a808ff0}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -4400,6 +4436,43 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/978-3-031-04083-2_18
+      \endverb
+    \endentry
+    \entry{Zou2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=934900799108c0ac6a538fb1471def5f}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da07cab453a7e5d757e5d71884ab3b26}{%
+           family={Khern-am-nuai},
+           familyi={K\bibinithyphendelim n\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \strng{fullhash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \strng{bibnamehash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \strng{authorbibnamehash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \strng{authornamehash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \strng{authorfullhash}{83888a60199f9e8fd39cc2bb812a7de4}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI Ethics}
+      \field{title}{AI and housing discrimination: the case of mortgage applications}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{pages}{1271\bibrangedash 1281}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s43681-022-00234-9
       \endverb
     \endentry
   \enddatalist
