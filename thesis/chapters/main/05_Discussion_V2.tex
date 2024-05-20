@@ -6,13 +6,18 @@ The \textbf{research question} of this thesis included investigating the fairnes
 
 \textit{“Can underlying unfairness in mortgage decision-making be detected, explained, and iteratively mitigated without sacrificing predictive performance?"}
 
-% Short Findings Summary
+The findings of this thesis suggest that the underlying unfairness in mortgage decision-making can be detected and partly explained using explainability algorithms. 
+The analyses conducted supported the theory that the mortgage decisions according to the 2022 HMDA dataset favored \textbf{White} applicants (who also accounted for the majority of applications), leading to a neural network model trained on it being biased towards favoring \textbf{White} applicants over \textbf{Black or African American} applicants.
+However, the iterative mitigation of this unfairness proved hard to achieve with the chosen algorithms. 
+The fairness adjustments conducted in \textbf{chapter \ref{subsec:Iterations}} partly yielded improvements in fairness, but the models still favored \textbf{White} applicants over \textbf{Black or African American} applicants, even when the protected attribute itself was controlled for.
+This assumption of a “deeper” inequality present in the data, resulting from \textbf{Black or African American} applicants historically being associated with worse attributes in terms of worthiness for a mortgage was supported by the analysis of the geographical enrichment data in \textbf{chapter \ref{subsec:Enrichment_Data}}, showing that the regions with a higher proportion of \textbf{Black or African American} applicants were correlated with lower chances of having a mortgage granted.
 
 % Interpretation - Introductory Paragraph
 
-\textbf{Interpretation of Fairness and Explainability}
+% \textbf{Interpretation of Fairness and Explainability}
+\textbf{Fairness and Explainability}
 
-When comparing the findings of this thesis to the research conducted by Martinez and Kircher \parencite{Martinez2021}, one common factor becomes apparent. Even though the differences in granted mortgages do not vary as extreme between the races analyzed (Martinez and Kircher report \textbf{Black or African American} applicants to have a 40\% - 80\% higher risk of having their applications denied), the factors influencing the decision-making process are similar.
+When comparing the findings of this thesis to the research conducted by Martinez and Kirchner \parencite{Martinez2021}, one common factor becomes apparent. Even though the differences in granted mortgages do not vary as extreme between the races analyzed (Martinez and Kircher report \textbf{Black or African American} applicants to have a 40\% - 80\% higher risk of having their applications denied), the factors influencing the decision-making process are similar.
 Just as the findings of the explainability algorithms displayed in \textbf{chapter \ref{subsec:Explainability}} suggest, the \textit{debt to income ratio} appeared to be a major factor in the decision-making process, with \textbf{Black or African American} applicants having a higher risk of being denied a mortgage due to this factor.
 While a direct comparison of the results is not possible due to the different datasets used and the different filters applied, the similarities in the factors influencing the decision-making process suggest that the underlying unfairness in mortgage decision-making is a systemic issue that is not easily mitigated.
 
@@ -21,15 +26,18 @@ Different studies on less recent versions of the HMDA data, such as those by Che
 The findings of this thesis suggest that this discrimination is still present in the data used for the analysis, even though the data was collected in 2022, which supports the assumption that a big part of that discrimination is not "direct" but rather results from skin color being related to other detrimental decision factors, as has been assessed in \textbf{chapter \ref{subsec:Enrichment_Data}}.
 It can be assumed that a more granular control for these factors might have provided a more detailed explanation of the unfairness present in the data. This is where studies like the one by Delis and Papadopoulos come in. They suggest that, even though discrimination cannot be ruled out for mortgage lending decisions, a tighter control of the omitted variables might show that race alone is not the deciding factor in the decision-making process \parencite{Delis2019}.
 
-\textbf{Interpretation of the EDA} % required in this form?
+% \textbf{Interpretation of the EDA} % required in this form?
 
 
 
-\textbf{Interpretation of the Results}
+%\textbf{Interpretation of the Results}
+\textbf{Results}
 
+Both the performance (see \textbf{table \ref{tab:Model_Evaluation}}) and the subgroup performance (see \textbf{table \ref{tab:Fairness_Assessment_Initial}}) of the initial model surpass the performance of the algorithms promoted by Ghoba and Colaner \parencite{Ghoba}, which were used as a basis for the variable selection in this thesis. However, direct comparisons are impaired by the fact that no detailed methodology was provided in their paper.
+Additionally, no feature importances have been assessed in this study, so a direct comparison of the results is not possible. Apart from the aforementioned study by Martinez and Kirchner, few papers report on feature importance in comparable setups. 
+One of them is a pre-print by Alves et al., that suggests high feature importance of \textit{derived\_loan\_product\_type, intro\_rate\_period} (both of which have not been included in this thesis), as well as \textit{race} and \textit{gender} of the applicants, which have been included in this thesis but did not show high feature importance \parencite{alves:hal-03033181}.
 
-
-\textbf{Interpretation Summary}
+% \textbf{Interpretation Summary}
 
 
 

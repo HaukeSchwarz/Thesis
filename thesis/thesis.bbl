@@ -119,6 +119,66 @@
       \verb https://openai.com/index/planning-for-agi-and-beyond/
       \endverb
     \endentry
+    \entry{alves:hal-03033181}{unpublished}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0043c52d1d52b4b127a0361669f96f44}{%
+           family={Alves},
+           familyi={A\bibinitperiod},
+           given={Guilherme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc0693a5bdad092df9f5d52d423ebc00}{%
+           family={Bhargava},
+           familyi={B\bibinitperiod},
+           given={Vaishnavi},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fe3818eeb4f56c46eb0a7b47b405038}{%
+           family={Bernier},
+           familyi={B\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c23026301fda224f1c6fed10276532}{%
+           family={Couceiro},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98128505b896f47eaafa24f789f05a16}{%
+           family={Napoli},
+           familyi={N\bibinitperiod},
+           given={Amedeo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2cb57b12044687bda49199a3915bf6b}
+      \strng{fullhash}{28c4502f5ea5a0a63755acd5d2b5f1ed}
+      \strng{bibnamehash}{f2cb57b12044687bda49199a3915bf6b}
+      \strng{authorbibnamehash}{f2cb57b12044687bda49199a3915bf6b}
+      \strng{authornamehash}{f2cb57b12044687bda49199a3915bf6b}
+      \strng{authorfullhash}{28c4502f5ea5a0a63755acd5d2b5f1ed}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{note}{working paper or preprint}
+      \field{title}{{FixOut: an ensemble approach to fairer models}}
+      \field{year}{2020}
+      \verb{file}
+      \verb https://hal.science/hal-03033181/file/_shared__IDA_2021___FixOut__an_ensemble_approach_to_fairer_models%20%281%29.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03033181
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03033181
+      \endverb
+      \keyw{SHAP ; LIME ; Fairness metrics ; Feature importance ; Feature-dropout ; Ensemble classifier}
+    \endentry
     \entry{Anderson2023}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c8a174520f512c1ef75018c34d89ccf4}{%
