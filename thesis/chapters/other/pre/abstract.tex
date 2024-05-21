@@ -6,13 +6,18 @@ Leveraging Explainability to Quantify the Trade-Off between Fairness and Perform
 \textbf{Author:} Hauke Schwarz
 \vspace{1em}
 
-The rapid increase in the application of algorithmic decision-making has given rise to concerns about the fairness of machine-made decisions. Specifically in areas that heavily impact individuals like healthcare, recidivism, or finance, a thorough understanding of how and why decisions have been made is crucial from both a regulatory and moral standpoint.
+The increase in the application of algorithmic decision-making has given rise to concerns about the fairness of machine-made decisions. 
+Specifically in areas that heavily impact individuals like healthcare, recidivism, or finance, a thorough understanding of how decisions have been made is crucial from a regulatory and moral standpoint.
 
-However, improving algorithms in terms of their predictive performance often comes at the cost of increased complexity and thereby reduced understandability, directly threatening this target. This is especially true for algorithms without a direct interpretation method like boosted tree models or neural networks, so-called “black box” models.
+However, improving algorithms in terms of their predictive performance often comes at the cost of increased complexity and thereby reduced understandability. 
+This is especially true for algorithms without a direct interpretation method like neural networks, so-called “black box” models.
 
-This thesis aims to examine whether Home Mortgage Disclosure Act mortgage lending from the year 2022 can be used to train a neural network to sufficiently predict whether a mortgage will be granted based on demographic data, specifically focusing on geography and sensitive attributes such as applicant race or gender. Both fairness and explainability requirements are incorporated into the process, all with the aim of keeping the model’s predictive performance at a high level.
+This thesis aimed to examine whether 2022 Home Mortgage Disclosure Act mortgage lending data can be used to train a neural network to predict whether a mortgage will be granted based on demographic data, specifically focusing on geography and sensitive attributes such as applicant race. 
+Both fairness and explainability requirements were incorporated into the process, all with the aim of keeping the model’s predictive performance high.
 
-Iteratively adapting the initial neural network with different fairness-focused algorithms as well as trying to uncover its inner workings using explainability algorithms showed mixed results. While some of the outcomes were promising with regards to the scope of this thesis, it has to be noted that none of the iterations applied managed to significantly improve fairness and/or predictive performance of the proposed model. This is most likely the effect of underlying discriminatory factors underlying in the data, that cannot directly be mitigated by controlling for the race of mortgage applicants, leaving an important focus for future research.
+Iteratively adapting the initial neural network with different fairness-focused algorithms as well as trying to uncover its inner workings using explainability algorithms showed mixed results. 
+While some results were promising with regards to the scope of this thesis, none of the iterations applied managed to significantly improve fairness and/or predictive performance of the proposed model. 
+This is most likely the effect of underlying discriminatory factors underlying in the data, that cannot directly be mitigated by controlling for the race of mortgage applicants, leaving an important focus for future research.
 
 \vspace{3em}
 
