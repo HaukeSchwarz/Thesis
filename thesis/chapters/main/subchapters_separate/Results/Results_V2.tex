@@ -115,6 +115,8 @@ Converting the probabilities into predictions with a threshold of 0.5 fulfilled 
 
 \end{figure}
 
+\pagebreak
+
 \textbf{Fairness Assessment}
 
 Following the research question (see \textbf{chapter \ref{ch:Introduction}}), the \textit{detection of unfairness} in the predictions is an explicit goal of this thesis. To address this, the fairness assessment outlined in \textbf{chapter \ref{subsec:Model_Training_and_Prediction}} was applied to the predictions. The results of the fairness assessment (i.e. \textit{metrics \#2}) are shown in \textbf{table \ref{tab:Fairness_Assessment_Initial}}. 
@@ -210,6 +212,8 @@ According to SHAP, none of the decisions displayed here (and in the whole set of
     \label{fig:SHAP_Individual_Analyses}
 \end{figure}
 
+\pagebreak
+
 \textbf{LIME}
 
 The LIME algorithm, in contrast to SHAP, tries to explain the model's decision on a local level by approximating the model's behavior around a single prediction (see \textbf{chapter \ref{subsec:algorithms}}).
@@ -251,6 +255,8 @@ It showed that all three explanation algorithms mainly agree on the three most i
 While the SHAP and LIME algorithms agreed on the most important features, the actual impact of these features varied significantly. The global surrogate model confirmed the results of the local explanations, showing that the most important features were the \textit{debt to income ratio} and the \textit{interest rate}. 
 It is noteworthy that missingness in the \textit{debt\_to\_income\_ratio} cannot be considered to be at random as it is highly predictive of the model's decision. 
 While individual values put out by SHAP and LIME might differ due to the different approaches, the overall trends of the explanations were similar, suggesting that the model's decision-making process could be explained with some level of confidence.
+
+\pagebreak
 
 \subsection{Fairness Adjustments}\label{Fairness Adjustments Results}
 
@@ -371,6 +377,8 @@ Subgroup performance could not be optimized compared to the benchmark and the di
 %    \small
 %    While the subgroup performances of the \textit{correlation remover} model were comparable to those of the benchmark model (compare \textbf{table \ref{tab:Fairness_Assessment_Initial}}), the disparities had higher absolute distances from 1, indicating a lower level of fairness.
 \end{table}
+
+\pagebreak
 
 \textbf{Calibrated Equalized Odds}
 

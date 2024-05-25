@@ -12,29 +12,29 @@
 \contentsline {section}{\numberline {2.1}Fairness in Algorithmic Decision Making}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Overview of Fairness in Algorithmic Decision Making}{2}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Applications of Fairness in Mortgage Lending}{5}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Explainability and Interpretability in Machine Learning}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Explainability and Interpretability in Machine Learning}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Inherently Interpretable Models vs. Black Box Models}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Explainability Algorithms}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Explainability and Fairness}{9}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Data and Methodology}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}HMDA Data}{11}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Enrichment Data}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Methodology}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{16}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Explainability}{19}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Fairness Adjustments}{21}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{23}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}HMDA Data}{23}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Enrichment Data}{28}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Results}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Explainability}{33}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{39}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Discussion, Interpretation, and Limitations}{47}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations and Conclusion}{50}{section.5.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{53}{chapter*.43}%
+\contentsline {subsection}{\numberline {2.2.3}Explainability and Fairness}{10}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Data and Methodology}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}HMDA Data}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Enrichment Data}{15}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Methodology}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Mortgage Classifier (Benchmark)}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Explainability}{20}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Fairness Adjustments}{22}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Results}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{24}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}HMDA Data}{24}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Enrichment Data}{29}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Results}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Mortgage Classifier (Benchmark)}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Explainability}{34}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Fairness Adjustments}{41}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Discussion, Interpretation, and Limitations}{48}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations and Conclusion}{51}{section.5.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{54}{chapter*.43}%
 \contentsfinish 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
