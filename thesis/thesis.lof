@@ -1,0 +1,29 @@
+\babel@toc {english}{}\relax 
+\addvspace {3pt}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Explainability Overview, from \blx@tocontentsinit {0}\cite {SALEEM2022165}}}{9}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual Inspection of Missingness in the missingno Package}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology}}{18}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces HMDA: Distribution of the Target Variable}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces HMDA: Correlation Between the Numerical Features}}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HMDA: Histograms of the Numerical Features}}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces HMDA: Distributions of the Categorical Features}}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Loan Grant by Protected Attribute}}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Correlation Between the Enrichment Features}}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Relationship between Applicant Race, Poverty Rate and Loan Grants}}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Enrichment Data EDA}}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Training History, ROC curve, and Confusion Matrix of the Mortgage Classifier Model}}{33}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces SHAP beeswarm plot}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Selected SHAP Individual Analyses}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces LIME Individual Feature Importance}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Global Surrogate Model compared to SHAP and LIME}}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Differences in Positive Predictions per Model}}{45}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fairness Adjustments Results}}{46}{figure.caption.41}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsfinish 
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
