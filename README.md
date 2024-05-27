@@ -1,4 +1,4 @@
-## Master Thesis "XXX"
+## Master Thesis "Assessing the Fairness of Mortgage Lending Decisions: Leveraging Explainability to Quantify the Trade-Off between Fairness and Performance in Algorithmic Decision-Making"
 ### Hauke Schwarz
 ### Católica Lisbon School of Business & Economics
 ### Summer 2024
