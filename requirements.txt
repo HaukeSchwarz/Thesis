@@ -14,11 +14,11 @@ notebook
 wget
 folktables
 lightgbm~=3.2.1
-scikit-learn
+scikit-learn>=1.5.0
 optuna
 seaborn
 matplotlib
 hyperparameter-tuning~=0.3.1
 aequitas-lite~=0.43.2
-scikit-learn~=1.0.2
+# scikit-learn~=1.0.2
 pandas~=1.3.5
